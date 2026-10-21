@@ -3,8 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-import siteConfiguration from './.figma/make/site.json'
-
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -18,9 +16,9 @@ export default defineConfig(({ mode }) => {
       minify: !emitSourcemaps,
     },
     plugins: [
-react(),
+      react(),
       tailwindcss(),
-      figmaSiteConfiguration(siteConfiguration),
+      figmaSiteConfiguration({}),
       figmaErrorOverlayReplay(),
       figmaReactRefreshBoundaryFallback(),
       figmaMakeKitPlugin({ storiesGlob: '/src/**/*.stories.{ts,tsx,js,jsx}' }),
@@ -31,17 +29,13 @@ react(),
       },
     },
     server: {
-      host: process.env.FIGMA_DEV_SERVER_HOST || '0.0.0.0',
+      host: '0.0.0.0',
       port: parseInt(process.env.PORT || '8443'),
       strictPort: true,
-      watch: {
-        ignored: [
-          '**/.figma/**',
-],
-      },
+      watch: { ignored: ['**/.figma/**'] },
     },
     preview: {
-      host: process.env.FIGMA_DEV_SERVER_HOST || '0.0.0.0',
+      host: '0.0.0.0',
       port: parseInt(process.env.PORT || '8443'),
     },
   }
@@ -88,8 +82,7 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
 
   const title = config.title ?? "Figma Make App"
   const description = config.description ?? ''
-  // Imported HTML keeps its own favicon; new Makes default to the Make product icon.
-  const favicon = config.icons?.icon ?? '/favicon.svg'
+  const favicon = config.icons?.icon ?? ''
   const socialImage = config.openGraph?.image ?? ''
   const language = sanitizeHtmlValue(config.language) || 'en'
   const googleAnalyticsId = sanitizeHtmlValue(config.analytics?.googleAnalyticsId)
@@ -274,9 +267,7 @@ function figmaErrorOverlayReplay(): Plugin {
  * the old tree mounted until the page is reloaded.
  */
 function figmaReactRefreshBoundaryFallback(): Plugin {
-  type ModuleNode = import('vite').ModuleNode
   const hadRefreshBoundary = new Map<string, boolean>()
-  const lostRefreshBoundaries = new Set<string>()
   let sendFullReload: (() => void) | null = null
 
   return {
@@ -286,29 +277,6 @@ function figmaReactRefreshBoundaryFallback(): Plugin {
     configureServer(server) {
       sendFullReload = () => server.ws.send({ type: 'full-reload', path: '*' })
     },
-    handleHotUpdate({ modules, server, timestamp }) {
-      if (lostRefreshBoundaries.size === 0) return
-
-      const visited = new Set<ModuleNode>()
-      const pending = [...modules]
-      while (pending.length > 0) {
-        const current = pending.pop()
-        if (!current || visited.has(current)) continue
-        visited.add(current)
-
-        const moduleId = current.id?.split('?')[0]
-        if (moduleId && lostRefreshBoundaries.has(moduleId)) {
-          const invalidated = new Set<ModuleNode>()
-          for (const updatedModule of modules) {
-            server.moduleGraph.invalidateModule(updatedModule, invalidated, timestamp, true)
-          }
-          sendFullReload?.()
-          return []
-        }
-
-        pending.push(...current.importers)
-      }
-    },
     transform(code, id) {
       if (!/\.[jt]sx?(?:\?|$)/.test(id) || id.includes('/node_modules/')) return null
 
@@ -317,9 +285,7 @@ function figmaReactRefreshBoundaryFallback(): Plugin {
       const previousHadRefreshBoundary = hadRefreshBoundary.get(moduleId)
       hadRefreshBoundary.set(moduleId, hasRefreshBoundary)
 
-      if (hasRefreshBoundary) lostRefreshBoundaries.delete(moduleId)
       if (previousHadRefreshBoundary && !hasRefreshBoundary) {
-        lostRefreshBoundaries.add(moduleId)
         queueMicrotask(() => sendFullReload?.())
       }
 
