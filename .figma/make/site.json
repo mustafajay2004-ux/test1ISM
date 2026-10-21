@@ -1,0 +1,10 @@
+{
+  "description": "Le Coin ISM is an independent e-commerce platform designed for ISM students, offering trendy accessories with a simple ordering process via WhatsApp.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
