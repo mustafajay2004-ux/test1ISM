@@ -25,7 +25,14 @@ type Product = {
   subcategory: string | null;
   features: Record<Lang, string[]> | null;
   addedAt: string | null;
+  featured: boolean;
+  audience: "men" | "women" | null;
+  priceOnRequest: boolean;
 };
+
+// Numéro WhatsApp Business au format international, sans "+" ni espaces (ex. "221770000000").
+// Tant qu'il est vide, le bouton de commande reste désactivé.
+const WHATSAPP_NUMBER = "";
 
 const categories: Category[] = [
   {
@@ -112,7 +119,7 @@ const categories: Category[] = [
 ];
 
 // Editable catalogue source. Replace a slot with verified product data before publishing it.
-const products: Product[] = categories.flatMap((category) =>
+const emptySlots: Product[] = categories.flatMap((category) =>
   [1, 2].map((slot) => ({
     id: `${category.id}-slot-${slot}`,
     category: category.id,
@@ -126,8 +133,52 @@ const products: Product[] = categories.flatMap((category) =>
     subcategory: null,
     features: null,
     addedAt: null,
+    featured: false,
+    audience: null,
+    priceOnRequest: false,
   })),
 );
+
+// Produits réels : on remplace l'emplacement correspondant, rien d'autre n'est inventé.
+// Photos : ajouter les fichiers dans /public puis les lister dans `images` (ex. "/rolex-day-date-1.jpg").
+// Prix : renseigner `price` (FCFA) ou mettre `priceOnRequest: true` pour afficher « Prix sur demande ».
+// Disponibilité : passer `availability` à "available" ou "preorder" une fois confirmée.
+const realProducts: Record<string, Partial<Product>> = {
+  "watches-slot-1": {
+    name: { fr: "Rolex Day-Date 36 mm", en: "Rolex Day-Date 36 mm" },
+    subcategory: "Classiques",
+    description: {
+      fr: "Montre Rolex Day-Date 36 mm, finition jaune doré, livrée avec sa boîte. Pas de certificat ni de facture d’origine.",
+      en: "Rolex Day-Date 36 mm watch, yellow gold finish, supplied with its box. No original certificate or invoice.",
+    },
+    features: {
+      fr: ["Marque : Rolex", "Modèle : Day-Date 36 mm", "Finition jaune doré", "Avec boîte", "Sans certificat ni facture d’origine"],
+      en: ["Brand: Rolex", "Model: Day-Date 36 mm", "Yellow gold finish", "With box", "No original certificate or invoice"],
+    },
+    featured: true,
+    priceOnRequest: true,
+  },
+  "watches-slot-2": {
+    name: { fr: "Audemars Piguet (modèle à préciser)", en: "Audemars Piguet (model to be specified)" },
+    subcategory: "Classiques",
+    description: {
+      fr: "Montre Audemars Piguet livrée avec sa boîte. Modèle et référence à préciser.",
+      en: "Audemars Piguet watch supplied with its box. Model and reference to be specified.",
+    },
+    features: {
+      fr: ["Marque : Audemars Piguet", "Avec boîte", "Modèle et référence à préciser"],
+      en: ["Brand: Audemars Piguet", "With box", "Model and reference to be specified"],
+    },
+    featured: true,
+    priceOnRequest: true,
+  },
+  "jewelry-slot-1": { audience: "men", featured: true },
+  "jewelry-slot-2": { audience: "women", featured: true },
+};
+
+const products: Product[] = emptySlots.map((product) => ({ ...product, ...realProducts[product.id] }));
+
+const featuredProducts = products.filter((product) => product.featured);
 
 const copy = {
   fr: {
@@ -192,6 +243,15 @@ const copy = {
     language: "Langue",
     footerText: "Une sélection indépendante pensée avec et pour les étudiants.",
     verifiedOnly: "Aucune donnée commerciale inventée",
+    prestigeEyebrow: "Sélection prestige",
+    prestigeTitle: "Nos pièces d’exception",
+    prestigeText: "Une vitrine de nos articles les plus luxueux. Toutes les montres et tous les bijoux restent à retrouver dans leurs catégories.",
+    priceOnRequest: "Prix sur demande",
+    men: "Homme",
+    women: "Femme",
+    statusAvailable: "Disponible",
+    statusPreorder: "Précommande",
+    statusUnavailable: "Indisponible",
   },
   en: {
     announcement: "Catalogue in preparation — only verified information will be published",
@@ -255,6 +315,15 @@ const copy = {
     language: "Language",
     footerText: "An independent selection made with and for students.",
     verifiedOnly: "No invented commercial data",
+    prestigeEyebrow: "Prestige selection",
+    prestigeTitle: "Our exceptional pieces",
+    prestigeText: "A showcase of our most luxurious items. All watches and jewellery can still be found in their categories.",
+    priceOnRequest: "Price on request",
+    men: "Men",
+    women: "Women",
+    statusAvailable: "Available",
+    statusPreorder: "Pre-order",
+    statusUnavailable: "Unavailable",
   },
 };
 
@@ -278,8 +347,14 @@ function Logo({ onClick }: { onClick: () => void }) {
 }
 
 const getCategory = (id: CategoryId) => categories.find((category) => category.id === id) ?? categories[0];
-const displayName = (product: Product, lang: Lang) =>
-  product.name?.[lang] ?? (lang === "fr" ? `Produit à renseigner · ${getCategory(product.category).name.fr}` : `Product to complete · ${getCategory(product.category).name.en}`);
+const priceLabel = (product: Product, lang: Lang) =>
+  product.price !== null ? `${product.price.toLocaleString("fr-FR")} FCFA` : product.priceOnRequest ? copy[lang].priceOnRequest : copy[lang].pricePending;
+const audienceLabel = (product: Product, lang: Lang) => (product.audience ? copy[lang][product.audience] : "");
+const displayName = (product: Product, lang: Lang) => {
+  const audience = audienceLabel(product, lang);
+  const suffix = audience ? ` · ${audience}` : "";
+  return product.name?.[lang] ?? (lang === "fr" ? `Produit à renseigner · ${getCategory(product.category).name.fr}${suffix}` : `Product to complete · ${getCategory(product.category).name.en}${suffix}`);
+};
 
 function ProductPlaceholder({ category, compact = false }: { category: CategoryId; compact?: boolean }) {
   return <div className={compact ? "product-placeholder compact" : "product-placeholder"}><Icon name="image" size={compact ? 22 : 34} /><span>{category.toUpperCase()}</span><small>PHOTO</small></div>;
@@ -297,6 +372,7 @@ export default function App() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [variant, setVariant] = useState("");
   const [quantity, setQuantity] = useState(1);
+  const [imageIndex, setImageIndex] = useState(0);
   const t = copy[lang];
 
   const navigate = (next: Page) => {
@@ -317,14 +393,25 @@ export default function App() {
     setSelectedCategory(product.category);
     setVariant("");
     setQuantity(1);
+    setImageIndex(0);
     navigate("product");
   };
+
+  const fr = lang === "fr";
+  const missingData = [
+    !selectedProduct.name && (fr ? "Nom exact du produit" : "Exact product name"),
+    selectedProduct.price === null && !selectedProduct.priceOnRequest && (fr ? "Prix réel en FCFA" : "Real price in FCFA"),
+    selectedProduct.availability === "pending" && (fr ? "Disponibilité réelle" : "Actual availability"),
+    !selectedProduct.description && (fr ? "Description et caractéristiques" : "Description and features"),
+    !selectedProduct.images.length && (fr ? "Photos authentiques du stock" : "Authentic stock photos"),
+  ].filter((item): item is string => Boolean(item));
 
   const activeCategory = getCategory(selectedCategory);
   const categoryProducts = products.filter((product) => product.category === selectedCategory);
   const canOrder = Boolean(
+    WHATSAPP_NUMBER &&
     selectedProduct.name &&
-    selectedProduct.price !== null &&
+    (selectedProduct.price !== null || selectedProduct.priceOnRequest) &&
     selectedProduct.availability !== "pending" &&
     selectedProduct.availability !== "unavailable" &&
     (!selectedProduct.variants.length || variant),
@@ -345,8 +432,8 @@ export default function App() {
 
   const whatsappMessage = canOrder
     ? lang === "fr"
-      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity}, prix affiché : ${selectedProduct.price} FCFA. Voici le produit : ${window.location.href}`
-      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity}, displayed price: ${selectedProduct.price} FCFA. Product link: ${window.location.href}`
+      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity}, prix affiché : ${priceLabel(selectedProduct, "fr")}. Voici le produit : ${window.location.href}`
+      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity}, displayed price: ${priceLabel(selectedProduct, "en")}. Product link: ${window.location.href}`
     : "";
 
   return (
@@ -377,7 +464,7 @@ export default function App() {
 
           <section className="section shell" id="categories"><div className="section-heading"><div><span className="eyebrow">01 — {t.categories}</span><h2>{t.categories}</h2></div><p>{t.categoriesText}</p></div><div className="category-grid six-categories">{categories.map((category, index) => <button className={`category-card cat-${(index % 3) + 1}`} key={category.id} onClick={() => openCategory(category.id)}><span>0{index + 1}</span><div><strong>{category.name[lang]}</strong><small>{category.subcategories[lang].slice(0, 3).join(" · ")}</small></div><i><Icon name="arrow" /></i></button>)}</div></section>
 
-          <section className="section warm-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow">02 — {t.catalogPending}</span><h2>{lang === "fr" ? "Prêt pour vos produits réels" : "Ready for your real products"}</h2></div><button className="text-link" onClick={() => navigate("shop")}>{t.seeAll}<Icon name="arrow" /></button></div><div className="product-grid home-products">{products.slice(0, 4).map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={openProduct} />)}</div></div></section>
+          <section className="section warm-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow">02 — {t.prestigeEyebrow}</span><h2>{t.prestigeTitle}</h2><p style={{ marginTop: 12, maxWidth: 560, color: "var(--muted)" }}>{t.prestigeText}</p></div><button className="text-link" onClick={() => navigate("shop")}>{t.seeAll}<Icon name="arrow" /></button></div><div className="product-grid home-products">{featuredProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={openProduct} />)}</div></div></section>
 
           <section className="section shell philosophy"><div className="philosophy-number">03</div><div><span className="eyebrow">{lang === "fr" ? "Notre engagement" : "Our commitment"}</span><h2>{t.philosophy}</h2></div><div><p>{t.philosophyText}</p><button className="text-link" onClick={() => navigate("about")}>{t.nav.about}<Icon name="arrow" /></button></div></section>
 
@@ -390,12 +477,13 @@ export default function App() {
         {page === "product" && <section className="product-page shell">
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
           <div className="product-detail">
-            <div className="product-gallery"><div className="main-image"><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></div><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></div>
-            <div className="product-info"><div className="product-meta"><Status lang={lang} /><span>{lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className="detail-price pending-price">{t.pricePending}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
-              <div className="data-checklist"><strong>{t.addData}</strong>{(lang === "fr" ? ["Nom exact du produit", "Prix réel en FCFA", "Disponibilité réelle", "Description et caractéristiques", "Photos authentiques du stock"] : ["Exact product name", "Real price in FCFA", "Actual availability", "Description and features", "Authentic stock photos"]).map((item) => <span key={item}><i />{item}</span>)}</div>
+            <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
+            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{priceLabel(selectedProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
+              {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
+              {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
               <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : <div className="unconfigured-field">{lang === "fr" ? "Couleurs, tailles ou modèles à renseigner" : "Colours, sizes or models to complete"}</div>}</div>
               <div className="selection-block"><label>{t.quantity}</label><div className="quantity"><button aria-label="Decrease" onClick={() => setQuantity(Math.max(1, quantity - 1))}><Icon name="minus" /></button><span>{quantity}</span><button aria-label="Increase" onClick={() => setQuantity(quantity + 1)}><Icon name="plus" /></button></div></div>
-              <a className={`button whatsapp ${canOrder ? "" : "disabled"}`} href={canOrder ? `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}` : undefined} target={canOrder ? "_blank" : undefined} rel="noreferrer" aria-disabled={!canOrder} onClick={(event) => { if (!canOrder) event.preventDefault(); }}><Icon name="message" />{t.order}<Icon name="arrow" /></a><p className="order-help"><Icon name={canOrder ? "check" : "close"} />{canOrder ? t.practicalText : t.orderUnavailable}</p><details className="practical" open><summary>{t.practical}<span>−</span></summary><p>{t.practicalText}</p></details>
+              <a className={`button whatsapp ${canOrder ? "" : "disabled"}`} href={canOrder ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}` : undefined} target={canOrder ? "_blank" : undefined} rel="noreferrer" aria-disabled={!canOrder} onClick={(event) => { if (!canOrder) event.preventDefault(); }}><Icon name="message" />{t.order}<Icon name="arrow" /></a><p className="order-help"><Icon name={canOrder ? "check" : "close"} />{canOrder ? t.practicalText : t.orderUnavailable}</p><details className="practical" open><summary>{t.practical}<span>−</span></summary><p>{t.practicalText}</p></details>
             </div>
           </div>
           <RecommendationSection title={t.similar} products={categoryProducts.filter((product) => product.id !== selectedProduct.id)} lang={lang} onOpen={openProduct} />
@@ -412,13 +500,17 @@ export default function App() {
   );
 }
 
-function Status({ lang }: { lang: Lang }) {
-  return <span className="status pending"><i />{lang === "fr" ? "À renseigner" : "To complete"}</span>;
+function Status({ lang, availability = "pending" }: { lang: Lang; availability?: Product["availability"] }) {
+  const t = copy[lang];
+  const label = availability === "available" ? t.statusAvailable : availability === "preorder" ? t.statusPreorder : availability === "unavailable" ? t.statusUnavailable : lang === "fr" ? "À renseigner" : "To complete";
+  return <span className={`status ${availability}`}><i />{label}</span>;
 }
 
 function ProductCard({ product, lang, onOpen }: { product: Product; lang: Lang; onOpen: (product: Product) => void }) {
   const t = copy[lang];
-  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image"><ProductPlaceholder category={product.category} /><Status lang={lang} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]} · {t.placeholder}</span><h3>{displayName(product, lang)}</h3><strong className="price-placeholder">{t.pricePending}</strong></div></article>;
+  const hasPrice = product.price !== null || product.priceOnRequest;
+  const audience = audienceLabel(product, lang);
+  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{priceLabel(product, lang)}</strong></div></article>;
 }
 
 function CatalogPage({ lang, isCategory, activeCategory, products: visibleProducts, query, setQuery, subcategory, setSubcategory, sort, setSort, filterOpen, setFilterOpen, onShop, onCategory, onProduct, onClear }: {
