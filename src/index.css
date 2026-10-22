@@ -422,3 +422,6 @@ h3 { margin: 0; color: var(--navy); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+.status.preorder i { background: var(--gold); }
+.status.unavailable i { background: #b5483a; }
