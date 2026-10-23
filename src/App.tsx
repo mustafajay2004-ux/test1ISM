@@ -174,13 +174,26 @@ const realProducts: Record<string, Partial<Product>> = {
     featured: true,
     priceOnRequest: true,
   },
-  "jewelry-slot-1": { audience: "men", featured: true },
-  "jewelry-slot-2": { audience: "women", featured: true },
 };
 
 const products: Product[] = emptySlots.map((product) => ({ ...product, ...realProducts[product.id] }));
 
 const featuredProducts = products.filter((product) => product.featured);
+
+// Cartes « collection » de l'accueil : un visuel d'ambiance qui mène à la catégorie, sans prix ni produit précis.
+// Pour changer la photo : déposer le fichier dans /public et modifier `image` (null = emplacement vide).
+type Showcase = {
+  id: string;
+  category: CategoryId;
+  subcategory: string | null;
+  title: Record<Lang, string>;
+  image: string | null;
+};
+
+const showcases: Showcase[] = [
+  { id: "showcase-jewelry-men", category: "jewelry", subcategory: "Bijoux pour homme", title: { fr: "Bijoux · Homme", en: "Jewellery · Men" }, image: "/bijoux-homme.jpg" },
+  { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: null },
+];
 
 const copy = {
   fr: {
@@ -254,6 +267,8 @@ const copy = {
     statusAvailable: "Disponible",
     statusPreorder: "Précommande",
     statusUnavailable: "Indisponible",
+    showcaseTag: "Collection",
+    showcaseCta: "Découvrir la sélection",
   },
   en: {
     announcement: "Catalogue in preparation — only verified information will be published",
@@ -326,6 +341,8 @@ const copy = {
     statusAvailable: "Available",
     statusPreorder: "Pre-order",
     statusUnavailable: "Unavailable",
+    showcaseTag: "Collection",
+    showcaseCta: "Explore the selection",
   },
 };
 
@@ -399,6 +416,11 @@ export default function App() {
     navigate("product");
   };
 
+  const openShowcase = (showcase: Showcase) => {
+    openCategory(showcase.category);
+    setSubcategory(showcase.subcategory ?? "");
+  };
+
   const fr = lang === "fr";
   const missingData = [
     !selectedProduct.name && (fr ? "Nom exact du produit" : "Exact product name"),
@@ -466,7 +488,7 @@ export default function App() {
 
           <section className="section shell" id="categories"><div className="section-heading"><div><span className="eyebrow">01 — {t.categories}</span><h2>{t.categories}</h2></div><p>{t.categoriesText}</p></div><div className="category-grid six-categories">{categories.map((category, index) => <button className={`category-card cat-${(index % 3) + 1}`} key={category.id} onClick={() => openCategory(category.id)}><span>0{index + 1}</span><div><strong>{category.name[lang]}</strong><small>{category.subcategories[lang].slice(0, 3).join(" · ")}</small></div><i><Icon name="arrow" /></i></button>)}</div></section>
 
-          <section className="section warm-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow">02 — {t.prestigeEyebrow}</span><h2>{t.prestigeTitle}</h2><p style={{ marginTop: 12, maxWidth: 560, color: "var(--muted)" }}>{t.prestigeText}</p></div><button className="text-link" onClick={() => navigate("shop")}>{t.seeAll}<Icon name="arrow" /></button></div><div className="product-grid home-products">{featuredProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={openProduct} />)}</div></div></section>
+          <section className="section warm-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow">02 — {t.prestigeEyebrow}</span><h2>{t.prestigeTitle}</h2><p style={{ marginTop: 12, maxWidth: 560, color: "var(--muted)" }}>{t.prestigeText}</p></div><button className="text-link" onClick={() => navigate("shop")}>{t.seeAll}<Icon name="arrow" /></button></div><div className="product-grid home-products">{featuredProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={openProduct} />)}{showcases.map((showcase) => <ShowcaseCard key={showcase.id} showcase={showcase} lang={lang} onOpen={openShowcase} />)}</div></div></section>
 
           <section className="section shell philosophy"><div className="philosophy-number">03</div><div><span className="eyebrow">{lang === "fr" ? "Notre engagement" : "Our commitment"}</span><h2>{t.philosophy}</h2></div><div><p>{t.philosophyText}</p><button className="text-link" onClick={() => navigate("about")}>{t.nav.about}<Icon name="arrow" /></button></div></section>
 
@@ -513,6 +535,11 @@ function ProductCard({ product, lang, onOpen }: { product: Product; lang: Lang; 
   const hasPrice = product.price !== null || product.priceOnRequest;
   const audience = audienceLabel(product, lang);
   return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{priceLabel(product, lang)}</strong></div></article>;
+}
+
+function ShowcaseCard({ showcase, lang, onOpen }: { showcase: Showcase; lang: Lang; onOpen: (showcase: Showcase) => void }) {
+  const t = copy[lang];
+  return <article className="product-card placeholder-card" onClick={() => onOpen(showcase)}><div className="product-image">{showcase.image ? <img src={showcase.image} alt={showcase.title[lang]} style={{ objectPosition: "center 58%" }} /> : <ProductPlaceholder category={showcase.category} />}<span className="status confirm"><i />{t.showcaseTag}</span><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(showcase.category).name[lang]}</span><h3>{showcase.title[lang]}</h3><strong>{t.showcaseCta}</strong></div></article>;
 }
 
 function CatalogPage({ lang, isCategory, activeCategory, products: visibleProducts, query, setQuery, subcategory, setSubcategory, sort, setSort, filterOpen, setFilterOpen, onShop, onCategory, onProduct, onClear }: {
