@@ -188,11 +188,12 @@ type Showcase = {
   subcategory: string | null;
   title: Record<Lang, string>;
   image: string | null;
+  position?: string;
 };
 
 const showcases: Showcase[] = [
-  { id: "showcase-jewelry-men", category: "jewelry", subcategory: "Bijoux pour homme", title: { fr: "Bijoux · Homme", en: "Jewellery · Men" }, image: "/bijoux-homme.jpg" },
-  { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: null },
+  { id: "showcase-jewelry-men", category: "jewelry", subcategory: "Bijoux pour homme", title: { fr: "Bijoux · Homme", en: "Jewellery · Men" }, image: "/bijoux-homme-style.jpg", position: "center 50%" },
+  { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: "/bijoux-femme-style.jpg", position: "center 40%" },
 ];
 
 const copy = {
@@ -269,6 +270,7 @@ const copy = {
     statusUnavailable: "Indisponible",
     showcaseTag: "Collection",
     showcaseCta: "Découvrir la sélection",
+    moodVisual: "Visuel d’ambiance",
   },
   en: {
     announcement: "Catalogue in preparation — only verified information will be published",
@@ -343,6 +345,7 @@ const copy = {
     statusUnavailable: "Unavailable",
     showcaseTag: "Collection",
     showcaseCta: "Explore the selection",
+    moodVisual: "Mood visual",
   },
 };
 
@@ -539,7 +542,7 @@ function ProductCard({ product, lang, onOpen }: { product: Product; lang: Lang; 
 
 function ShowcaseCard({ showcase, lang, onOpen }: { showcase: Showcase; lang: Lang; onOpen: (showcase: Showcase) => void }) {
   const t = copy[lang];
-  return <article className="product-card placeholder-card" onClick={() => onOpen(showcase)}><div className="product-image">{showcase.image ? <img src={showcase.image} alt={showcase.title[lang]} style={{ objectPosition: "center 58%" }} /> : <ProductPlaceholder category={showcase.category} />}<span className="status confirm"><i />{t.showcaseTag}</span><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(showcase.category).name[lang]}</span><h3>{showcase.title[lang]}</h3><strong>{t.showcaseCta}</strong></div></article>;
+  return <article className="product-card placeholder-card" onClick={() => onOpen(showcase)}><div className="product-image">{showcase.image ? <><img src={showcase.image} alt={showcase.title[lang]} style={{ objectPosition: showcase.position ?? "center" }} /><span className="demo-label">{t.moodVisual}</span></> : <ProductPlaceholder category={showcase.category} />}<span className="status confirm"><i />{t.showcaseTag}</span><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(showcase.category).name[lang]}</span><h3>{showcase.title[lang]}</h3><strong>{t.showcaseCta}</strong></div></article>;
 }
 
 function CatalogPage({ lang, isCategory, activeCategory, products: visibleProducts, query, setQuery, subcategory, setSubcategory, sort, setSort, filterOpen, setFilterOpen, onShop, onCategory, onProduct, onClear }: {
