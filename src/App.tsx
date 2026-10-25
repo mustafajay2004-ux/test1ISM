@@ -26,7 +26,7 @@ type Product = {
   features: Record<Lang, string[]> | null;
   addedAt: string | null;
   featured: boolean;
-  audience: "men" | "women" | null;
+  audience: "men" | "women" | "unisex" | null;
   priceOnRequest: boolean;
 };
 
@@ -43,8 +43,8 @@ const categories: Category[] = [
       en: "Classic, sports or smart watches, depending on confirmed available models.",
     },
     subcategories: {
-      fr: ["Classiques", "Sportives", "Connectées", "Pour homme", "Pour femme"],
-      en: ["Classic", "Sports", "Smart watches", "Men", "Women"],
+      fr: ["Classiques", "Sportives", "Connectées"],
+      en: ["Classic", "Sports", "Smart watches"],
     },
     filters: { fr: ["Type", "Style", "Couleur", "Prix"], en: ["Type", "Style", "Colour", "Price"] },
   },
@@ -56,8 +56,8 @@ const categories: Category[] = [
       en: "Bracelets, earrings, necklaces and men’s jewellery based on confirmed items.",
     },
     subcategories: {
-      fr: ["Bracelets", "Boucles d’oreilles", "Colliers", "Bijoux pour homme"],
-      en: ["Bracelets", "Earrings", "Necklaces", "Men’s jewellery"],
+      fr: ["Bracelets", "Boucles d’oreilles", "Colliers"],
+      en: ["Bracelets", "Earrings", "Necklaces"],
     },
     filters: { fr: ["Type", "Style", "Couleur", "Matière"], en: ["Type", "Style", "Colour", "Material"] },
   },
@@ -147,6 +147,7 @@ const realProducts: Record<string, Partial<Product>> = {
   "watches-slot-1": {
     name: { fr: "Rolex Day-Date 36 mm", en: "Rolex Day-Date 36 mm" },
     subcategory: "Classiques",
+    audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
       fr: "Montre Rolex Day-Date 36 mm, livrée avec sa boîte. Pas de certificat ni de facture d’origine.",
       en: "Rolex Day-Date 36 mm watch, supplied with its box. No original certificate or invoice.",
@@ -162,6 +163,7 @@ const realProducts: Record<string, Partial<Product>> = {
   "watches-slot-2": {
     name: { fr: "Audemars Piguet (modèle à préciser)", en: "Audemars Piguet (model to be specified)" },
     subcategory: "Classiques",
+    audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
       fr: "Montre Audemars Piguet livrée avec sa boîte. Modèle et référence à préciser.",
       en: "Audemars Piguet watch supplied with its box. Model and reference to be specified.",
@@ -186,14 +188,15 @@ type Showcase = {
   id: string;
   category: CategoryId;
   subcategory: string | null;
+  audience?: "men" | "women";
   title: Record<Lang, string>;
   image: string | null;
   position?: string;
 };
 
 const showcases: Showcase[] = [
-  { id: "showcase-jewelry-men", category: "jewelry", subcategory: "Bijoux pour homme", title: { fr: "Bijoux · Homme", en: "Jewellery · Men" }, image: "/bijoux-homme-style.jpg", position: "center 50%" },
-  { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: "/bijoux-femme-style.jpg", position: "center 40%" },
+  { id: "showcase-jewelry-men", category: "jewelry", subcategory: null, audience: "men", title: { fr: "Bijoux · Homme", en: "Jewellery · Men" }, image: "/bijoux-homme-style.jpg", position: "center 50%" },
+  { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, audience: "women", title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: "/bijoux-femme-style.jpg", position: "center 40%" },
 ];
 
 const copy = {
@@ -271,6 +274,8 @@ const copy = {
     showcaseTag: "Collection",
     showcaseCta: "Découvrir la sélection",
     moodVisual: "Visuel d’ambiance",
+    allAudience: "Tous",
+    noMatch: "Aucun produit pour cette sélection pour le moment.",
   },
   en: {
     announcement: "Catalogue in preparation — only verified information will be published",
@@ -346,6 +351,8 @@ const copy = {
     showcaseTag: "Collection",
     showcaseCta: "Explore the selection",
     moodVisual: "Mood visual",
+    allAudience: "All",
+    noMatch: "No products for this selection yet.",
   },
 };
 
@@ -371,7 +378,7 @@ function Logo({ onClick }: { onClick: () => void }) {
 const getCategory = (id: CategoryId) => categories.find((category) => category.id === id) ?? categories[0];
 const priceLabel = (product: Product, lang: Lang) =>
   product.price !== null ? `${product.price.toLocaleString("fr-FR")} FCFA` : product.priceOnRequest ? copy[lang].priceOnRequest : copy[lang].pricePending;
-const audienceLabel = (product: Product, lang: Lang) => (product.audience ? copy[lang][product.audience] : "");
+const audienceLabel = (product: Product, lang: Lang) => (product.audience && product.audience !== "unisex" ? copy[lang][product.audience] : "");
 const displayName = (product: Product, lang: Lang) => {
   const audience = audienceLabel(product, lang);
   const suffix = audience ? ` · ${audience}` : "";
@@ -389,6 +396,7 @@ export default function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product>(products[0]);
   const [query, setQuery] = useState("");
   const [subcategory, setSubcategory] = useState("");
+  const [audience, setAudience] = useState<"" | "men" | "women">("");
   const [sort, setSort] = useState("newest");
   const [menuOpen, setMenuOpen] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
@@ -406,6 +414,7 @@ export default function App() {
   const openCategory = (category: CategoryId) => {
     setSelectedCategory(category);
     setSubcategory("");
+    setAudience("");
     setQuery("");
     navigate("category");
   };
@@ -422,6 +431,7 @@ export default function App() {
   const openShowcase = (showcase: Showcase) => {
     openCategory(showcase.category);
     setSubcategory(showcase.subcategory ?? "");
+    setAudience(showcase.audience ?? "");
   };
 
   const fr = lang === "fr";
@@ -450,12 +460,13 @@ export default function App() {
       const name = displayName(product, lang).toLowerCase();
       const matchesQuery = name.includes(query.toLowerCase()) || getCategory(product.category).name[lang].toLowerCase().includes(query.toLowerCase());
       const matchesSubcategory = !subcategory || product.subcategory === subcategory;
-      return matchesQuery && matchesSubcategory;
+      const matchesAudience = !audience || product.audience === audience || product.audience === "unisex";
+      return matchesQuery && matchesSubcategory && matchesAudience;
     });
     if (sort === "low") return [...filtered].sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity));
     if (sort === "high") return [...filtered].sort((a, b) => (b.price ?? -1) - (a.price ?? -1));
     return filtered;
-  }, [page, categoryProducts, query, subcategory, sort, lang]);
+  }, [page, categoryProducts, query, subcategory, audience, sort, lang]);
 
   const whatsappMessage = canOrder
     ? lang === "fr"
@@ -499,7 +510,7 @@ export default function App() {
           <FaqPreview lang={lang} onAll={() => navigate("faq")} />
         </>}
 
-        {(page === "shop" || page === "category") && <CatalogPage lang={lang} isCategory={page === "category"} activeCategory={activeCategory} products={visibleProducts} query={query} setQuery={setQuery} subcategory={subcategory} setSubcategory={setSubcategory} sort={sort} setSort={setSort} filterOpen={filterOpen} setFilterOpen={setFilterOpen} onShop={() => navigate("shop")} onCategory={openCategory} onProduct={openProduct} onClear={() => { setQuery(""); setSubcategory(""); }} />}
+        {(page === "shop" || page === "category") && <CatalogPage lang={lang} isCategory={page === "category"} activeCategory={activeCategory} products={visibleProducts} query={query} setQuery={setQuery} subcategory={subcategory} setSubcategory={setSubcategory} audience={audience} setAudience={setAudience} sort={sort} setSort={setSort} filterOpen={filterOpen} setFilterOpen={setFilterOpen} onShop={() => navigate("shop")} onCategory={openCategory} onProduct={openProduct} onClear={() => { setQuery(""); setSubcategory(""); setAudience(""); }} />}
 
         {page === "product" && <section className="product-page shell">
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
@@ -545,17 +556,17 @@ function ShowcaseCard({ showcase, lang, onOpen }: { showcase: Showcase; lang: La
   return <article className="product-card placeholder-card" onClick={() => onOpen(showcase)}><div className="product-image">{showcase.image ? <><img src={showcase.image} alt={showcase.title[lang]} style={{ objectPosition: showcase.position ?? "center" }} /><span className="demo-label">{t.moodVisual}</span></> : <ProductPlaceholder category={showcase.category} />}<span className="status confirm"><i />{t.showcaseTag}</span><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(showcase.category).name[lang]}</span><h3>{showcase.title[lang]}</h3><strong>{t.showcaseCta}</strong></div></article>;
 }
 
-function CatalogPage({ lang, isCategory, activeCategory, products: visibleProducts, query, setQuery, subcategory, setSubcategory, sort, setSort, filterOpen, setFilterOpen, onShop, onCategory, onProduct, onClear }: {
-  lang: Lang; isCategory: boolean; activeCategory: Category; products: Product[]; query: string; setQuery: (value: string) => void; subcategory: string; setSubcategory: (value: string) => void; sort: string; setSort: (value: string) => void; filterOpen: boolean; setFilterOpen: (value: boolean) => void; onShop: () => void; onCategory: (id: CategoryId) => void; onProduct: (product: Product) => void; onClear: () => void;
+function CatalogPage({ lang, isCategory, activeCategory, products: visibleProducts, query, setQuery, subcategory, setSubcategory, audience, setAudience, sort, setSort, filterOpen, setFilterOpen, onShop, onCategory, onProduct, onClear }: {
+  lang: Lang; isCategory: boolean; activeCategory: Category; products: Product[]; query: string; setQuery: (value: string) => void; subcategory: string; setSubcategory: (value: string) => void; audience: "" | "men" | "women"; setAudience: (value: "" | "men" | "women") => void; sort: string; setSort: (value: string) => void; filterOpen: boolean; setFilterOpen: (value: boolean) => void; onShop: () => void; onCategory: (id: CategoryId) => void; onProduct: (product: Product) => void; onClear: () => void;
 }) {
   const t = copy[lang];
   const availablePriceData = visibleProducts.some((product) => product.price !== null);
   const filterCategory = isCategory ? activeCategory : null;
   return <section className="shop-page shell">
-    <div className="page-intro">{isCategory && <div className="breadcrumb"><button onClick={onShop}>{t.nav.shop}</button><span>/</span><span>{activeCategory.name[lang]}</span></div>}<span className="eyebrow">{isCategory ? `Collection 0${categories.findIndex((item) => item.id === activeCategory.id) + 1}` : t.catalogReady}</span><h1>{isCategory ? activeCategory.name[lang] : t.shopTitle}</h1><p>{isCategory ? activeCategory.description[lang] : t.shopText}</p>{isCategory && <div className="subcategory-chips">{activeCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "active" : ""} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}>{item}</button>)}</div>}</div>
+    <div className="page-intro">{isCategory && <div className="breadcrumb"><button onClick={onShop}>{t.nav.shop}</button><span>/</span><span>{activeCategory.name[lang]}</span></div>}<span className="eyebrow">{isCategory ? `Collection 0${categories.findIndex((item) => item.id === activeCategory.id) + 1}` : t.catalogReady}</span><h1>{isCategory ? activeCategory.name[lang] : t.shopTitle}</h1><p>{isCategory ? activeCategory.description[lang] : t.shopText}</p>{isCategory && ["watches", "jewelry"].includes(activeCategory.id) && <div className="subcategory-chips audience-chips">{([["", t.allAudience], ["men", t.men], ["women", t.women]] as const).map(([value, label]) => <button className={audience === value ? "active" : ""} key={value} onClick={() => setAudience(value)}>{label}</button>)}</div>}{isCategory && <div className="subcategory-chips">{activeCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "active" : ""} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}>{item}</button>)}</div>}</div>
     {!isCategory && <div className="shop-category-strip">{categories.map((category) => <button key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><Icon name="arrow" /></button>)}</div>}
     <div className="catalog-toolbar"><label className="search-field"><Icon name="search" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t.search} /></label><button className="button secondary mobile-filter" onClick={() => setFilterOpen(!filterOpen)}>{t.filters}<span>{filterOpen ? "−" : "+"}</span></button><div className="sort-control"><label>{t.sort}</label><select value={sort} onChange={(event) => setSort(event.target.value)} disabled={!availablePriceData}><option value="newest">{t.newest}</option><option value="low">{t.low}</option><option value="high">{t.high}</option></select></div></div>
-    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "filter-option active" : "filter-option"} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}><span>{item}</span><small>—</small></button>)}</div><div className="planned-filters"><label>{lang === "fr" ? "Filtres prévus" : "Planned filters"}</label>{filterCategory.filters[lang].map((filter) => <span key={filter}>{filter}<small>{lang === "fr" ? "À activer avec les données" : "Enable with data"}</small></span>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>02</small></button>)}</div>}<div className="pilot-note"><span>i</span><p>{lang === "fr" ? "Le tri par prix et les filtres détaillés s’activent uniquement lorsque les données réelles sont renseignées." : "Price sorting and detailed filters are only enabled once real data is entered."}</p></div></aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory ? (lang === "fr" ? "Aucun produit n’est encore associé à cette sous-catégorie." : "No product is associated with this subcategory yet.") : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
+    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "filter-option active" : "filter-option"} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}><span>{item}</span><small>—</small></button>)}</div><div className="planned-filters"><label>{lang === "fr" ? "Filtres prévus" : "Planned filters"}</label>{filterCategory.filters[lang].map((filter) => <span key={filter}>{filter}<small>{lang === "fr" ? "À activer avec les données" : "Enable with data"}</small></span>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>{String(products.filter((item) => item.category === category.id && item.name).length).padStart(2, "0")}</small></button>)}</div>}<div className="pilot-note"><span>i</span><p>{lang === "fr" ? "Le tri par prix et les filtres détaillés s’activent uniquement lorsque les données réelles sont renseignées." : "Price sorting and detailed filters are only enabled once real data is entered."}</p></div></aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory || audience ? t.noMatch : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
   </section>;
 }
 
