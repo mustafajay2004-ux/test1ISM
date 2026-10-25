@@ -425,3 +425,4 @@ h3 { margin: 0; color: var(--navy); }
 
 .status.preorder i { background: var(--gold); }
 .status.unavailable i { background: #b5483a; }
+.subcategory-chips.audience-chips + .subcategory-chips { margin-top: 10px; }
