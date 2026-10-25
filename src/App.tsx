@@ -8,9 +8,19 @@ type Category = {
   id: CategoryId;
   name: Record<Lang, string>;
   description: Record<Lang, string>;
-  subcategories: Record<Lang, string[]>;
+  subcategories: Subcategory[];
   filters: Record<Lang, string[]>;
 };
+
+// Une sous-catégorie a un identifiant stable (celui qu'on met dans `subcategory` d'un produit).
+// Avec `parent`, elle devient un sous-type : cliquer sur le parent montre toute la sélection.
+type Subcategory = { id: string; name: Record<Lang, string>; parent?: string };
+const sub = (id: string, fr: string, en: string, parent?: string): Subcategory => ({ id, name: { fr, en }, parent });
+
+// Modèles d'iPhone proposés comme sous-boutons (coques, verres trempés). Pour en ajouter un, l'ajouter à cette liste.
+const iphoneModels = ["11", "11 Pro", "11 Pro Max", "12", "12 Pro", "12 Pro Max", "13", "13 Pro", "13 Pro Max", "14", "14 Pro", "14 Pro Max", "15", "15 Pro", "15 Pro Max", "16", "16 Pro", "16 Pro Max", "17", "17 Pro", "17 Pro Max"];
+const modelSubs = (prefix: string, parent: string) =>
+  iphoneModels.map((model) => sub(`${prefix}-iphone-${model.toLowerCase().replace(/ /g, "-")}`, `iPhone ${model}`, `iPhone ${model}`, parent));
 
 type Product = {
   id: string;
@@ -42,10 +52,7 @@ const categories: Category[] = [
       fr: "Classiques, sportives ou connectées, selon les modèles dont la disponibilité est confirmée.",
       en: "Classic, sports or smart watches, depending on confirmed available models.",
     },
-    subcategories: {
-      fr: ["Classiques", "Sportives", "Connectées"],
-      en: ["Classic", "Sports", "Smart watches"],
-    },
+    subcategories: [sub("classic", "Classiques", "Classic"), sub("sports", "Sportives", "Sports"), sub("smart", "Connectées", "Smart watches")],
     filters: { fr: ["Type", "Style", "Couleur", "Prix"], en: ["Type", "Style", "Colour", "Price"] },
   },
   {
@@ -55,10 +62,7 @@ const categories: Category[] = [
       fr: "Bracelets, boucles d’oreilles, colliers et bijoux pour hommes selon les références confirmées.",
       en: "Bracelets, earrings, necklaces and men’s jewellery based on confirmed items.",
     },
-    subcategories: {
-      fr: ["Bracelets", "Boucles d’oreilles", "Colliers"],
-      en: ["Bracelets", "Earrings", "Necklaces"],
-    },
+    subcategories: [sub("bracelets", "Bracelets", "Bracelets"), sub("earrings", "Boucles d’oreilles", "Earrings"), sub("necklaces", "Colliers", "Necklaces")],
     filters: { fr: ["Type", "Style", "Couleur", "Matière"], en: ["Type", "Style", "Colour", "Material"] },
   },
   {
@@ -68,10 +72,7 @@ const categories: Category[] = [
       fr: "Sacs à main, sacoches et sacs pour hommes, uniquement parmi les modèles réellement disponibles.",
       en: "Handbags, crossbody bags and men’s bags, limited to models that are genuinely available.",
     },
-    subcategories: {
-      fr: ["Sacs à main", "Sacoches", "Sacs pour homme", "Autres sacs"],
-      en: ["Handbags", "Crossbody bags", "Men’s bags", "Other bags"],
-    },
+    subcategories: [sub("handbags", "Sacs à main", "Handbags"), sub("crossbody", "Sacoches", "Crossbody bags"), sub("mens-bags", "Sacs pour homme", "Men’s bags"), sub("other-bags", "Autres sacs", "Other bags")],
     filters: { fr: ["Type", "Couleur", "Style", "Prix"], en: ["Type", "Colour", "Style", "Price"] },
   },
   {
@@ -81,10 +82,7 @@ const categories: Category[] = [
       fr: "Foulards et carrés de soie classés par imprimé, couleur et style lorsque ces informations sont vérifiées.",
       en: "Scarves and silk squares organised by print, colour and style when that information is verified.",
     },
-    subcategories: {
-      fr: ["Foulards", "Carrés de soie", "Imprimés", "Unis"],
-      en: ["Scarves", "Silk squares", "Printed", "Plain"],
-    },
+    subcategories: [sub("scarves", "Foulards", "Scarves"), sub("silk", "Carrés de soie", "Silk squares"), sub("printed", "Imprimés", "Printed"), sub("plain", "Unis", "Plain")],
     filters: { fr: ["Type", "Couleur", "Motif", "Style"], en: ["Type", "Colour", "Pattern", "Style"] },
   },
   {
@@ -94,10 +92,7 @@ const categories: Category[] = [
       fr: "Lunettes, ceintures et accessoires de tête selon le catalogue confirmé.",
       en: "Sunglasses, belts and headwear based on the confirmed catalogue.",
     },
-    subcategories: {
-      fr: ["Lunettes de soleil", "Ceintures", "Casquettes", "Bonnets", "Chapeaux"],
-      en: ["Sunglasses", "Belts", "Caps", "Beanies", "Hats"],
-    },
+    subcategories: [sub("sunglasses", "Lunettes de soleil", "Sunglasses"), sub("belts", "Ceintures", "Belts"), sub("caps", "Casquettes", "Caps"), sub("beanies", "Bonnets", "Beanies"), sub("hats", "Chapeaux", "Hats")],
     filters: { fr: ["Type", "Style", "Couleur", "Taille"], en: ["Type", "Style", "Colour", "Size"] },
   },
   {
@@ -107,10 +102,32 @@ const categories: Category[] = [
       fr: "Accessoires pour appareils, écouteurs, casques et enceintes dont les caractéristiques sont vérifiées.",
       en: "Device accessories, earphones, headphones and speakers with verified specifications.",
     },
-    subcategories: {
-      fr: ["Téléphone", "Ordinateur", "Écouteurs sans fil", "Écouteurs filaires", "Casques", "Enceintes"],
-      en: ["Phone", "Computer", "Wireless earbuds", "Wired earphones", "Headphones", "Speakers"],
-    },
+    subcategories: [
+      sub("phone", "Téléphone", "Phone"),
+      sub("cases", "Coques de téléphone", "Phone cases"),
+      ...modelSubs("case", "cases"),
+      sub("chargers", "Chargeurs rapides et câbles", "Fast chargers & cables"),
+      sub("charger-usbc", "Chargeurs type C", "USB-C chargers", "chargers"),
+      sub("charger-iphone", "Chargeurs iPhone", "iPhone chargers", "chargers"),
+      sub("charger-samsung", "Chargeurs Samsung mini", "Samsung mini chargers", "chargers"),
+      sub("cable-usbc-usbc", "Câble USB-C vers USB-C", "USB-C to USB-C cable", "chargers"),
+      sub("cable-usbc-lightning", "Câble USB-C vers Lightning", "USB-C to Lightning cable", "chargers"),
+      sub("powerbanks", "Batteries externes", "Power banks"),
+      sub("powerbank-10000", "10 000 mAh", "10,000 mAh", "powerbanks"),
+      sub("powerbank-20000", "20 000 mAh", "20,000 mAh", "powerbanks"),
+      sub("screen", "Verres trempés et protections d’écran", "Tempered glass & screen protectors"),
+      ...modelSubs("screen", "screen"),
+      sub("stands", "Supports de téléphone", "Phone stands"),
+      sub("mics", "Mini-micros pour smartphone", "Smartphone mini microphones"),
+      sub("computer", "Ordinateur", "Computer"),
+      sub("earbuds", "Écouteurs sans fil", "Wireless earbuds"),
+      sub("earbuds-entry", "Entrée de gamme", "Entry level", "earbuds"),
+      sub("earbuds-mid", "Milieu de gamme", "Mid-range", "earbuds"),
+      sub("earbuds-top", "Haut de gamme", "High-end", "earbuds"),
+      sub("wired", "Écouteurs filaires", "Wired earphones"),
+      sub("headphones", "Casques", "Headphones"),
+      sub("speakers", "Enceintes", "Speakers"),
+    ],
     filters: {
       fr: ["Type d’accessoire", "Compatibilité", "Connectivité", "Prix"],
       en: ["Accessory type", "Compatibility", "Connectivity", "Price"],
@@ -146,7 +163,7 @@ const emptySlots: Product[] = categories.flatMap((category) =>
 const realProducts: Record<string, Partial<Product>> = {
   "watches-slot-1": {
     name: { fr: "Rolex Day-Date 36 mm", en: "Rolex Day-Date 36 mm" },
-    subcategory: "Classiques",
+    subcategory: "classic",
     audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
       fr: "Montre Rolex Day-Date 36 mm, livrée avec sa boîte. Pas de certificat ni de facture d’origine.",
@@ -162,7 +179,7 @@ const realProducts: Record<string, Partial<Product>> = {
   },
   "watches-slot-2": {
     name: { fr: "Audemars Piguet (modèle à préciser)", en: "Audemars Piguet (model to be specified)" },
-    subcategory: "Classiques",
+    subcategory: "classic",
     audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
       fr: "Montre Audemars Piguet livrée avec sa boîte. Modèle et référence à préciser.",
@@ -275,6 +292,7 @@ const copy = {
     showcaseCta: "Découvrir la sélection",
     moodVisual: "Visuel d’ambiance",
     allAudience: "Tous",
+    allSelection: "Toute la sélection",
     noMatch: "Aucun produit pour cette sélection pour le moment.",
   },
   en: {
@@ -352,6 +370,7 @@ const copy = {
     showcaseCta: "Explore the selection",
     moodVisual: "Mood visual",
     allAudience: "All",
+    allSelection: "Full selection",
     noMatch: "No products for this selection yet.",
   },
 };
@@ -376,6 +395,9 @@ function Logo({ onClick }: { onClick: () => void }) {
 }
 
 const getCategory = (id: CategoryId) => categories.find((category) => category.id === id) ?? categories[0];
+// Un produit est dans la sélection choisie s'il porte cet identifiant, ou s'il est un sous-type de ce parent.
+const inSubcategory = (productSub: string | null, selected: string, category: Category) =>
+  productSub === selected || category.subcategories.find((item) => item.id === productSub)?.parent === selected;
 const priceLabel = (product: Product, lang: Lang) =>
   product.price !== null ? `${product.price.toLocaleString("fr-FR")} FCFA` : product.priceOnRequest ? copy[lang].priceOnRequest : copy[lang].pricePending;
 const audienceLabel = (product: Product, lang: Lang) => (product.audience && product.audience !== "unisex" ? copy[lang][product.audience] : "");
@@ -459,14 +481,14 @@ export default function App() {
     const filtered = base.filter((product) => {
       const name = displayName(product, lang).toLowerCase();
       const matchesQuery = name.includes(query.toLowerCase()) || getCategory(product.category).name[lang].toLowerCase().includes(query.toLowerCase());
-      const matchesSubcategory = !subcategory || product.subcategory === subcategory;
+      const matchesSubcategory = !subcategory || inSubcategory(product.subcategory, subcategory, activeCategory);
       const matchesAudience = !audience || product.audience === audience || product.audience === "unisex";
       return matchesQuery && matchesSubcategory && matchesAudience;
     });
     if (sort === "low") return [...filtered].sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity));
     if (sort === "high") return [...filtered].sort((a, b) => (b.price ?? -1) - (a.price ?? -1));
     return filtered;
-  }, [page, categoryProducts, query, subcategory, audience, sort, lang]);
+  }, [page, categoryProducts, activeCategory, query, subcategory, audience, sort, lang]);
 
   const whatsappMessage = canOrder
     ? lang === "fr"
@@ -500,7 +522,7 @@ export default function App() {
         {page === "home" && <>
           <section className="hero"><div className="shell hero-grid"><div className="hero-copy"><span className="eyebrow">{t.heroEyebrow}</span><h1>{t.heroTitle}</h1><p>{t.heroText}</p><div className="button-row"><button className="button primary" onClick={() => document.getElementById("categories")?.scrollIntoView({ behavior: "smooth" })}>{t.discover}<Icon name="arrow" /></button><button className="button tertiary" onClick={() => document.getElementById("how")?.scrollIntoView({ behavior: "smooth" })}>{t.how}</button></div><div className="trust-note"><Icon name="check" /><span>{t.verifiedOnly}</span></div></div><div className="hero-visual"><div className="hero-image-wrap"><img src="https://images.unsplash.com/photo-1776435303185-95be02310cff?auto=format&fit=crop&w=1200&q=85" alt={lang === "fr" ? "Visuel éditorial provisoire, non lié au stock" : "Temporary editorial visual, unrelated to stock"} /><span className="photo-credit">Visuel éditorial provisoire · Unsplash</span></div><div className="floating-card"><span>06</span><strong>{t.catalogReady}</strong><small>{t.catalogPending}</small></div></div></div></section>
 
-          <section className="section shell" id="categories"><div className="section-heading"><div><span className="eyebrow">01 — {t.categories}</span><h2>{t.categories}</h2></div><p>{t.categoriesText}</p></div><div className="category-grid six-categories">{categories.map((category, index) => <button className={`category-card cat-${(index % 3) + 1}`} key={category.id} onClick={() => openCategory(category.id)}><span>0{index + 1}</span><div><strong>{category.name[lang]}</strong><small>{category.subcategories[lang].slice(0, 3).join(" · ")}</small></div><i><Icon name="arrow" /></i></button>)}</div></section>
+          <section className="section shell" id="categories"><div className="section-heading"><div><span className="eyebrow">01 — {t.categories}</span><h2>{t.categories}</h2></div><p>{t.categoriesText}</p></div><div className="category-grid six-categories">{categories.map((category, index) => <button className={`category-card cat-${(index % 3) + 1}`} key={category.id} onClick={() => openCategory(category.id)}><span>0{index + 1}</span><div><strong>{category.name[lang]}</strong><small>{category.subcategories.filter((item) => !item.parent).slice(0, 3).map((item) => item.name[lang]).join(" · ")}</small></div><i><Icon name="arrow" /></i></button>)}</div></section>
 
           <section className="section warm-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow">02 — {t.prestigeEyebrow}</span><h2>{t.prestigeTitle}</h2><p style={{ marginTop: 12, maxWidth: 560, color: "var(--muted)" }}>{t.prestigeText}</p></div><button className="text-link" onClick={() => navigate("shop")}>{t.seeAll}<Icon name="arrow" /></button></div><div className="product-grid home-products">{featuredProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={openProduct} />)}{showcases.map((showcase) => <ShowcaseCard key={showcase.id} showcase={showcase} lang={lang} onOpen={openShowcase} />)}</div></div></section>
 
@@ -562,11 +584,14 @@ function CatalogPage({ lang, isCategory, activeCategory, products: visibleProduc
   const t = copy[lang];
   const availablePriceData = visibleProducts.some((product) => product.price !== null);
   const filterCategory = isCategory ? activeCategory : null;
+  const selectedSub = activeCategory.subcategories.find((item) => item.id === subcategory);
+  const activeTop = selectedSub?.parent ?? selectedSub?.id ?? "";
+  const childSubs = activeTop ? activeCategory.subcategories.filter((item) => item.parent === activeTop) : [];
   return <section className="shop-page shell">
-    <div className="page-intro">{isCategory && <div className="breadcrumb"><button onClick={onShop}>{t.nav.shop}</button><span>/</span><span>{activeCategory.name[lang]}</span></div>}<span className="eyebrow">{isCategory ? `Collection 0${categories.findIndex((item) => item.id === activeCategory.id) + 1}` : t.catalogReady}</span><h1>{isCategory ? activeCategory.name[lang] : t.shopTitle}</h1><p>{isCategory ? activeCategory.description[lang] : t.shopText}</p>{isCategory && ["watches", "jewelry"].includes(activeCategory.id) && <div className="subcategory-chips audience-chips">{([["", t.allAudience], ["men", t.men], ["women", t.women]] as const).map(([value, label]) => <button className={audience === value ? "active" : ""} key={value} onClick={() => setAudience(value)}>{label}</button>)}</div>}{isCategory && <div className="subcategory-chips">{activeCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "active" : ""} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}>{item}</button>)}</div>}</div>
+    <div className="page-intro">{isCategory && <div className="breadcrumb"><button onClick={onShop}>{t.nav.shop}</button><span>/</span><span>{activeCategory.name[lang]}</span></div>}<span className="eyebrow">{isCategory ? `Collection 0${categories.findIndex((item) => item.id === activeCategory.id) + 1}` : t.catalogReady}</span><h1>{isCategory ? activeCategory.name[lang] : t.shopTitle}</h1><p>{isCategory ? activeCategory.description[lang] : t.shopText}</p>{isCategory && ["watches", "jewelry"].includes(activeCategory.id) && <div className="subcategory-chips audience-chips">{([["", t.allAudience], ["men", t.men], ["women", t.women]] as const).map(([value, label]) => <button className={audience === value ? "active" : ""} key={value} onClick={() => setAudience(value)}>{label}</button>)}</div>}{isCategory && <div className="subcategory-chips">{activeCategory.subcategories.filter((item) => !item.parent).map((item) => <button className={activeTop === item.id ? "active" : ""} key={item.id} onClick={() => setSubcategory(subcategory === item.id ? "" : item.id)}>{item.name[lang]}</button>)}</div>}{isCategory && childSubs.length > 0 && <div className="subcategory-chips child-chips"><button className={subcategory === activeTop ? "active" : ""} onClick={() => setSubcategory(activeTop)}>{t.allSelection}</button>{childSubs.map((item) => <button className={subcategory === item.id ? "active" : ""} key={item.id} onClick={() => setSubcategory(subcategory === item.id ? activeTop : item.id)}>{item.name[lang]}</button>)}</div>}</div>
     {!isCategory && <div className="shop-category-strip">{categories.map((category) => <button key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><Icon name="arrow" /></button>)}</div>}
     <div className="catalog-toolbar"><label className="search-field"><Icon name="search" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t.search} /></label><button className="button secondary mobile-filter" onClick={() => setFilterOpen(!filterOpen)}>{t.filters}<span>{filterOpen ? "−" : "+"}</span></button><div className="sort-control"><label>{t.sort}</label><select value={sort} onChange={(event) => setSort(event.target.value)} disabled={!availablePriceData}><option value="newest">{t.newest}</option><option value="low">{t.low}</option><option value="high">{t.high}</option></select></div></div>
-    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories[lang].map((item) => <button className={subcategory === item ? "filter-option active" : "filter-option"} key={item} onClick={() => setSubcategory(subcategory === item ? "" : item)}><span>{item}</span><small>—</small></button>)}</div><div className="planned-filters"><label>{lang === "fr" ? "Filtres prévus" : "Planned filters"}</label>{filterCategory.filters[lang].map((filter) => <span key={filter}>{filter}<small>{lang === "fr" ? "À activer avec les données" : "Enable with data"}</small></span>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>{String(products.filter((item) => item.category === category.id && item.name).length).padStart(2, "0")}</small></button>)}</div>}<div className="pilot-note"><span>i</span><p>{lang === "fr" ? "Le tri par prix et les filtres détaillés s’activent uniquement lorsque les données réelles sont renseignées." : "Price sorting and detailed filters are only enabled once real data is entered."}</p></div></aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory || audience ? t.noMatch : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
+    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories.filter((item) => !item.parent || item.parent === activeTop).map((item) => <button className={subcategory === item.id ? "filter-option active" : "filter-option"} key={item.id} style={item.parent ? { paddingLeft: 16 } : undefined} onClick={() => setSubcategory(subcategory === item.id ? "" : item.id)}><span>{item.name[lang]}</span><small>—</small></button>)}</div><div className="planned-filters"><label>{lang === "fr" ? "Filtres prévus" : "Planned filters"}</label>{filterCategory.filters[lang].map((filter) => <span key={filter}>{filter}<small>{lang === "fr" ? "À activer avec les données" : "Enable with data"}</small></span>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>{String(products.filter((item) => item.category === category.id && item.name).length).padStart(2, "0")}</small></button>)}</div>}<div className="pilot-note"><span>i</span><p>{lang === "fr" ? "Le tri par prix et les filtres détaillés s’activent uniquement lorsque les données réelles sont renseignées." : "Price sorting and detailed filters are only enabled once real data is entered."}</p></div></aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory || audience ? t.noMatch : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
   </section>;
 }
 
