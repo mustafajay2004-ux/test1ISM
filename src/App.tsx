@@ -38,6 +38,7 @@ type Product = {
   featured: boolean;
   audience: "men" | "women" | "unisex" | null;
   priceOnRequest: boolean;
+  imageFit?: "cover" | "contain";
 };
 
 // Numéro WhatsApp Business au format international, sans "+" ni espaces (ex. "221770000000").
@@ -112,6 +113,8 @@ const categories: Category[] = [
       sub("charger-samsung", "Chargeurs Samsung mini", "Samsung mini chargers", "chargers"),
       sub("cable-usbc-usbc", "Câble USB-C vers USB-C", "USB-C to USB-C cable", "chargers"),
       sub("cable-usbc-lightning", "Câble USB-C vers Lightning", "USB-C to Lightning cable", "chargers"),
+      sub("cable-micro", "Câble Micro USB", "Micro USB cable", "chargers"),
+      sub("cable-3in1", "Câble 3 en 1", "3-in-1 cable", "chargers"),
       sub("powerbanks", "Batteries externes", "Power banks"),
       sub("powerbank-10000", "10 000 mAh", "10,000 mAh", "powerbanks"),
       sub("powerbank-20000", "20 000 mAh", "20,000 mAh", "powerbanks"),
@@ -195,7 +198,152 @@ const realProducts: Record<string, Partial<Product>> = {
   },
 };
 
-const products: Product[] = emptySlots.map((product) => ({ ...product, ...realProducts[product.id] }));
+// Produits ajoutés en plus des emplacements. Un produit = un objet ci-dessous.
+// Les photos sont dans /public. `priceOnRequest: true` est provisoire : remplacer par `price: 5000` (en FCFA)
+// quand le prix est connu, et passer `availability` à "available" ou "preorder" pour activer la commande WhatsApp.
+const newProduct = (id: string, category: CategoryId, data: Partial<Product>): Product => ({
+  id, category, slot: 0, name: null, price: null, description: null, images: [], variants: [],
+  availability: "pending", subcategory: null, features: null, addedAt: null, featured: false,
+  audience: null, priceOnRequest: true, imageFit: "contain", ...data,
+});
+
+const catalogue: Product[] = [
+  newProduct("tech-cable-tdkc313-lightning", "tech", {
+    name: { fr: "Câble TDKC 313 USB-C vers Lightning 27 W (1 m)", en: "TDKC 313 USB-C to Lightning cable 27 W (1 m)" },
+    subcategory: "cable-usbc-lightning",
+    images: ["/cable-tdkc313-lightning.jpg"],
+    description: {
+      fr: "Câble de charge rapide USB-C vers Lightning, 1 m, avec la mention 27 W Power Delivery sur l’emballage.",
+      en: "USB-C to Lightning fast-charging cable, 1 m, marked 27 W Power Delivery on the packaging.",
+    },
+    features: {
+      fr: ["Connecteurs : USB-C et Lightning", "Longueur : 1 m", "Puissance indiquée sur l’emballage : 27 W", "Modèle : TDKC 313"],
+      en: ["Connectors: USB-C and Lightning", "Length: 1 m", "Power marked on the packaging: 27 W", "Model: TDKC 313"],
+    },
+  }),
+  newProduct("tech-cable-apple-lightning-1m", "tech", {
+    name: { fr: "Câble Apple USB-C vers Lightning (1 m)", en: "Apple USB-C to Lightning cable (1 m)" },
+    subcategory: "cable-usbc-lightning",
+    images: ["/cable-apple-lightning-1m.jpg"],
+    description: {
+      fr: "Câble Apple USB-C vers Lightning de 1 m, livré dans sa boîte.",
+      en: "Apple USB-C to Lightning cable, 1 m, supplied in its box.",
+    },
+    features: {
+      fr: ["Marque : Apple", "Connecteurs : USB-C et Lightning", "Longueur : 1 m", "Avec boîte"],
+      en: ["Brand: Apple", "Connectors: USB-C and Lightning", "Length: 1 m", "With box"],
+    },
+  }),
+  newProduct("tech-cable-apple-usbc-2m", "tech", {
+    name: { fr: "Câble Apple USB-C (2 m)", en: "Apple USB-C charge cable (2 m)" },
+    subcategory: "cable-usbc-usbc",
+    images: ["/cable-apple-usbc-2m.jpg"],
+    description: {
+      fr: "Câble de charge Apple USB-C vers USB-C de 2 m, livré dans sa boîte.",
+      en: "Apple USB-C to USB-C charge cable, 2 m, supplied in its box.",
+    },
+    features: {
+      fr: ["Marque : Apple", "Connecteurs : USB-C des deux côtés", "Longueur : 2 m", "Avec boîte"],
+      en: ["Brand: Apple", "Connectors: USB-C on both ends", "Length: 2 m", "With box"],
+    },
+  }),
+  newProduct("tech-chargeur-45w-usbc", "tech", {
+    name: { fr: "Chargeur 45 W USB-C + câble USB-C vers USB-C", en: "45 W USB-C charger + USB-C to USB-C cable" },
+    subcategory: "charger-usbc",
+    images: ["/chargeur-45w-usbc.jpg"],
+    description: {
+      fr: "Adaptateur secteur 45 W Power Delivery, avec un câble USB-C vers USB-C (5 A) inclus.",
+      en: "45 W Power Delivery wall adapter, with a USB-C to USB-C (5 A) cable included.",
+    },
+    features: {
+      fr: ["Puissance indiquée sur l’emballage : 45 W (PD)", "Sortie : USB-C", "Câble USB-C vers USB-C (5 A) inclus", "Prise européenne", "Coloris : noir"],
+      en: ["Power marked on the packaging: 45 W (PD)", "Output: USB-C", "USB-C to USB-C (5 A) cable included", "European plug", "Colour: black"],
+    },
+  }),
+  newProduct("tech-chargeur-usbc-couleurs", "tech", {
+    name: { fr: "Chargeur secteur + câble USB-A vers USB-C", en: "Wall charger + USB-A to USB-C cable" },
+    subcategory: "charger-usbc",
+    images: ["/chargeur-usbc-blanc.jpg", "/chargeur-usbc-orange.jpg", "/chargeur-usbc-jaune.jpg", "/chargeur-usbc-rose.jpg"],
+    variants: ["Blanc", "Orange", "Jaune", "Rose"],
+    description: {
+      fr: "Chargeur secteur USB livré avec un câble USB-A vers USB-C, en plusieurs coloris : blanc, orange, jaune et rose.",
+      en: "USB wall charger supplied with a USB-A to USB-C cable, in several colours: white, orange, yellow and pink.",
+    },
+    features: {
+      fr: ["Câble : USB-A vers USB-C inclus", "Prise européenne", "Coloris : blanc, orange, jaune, rose"],
+      en: ["Cable: USB-A to USB-C included", "European plug", "Colours: white, orange, yellow, pink"],
+    },
+  }),
+  newProduct("tech-chargeur-35w-iphone", "tech", {
+    name: { fr: "Chargeur 35 W USB-C + câble USB-C vers Lightning", en: "35 W USB-C charger + USB-C to Lightning cable" },
+    subcategory: "charger-iphone",
+    images: ["/chargeur-35w-lightning-orange.jpg"],
+    description: {
+      fr: "Adaptateur secteur 35 W avec sortie USB-C et câble USB-C vers Lightning inclus, en orange.",
+      en: "35 W wall adapter with a USB-C output and a USB-C to Lightning cable included, in orange.",
+    },
+    features: {
+      fr: ["Puissance indiquée sur l’emballage : 35 W", "Sortie : USB-C", "Câble USB-C vers Lightning inclus", "Prise européenne", "Coloris : orange"],
+      en: ["Power marked on the packaging: 35 W", "Output: USB-C", "USB-C to Lightning cable included", "European plug", "Colour: orange"],
+    },
+  }),
+  newProduct("tech-chargeur-tdkc313-s8", "tech", {
+    name: { fr: "Chargeur rapide TDKC 313 S8 + câble USB-A vers USB-C", en: "TDKC 313 S8 fast charger + USB-A to USB-C cable" },
+    subcategory: "charger-samsung",
+    images: ["/chargeur-s8-noir.jpg"],
+    description: {
+      fr: "Petit chargeur secteur « Adaptive Fast Charging » avec sortie USB-A, livré avec un câble USB-A vers USB-C.",
+      en: "Compact “Adaptive Fast Charging” wall charger with a USB-A output, supplied with a USB-A to USB-C cable.",
+    },
+    features: {
+      fr: ["Mention « Adaptive Fast Charging » sur l’emballage", "Sortie : USB-A", "Câble USB-A vers USB-C inclus", "Modèle : TDKC 313 S8", "Coloris : noir"],
+      en: ["“Adaptive Fast Charging” marked on the packaging", "Output: USB-A", "USB-A to USB-C cable included", "Model: TDKC 313 S8", "Colour: black"],
+    },
+  }),
+  newProduct("tech-chargeur-grand-s6", "tech", {
+    name: { fr: "Chargeur rapide GRAND S6 + câble Micro USB", en: "GRAND S6 fast charger + Micro USB cable" },
+    subcategory: "charger-samsung",
+    images: ["/chargeur-grand-s6-blanc.jpg"],
+    description: {
+      fr: "Petit chargeur secteur « Adaptive Fast Charging » avec sortie USB-A, livré avec un câble USB-A vers Micro USB, en blanc.",
+      en: "Compact “Adaptive Fast Charging” wall charger with a USB-A output, supplied with a USB-A to Micro USB cable, in white.",
+    },
+    features: {
+      fr: ["Mention « Adaptive Fast Charging » sur l’emballage", "Sortie : USB-A", "Câble USB-A vers Micro USB inclus", "Modèle : GRAND S6", "Coloris : blanc"],
+      en: ["“Adaptive Fast Charging” marked on the packaging", "Output: USB-A", "USB-A to Micro USB cable included", "Model: GRAND S6", "Colour: white"],
+    },
+  }),
+  newProduct("tech-cable-micro-usb", "tech", {
+    name: { fr: "Câble TDKC313 USB-A vers Micro USB", en: "TDKC313 USB-A to Micro USB cable" },
+    subcategory: "cable-micro",
+    images: ["/cable-micro-usb-tdkc313.jpg"],
+    description: {
+      fr: "Câble USB-A vers Micro USB pour la charge et le transfert de données, en blanc.",
+      en: "USB-A to Micro USB cable for charging and data transfer, in white.",
+    },
+    features: {
+      fr: ["Connecteurs : USB-A et Micro USB", "Charge rapide et transfert de données (mention de l’emballage)", "Modèle : TDKC313", "Coloris : blanc"],
+      en: ["Connectors: USB-A and Micro USB", "Fast charging and data transfer (marked on the packaging)", "Model: TDKC313", "Colour: white"],
+    },
+  }),
+  newProduct("tech-cable-3-en-1", "tech", {
+    name: { fr: "Câble 3 en 1 nylon tressé (USB-C, Lightning, Micro USB)", en: "3-in-1 braided nylon cable (USB-C, Lightning, Micro USB)" },
+    subcategory: "cable-3in1",
+    images: ["/cable-3-en-1.jpg"],
+    description: {
+      fr: "Un seul câble USB-A avec trois embouts : USB-C, Lightning et Micro USB. Gaine en nylon tressé, longueur 1,2 m.",
+      en: "A single USB-A cable with three tips: USB-C, Lightning and Micro USB. Braided nylon sheath, 1.2 m long.",
+    },
+    features: {
+      fr: ["Embouts : USB-C, Lightning, Micro USB", "Longueur : 1,2 m", "Nylon tressé", "Charge et transfert de données (mention de l’emballage)", "Coloris : noir"],
+      en: ["Tips: USB-C, Lightning, Micro USB", "Length: 1.2 m", "Braided nylon", "Charging and data transfer (marked on the packaging)", "Colour: black"],
+    },
+  }),
+];
+
+// Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
+const placeholders = emptySlots.filter((slot) => !catalogue.some((item) => item.category === slot.category));
+const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue];
 
 const featuredProducts = products.filter((product) => product.featured);
 
@@ -400,6 +548,8 @@ const inSubcategory = (productSub: string | null, selected: string, category: Ca
   productSub === selected || category.subcategories.find((item) => item.id === productSub)?.parent === selected;
 const priceLabel = (product: Product, lang: Lang) =>
   product.price !== null ? `${product.price.toLocaleString("fr-FR")} FCFA` : product.priceOnRequest ? copy[lang].priceOnRequest : copy[lang].pricePending;
+// Photos de catalogue (produit + emballage) : on les montre en entier, sur fond blanc, au lieu de les recadrer.
+const fitStyle = (product: Product) => (product.imageFit === "contain" ? { objectFit: "contain" as const, background: "#fff" } : undefined);
 const audienceLabel = (product: Product, lang: Lang) => (product.audience && product.audience !== "unisex" ? copy[lang][product.audience] : "");
 const displayName = (product: Product, lang: Lang) => {
   const audience = audienceLabel(product, lang);
@@ -537,7 +687,7 @@ export default function App() {
         {page === "product" && <section className="product-page shell">
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
           <div className="product-detail">
-            <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
+            <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} style={fitStyle(selectedProduct)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" style={fitStyle(selectedProduct)} /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
             <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{priceLabel(selectedProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
               {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
               {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
@@ -570,7 +720,7 @@ function ProductCard({ product, lang, onOpen }: { product: Product; lang: Lang; 
   const t = copy[lang];
   const hasPrice = product.price !== null || product.priceOnRequest;
   const audience = audienceLabel(product, lang);
-  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{priceLabel(product, lang)}</strong></div></article>;
+  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} style={fitStyle(product)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{priceLabel(product, lang)}</strong></div></article>;
 }
 
 function ShowcaseCard({ showcase, lang, onOpen }: { showcase: Showcase; lang: Lang; onOpen: (showcase: Showcase) => void }) {
