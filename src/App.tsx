@@ -549,6 +549,32 @@ const catalogue: Product[] = [
       en: ["Model: AirPods Pro", "Silicone ear tips", "Charging case included", "USB-C to USB-C cable supplied", "With box and manual", "Colour: white"],
     },
   }),
+  newProduct("tech-earbuds-free-buds-lge-20", "tech", {
+    name: { fr: "Écouteurs Bluetooth Free Buds LGE-20", en: "Free Buds LGE-20 Bluetooth earbuds" },
+    subcategory: "earbuds-mid",
+    images: ["/earbuds-free-buds-lge-20.jpg"],
+    description: {
+      fr: "Des écouteurs intra-auriculaires Bluetooth 5.3 noirs avec isolation du bruit, basses précises et micro intégré pour les appels. Le boîtier de charge affiche le niveau de batterie en pourcentage, pour savoir toujours où tu en es. Jusqu’à 5,5 h d’écoute par charge, et jusqu’à 20 h avec le boîtier. Câble de charge USB-A vers USB-C fourni.",
+      en: "Black Bluetooth 5.3 in-ear earbuds with noise isolation, precise bass and a built-in microphone for calls. The charging case shows the battery level as a percentage so you always know where you stand. Up to 5.5 h of playback per charge, and up to 20 h with the case. USB-A to USB-C charging cable supplied.",
+    },
+    features: {
+      fr: ["Bluetooth 5.3", "Isolation du bruit, basses précises, son Hi-Fi", "Micro intégré", "Autonomie indiquée : 5,5 h par charge, jusqu’à 20 h avec le boîtier", "Boîtier de charge avec affichage LED du niveau de batterie", "Résistance à l’eau IPX5 (mention de l’emballage)", "Câble USB-A vers USB-C fourni", "Modèle : Free Buds LGE-20", "Coloris : noir"],
+      en: ["Bluetooth 5.3", "Noise isolation, precise bass, Hi-Fi sound", "Built-in microphone", "Stated battery life: 5.5 h per charge, up to 20 h with the case", "Charging case with LED battery display", "IPX5 water resistance (marked on the packaging)", "USB-A to USB-C cable supplied", "Model: Free Buds LGE-20", "Colour: black"],
+    },
+  }),
+  newProduct("tech-earbuds-ormushie-oms-free", "tech", {
+    name: { fr: "Écouteurs à clip Ormushie OMS-FREE", en: "Ormushie OMS-FREE clip-on earphones" },
+    subcategory: "earbuds-openear",
+    images: ["/earbuds-ormushie-oms-free.jpg"],
+    description: {
+      fr: "Des écouteurs à clip au design élégant, avec un boîtier en tissu et des finitions brillantes : on les remarque. Ils se portent confortablement sur l’oreille, avec un son Hi-Fi (Hi-Res Audio), des basses renforcées et une bonne qualité d’appel. Livrés avec câble de charge USB-A vers USB-C, 6 embouts et la notice.",
+      en: "Elegantly designed clip-on earphones with a fabric case and glossy finishes: they get noticed. They sit comfortably on the ear, with Hi-Fi sound (Hi-Res Audio), enhanced bass and good call quality. Supplied with a USB-A to USB-C charging cable, 6 ear tips and the manual.",
+    },
+    features: {
+      fr: ["Format à clip, port confortable", "Son Hi-Fi, Hi-Res Audio (mention de l’emballage)", "Basses renforcées", "Pour appels téléphoniques", "Câble USB-A vers USB-C et 6 embouts fournis", "Marque : Ormushie – modèle OMS-FREE", "Coloris visibles sur l’emballage : noir, beige doré, violet"],
+      en: ["Clip-on design, comfortable fit", "Hi-Fi sound, Hi-Res Audio (marked on the packaging)", "Enhanced bass", "For phone calls", "USB-A to USB-C cable and 6 ear tips supplied", "Brand: Ormushie – model OMS-FREE", "Colours shown on the packaging: black, gold beige, purple"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
