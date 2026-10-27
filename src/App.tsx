@@ -117,6 +117,7 @@ const categories: Category[] = [
       sub("cable-3in1", "Câble 3 en 1", "3-in-1 cable", "chargers"),
       sub("powerbanks", "Batteries externes", "Power banks"),
       sub("powerbank-10000", "10 000 mAh", "10,000 mAh", "powerbanks"),
+      sub("powerbank-15000", "15 000 mAh", "15,000 mAh", "powerbanks"),
       sub("powerbank-20000", "20 000 mAh", "20,000 mAh", "powerbanks"),
       sub("screen", "Verres trempés et protections d’écran", "Tempered glass & screen protectors"),
       ...modelSubs("screen", "screen"),
@@ -337,6 +338,97 @@ const catalogue: Product[] = [
     features: {
       fr: ["Embouts : USB-C, Lightning, Micro USB", "Longueur : 1,2 m", "Nylon tressé", "Charge et transfert de données (mention de l’emballage)", "Coloris : noir"],
       en: ["Tips: USB-C, Lightning, Micro USB", "Length: 1.2 m", "Braided nylon", "Charging and data transfer (marked on the packaging)", "Colour: black"],
+    },
+  }),
+  newProduct("tech-powerbank-2smc-m8c70", "tech", {
+    name: { fr: "Power bank 2SMC M8C70 – 10 000 mAh", en: "2SMC M8C70 power bank – 10,000 mAh" },
+    subcategory: "powerbank-10000",
+    images: ["/powerbank-2smc-m8c70.jpg"],
+    description: {
+      fr: "Le power bank qui se fixe à ton téléphone. 10 000 mAh, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) : plus besoin de chercher ton câble, il y a toujours le bon, que tu aies un iPhone, un Samsung ou un autre. Les ventouses au dos le collent au téléphone, la dragonne se glisse au poignet ou au sac. Idéal pour les cours, les trajets et les sorties. Câble USB-A vers USB-C fourni, garantie 365 jours.",
+      en: "The power bank that sticks to your phone. 10,000 mAh and 4 built-in cables (USB-A, USB-C, Lightning, Micro USB): always the right cable, whether you have an iPhone, a Samsung or another phone. The suction cups on the back hold it on the phone and the strap clips to your wrist or bag. Ideal for classes, commuting and nights out. USB-A to USB-C cable supplied, 365-day warranty.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 10 000 mAh", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Ventouses au dos et dragonne", "Câble USB-A vers USB-C fourni", "Marque : 2SMC – modèle M8C70", "Coloris : noir"],
+      en: ["Stated capacity: 10,000 mAh", "4 built-in cables: USB-A, USB-C, Lightning, Micro USB", "Suction cups on the back and wrist strap", "USB-A to USB-C cable supplied", "Brand: 2SMC – model M8C70", "Colour: black"],
+    },
+  }),
+  newProduct("tech-powerbank-aroimac-ard67", "tech", {
+    name: { fr: "Power bank Aroimac ARD67 – 10 000 mAh", en: "Aroimac ARD67 power bank – 10,000 mAh" },
+    subcategory: "powerbank-10000",
+    images: ["/powerbank-aroimac-ard67.jpg"],
+    description: {
+      fr: "Un power bank blanc, fin et facile à glisser dans un sac. 10 000 mAh, 4 câbles de sortie intégrés pour charger tes appareils sans rien emporter d’autre, et une entrée/sortie USB-C pour le recharger vite et charger un appareil USB-C. Garantie 365 jours.",
+      en: "A slim white power bank that slips easily into a bag. 10,000 mAh, 4 built-in output cables so you carry nothing else, and a USB-C input/output to recharge it quickly and charge USB-C devices. 365-day warranty.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 10 000 mAh", "4 câbles de sortie intégrés", "Entrée / sortie USB-C", "Protection de sécurité (mention de l’emballage)", "Marque : Aroimac – modèle ARD67", "Coloris : blanc"],
+      en: ["Stated capacity: 10,000 mAh", "4 built-in output cables", "USB-C input / output", "Safety protection (marked on the packaging)", "Brand: Aroimac – model ARD67", "Colour: white"],
+    },
+  }),
+  newProduct("tech-powerbank-dakewei-p15", "tech", {
+    name: { fr: "Power bank Dakewei DKW-P15 – 10 000 mAh", en: "Dakewei DKW-P15 power bank – 10,000 mAh" },
+    subcategory: "powerbank-10000",
+    images: ["/powerbank-dakewei-p15.jpg"],
+    description: {
+      fr: "Un power bank blanc qui te dit où il en est. 10 000 mAh, écran LED pour voir le niveau de charge d’un coup d’œil (25, 50, 75, 100), et 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) pour charger iPhone, Android et accessoires. Câble USB-A vers USB-C fourni, charge rapide annoncée sur l’emballage.",
+      en: "A white power bank that shows you where it stands. 10,000 mAh, an LED display for the charge level at a glance (25, 50, 75, 100), and 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) to charge iPhone, Android and accessories. USB-A to USB-C cable supplied, fast charging marked on the packaging.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 10 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Câble USB-A vers USB-C fourni", "Marque : Dakewei – modèle DKW-P15", "Coloris : blanc"],
+      en: ["Stated capacity: 10,000 mAh", "LED charge-level display (25 / 50 / 75 / 100)", "4 built-in cables: USB-A, USB-C, Lightning, Micro USB", "USB-A to USB-C cable supplied", "Brand: Dakewei – model DKW-P15", "Colour: white"],
+    },
+  }),
+  newProduct("tech-powerbank-tdk551", "tech", {
+    name: { fr: "Power bank magnétique TDKC313 TDK551 – 10 000 mAh", en: "TDKC313 TDK551 magnetic power bank – 10,000 mAh" },
+    subcategory: "powerbank-10000",
+    images: ["/powerbank-tdk551-1.jpg", "/powerbank-tdk551-2.jpg"],
+    description: {
+      fr: "Le power bank sans fil : il se colle au dos de ton téléphone grâce à l’aimant et le recharge sans câble (15 W annoncés), avec un petit support pour regarder tes vidéos. 10 000 mAh, charge rapide 22,5 W (PD + QC), plus une sortie USB-C et une sortie USB-A pour recharger d’autres appareils en même temps. Câble USB-C vers USB-C fourni, dragonne incluse.",
+      en: "The wireless power bank: it snaps to the back of your phone with its magnet and charges it without a cable (15 W marked), with a small stand for watching videos. 10,000 mAh, 22.5 W fast charging (PD + QC), plus a USB-C and a USB-A output to charge other devices at the same time. USB-C to USB-C cable supplied, strap included.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 10 000 mAh", "Recharge sans fil magnétique : 15 W (mention de l’emballage)", "Puissance indiquée : 22,5 W (PD + QC)", "Entrée / sortie USB-C et sortie USB-A", "Câble USB-C vers USB-C fourni", "Marque : TDKC313 – modèle TDK551", "Coloris : noir"],
+      en: ["Stated capacity: 10,000 mAh", "Magnetic wireless charging: 15 W (marked on the packaging)", "Marked power: 22.5 W (PD + QC)", "USB-C input / output and USB-A output", "USB-C to USB-C cable supplied", "Brand: TDKC313 – model TDK551", "Colour: black"],
+    },
+  }),
+  newProduct("tech-powerbank-15000", "tech", {
+    name: { fr: "Power bank 15 000 mAh – 4 câbles intégrés", en: "15,000 mAh power bank – 4 built-in cables" },
+    subcategory: "powerbank-15000",
+    images: ["/powerbank-15000.jpg"],
+    description: {
+      fr: "Plus d’autonomie pour toute la journée. 15 000 mAh, écran LED qui affiche le pourcentage exact de charge, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) et 4 sorties pour charger plusieurs appareils en même temps : téléphone, écouteurs, tablette. Charge rapide annoncée sur l’emballage.",
+      en: "More battery for the whole day. 15,000 mAh, an LED screen showing the exact charge percentage, 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) and 4 outputs to charge several devices at once: phone, earbuds, tablet. Fast charging marked on the packaging.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 15 000 mAh", "Écran LED affichant le pourcentage", "4 câbles intégrés", "4 sorties (mention de l’emballage)", "Charge rapide (mention de l’emballage)", "Coloris : noir"],
+      en: ["Stated capacity: 15,000 mAh", "LED screen showing the percentage", "4 built-in cables", "4 outputs (marked on the packaging)", "Fast charging (marked on the packaging)", "Colour: black"],
+    },
+  }),
+  newProduct("tech-powerbank-tdkc313-20000", "tech", {
+    name: { fr: "Power bank TDKC313 22,5 W – 20 000 mAh", en: "TDKC313 22.5 W power bank – 20,000 mAh" },
+    subcategory: "powerbank-20000",
+    images: ["/powerbank-tdkc313-20000.jpg"],
+    description: {
+      fr: "La grosse autonomie, en format compact. 20 000 mAh, charge rapide 22,5 W (PD, QC3.0), écran LED du niveau de charge et câble USB-C intégré toujours avec toi, en plus d’un câble USB-C vers USB-C fourni. Parfait pour les longues journées, les voyages et les téléphones récents. Garantie 365 jours.",
+      en: "Big battery life in a compact body. 20,000 mAh, 22.5 W fast charging (PD, QC3.0), an LED charge-level display and a built-in USB-C cable always with you, plus a USB-C to USB-C cable supplied. Perfect for long days, travel and recent phones. 365-day warranty.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 20 000 mAh", "Charge rapide indiquée : 22,5 W (PD, QC3.0)", "Écran LED du niveau de charge", "Câble USB-C intégré + câble USB-C vers USB-C fourni", "Marque : TDKC313", "Coloris : blanc"],
+      en: ["Stated capacity: 20,000 mAh", "Marked fast charging: 22.5 W (PD, QC3.0)", "LED charge-level display", "Built-in USB-C cable + USB-C to USB-C cable supplied", "Brand: TDKC313", "Colour: white"],
+    },
+  }),
+  newProduct("tech-powerbank-dakewei-p26a", "tech", {
+    name: { fr: "Power bank Dakewei DKW-P26A – 20 000 mAh", en: "Dakewei DKW-P26A power bank – 20,000 mAh" },
+    subcategory: "powerbank-20000",
+    images: ["/powerbank-dakewei-p26a.jpg"],
+    description: {
+      fr: "Le grand format pour ne jamais tomber à plat. 20 000 mAh, écran LED du niveau de charge (25, 50, 75, 100), câbles intégrés pour charger sans rien chercher et dragonne pour le transporter facilement. Le bon choix si tu charges plusieurs appareils ou si tu passes de longues journées dehors.",
+      en: "The big one, so you never run flat. 20,000 mAh, an LED charge-level display (25, 50, 75, 100), built-in cables so you never have to look for one and a strap to carry it easily. A great choice if you charge several devices or spend long days out.",
+    },
+    features: {
+      fr: ["Capacité indiquée : 20 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "Câbles intégrés", "Dragonne", "Marque : Dakewei – modèle DKW-P26A", "Coloris : noir"],
+      en: ["Stated capacity: 20,000 mAh", "LED charge-level display (25 / 50 / 75 / 100)", "Built-in cables", "Wrist strap", "Brand: Dakewei – model DKW-P26A", "Colour: black"],
     },
   }),
 ];
