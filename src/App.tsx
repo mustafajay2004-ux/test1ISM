@@ -260,18 +260,18 @@ const catalogue: Product[] = [
       en: ["Power marked on the packaging: 45 W (PD)", "Output: USB-C", "USB-C to USB-C (5 A) cable included", "European plug", "Colour: black"],
     },
   }),
-  newProduct("tech-chargeur-usbc-couleurs", "tech", {
-    name: { fr: "Chargeur secteur + câble USB-A vers USB-C", en: "Wall charger + USB-A to USB-C cable" },
-    subcategory: "charger-usbc",
-    images: ["/chargeur-usbc-blanc.jpg", "/chargeur-usbc-orange.jpg", "/chargeur-usbc-jaune.jpg", "/chargeur-usbc-rose.jpg"],
+  newProduct("tech-chargeur-iphone-couleurs", "tech", {
+    name: { fr: "Chargeur secteur + câble USB-A vers Lightning (iPhone)", en: "Wall charger + USB-A to Lightning cable (iPhone)" },
+    subcategory: "charger-iphone",
+    images: ["/chargeur-iphone-blanc.jpg", "/chargeur-iphone-orange.jpg", "/chargeur-iphone-jaune.jpg", "/chargeur-iphone-rose.jpg"],
     variants: ["Blanc", "Orange", "Jaune", "Rose"],
     description: {
-      fr: "Chargeur secteur USB livré avec un câble USB-A vers USB-C, en plusieurs coloris : blanc, orange, jaune et rose.",
-      en: "USB wall charger supplied with a USB-A to USB-C cable, in several colours: white, orange, yellow and pink.",
+      fr: "Chargeur secteur USB-A livré avec un câble USB-A vers Lightning pour iPhone, en plusieurs coloris : blanc, orange, jaune et rose.",
+      en: "USB-A wall charger supplied with a USB-A to Lightning cable for iPhone, in several colours: white, orange, yellow and pink.",
     },
     features: {
-      fr: ["Câble : USB-A vers USB-C inclus", "Prise européenne", "Coloris : blanc, orange, jaune, rose"],
-      en: ["Cable: USB-A to USB-C included", "European plug", "Colours: white, orange, yellow, pink"],
+      fr: ["Câble : USB-A vers Lightning inclus", "Pour iPhone", "Prise européenne", "Coloris : blanc, orange, jaune, rose"],
+      en: ["Cable: USB-A to Lightning included", "For iPhone", "European plug", "Colours: white, orange, yellow, pink"],
     },
   }),
   newProduct("tech-chargeur-35w-iphone", "tech", {
