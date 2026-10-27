@@ -128,6 +128,7 @@ const categories: Category[] = [
       sub("earbuds-entry", "Entrée de gamme", "Entry level", "earbuds"),
       sub("earbuds-mid", "Milieu de gamme", "Mid-range", "earbuds"),
       sub("earbuds-top", "Haut de gamme", "High-end", "earbuds"),
+      sub("earbuds-openear", "Open-ear (à clip)", "Open-ear (clip-on)", "earbuds"),
       sub("wired", "Écouteurs filaires", "Wired earphones"),
       sub("headphones", "Casques", "Headphones"),
       sub("speakers", "Enceintes", "Speakers"),
@@ -345,8 +346,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-2smc-m8c70.jpg"],
     description: {
-      fr: "Batterie externe 10 000 mAh avec 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB), dragonne et ventouses au dos pour la fixer au téléphone. Câble USB-A vers USB-C fourni.",
-      en: "10,000 mAh power bank with 4 built-in cables (USB-A, USB-C, Lightning, Micro USB), a wrist strap and suction cups on the back to hold it on the phone. USB-A to USB-C cable supplied.",
+      fr: "Le power bank qui se fixe à ton téléphone. 10 000 mAh, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) : plus besoin de chercher ton câble, il y a toujours le bon, que tu aies un iPhone, un Samsung ou un autre. Les ventouses au dos le collent au téléphone, la dragonne se glisse au poignet ou au sac. Idéal pour les cours, les trajets et les sorties. Câble USB-A vers USB-C fourni, garantie 365 jours.",
+      en: "The power bank that sticks to your phone. 10,000 mAh and 4 built-in cables (USB-A, USB-C, Lightning, Micro USB): always the right cable, whether you have an iPhone, a Samsung or another phone. The suction cups on the back hold it on the phone and the strap clips to your wrist or bag. Ideal for classes, commuting and nights out. USB-A to USB-C cable supplied, 365-day warranty.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Ventouses au dos et dragonne", "Câble USB-A vers USB-C fourni", "Marque : 2SMC – modèle M8C70", "Coloris : noir"],
@@ -358,8 +359,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-aroimac-ard67.jpg"],
     description: {
-      fr: "Batterie externe blanche 10 000 mAh avec 4 câbles de sortie intégrés et entrée/sortie USB-C, au format portable.",
-      en: "White 10,000 mAh power bank with 4 built-in output cables and a USB-C input/output, in a portable format.",
+      fr: "Un power bank blanc, fin et facile à glisser dans un sac. 10 000 mAh, 4 câbles de sortie intégrés pour charger tes appareils sans rien emporter d’autre, et une entrée/sortie USB-C pour le recharger vite et charger un appareil USB-C. Garantie 365 jours.",
+      en: "A slim white power bank that slips easily into a bag. 10,000 mAh, 4 built-in output cables so you carry nothing else, and a USB-C input/output to recharge it quickly and charge USB-C devices. 365-day warranty.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "4 câbles de sortie intégrés", "Entrée / sortie USB-C", "Protection de sécurité (mention de l’emballage)", "Marque : Aroimac – modèle ARD67", "Coloris : blanc"],
@@ -371,8 +372,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-dakewei-p15.jpg"],
     description: {
-      fr: "Batterie externe blanche 10 000 mAh avec écran LED indiquant le niveau de charge et 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB). Câble USB-A vers USB-C fourni.",
-      en: "White 10,000 mAh power bank with an LED display showing the charge level and 4 built-in cables (USB-A, USB-C, Lightning, Micro USB). USB-A to USB-C cable supplied.",
+      fr: "Un power bank blanc qui te dit où il en est. 10 000 mAh, écran LED pour voir le niveau de charge d’un coup d’œil (25, 50, 75, 100), et 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) pour charger iPhone, Android et accessoires. Câble USB-A vers USB-C fourni, charge rapide annoncée sur l’emballage.",
+      en: "A white power bank that shows you where it stands. 10,000 mAh, an LED display for the charge level at a glance (25, 50, 75, 100), and 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) to charge iPhone, Android and accessories. USB-A to USB-C cable supplied, fast charging marked on the packaging.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Câble USB-A vers USB-C fourni", "Marque : Dakewei – modèle DKW-P15", "Coloris : blanc"],
@@ -384,8 +385,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-tdk551-1.jpg", "/powerbank-tdk551-2.jpg"],
     description: {
-      fr: "Batterie externe 10 000 mAh avec recharge sans fil magnétique (15 W indiqués) pour téléphone, et sorties USB-C et USB-A. Câble USB-C vers USB-C fourni.",
-      en: "10,000 mAh power bank with magnetic wireless charging (15 W marked) for phones, and USB-C and USB-A outputs. USB-C to USB-C cable supplied.",
+      fr: "Le power bank sans fil : il se colle au dos de ton téléphone grâce à l’aimant et le recharge sans câble (15 W annoncés), avec un petit support pour regarder tes vidéos. 10 000 mAh, charge rapide 22,5 W (PD + QC), plus une sortie USB-C et une sortie USB-A pour recharger d’autres appareils en même temps. Câble USB-C vers USB-C fourni, dragonne incluse.",
+      en: "The wireless power bank: it snaps to the back of your phone with its magnet and charges it without a cable (15 W marked), with a small stand for watching videos. 10,000 mAh, 22.5 W fast charging (PD + QC), plus a USB-C and a USB-A output to charge other devices at the same time. USB-C to USB-C cable supplied, strap included.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "Recharge sans fil magnétique : 15 W (mention de l’emballage)", "Puissance indiquée : 22,5 W (PD + QC)", "Entrée / sortie USB-C et sortie USB-A", "Câble USB-C vers USB-C fourni", "Marque : TDKC313 – modèle TDK551", "Coloris : noir"],
@@ -397,8 +398,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-15000",
     images: ["/powerbank-15000.jpg"],
     description: {
-      fr: "Batterie externe noire 15 000 mAh avec écran LED affichant le pourcentage de charge, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) et plusieurs sorties.",
-      en: "Black 15,000 mAh power bank with an LED screen showing the charge percentage, 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) and several outputs.",
+      fr: "Plus d’autonomie pour toute la journée. 15 000 mAh, écran LED qui affiche le pourcentage exact de charge, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) et 4 sorties pour charger plusieurs appareils en même temps : téléphone, écouteurs, tablette. Charge rapide annoncée sur l’emballage.",
+      en: "More battery for the whole day. 15,000 mAh, an LED screen showing the exact charge percentage, 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) and 4 outputs to charge several devices at once: phone, earbuds, tablet. Fast charging marked on the packaging.",
     },
     features: {
       fr: ["Capacité indiquée : 15 000 mAh", "Écran LED affichant le pourcentage", "4 câbles intégrés", "4 sorties (mention de l’emballage)", "Charge rapide (mention de l’emballage)", "Coloris : noir"],
@@ -410,8 +411,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-20000",
     images: ["/powerbank-tdkc313-20000.jpg"],
     description: {
-      fr: "Batterie externe blanche 20 000 mAh avec écran LED, câble USB-C intégré et charge rapide 22,5 W (PD). Câble USB-C vers USB-C fourni.",
-      en: "White 20,000 mAh power bank with an LED display, a built-in USB-C cable and 22.5 W fast charging (PD). USB-C to USB-C cable supplied.",
+      fr: "La grosse autonomie, en format compact. 20 000 mAh, charge rapide 22,5 W (PD, QC3.0), écran LED du niveau de charge et câble USB-C intégré toujours avec toi, en plus d’un câble USB-C vers USB-C fourni. Parfait pour les longues journées, les voyages et les téléphones récents. Garantie 365 jours.",
+      en: "Big battery life in a compact body. 20,000 mAh, 22.5 W fast charging (PD, QC3.0), an LED charge-level display and a built-in USB-C cable always with you, plus a USB-C to USB-C cable supplied. Perfect for long days, travel and recent phones. 365-day warranty.",
     },
     features: {
       fr: ["Capacité indiquée : 20 000 mAh", "Charge rapide indiquée : 22,5 W (PD, QC3.0)", "Écran LED du niveau de charge", "Câble USB-C intégré + câble USB-C vers USB-C fourni", "Marque : TDKC313", "Coloris : blanc"],
@@ -423,12 +424,129 @@ const catalogue: Product[] = [
     subcategory: "powerbank-20000",
     images: ["/powerbank-dakewei-p26a.jpg"],
     description: {
-      fr: "Batterie externe noire 20 000 mAh avec écran LED du niveau de charge, dragonne et câbles intégrés.",
-      en: "Black 20,000 mAh power bank with an LED charge-level display, a wrist strap and built-in cables.",
+      fr: "Le grand format pour ne jamais tomber à plat. 20 000 mAh, écran LED du niveau de charge (25, 50, 75, 100), câbles intégrés pour charger sans rien chercher et dragonne pour le transporter facilement. Le bon choix si tu charges plusieurs appareils ou si tu passes de longues journées dehors.",
+      en: "The big one, so you never run flat. 20,000 mAh, an LED charge-level display (25, 50, 75, 100), built-in cables so you never have to look for one and a strap to carry it easily. A great choice if you charge several devices or spend long days out.",
     },
     features: {
       fr: ["Capacité indiquée : 20 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "Câbles intégrés", "Dragonne", "Marque : Dakewei – modèle DKW-P26A", "Coloris : noir"],
       en: ["Stated capacity: 20,000 mAh", "LED charge-level display (25 / 50 / 75 / 100)", "Built-in cables", "Wrist strap", "Brand: Dakewei – model DKW-P26A", "Colour: black"],
+    },
+  }),
+  newProduct("tech-earbuds-langeer-lge-ne55", "tech", {
+    name: { fr: "Écouteurs open-ear Langeer LGE-NE55", en: "Langeer LGE-NE55 open-ear earphones" },
+    subcategory: "earbuds-openear",
+    images: ["/earbuds-langeer-lge-ne55-1.jpg", "/earbuds-langeer-lge-ne55-2.jpg"],
+    description: {
+      fr: "Des écouteurs à clip qui se posent sur l’oreille sans la boucher : tu écoutes ta musique tout en restant attentif à ce qui t’entoure, et ils restent confortables longtemps. Commandes tactiles, micro HD intégré pour les appels, son Hi-Fi avec extra bass, et un boîtier de charge USB-C argenté. Livrés avec câble de charge et embouts.",
+      en: "Clip-on earphones that sit on the ear without blocking it: you enjoy your music while staying aware of your surroundings, and they stay comfortable for long. Touch controls, built-in HD microphone for calls, Hi-Fi sound with extra bass, and a silver USB-C charging case. Supplied with a charging cable and ear tips.",
+    },
+    features: {
+      fr: ["Format open-ear à clip", "Commandes tactiles", "Micro HD intégré", "Son Hi-Fi, extra bass", "Portée indiquée : 10 m ou plus", "Autonomie indiquée : écoute 3 à 4 h, appels 4 h ou plus", "Résistance à l’eau et à la transpiration (mention de l’emballage)", "Boîtier de charge USB-C", "Marque : Langeer – modèle LGE-NE55", "Coloris : argent"],
+      en: ["Clip-on open-ear design", "Touch controls", "Built-in HD microphone", "Hi-Fi sound, extra bass", "Stated range: 10 m or more", "Stated battery life: playback 3–4 h, calls 4 h or more", "Water and sweat resistance (marked on the packaging)", "USB-C charging case", "Brand: Langeer – model LGE-NE55", "Colour: silver"],
+    },
+  }),
+  newProduct("tech-earbuds-freeclip-lge-08", "tech", {
+    name: { fr: "Écouteurs open-ear FreeClip LGE-08", en: "FreeClip LGE-08 open-ear earbuds" },
+    subcategory: "earbuds-openear",
+    images: ["/earbuds-freeclip-lge-08.jpg"],
+    description: {
+      fr: "Des écouteurs open-ear noirs au design léger et original : tu les portes toute la journée sans gêne et tu gardes l’oreille libre. Son Hi-Fi, longue autonomie annoncée et boîtier de charge USB-C. Livrés avec câble de charge et 4 embouts.",
+      en: "Black open-ear earbuds with a light, distinctive design: wear them all day without discomfort and keep your ears open. Hi-Fi sound, long battery life as marked, and a USB-C charging case. Supplied with a charging cable and 4 ear tips.",
+    },
+    features: {
+      fr: ["Format open-ear", "Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Design léger", "Câble USB-A vers USB-C et 4 embouts fournis", "Marque : FreeClip – modèle LGE-08", "Coloris : noir"],
+      en: ["Open-ear design", "Hi-Fi sound", "Long battery life (marked on the packaging)", "Lightweight design", "USB-A to USB-C cable and 4 ear tips supplied", "Brand: FreeClip – model LGE-08", "Colour: black"],
+    },
+  }),
+  newProduct("tech-earbuds-seufre", "tech", {
+    name: { fr: "Écouteurs Bluetooth open-ear Seufre", en: "Seufre open-ear Bluetooth earphones" },
+    subcategory: "earbuds-openear",
+    images: ["/earbuds-seufre.jpg"],
+    description: {
+      fr: "Des écouteurs Bluetooth 5.3 à crochet d’oreille, pensés pour rester stables et confortables pendant le sport comme en cours. Son Hi-Fi, boîtier de charge avec affichage LED du niveau de batterie, et une pochette de rangement avec mousqueton fournie.",
+      en: "Bluetooth 5.3 earphones with ear hooks, designed to stay stable and comfortable during sport and in class. Hi-Fi sound, a charging case with an LED battery display, and a carry pouch with carabiner included.",
+    },
+    features: {
+      fr: ["Bluetooth 5.3", "Crochet d’oreille, port confortable", "Son Hi-Fi", "Boîtier de charge avec affichage LED", "Câble USB-A vers USB-C, 6 embouts et pochette fournis", "Marque : Seufre", "Coloris : noir"],
+      en: ["Bluetooth 5.3", "Ear-hook design, comfortable fit", "Hi-Fi sound", "Charging case with LED display", "USB-A to USB-C cable, 6 ear tips and pouch supplied", "Brand: Seufre", "Colour: black"],
+    },
+  }),
+  newProduct("tech-earbuds-calus-m02-prox", "tech", {
+    name: { fr: "Écouteurs open-ear Calus M02 PROX", en: "Calus M02 PROX open-ear earbuds" },
+    subcategory: "earbuds-openear",
+    images: ["/earbuds-calus-m02-prox.jpg"],
+    description: {
+      fr: "Des écouteurs Bluetooth 5.3 à clip, noirs, pour la musique, les appels et le jeu. Son Hi-Fi avec basses profondes, latence annoncée nulle, connexion stable et port confortable. Livrés avec câble de charge et 6 embouts.",
+      en: "Black Bluetooth 5.3 clip-on earbuds for music, calls and gaming. Hi-Fi sound with deep bass, zero delay as marked, a stable connection and a comfortable fit. Supplied with a charging cable and 6 ear tips.",
+    },
+    features: {
+      fr: ["Bluetooth 5.3", "Son Hi-Fi, basses profondes", "Latence nulle annoncée, son surround 360° (mention de l’emballage)", "Pour musique, appels et jeu", "Câble USB-A vers USB-C et 6 embouts fournis", "Marque : Calus – modèle M02 PROX", "Coloris : noir"],
+      en: ["Bluetooth 5.3", "Hi-Fi sound, deep bass", "Zero delay and 360° surround (marked on the packaging)", "For music, calls and gaming", "USB-A to USB-C cable and 6 ear tips supplied", "Brand: Calus – model M02 PROX", "Colour: black"],
+    },
+  }),
+  newProduct("tech-earbuds-oraimo-i12", "tech", {
+    name: { fr: "Écouteurs sans fil oraimo i12-TWS", en: "oraimo i12-TWS wireless earbuds" },
+    subcategory: "earbuds-entry",
+    images: ["/earbuds-oraimo-i12.jpg"],
+    description: {
+      fr: "Des écouteurs sans fil blancs, simples et légers, pour écouter ta musique et téléphoner sans fil. Chaque écouteur tient environ 2,5 h, et le boîtier de charge 350 mAh peut les recharger environ 4 fois. Un très bon point d’entrée pour passer au sans fil.",
+      en: "Simple, lightweight white wireless earbuds for music and calls without wires. Each earbud lasts about 2.5 h, and the 350 mAh charging case can recharge them about 4 times. A great entry point into wireless audio.",
+    },
+    features: {
+      fr: ["Autonomie indiquée : 2,5 h par charge des écouteurs (35 mAh)", "Boîtier de charge 350 mAh : environ 4 recharges", "Son Hi-Fi, connexion stable", "Design léger", "Câble de charge USB-A vers Micro USB fourni", "Marque : oraimo – modèle i12-TWS", "Coloris : blanc"],
+      en: ["Stated battery life: 2.5 h per charge (35 mAh earbuds)", "350 mAh charging case: about 4 recharges", "Hi-Fi sound, stable connection", "Lightweight design", "USB-A to Micro USB charging cable supplied", "Brand: oraimo – model i12-TWS", "Colour: white"],
+    },
+  }),
+  newProduct("tech-earbuds-tws-blanc-etui", "tech", {
+    name: { fr: "Écouteurs sans fil TWS blancs avec étui silicone", en: "White TWS wireless earbuds with silicone case" },
+    subcategory: "earbuds-mid",
+    images: ["/earbuds-tws-blanc-etui.jpg"],
+    description: {
+      fr: "Des écouteurs sans fil blancs avec micro intégré pour les appels, un son Hi-Fi et un boîtier de charge compact. Ils sont livrés avec un étui en silicone avec mousqueton, 6 embouts et un câble de charge USB-A vers USB-C : tout est inclus dès l’ouverture de la boîte.",
+      en: "White wireless earbuds with a built-in microphone for calls, Hi-Fi sound and a compact charging case. Supplied with a silicone case with carabiner, 6 ear tips and a USB-A to USB-C charging cable: everything is included in the box.",
+    },
+    features: {
+      fr: ["Micro intégré pour les appels", "Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Étui silicone avec mousqueton, 6 embouts et câble USB-A vers USB-C fournis", "Coloris : blanc"],
+      en: ["Built-in microphone for calls", "Hi-Fi sound", "Long battery life (marked on the packaging)", "Silicone case with carabiner, 6 ear tips and USB-A to USB-C cable supplied", "Colour: white"],
+    },
+  }),
+  newProduct("tech-earbuds-true-wireless-blanc", "tech", {
+    name: { fr: "Écouteurs True Wireless blancs", en: "White True Wireless earbuds" },
+    subcategory: "earbuds-mid",
+    images: ["/earbuds-true-wireless-blanc.jpg"],
+    description: {
+      fr: "Des écouteurs sans fil blancs au port confortable, avec un son de qualité, une longue autonomie annoncée, une connexion stable et un boîtier de charge compact.",
+      en: "White wireless earbuds with a comfortable fit, quality sound, long battery life as marked, a stable connection and a compact charging case.",
+    },
+    features: {
+      fr: ["Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Connexion stable", "Design léger et port confortable", "Coloris : blanc"],
+      en: ["Hi-Fi sound", "Long battery life (marked on the packaging)", "Stable connection", "Lightweight design and comfortable fit", "Colour: white"],
+    },
+  }),
+  newProduct("tech-earbuds-airpods-3", "tech", {
+    name: { fr: "AirPods 3", en: "AirPods 3" },
+    subcategory: "earbuds-mid",
+    images: ["/earbuds-airpods-3.jpg"],
+    description: {
+      fr: "Les AirPods 3, livrés dans leur boîte avec le boîtier de charge, un câble USB-C vers Lightning et la notice. Un design sans embouts, léger et facile à porter, qui se connecte facilement à ton iPhone.",
+      en: "AirPods 3, supplied in their box with the charging case, a USB-C to Lightning cable and the manual. A lightweight, easy-to-wear design without ear tips that connects easily to your iPhone.",
+    },
+    features: {
+      fr: ["Modèle : AirPods 3", "Boîtier de charge inclus", "Câble USB-C vers Lightning fourni", "Avec boîte et notice", "Coloris : blanc"],
+      en: ["Model: AirPods 3", "Charging case included", "USB-C to Lightning cable supplied", "With box and manual", "Colour: white"],
+    },
+  }),
+  newProduct("tech-earbuds-airpods-pro", "tech", {
+    name: { fr: "AirPods Pro", en: "AirPods Pro" },
+    subcategory: "earbuds-top",
+    images: ["/earbuds-airpods-pro.jpg"],
+    description: {
+      fr: "Les AirPods Pro avec embouts en silicone pour un port bien ajusté, boîtier de charge et câble USB-C vers USB-C fourni, dans leur boîte avec la notice. Le choix haut de gamme de la sélection.",
+      en: "AirPods Pro with silicone ear tips for a snug fit, a charging case and a USB-C to USB-C cable, supplied in their box with the manual. The high-end pick of the selection.",
+    },
+    features: {
+      fr: ["Modèle : AirPods Pro", "Embouts en silicone", "Boîtier de charge inclus", "Câble USB-C vers USB-C fourni", "Avec boîte et notice", "Coloris : blanc"],
+      en: ["Model: AirPods Pro", "Silicone ear tips", "Charging case included", "USB-C to USB-C cable supplied", "With box and manual", "Colour: white"],
     },
   }),
 ];
