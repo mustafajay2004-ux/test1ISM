@@ -575,6 +575,87 @@ const catalogue: Product[] = [
       en: ["Clip-on design, comfortable fit", "Hi-Fi sound, Hi-Res Audio (marked on the packaging)", "Enhanced bass", "For phone calls", "USB-A to USB-C cable and 6 ear tips supplied", "Brand: Ormushie – model OMS-FREE", "Colours shown on the packaging: black, gold beige, purple"],
     },
   }),
+  newProduct("tech-casque-sony-wh-xm5", "tech", {
+    name: { fr: "Casque sans fil Sony WH-XM5 à réduction de bruit", en: "Sony WH-XM5 wireless noise-cancelling headphones" },
+    subcategory: "headphones",
+    images: ["/casque-sony-wh-xm5-blanc.jpg", "/casque-sony-wh-xm5-noir.jpg"],
+    variants: ["Blanc", "Noir"],
+    description: {
+      fr: "Un casque sans fil haut de gamme pour s’isoler du bruit et profiter de sa musique : réduction de bruit active, jusqu’à 30 h d’autonomie annoncées et son 360 Reality Audio. Idéal pour les révisions, les transports et les voyages. Livré avec étui de transport, câble de charge USB-A vers USB-C, câble audio jack 3,5 mm et adaptateur avion.",
+      en: "A premium wireless headset to shut out the noise and enjoy your music: active noise cancelling, up to 30 h of battery life as marked and 360 Reality Audio. Ideal for studying, commuting and travel. Supplied with a carry case, a USB-A to USB-C charging cable, a 3.5 mm audio cable and an airplane adapter.",
+    },
+    features: {
+      fr: ["Réduction de bruit active", "Autonomie indiquée : 30 h", "360 Reality Audio (mention de l’emballage)", "Étui, câble USB-A vers USB-C, câble jack 3,5 mm et adaptateur avion fournis", "Marque : Sony – modèle WH-XM5", "Coloris : blanc, noir"],
+      en: ["Active noise cancelling", "Stated battery life: 30 h", "360 Reality Audio (marked on the packaging)", "Case, USB-A to USB-C cable, 3.5 mm audio cable and airplane adapter supplied", "Brand: Sony – model WH-XM5", "Colours: white, black"],
+    },
+  }),
+  newProduct("tech-casque-jbl-pure-bass-a18", "tech", {
+    name: { fr: "Casque Bluetooth JBL Pure Bass A18", en: "JBL Pure Bass A18 Bluetooth headphones" },
+    subcategory: "headphones",
+    images: ["/casque-jbl-a18-orange.jpg", "/casque-jbl-a18-blanc.jpg", "/casque-jbl-a18-gris.jpg", "/casque-jbl-a18-noir.jpg"],
+    variants: ["Orange", "Blanc", "Gris", "Noir"],
+    description: {
+      fr: "Le casque Bluetooth du quotidien : léger, pliable et confortable, avec un son Hi-Fi aux basses puissantes. Il se range dans sa pochette et se glisse facilement dans le sac, pour la fac comme pour les trajets. Câble de charge USB-A vers Micro USB fourni. Quatre coloris au choix : orange, blanc, gris et noir.",
+      en: "The everyday Bluetooth headset: light, foldable and comfortable, with Hi-Fi sound and powerful bass. It folds into its pouch and slips easily into a bag, for campus and commuting. USB-A to Micro USB charging cable supplied. Four colours to choose from: orange, white, grey and black.",
+    },
+    features: {
+      fr: ["Bluetooth", "Son Hi-Fi, Pure Bass", "Pliable et léger", "Port confortable", "Pochette et câble USB-A vers Micro USB fournis", "Marque : JBL – modèle Pure Bass A18", "Coloris : orange, blanc, gris, noir"],
+      en: ["Bluetooth", "Hi-Fi sound, Pure Bass", "Foldable and lightweight", "Comfortable fit", "Pouch and USB-A to Micro USB cable supplied", "Brand: JBL – model Pure Bass A18", "Colours: orange, white, grey, black"],
+    },
+  }),
+  newProduct("tech-casque-jbl-live-660nc", "tech", {
+    name: { fr: "Casque Bluetooth JBL Live 660NC à réduction de bruit", en: "JBL Live 660NC Bluetooth noise-cancelling headphones" },
+    subcategory: "headphones",
+    images: ["/casque-jbl-live-660nc.jpg"],
+    description: {
+      fr: "Un casque Bluetooth à réduction de bruit active pour écouter ta musique sans être dérangé, avec jusqu’à 50 h d’autonomie annoncées sur l’emballage et l’appairage rapide Fast Pair pour se connecter en un instant à un téléphone Android. Coloris noir.",
+      en: "A Bluetooth headset with active noise cancelling so you can enjoy your music undisturbed, with up to 50 h of battery life as marked on the packaging and Fast Pair for quick pairing with an Android phone. Black.",
+    },
+    features: {
+      fr: ["Réduction de bruit active", "Bluetooth", "Autonomie indiquée : 50 h", "Fast Pair", "Marque : JBL – modèle Live 660NC", "Coloris : noir"],
+      en: ["Active noise cancelling", "Bluetooth", "Stated battery life: 50 h", "Fast Pair", "Brand: JBL – model Live 660NC", "Colour: black"],
+    },
+  }),
+  newProduct("tech-casque-jbl-super-bass-i12", "tech", {
+    name: { fr: "Casque Bluetooth JBL Super Bass I12", en: "JBL Super Bass I12 Bluetooth headphones" },
+    subcategory: "headphones",
+    images: ["/casque-jbl-super-bass-i12.jpg"],
+    description: {
+      fr: "Un casque Bluetooth circum-aural pensé pour les basses : grands coussinets confortables, arceau rembourré et commandes directement sur l’oreillette pour gérer la musique et les appels. Un look affirmé en noir, pour écouter fort et longtemps.",
+      en: "A Bluetooth over-ear headset built for bass: large comfortable ear cushions, a padded headband and controls right on the earcup to manage music and calls. A bold look in black.",
+    },
+    features: {
+      fr: ["Bluetooth", "Super Bass", "Grands coussinets, arceau rembourré", "Boutons de commande sur l’oreillette", "Marque : JBL – modèle I12", "Coloris : noir"],
+      en: ["Bluetooth", "Super Bass", "Large ear cushions, padded headband", "Control buttons on the earcup", "Brand: JBL – model I12", "Colour: black"],
+    },
+  }),
+  newProduct("tech-casque-airpods-max", "tech", {
+    name: { fr: "AirPods Max", en: "AirPods Max" },
+    subcategory: "headphones",
+    images: ["/casque-airpods-max-boite.jpg", "/casque-airpods-max-argent.jpg", "/casque-airpods-max-vert.jpg", "/casque-airpods-max-bleu.jpg", "/casque-airpods-max-rouge.jpg", "/casque-airpods-max-noir.jpg"],
+    variants: ["Argent", "Vert", "Bleu", "Rouge", "Noir"],
+    description: {
+      fr: "Le casque AirPods Max : un design aluminium et mailles, des coussinets enveloppants et un style qu’on reconnaît tout de suite. Livré dans sa boîte avec son étui, un câble USB-C vers USB-C et la notice. Disponible en cinq coloris : argent, vert, bleu, rouge et noir.",
+      en: "The AirPods Max headphones: an aluminium and mesh design, enveloping ear cushions and a style you recognise at once. Supplied in its box with its case, a USB-C to USB-C cable and the manual. Available in five colours: silver, green, blue, red and black.",
+    },
+    features: {
+      fr: ["Modèle : AirPods Max", "Étui, câble USB-C vers USB-C et notice fournis", "Avec boîte", "Coloris : argent, vert, bleu, rouge, noir"],
+      en: ["Model: AirPods Max", "Case, USB-C to USB-C cable and manual supplied", "With box", "Colours: silver, green, blue, red, black"],
+    },
+  }),
+  newProduct("tech-casque-bose-quietcomfort-ultra", "tech", {
+    name: { fr: "Casque Bose QuietComfort Ultra", en: "Bose QuietComfort Ultra headphones" },
+    subcategory: "headphones",
+    images: ["/casque-bose-quietcomfort-ultra.jpg"],
+    description: {
+      fr: "Le casque pensé pour le confort et le silence : réduction de bruit, son premium, longue autonomie annoncée et coussinets doux pour des heures d’écoute. Livré avec un étui rigide, un câble de charge USB-A vers USB-C et un câble audio jack 3,5 mm. Coloris noir.",
+      en: "The headset built for comfort and quiet: noise cancelling, premium sound, long battery life as marked and soft ear cushions for hours of listening. Supplied with a hard case, a USB-A to USB-C charging cable and a 3.5 mm audio cable. Black.",
+    },
+    features: {
+      fr: ["Réduction de bruit", "Son premium, longue autonomie (mention de l’emballage)", "Port confortable", "Étui rigide, câble USB-A vers USB-C et câble jack 3,5 mm fournis", "Marque : Bose – modèle QuietComfort Ultra", "Coloris : noir"],
+      en: ["Noise cancelling", "Premium sound, long battery life (marked on the packaging)", "Comfortable fit", "Hard case, USB-A to USB-C cable and 3.5 mm audio cable supplied", "Brand: Bose – model QuietComfort Ultra", "Colour: black"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
