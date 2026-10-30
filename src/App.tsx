@@ -18,7 +18,7 @@ type Subcategory = { id: string; name: Record<Lang, string>; parent?: string };
 const sub = (id: string, fr: string, en: string, parent?: string): Subcategory => ({ id, name: { fr, en }, parent });
 
 // Modèles d'iPhone proposés comme sous-boutons (coques, verres trempés). Pour en ajouter un, l'ajouter à cette liste.
-const iphoneModels = ["11", "11 Pro", "11 Pro Max", "12", "12 Pro", "12 Pro Max", "13", "13 Pro", "13 Pro Max", "14", "14 Pro", "14 Pro Max", "15", "15 Pro", "15 Pro Max", "16", "16 Pro", "16 Pro Max", "17", "17 Pro", "17 Pro Max"];
+const iphoneModels = ["11", "11 Pro", "11 Pro Max", "12", "12 Pro", "12 Pro Max", "13", "13 Pro", "13 Pro Max", "14", "14 Plus", "14 Pro", "14 Pro Max", "15", "15 Plus", "15 Pro", "15 Pro Max", "16", "16 Plus", "16 Pro", "16 Pro Max", "17", "17 Pro", "17 Pro Max"];
 const modelSubs = (prefix: string, parent: string) =>
   iphoneModels.map((model) => sub(`${prefix}-iphone-${model.toLowerCase().replace(/ /g, "-")}`, `iPhone ${model}`, `iPhone ${model}`, parent));
 
@@ -207,6 +207,21 @@ const newProduct = (id: string, category: CategoryId, data: Partial<Product>): P
   id, category, slot: 0, name: null, price: null, description: null, images: [], variants: [],
   availability: "pending", subcategory: null, features: null, addedAt: null, featured: false,
   audience: null, priceOnRequest: true, imageFit: "contain", ...data,
+});
+
+// Coque de téléphone : un produit = un modèle d'iPhone (la coque va dans le bouton du modèle).
+const caseProduct = (
+  id: string, model: string, images: string[],
+  name: [string, string], description: [string, string], features: [string[], string[]],
+): Product => newProduct(id, "tech", {
+  name: { fr: name[0], en: name[1] },
+  subcategory: `case-iphone-${model.toLowerCase().replace(/ /g, "-")}`,
+  images,
+  description: {
+    fr: `${description[0]} Compatible uniquement avec l’iPhone ${model} : vérifie le modèle de ton téléphone avant de commander.`,
+    en: `${description[1]} Fits the iPhone ${model} only: check your phone model before ordering.`,
+  },
+  features: { fr: [`Compatible : iPhone ${model}`, ...features[0]], en: [`Fits: iPhone ${model}`, ...features[1]] },
 });
 
 const catalogue: Product[] = [
@@ -656,6 +671,62 @@ const catalogue: Product[] = [
       en: ["Noise cancelling", "Premium sound, long battery life (marked on the packaging)", "Comfortable fit", "Hard case, USB-A to USB-C cable and 3.5 mm audio cable supplied", "Brand: Bose – model QuietComfort Ultra", "Colour: black"],
     },
   }),
+  caseProduct("tech-coque-14plus-alveoles-violet", "14 Plus", ["/coque-14plus-alveoles-violet.jpg"],
+    ["Coque alvéoles violette – iPhone 14 Plus", "Purple honeycomb case – iPhone 14 Plus"],
+    ["Une coque violette au motif alvéoles (hexagones) brillant : un look original qui protège ton téléphone et fait la différence.", "A purple case with a glossy honeycomb (hexagon) pattern: an original look that protects your phone and stands out."],
+    [["Motif alvéoles (hexagones)", "Boutons recouverts", "Coloris : violet"], ["Honeycomb (hexagon) pattern", "Covered buttons", "Colour: purple"]]),
+  caseProduct("tech-coque-13pro-monogramme-marron", "13 Pro", ["/coque-13pro-monogramme-marron-1.jpg", "/coque-13pro-monogramme-marron-2.jpg"],
+    ["Coque marron à motif monogramme – iPhone 13 Pro", "Brown monogram-pattern case – iPhone 13 Pro"],
+    ["Une coque marron à finition aspect cuir et motif monogramme en relief, pour un style sobre et élégant avec bords noirs qui entourent le téléphone.", "A brown case with a leather-look finish and an embossed monogram pattern, for a clean, elegant style with black edges around the phone."],
+    [["Finition aspect cuir, motif monogramme en relief", "Bords noirs", "Coloris : marron"], ["Leather-look finish, embossed monogram pattern", "Black edges", "Colour: brown"]]),
+  caseProduct("tech-coque-15-magsafe-transparente", "15", ["/coque-15-magsafe-transparente.jpg"],
+    ["Coque transparente MagSafe antichoc – iPhone 15", "Clear shockproof MagSafe case – iPhone 15"],
+    ["Une coque transparente qui laisse voir la couleur de ton iPhone, avec coins renforcés et anneau MagSafe pour poser ton téléphone sur un chargeur ou un support magnétique.", "A clear case that shows off your iPhone’s colour, with reinforced corners and a MagSafe ring to place your phone on a magnetic charger or stand."],
+    [["Transparente", "Coins renforcés antichoc", "Anneau MagSafe visible", "Coloris : transparent"], ["Clear", "Reinforced shockproof corners", "MagSafe ring visible", "Colour: clear"]]),
+  caseProduct("tech-coque-12pro-magsafe-gris-mat", "12 Pro", ["/coque-12pro-magsafe-gris-mat.jpg"],
+    ["Coque MagSafe gris mat, bord noir – iPhone 12 Pro", "Matte grey MagSafe case with black edge – iPhone 12 Pro"],
+    ["Une coque au dos gris mat translucide et au bord noir, avec anneau MagSafe : un look discret et sobre, facile à assortir.", "A case with a translucent matte-grey back and black edge, with a MagSafe ring: a discreet, understated look that goes with everything."],
+    [["Dos gris mat, bord noir", "Anneau MagSafe visible", "Coloris : gris / noir"], ["Matte grey back, black edge", "MagSafe ring visible", "Colour: grey / black"]]),
+  caseProduct("tech-coque-16pro-orange-tisse", "16 Pro", ["/coque-16pro-orange-tisse.jpg"],
+    ["Coque orange motif tissé – iPhone 16 Pro", "Orange woven-pattern case – iPhone 16 Pro"],
+    ["Une coque orange brillante, avec un motif tissé noir et beige, pour un look chaud et affirmé. Protège-objectifs doré intégré autour des caméras.", "A glossy orange case with a black and beige woven pattern, for a warm, bold look. Gold camera rings built in around the lenses."],
+    [["Finition brillante, motif tissé noir et beige", "Contours dorés autour des caméras", "Coloris : orange"], ["Glossy finish, black and beige woven pattern", "Gold rings around the cameras", "Colour: orange"]]),
+  caseProduct("tech-coque-17pro-noire-tisse", "17 Pro", ["/coque-17pro-noire-tisse.jpg"],
+    ["Coque noire motif tissé – iPhone 17 Pro", "Black woven-pattern case – iPhone 17 Pro"],
+    ["Une coque noire brillante au motif tissé gris et noir, élégante et facile à assortir. Contours argentés autour des caméras.", "A glossy black case with a grey and black woven pattern, elegant and easy to match. Silver rings around the cameras."],
+    [["Finition brillante, motif tissé noir et gris", "Contours argentés autour des caméras", "Coloris : noir"], ["Glossy finish, black and grey woven pattern", "Silver rings around the cameras", "Colour: black"]]),
+  caseProduct("tech-coque-14pro-magsafe-blanche", "14 Pro", ["/coque-14pro-magsafe-blanche.jpg"],
+    ["Coque transparente blanche MagSafe – iPhone 14 Pro", "White-tinted clear MagSafe case – iPhone 14 Pro"],
+    ["Une coque transparente à dos blanc cassé, avec coins renforcés et anneau MagSafe sombre : un look propre et clair qui protège les angles de ton téléphone.", "A clear case with an off-white back, reinforced corners and a dark MagSafe ring: a clean look that protects your phone’s corners."],
+    [["Dos blanc cassé, transparente", "Coins renforcés", "Anneau MagSafe visible", "Coloris : blanc / transparent"], ["Off-white back, clear", "Reinforced corners", "MagSafe ring visible", "Colour: white / clear"]]),
+  caseProduct("tech-coque-13pro-fleurs-violet", "13 Pro", ["/coque-13pro-fleurs-violet.jpg"],
+    ["Coque violette fleurs et papillon « Smile » – iPhone 13 Pro", "Purple flowers and butterfly “Smile” case – iPhone 13 Pro"],
+    ["Une coque violette toute douce, décorée de fleurs en relief, de perles et d’un papillon translucide, avec le message « A smile is the prettiest thing you can wear ». Pour celles qui aiment les coques colorées et pleines de détails.", "A soft purple case decorated with raised flowers, pearls and a translucent butterfly, with the message “A smile is the prettiest thing you can wear”. For anyone who loves colourful, detailed cases."],
+    [["Décor 3D : fleurs, perles et papillon", "Message « Nice / Smile »", "Coloris : violet"], ["3D decoration: flowers, pearls and butterfly", "“Nice / Smile” message", "Colour: purple"]]),
+  caseProduct("tech-coque-14pro-fumee-phone-case", "14 Pro", ["/coque-14pro-fumee-phone-case.jpg"],
+    ["Coque fumée transparente – iPhone 14 Pro", "Smoke-tint clear case – iPhone 14 Pro"],
+    ["Une coque transparente teintée fumée, avec motif en relief et coins renforcés. Elle protège ton téléphone tout en gardant un look sombre et discret.", "A smoke-tinted clear case with an embossed pattern and reinforced corners. It protects your phone while keeping a dark, discreet look."],
+    [["Transparente teintée fumée", "Motif en relief", "Coins renforcés", "Coloris : fumé / noir"], ["Smoke-tinted clear", "Embossed pattern", "Reinforced corners", "Colour: smoke / black"]]),
+  caseProduct("tech-coque-14pro-rose-transparente", "14 Pro", ["/coque-14pro-rose-transparente.jpg"],
+    ["Coque rose à bord transparent – iPhone 14 Pro", "Pink case with clear edge – iPhone 14 Pro"],
+    ["Une coque rose vif brillant avec un bord transparent antichoc : un look pop qui protège les coins de ton iPhone.", "A bright glossy pink case with a clear shockproof edge: a pop look that protects your iPhone’s corners."],
+    [["Dos rose brillant, bord transparent", "Coins renforcés", "Coloris : rose"], ["Glossy pink back, clear edge", "Reinforced corners", "Colour: pink"]]),
+  caseProduct("tech-coque-14pro-magsafe-bronze", "14 Pro", ["/coque-14pro-magsafe-bronze.jpg"],
+    ["Coque MagSafe doré / bronze – iPhone 14 Pro", "Gold / bronze MagSafe case – iPhone 14 Pro"],
+    ["Une coque au dos doré translucide et au bord bronze, avec anneau MagSafe : une couleur chaude qui met en valeur ton téléphone.", "A case with a translucent gold back and bronze edge, with a MagSafe ring: a warm colour that shows off your phone."],
+    [["Dos doré, bord bronze", "Anneau MagSafe visible", "Coloris : doré / bronze"], ["Gold back, bronze edge", "MagSafe ring visible", "Colour: gold / bronze"]]),
+  caseProduct("tech-coque-13promax-strass-papillon", "13 Pro Max", ["/coque-13promax-strass-papillon.jpg"],
+    ["Coque transparente strass dorés et papillon – iPhone 13 Pro Max", "Clear case with gold rhinestones and butterfly – iPhone 13 Pro Max"],
+    ["Une coque brillante à pailletes, entourée de strass sur fond doré, avec un papillon en relief. Pour un style très glamour, avec coins renforcés.", "A sparkling case surrounded by rhinestones on a gold frame, with a raised butterfly. A very glamorous style, with reinforced corners."],
+    [["Strass et contour doré", "Fond pailleté, papillon décoratif", "Coins renforcés", "Coloris : transparent / doré"], ["Rhinestones and gold frame", "Glitter background, decorative butterfly", "Reinforced corners", "Colour: clear / gold"]]),
+  caseProduct("tech-coque-13promax-alveoles-noire", "13 Pro Max", ["/coque-13promax-alveoles-noire.jpg"],
+    ["Coque fumée alvéoles antichoc – iPhone 13 Pro Max", "Smoke honeycomb shockproof case – iPhone 13 Pro Max"],
+    ["Une coque noire fumée au motif alvéoles et aux coins renforcés pour mieux encaisser les chutes, avec un look sombre et moderne.", "A smoke-black case with a honeycomb pattern and reinforced corners to take drops better, with a dark, modern look."],
+    [["Motif alvéoles", "Coins renforcés antichoc", "Coloris : noir fumé"], ["Honeycomb pattern", "Reinforced shockproof corners", "Colour: smoke black"]]),
+  caseProduct("tech-coque-13promax-strass-vert-dragonne", "13 Pro Max", ["/coque-13promax-strass-vert-dragonne.jpg"],
+    ["Coque strass verts avec dragonne et breloques – iPhone 13 Pro Max", "Green rhinestone case with strap and charms – iPhone 13 Pro Max"],
+    ["Une coque transparente pailletée, bordée de strass verts, avec dragonne tressée verte et breloques (trèfle, papillons, médailles). Pratique pour tenir le téléphone et très tendance.", "A sparkly clear case edged with green rhinestones, with a green braided strap and charms (clover, butterflies, medallions). Handy to hold your phone and very trendy."],
+    [["Strass verts, fond pailleté", "Dragonne tressée verte et breloques", "Coins renforcés", "Coloris : vert / transparent"], ["Green rhinestones, glitter background", "Green braided strap and charms", "Reinforced corners", "Colour: green / clear"]]),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
