@@ -783,10 +783,122 @@ const catalogue: Product[] = [
       en: ["10 W power (marked on the packaging)", "Bluetooth, FM radio, TF card, USB drive", "Pairs 2 speakers (TWS)", "LED light bars, light mode adjustable with the M button", "1200 mAh Li-ion battery (marked on the packaging)", "Carry handle, on/off switch, previous / next / volume / play buttons", "Charging cable, 3.5 mm audio cable and adapter or manual depending on the batch (see photos)", "Brand: Loveyin – model Ai-176", "Colours: purple-blue, black"],
     },
   }),
+  newProduct("watch-day-date-palmier", "watches", {
+    name: { fr: "Montre Day-Date bicolore, cadran palmier", en: "Two-tone Day-Date watch, palm dial" },
+    subcategory: "classic",
+    audience: "men",
+    images: ["/montre-day-date-palmier.jpg"],
+    description: {
+      fr: "Une montre qui se remarque : bracelet President acier et or jaune, lunette cannelée dorée et cadran noir à motif palmier avec index façon diamant. Jour et date affichés, inscription Rolex sur le cadran. Le genre de pièce qui fait tout de suite habillé.",
+      en: "A watch that gets noticed: steel and yellow-gold President bracelet, gold fluted bezel and a black palm-pattern dial with diamond-style hour markers. Day and date display, Rolex inscription on the dial. The kind of piece that instantly dresses up an outfit.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Day-Date", "Bracelet President acier et or jaune, lunette cannelée", "Cadran noir motif palmier, index façon diamant", "Affichage du jour et de la date", "Style : classique"],
+      en: ["Rolex inscription on the dial, Day-Date model", "Steel and yellow-gold President bracelet, fluted bezel", "Black palm-pattern dial, diamond-style markers", "Day and date display", "Style: classic"],
+    },
+  }),
+  newProduct("watch-datejust-noire", "watches", {
+    name: { fr: "Montre Datejust tout noir, cadran argenté", en: "All-black Datejust watch, silver dial" },
+    subcategory: "classic",
+    audience: "unisex",
+    images: ["/montre-datejust-noire.jpg"],
+    description: {
+      fr: "Le contraste qui claque : boîtier, lunette cannelée et bracelet President entièrement noirs, avec un cadran argenté serti d’index façon diamant et de baguettes. Date à 3 heures, inscription Rolex sur le cadran. Un look audacieux, élégant et facile à porter.",
+      en: "A striking contrast: case, fluted bezel and President bracelet all in black, with a silver dial set with diamond-style and baguette markers. Date at 3 o’clock, Rolex inscription on the dial. A bold, elegant look that is easy to wear.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Boîtier, lunette cannelée et bracelet President noirs", "Cadran argenté, index façon diamant et baguettes", "Date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Datejust model", "Black case, fluted bezel and President bracelet", "Silver dial, diamond-style and baguette markers", "Date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-submariner-bleue", "watches", {
+    name: { fr: "Montre Submariner bleu électrique, cadran rouge", en: "Electric blue Submariner watch, red dial" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-submariner-bleue.jpg"],
+    description: {
+      fr: "Pour ceux qui veulent sortir du lot : boîtier et bracelet President bleu électrique, lunette cannelée et cadran dégradé rouge avec index façon diamant. Date à 3 heures, inscription Rolex sur le cadran. Une montre qui ne passe pas inaperçue.",
+      en: "For those who want to stand out: electric blue case and President bracelet, fluted bezel and a red gradient dial with diamond-style markers. Date at 3 o’clock, Rolex inscription on the dial. A watch that never goes unnoticed.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Submariner", "Boîtier et bracelet President bleu électrique", "Cadran dégradé rouge, index façon diamant", "Date à 3 heures", "Style : sportive"],
+      en: ["Rolex inscription on the dial, Submariner model", "Electric blue case and President bracelet", "Red gradient dial, diamond-style markers", "Date at 3 o’clock", "Style: sports"],
+    },
+  }),
+  newProduct("watch-oyster-perpetual-noire", "watches", {
+    name: { fr: "Montre Oyster Perpetual acier, cadran noir", en: "Steel Oyster Perpetual watch, black dial" },
+    subcategory: "classic",
+    audience: "men",
+    images: ["/montre-oyster-perpetual-noire.jpg"],
+    description: {
+      fr: "La montre simple et nette : bracelet Oyster en acier, lunette lisse, cadran noir à index lumineux bien lisibles et date à 3 heures. Inscription Rolex sur le cadran, petite touche rouge sur la couronne. Elle va avec tout, du quotidien aux sorties.",
+      en: "The clean, simple watch: steel Oyster bracelet, smooth bezel, black dial with easy-to-read bar markers and date at 3 o’clock. Rolex inscription on the dial, a small red touch on the crown. It goes with everything, from daily wear to evenings out.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Oyster Perpetual", "Bracelet Oyster en acier, lunette lisse", "Cadran noir, index en bâtons, couronne à touche rouge", "Date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Oyster Perpetual model", "Steel Oyster bracelet, smooth bezel", "Black dial, bar markers, red-accent crown", "Date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-submariner-bicolore", "watches", {
+    name: { fr: "Montre Submariner bicolore, lunette noire", en: "Two-tone Submariner watch, black bezel" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-submariner-bicolore.jpg"],
+    description: {
+      fr: "Le grand classique sportif en version acier et or : lunette noire graduée à liseré doré, cadran noir avec index façon diamant et bracelet Oyster bicolore. Date à 3 heures, inscription Rolex sur le cadran. Sportive et chic à la fois.",
+      en: "The sporty classic in steel and gold: black graduated bezel with gold trim, black dial with diamond-style markers and a two-tone Oyster bracelet. Date at 3 o’clock, Rolex inscription on the dial. Sporty and chic at once.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Submariner", "Bracelet Oyster acier et or, lunette noire graduée", "Cadran noir, index façon diamant", "Date à 3 heures", "Style : sportive"],
+      en: ["Rolex inscription on the dial, Submariner model", "Steel and gold Oyster bracelet, black graduated bezel", "Black dial, diamond-style markers", "Date at 3 o’clock", "Style: sports"],
+    },
+  }),
+  newProduct("watch-squelette-fashion-noire", "watches", {
+    name: { fr: "Montre squelette noire « Fashion », bracelet silicone", en: "Black skeleton “Fashion” watch, silicone strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-squelette-fashion-noire.jpg"],
+    description: {
+      fr: "Une montre au caractère affirmé : boîtier tonneau noir avec vis apparentes, cadran squelette où l’on voit les rouages, grands chiffres bien lisibles et bracelet silicone noir confortable. Un look moderne et sportif.",
+      en: "A watch with attitude: black tonneau case with visible screws, a skeleton dial that shows the gears, large easy-to-read numerals and a comfortable black silicone strap. A modern, sporty look.",
+    },
+    features: {
+      fr: ["Marque inscrite sur le cadran : Fashion", "Boîtier tonneau noir, vis apparentes", "Cadran squelette, grands chiffres", "Bracelet silicone noir", "Style : sportive"],
+      en: ["Brand on the dial: Fashion", "Black tonneau case, visible screws", "Skeleton dial, large numerals", "Black silicone strap", "Style: sports"],
+    },
+  }),
+  newProduct("watch-chrono-noire-rouge", "watches", {
+    name: { fr: "Montre noire à compteurs, touches rouges", en: "Black watch with sub-dials, red accents" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-chrono-noire-rouge.jpg"],
+    description: {
+      fr: "Le look racing tout en noir : boîtier tonneau mat, cadran squelette à trois compteurs avec touches rouges, date à 6 heures et bracelet silicone noir. Une montre qui a de la présence au poignet.",
+      en: "The all-black racing look: matte tonneau case, skeleton dial with three sub-dials and red accents, date at 6 o’clock and a black silicone strap. A watch with real presence on the wrist.",
+    },
+    features: {
+      fr: ["Boîtier tonneau noir mat, vis apparentes", "Cadran squelette, trois compteurs, touches rouges", "Date à 6 heures", "Bracelet silicone noir", "Style : sportive"],
+      en: ["Matte black tonneau case, visible screws", "Skeleton dial, three sub-dials, red accents", "Date at 6 o’clock", "Black silicone strap", "Style: sports"],
+    },
+  }),
+  newProduct("watch-auliter-carbone-rouge", "watches", {
+    name: { fr: "Montre AULITER effet carbone, bracelet rouge", en: "AULITER carbon-look watch, red strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-auliter-carbone-rouge.jpg"],
+    description: {
+      fr: "La plus colorée de la sélection : boîtier au motif effet carbone, cadran squelette avec aiguilles rouge, vert et bleu, et bracelet silicone rouge vif. Marque AULITER inscrite sur le cadran. Pour un style bien à toi.",
+      en: "The most colourful of the selection: carbon-look case, skeleton dial with red, green and blue hands, and a bright red silicone strap. AULITER brand on the dial. For a style that is all yours.",
+    },
+    features: {
+      fr: ["Marque inscrite sur le cadran : AULITER", "Boîtier effet carbone, vis apparentes", "Cadran squelette, aiguilles colorées", "Bracelet silicone rouge", "Style : sportive"],
+      en: ["Brand on the dial: AULITER", "Carbon-look case, visible screws", "Skeleton dial, coloured hands", "Red silicone strap", "Style: sports"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
-const placeholders = emptySlots.filter((slot) => !catalogue.some((item) => item.category === slot.category));
+const placeholders = emptySlots.filter((slot) => realProducts[slot.id] || !catalogue.some((item) => item.category === slot.category));
 const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue];
 
 const featuredProducts = products.filter((product) => product.featured);
