@@ -755,6 +755,34 @@ const catalogue: Product[] = [
     ["Coque bleue MagSafe avec volet caméra coulissant – iPhone 11", "Blue MagSafe case with sliding camera cover – iPhone 11"],
     ["Une coque bleue avec un volet coulissant qui cache la caméra quand tu ne t’en sers pas, et un anneau MagSafe au dos. Pratique et originale.", "A blue case with a sliding cover that hides the camera when you are not using it, and a MagSafe ring on the back. Practical and original."],
     [["Volet coulissant sur la caméra", "Anneau MagSafe visible", "Coloris : bleu"], ["Sliding camera cover", "MagSafe ring visible", "Colour: blue"]]),
+  newProduct("tech-enceinte-music-x2651", "tech", {
+    name: { fr: "Enceinte portable MUSIC X-2651", en: "MUSIC X-2651 portable speaker" },
+    subcategory: "speakers",
+    images: ["/enceinte-music-x2651-bleu.jpg", "/enceinte-music-x2651-orange.jpg", "/enceinte-music-x2651-vert.jpg", "/enceinte-music-x2651-noir.jpg"],
+    variants: ["Bleu clair", "Orange", "Vert", "Noir"],
+    description: {
+      fr: "Une petite enceinte ronde, sans fil, à emporter partout : façade en tissu, boutons de commande sur le dessus et dragonne pour l’accrocher à ton sac ou ta main. Livrée avec son câble de charge USB et sa dragonne assortie à la couleur. Quatre coloris au choix : bleu clair, orange, vert et noir.",
+      en: "A small, round, wireless speaker to take anywhere: fabric front, control buttons on top and a strap to hang it from your bag or wrist. Supplied with its USB charging cable and a strap matching the colour. Four colours: light blue, orange, green and black.",
+    },
+    features: {
+      fr: ["Enceinte portable sans fil (mention de l’emballage)", "Façade en tissu, boutons de commande sur le dessus", "Dragonne fournie", "Câble de charge USB fourni : USB-C pour le bleu clair et l’orange, micro-USB pour le vert et le noir", "Marque : MUSIC – modèle X-2651", "Coloris : bleu clair, orange, vert, noir"],
+      en: ["Portable wireless speaker (marked on the packaging)", "Fabric front, control buttons on top", "Strap supplied", "USB charging cable supplied: USB-C for light blue and orange, micro-USB for green and black", "Brand: MUSIC – model X-2651", "Colours: light blue, orange, green, black"],
+    },
+  }),
+  newProduct("tech-enceinte-loveyin-ai176", "tech", {
+    name: { fr: "Enceinte Loveyin Ai-176 à lumières LED", en: "Loveyin Ai-176 speaker with LED lights" },
+    subcategory: "speakers",
+    images: ["/enceinte-loveyin-ai176-violet-1.jpg", "/enceinte-loveyin-ai176-violet-2.jpg", "/enceinte-loveyin-ai176-noir.jpg"],
+    variants: ["Violet-bleu", "Noir"],
+    description: {
+      fr: "L’enceinte qui met l’ambiance : 10 W annoncés, barres lumineuses colorées, poignée pour la transporter et batterie 1200 mAh. Elle se connecte en Bluetooth, capte la radio FM et lit ta musique depuis une carte TF ou une clé USB. Tu en as deux ? Elles se jumellent en stéréo (mode TWS) pour doubler le son. Deux coloris : violet-bleu et noir.",
+      en: "The speaker that sets the mood: 10 W as marked, colourful light bars, a carry handle and a 1200 mAh battery. It connects by Bluetooth, picks up FM radio and plays your music from a TF card or USB drive. Got two? They pair in stereo (TWS mode) for double the sound. Two colours: purple-blue and black.",
+    },
+    features: {
+      fr: ["Puissance 10 W (mention de l’emballage)", "Bluetooth, radio FM, carte TF, clé USB", "Jumelage de 2 enceintes (TWS)", "Barres lumineuses LED, mode lumière réglable avec la touche M", "Batterie Li-ion 1200 mAh (mention de l’emballage)", "Poignée de transport, interrupteur marche/arrêt, boutons précédent / suivant / volume / lecture", "Câble de charge, câble jack 3,5 mm et adaptateur ou notice selon le lot (voir photos)", "Marque : Loveyin – modèle Ai-176", "Coloris : violet-bleu, noir"],
+      en: ["10 W power (marked on the packaging)", "Bluetooth, FM radio, TF card, USB drive", "Pairs 2 speakers (TWS)", "LED light bars, light mode adjustable with the M button", "1200 mAh Li-ion battery (marked on the packaging)", "Carry handle, on/off switch, previous / next / volume / play buttons", "Charging cable, 3.5 mm audio cable and adapter or manual depending on the batch (see photos)", "Brand: Loveyin – model Ai-176", "Colours: purple-blue, black"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
