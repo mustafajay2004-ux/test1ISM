@@ -1040,6 +1040,16 @@ const casePrices: Record<string, number> = {
   "tech-coque-11pro-argent-chrome": 3000,
   "tech-coque-11pro-logo-violet": 2000,
   "tech-coque-11pro-logo-creme": 2000,
+  "tech-coque-16pro-orange-tisse": 2500,
+  "tech-coque-17pro-noire-tisse": 2500,
+  "tech-coque-13pro-fleurs-violet": 3000,
+  "tech-coque-14pro-rose-transparente": 2000,
+  "tech-coque-14promax-beige": 2000,
+  "tech-coque-13promax-alveoles-noire": 2000,
+  "tech-coque-12promax-turquoise-pomme": 2000,
+  "tech-coque-12promax-silicone-anneau-contraste-sauge": 2000,
+  "tech-coque-12promax-silicone-anneau-contraste-mauve": 2000,
+  "tech-coque-12promax-silicone-anneau-contraste-pervenche": 2000,
 };
 const withPrice = (item: Product): Product => (casePrices[item.id] ? { ...item, price: casePrices[item.id], priceOnRequest: false } : item);
 const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue.map(withPrice)];
