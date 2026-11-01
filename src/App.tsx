@@ -209,6 +209,25 @@ const newProduct = (id: string, category: CategoryId, data: Partial<Product>): P
   audience: null, priceOnRequest: true, imageFit: "contain", ...data,
 });
 
+// Une couleur = une fiche produit : on voit chaque coloris directement dans la liste, sans devoir cliquer pour en découvrir d'autres.
+// `{x}` dans le texte est remplacé par la valeur propre à la couleur (ex. type de câble).
+type Colour = { fr: string; en: string; slug: string; images: string[]; x?: [string, string] };
+const splitColours = (base: Product, colours: Colour[]): Product[] => colours.map((c) => {
+  const fill = (text: string, i: 0 | 1) => (c.x ? text.replace("{x}", c.x[i]) : text);
+  return {
+    ...base,
+    id: `${base.id}-${c.slug}`,
+    name: base.name && { fr: `${base.name.fr} – ${c.fr}`, en: `${base.name.en} – ${c.en}` },
+    images: c.images,
+    variants: [],
+    description: base.description && { fr: fill(base.description.fr, 0), en: fill(base.description.en, 1) },
+    features: base.features && {
+      fr: base.features.fr.map((f) => (/^Coloris :/.test(f) ? `Coloris : ${c.fr.toLowerCase()}` : fill(f, 0))),
+      en: base.features.en.map((f) => (/^Colours?:/.test(f) ? `Colour: ${c.en.toLowerCase()}` : fill(f, 1))),
+    },
+  };
+});
+
 // Coque de téléphone : un produit = un modèle d'iPhone (la coque va dans le bouton du modèle).
 const caseProduct = (
   id: string, model: string, images: string[],
@@ -277,20 +296,25 @@ const catalogue: Product[] = [
       en: ["Power marked on the packaging: 45 W (PD)", "Output: USB-C", "USB-C to USB-C (5 A) cable included", "European plug", "Colour: black"],
     },
   }),
-  newProduct("tech-chargeur-iphone-couleurs", "tech", {
+  ...splitColours(newProduct("tech-chargeur-iphone-couleurs", "tech", {
     name: { fr: "Chargeur secteur + câble USB-A vers Lightning (iPhone)", en: "Wall charger + USB-A to Lightning cable (iPhone)" },
     subcategory: "charger-iphone",
     images: ["/chargeur-iphone-blanc.jpg", "/chargeur-iphone-orange.jpg", "/chargeur-iphone-jaune.jpg", "/chargeur-iphone-rose.jpg"],
     variants: ["Blanc", "Orange", "Jaune", "Rose"],
     description: {
-      fr: "Chargeur secteur USB-A livré avec un câble USB-A vers Lightning pour iPhone, en plusieurs coloris : blanc, orange, jaune et rose.",
-      en: "USB-A wall charger supplied with a USB-A to Lightning cable for iPhone, in several colours: white, orange, yellow and pink.",
+      fr: "Chargeur secteur USB-A livré avec un câble USB-A vers Lightning pour iPhone.",
+      en: "USB-A wall charger supplied with a USB-A to Lightning cable for iPhone.",
     },
     features: {
       fr: ["Câble : USB-A vers Lightning inclus", "Pour iPhone", "Prise européenne", "Coloris : blanc, orange, jaune, rose"],
       en: ["Cable: USB-A to Lightning included", "For iPhone", "European plug", "Colours: white, orange, yellow, pink"],
     },
-  }),
+  }), [
+    {"fr": "Blanc", "en": "White", "slug": "blanc", "images": ["/chargeur-iphone-blanc.jpg"]},
+    {"fr": "Orange", "en": "Orange", "slug": "orange", "images": ["/chargeur-iphone-orange.jpg"]},
+    {"fr": "Jaune", "en": "Yellow", "slug": "jaune", "images": ["/chargeur-iphone-jaune.jpg"]},
+    {"fr": "Rose", "en": "Pink", "slug": "rose", "images": ["/chargeur-iphone-rose.jpg"]},
+  ]),
   newProduct("tech-chargeur-35w-iphone", "tech", {
     name: { fr: "Chargeur 35 W USB-C + câble USB-C vers Lightning", en: "35 W USB-C charger + USB-C to Lightning cable" },
     subcategory: "charger-iphone",
@@ -590,7 +614,7 @@ const catalogue: Product[] = [
       en: ["Clip-on design, comfortable fit", "Hi-Fi sound, Hi-Res Audio (marked on the packaging)", "Enhanced bass", "For phone calls", "USB-A to USB-C cable and 6 ear tips supplied", "Brand: Ormushie – model OMS-FREE", "Colours shown on the packaging: black, gold beige, purple"],
     },
   }),
-  newProduct("tech-casque-sony-wh-xm5", "tech", {
+  ...splitColours(newProduct("tech-casque-sony-wh-xm5", "tech", {
     name: { fr: "Casque sans fil Sony WH-XM5 à réduction de bruit", en: "Sony WH-XM5 wireless noise-cancelling headphones" },
     subcategory: "headphones",
     images: ["/casque-sony-wh-xm5-blanc.jpg", "/casque-sony-wh-xm5-noir.jpg"],
@@ -603,21 +627,29 @@ const catalogue: Product[] = [
       fr: ["Réduction de bruit active", "Autonomie indiquée : 30 h", "360 Reality Audio (mention de l’emballage)", "Étui, câble USB-A vers USB-C, câble jack 3,5 mm et adaptateur avion fournis", "Marque : Sony – modèle WH-XM5", "Coloris : blanc, noir"],
       en: ["Active noise cancelling", "Stated battery life: 30 h", "360 Reality Audio (marked on the packaging)", "Case, USB-A to USB-C cable, 3.5 mm audio cable and airplane adapter supplied", "Brand: Sony – model WH-XM5", "Colours: white, black"],
     },
-  }),
-  newProduct("tech-casque-jbl-pure-bass-a18", "tech", {
+  }), [
+    {"fr": "Blanc", "en": "White", "slug": "blanc", "images": ["/casque-sony-wh-xm5-blanc.jpg"]},
+    {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/casque-sony-wh-xm5-noir.jpg"]},
+  ]),
+  ...splitColours(newProduct("tech-casque-jbl-pure-bass-a18", "tech", {
     name: { fr: "Casque Bluetooth JBL Pure Bass A18", en: "JBL Pure Bass A18 Bluetooth headphones" },
     subcategory: "headphones",
     images: ["/casque-jbl-a18-orange.jpg", "/casque-jbl-a18-blanc.jpg", "/casque-jbl-a18-gris.jpg", "/casque-jbl-a18-noir.jpg"],
     variants: ["Orange", "Blanc", "Gris", "Noir"],
     description: {
-      fr: "Le casque Bluetooth du quotidien : léger, pliable et confortable, avec un son Hi-Fi aux basses puissantes. Il se range dans sa pochette et se glisse facilement dans le sac, pour la fac comme pour les trajets. Câble de charge USB-A vers Micro USB fourni. Quatre coloris au choix : orange, blanc, gris et noir.",
-      en: "The everyday Bluetooth headset: light, foldable and comfortable, with Hi-Fi sound and powerful bass. It folds into its pouch and slips easily into a bag, for campus and commuting. USB-A to Micro USB charging cable supplied. Four colours to choose from: orange, white, grey and black.",
+      fr: "Le casque Bluetooth du quotidien : léger, pliable et confortable, avec un son Hi-Fi aux basses puissantes. Il se range dans sa pochette et se glisse facilement dans le sac, pour la fac comme pour les trajets. Câble de charge USB-A vers Micro USB fourni.",
+      en: "The everyday Bluetooth headset: light, foldable and comfortable, with Hi-Fi sound and powerful bass. It folds into its pouch and slips easily into a bag, for campus and commuting. USB-A to Micro USB charging cable supplied.",
     },
     features: {
       fr: ["Bluetooth", "Son Hi-Fi, Pure Bass", "Pliable et léger", "Port confortable", "Pochette et câble USB-A vers Micro USB fournis", "Marque : JBL – modèle Pure Bass A18", "Coloris : orange, blanc, gris, noir"],
       en: ["Bluetooth", "Hi-Fi sound, Pure Bass", "Foldable and lightweight", "Comfortable fit", "Pouch and USB-A to Micro USB cable supplied", "Brand: JBL – model Pure Bass A18", "Colours: orange, white, grey, black"],
     },
-  }),
+  }), [
+    {"fr": "Orange", "en": "Orange", "slug": "orange", "images": ["/casque-jbl-a18-orange.jpg"]},
+    {"fr": "Blanc", "en": "White", "slug": "blanc", "images": ["/casque-jbl-a18-blanc.jpg"]},
+    {"fr": "Gris", "en": "Grey", "slug": "gris", "images": ["/casque-jbl-a18-gris.jpg"]},
+    {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/casque-jbl-a18-noir.jpg"]},
+  ]),
   newProduct("tech-casque-jbl-live-660nc", "tech", {
     name: { fr: "Casque Bluetooth JBL Live 660NC à réduction de bruit", en: "JBL Live 660NC Bluetooth noise-cancelling headphones" },
     subcategory: "headphones",
@@ -644,20 +676,26 @@ const catalogue: Product[] = [
       en: ["Bluetooth", "Super Bass", "Large ear cushions, padded headband", "Control buttons on the earcup", "Brand: JBL – model I12", "Colour: black"],
     },
   }),
-  newProduct("tech-casque-airpods-max", "tech", {
+  ...splitColours(newProduct("tech-casque-airpods-max", "tech", {
     name: { fr: "AirPods Max", en: "AirPods Max" },
     subcategory: "headphones",
     images: ["/casque-airpods-max-boite.jpg", "/casque-airpods-max-argent.jpg", "/casque-airpods-max-vert.jpg", "/casque-airpods-max-bleu.jpg", "/casque-airpods-max-rouge.jpg", "/casque-airpods-max-noir.jpg"],
     variants: ["Argent", "Vert", "Bleu", "Rouge", "Noir"],
     description: {
-      fr: "Le casque AirPods Max : un design aluminium et mailles, des coussinets enveloppants et un style qu’on reconnaît tout de suite. Livré dans sa boîte avec son étui, un câble USB-C vers USB-C et la notice. Disponible en cinq coloris : argent, vert, bleu, rouge et noir.",
-      en: "The AirPods Max headphones: an aluminium and mesh design, enveloping ear cushions and a style you recognise at once. Supplied in its box with its case, a USB-C to USB-C cable and the manual. Available in five colours: silver, green, blue, red and black.",
+      fr: "Le casque AirPods Max : un design aluminium et mailles, des coussinets enveloppants et un style qu’on reconnaît tout de suite. Livré dans sa boîte avec son étui, un câble USB-C vers USB-C et la notice.",
+      en: "The AirPods Max headphones: an aluminium and mesh design, enveloping ear cushions and a style you recognise at once. Supplied in its box with its case, a USB-C to USB-C cable and the manual.",
     },
     features: {
       fr: ["Modèle : AirPods Max", "Étui, câble USB-C vers USB-C et notice fournis", "Avec boîte", "Coloris : argent, vert, bleu, rouge, noir"],
       en: ["Model: AirPods Max", "Case, USB-C to USB-C cable and manual supplied", "With box", "Colours: silver, green, blue, red, black"],
     },
-  }),
+  }), [
+    {"fr": "Argent", "en": "Silver", "slug": "argent", "images": ["/casque-airpods-max-argent.jpg", "/casque-airpods-max-boite.jpg"]},
+    {"fr": "Vert", "en": "Green", "slug": "vert", "images": ["/casque-airpods-max-vert.jpg", "/casque-airpods-max-boite.jpg"]},
+    {"fr": "Bleu", "en": "Blue", "slug": "bleu", "images": ["/casque-airpods-max-bleu.jpg", "/casque-airpods-max-boite.jpg"]},
+    {"fr": "Rouge", "en": "Red", "slug": "rouge", "images": ["/casque-airpods-max-rouge.jpg", "/casque-airpods-max-boite.jpg"]},
+    {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/casque-airpods-max-noir.jpg", "/casque-airpods-max-boite.jpg"]},
+  ]),
   newProduct("tech-casque-bose-quietcomfort-ultra", "tech", {
     name: { fr: "Casque Bose QuietComfort Ultra", en: "Bose QuietComfort Ultra headphones" },
     subcategory: "headphones",
@@ -735,10 +773,13 @@ const catalogue: Product[] = [
     ["Coque beige à bord transparent – iPhone 14 Pro Max", "Beige case with clear edge – iPhone 14 Pro Max"],
     ["Une coque au dos beige doux, avec un bord transparent et un contour caméra crème : un style sobre et élégant qui va avec tout.", "A case with a soft beige back, a clear edge and a cream camera frame: a clean, elegant style that goes with everything."],
     [["Dos beige, bord transparent", "Contour caméra crème", "Coloris : beige / transparent"], ["Beige back, clear edge", "Cream camera frame", "Colour: beige / clear"]]),
-  caseProduct("tech-coque-11pro-logo", "11 Pro", ["/coque-11pro-violet-logo.jpg", "/coque-11pro-creme-logo.jpg"],
+  ...splitColours(caseProduct("tech-coque-11pro-logo", "11 Pro", ["/coque-11pro-violet-logo.jpg", "/coque-11pro-creme-logo.jpg"],
     ["Coque translucide logo pomme – iPhone 11 Pro", "Translucent case with apple logo – iPhone 11 Pro"],
-    ["Une coque translucide teintée, avec un logo pomme au dos, qui laisse deviner la couleur de ton téléphone. Deux coloris : violet clair et crème.", "A tinted translucent case with an apple logo on the back that lets your phone’s colour show through. Two colours: light purple and cream."],
-    [["Translucide teintée, logo pomme au dos", "Bord transparent", "Coloris : violet clair, crème"], ["Tinted translucent, apple logo on the back", "Clear edge", "Colours: light purple, cream"]]),
+    ["Une coque translucide teintée, avec un logo pomme au dos, qui laisse deviner la couleur de ton téléphone.", "A tinted translucent case with an apple logo on the back that lets your phone’s colour show through."],
+    [["Translucide teintée, logo pomme au dos", "Bord transparent", "Coloris : violet clair, crème"], ["Tinted translucent, apple logo on the back", "Clear edge", "Colours: light purple, cream"]]), [
+    {"fr": "Violet clair", "en": "Light purple", "slug": "violet", "images": ["/coque-11pro-violet-logo.jpg"]},
+    {"fr": "Crème", "en": "Cream", "slug": "creme", "images": ["/coque-11pro-creme-logo.jpg"]},
+  ]),
   caseProduct("tech-coque-11-gris-fume-logo", "11", ["/coque-11-gris-fume-logo.jpg"],
     ["Coque gris fumé logo pomme – iPhone 11", "Smoke grey case with apple logo – iPhone 11"],
     ["Une coque translucide gris fumé avec logo pomme au dos et contour caméra blanc : un look discret qui protège ton iPhone 11.", "A translucent smoke-grey case with an apple logo on the back and a white camera frame: a discreet look that protects your iPhone 11."],
@@ -755,34 +796,42 @@ const catalogue: Product[] = [
     ["Coque bleue MagSafe avec volet caméra coulissant – iPhone 11", "Blue MagSafe case with sliding camera cover – iPhone 11"],
     ["Une coque bleue avec un volet coulissant qui cache la caméra quand tu ne t’en sers pas, et un anneau MagSafe au dos. Pratique et originale.", "A blue case with a sliding cover that hides the camera when you are not using it, and a MagSafe ring on the back. Practical and original."],
     [["Volet coulissant sur la caméra", "Anneau MagSafe visible", "Coloris : bleu"], ["Sliding camera cover", "MagSafe ring visible", "Colour: blue"]]),
-  newProduct("tech-enceinte-music-x2651", "tech", {
+  ...splitColours(newProduct("tech-enceinte-music-x2651", "tech", {
     name: { fr: "Enceinte portable MUSIC X-2651", en: "MUSIC X-2651 portable speaker" },
     subcategory: "speakers",
     images: ["/enceinte-music-x2651-bleu.jpg", "/enceinte-music-x2651-orange.jpg", "/enceinte-music-x2651-vert.jpg", "/enceinte-music-x2651-noir.jpg"],
     variants: ["Bleu clair", "Orange", "Vert", "Noir"],
     description: {
-      fr: "Une petite enceinte ronde, sans fil, à emporter partout : façade en tissu, boutons de commande sur le dessus et dragonne pour l’accrocher à ton sac ou ta main. Livrée avec son câble de charge USB et sa dragonne assortie à la couleur. Quatre coloris au choix : bleu clair, orange, vert et noir.",
-      en: "A small, round, wireless speaker to take anywhere: fabric front, control buttons on top and a strap to hang it from your bag or wrist. Supplied with its USB charging cable and a strap matching the colour. Four colours: light blue, orange, green and black.",
+      fr: "Une petite enceinte ronde, sans fil, à emporter partout : façade en tissu, boutons de commande sur le dessus et dragonne pour l’accrocher à ton sac ou ta main. Livrée avec son câble de charge USB et sa dragonne assortie à la couleur.",
+      en: "A small, round, wireless speaker to take anywhere: fabric front, control buttons on top and a strap to hang it from your bag or wrist. Supplied with its USB charging cable and a strap matching the colour.",
     },
     features: {
-      fr: ["Enceinte portable sans fil (mention de l’emballage)", "Façade en tissu, boutons de commande sur le dessus", "Dragonne fournie", "Câble de charge USB fourni : USB-C pour le bleu clair et l’orange, micro-USB pour le vert et le noir", "Marque : MUSIC – modèle X-2651", "Coloris : bleu clair, orange, vert, noir"],
-      en: ["Portable wireless speaker (marked on the packaging)", "Fabric front, control buttons on top", "Strap supplied", "USB charging cable supplied: USB-C for light blue and orange, micro-USB for green and black", "Brand: MUSIC – model X-2651", "Colours: light blue, orange, green, black"],
+      fr: ["Enceinte portable sans fil (mention de l’emballage)", "Façade en tissu, boutons de commande sur le dessus", "Dragonne fournie", "Câble de charge USB fourni : {x}", "Marque : MUSIC – modèle X-2651", "Coloris : bleu clair, orange, vert, noir"],
+      en: ["Portable wireless speaker (marked on the packaging)", "Fabric front, control buttons on top", "Strap supplied", "USB charging cable supplied: {x}", "Brand: MUSIC – model X-2651", "Colours: light blue, orange, green, black"],
     },
-  }),
-  newProduct("tech-enceinte-loveyin-ai176", "tech", {
+  }), [
+    {"fr": "Bleu clair", "en": "Light blue", "slug": "bleu", "images": ["/enceinte-music-x2651-bleu.jpg"], "x": ["USB-C", "USB-C"]},
+    {"fr": "Orange", "en": "Orange", "slug": "orange", "images": ["/enceinte-music-x2651-orange.jpg"], "x": ["USB-C", "USB-C"]},
+    {"fr": "Vert", "en": "Green", "slug": "vert", "images": ["/enceinte-music-x2651-vert.jpg"], "x": ["micro-USB", "micro-USB"]},
+    {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/enceinte-music-x2651-noir.jpg"], "x": ["micro-USB", "micro-USB"]},
+  ]),
+  ...splitColours(newProduct("tech-enceinte-loveyin-ai176", "tech", {
     name: { fr: "Enceinte Loveyin Ai-176 à lumières LED", en: "Loveyin Ai-176 speaker with LED lights" },
     subcategory: "speakers",
     images: ["/enceinte-loveyin-ai176-violet-1.jpg", "/enceinte-loveyin-ai176-violet-2.jpg", "/enceinte-loveyin-ai176-noir.jpg"],
     variants: ["Violet-bleu", "Noir"],
     description: {
-      fr: "L’enceinte qui met l’ambiance : 10 W annoncés, barres lumineuses colorées, poignée pour la transporter et batterie 1200 mAh. Elle se connecte en Bluetooth, capte la radio FM et lit ta musique depuis une carte TF ou une clé USB. Tu en as deux ? Elles se jumellent en stéréo (mode TWS) pour doubler le son. Deux coloris : violet-bleu et noir.",
-      en: "The speaker that sets the mood: 10 W as marked, colourful light bars, a carry handle and a 1200 mAh battery. It connects by Bluetooth, picks up FM radio and plays your music from a TF card or USB drive. Got two? They pair in stereo (TWS mode) for double the sound. Two colours: purple-blue and black.",
+      fr: "L’enceinte qui met l’ambiance : 10 W annoncés, barres lumineuses colorées, poignée pour la transporter et batterie 1200 mAh. Elle se connecte en Bluetooth, capte la radio FM et lit ta musique depuis une carte TF ou une clé USB. Tu en as deux ? Elles se jumellent en stéréo (mode TWS) pour doubler le son.",
+      en: "The speaker that sets the mood: 10 W as marked, colourful light bars, a carry handle and a 1200 mAh battery. It connects by Bluetooth, picks up FM radio and plays your music from a TF card or USB drive. Got two? They pair in stereo (TWS mode) for double the sound.",
     },
     features: {
       fr: ["Puissance 10 W (mention de l’emballage)", "Bluetooth, radio FM, carte TF, clé USB", "Jumelage de 2 enceintes (TWS)", "Barres lumineuses LED, mode lumière réglable avec la touche M", "Batterie Li-ion 1200 mAh (mention de l’emballage)", "Poignée de transport, interrupteur marche/arrêt, boutons précédent / suivant / volume / lecture", "Câble de charge, câble jack 3,5 mm et adaptateur ou notice selon le lot (voir photos)", "Marque : Loveyin – modèle Ai-176", "Coloris : violet-bleu, noir"],
       en: ["10 W power (marked on the packaging)", "Bluetooth, FM radio, TF card, USB drive", "Pairs 2 speakers (TWS)", "LED light bars, light mode adjustable with the M button", "1200 mAh Li-ion battery (marked on the packaging)", "Carry handle, on/off switch, previous / next / volume / play buttons", "Charging cable, 3.5 mm audio cable and adapter or manual depending on the batch (see photos)", "Brand: Loveyin – model Ai-176", "Colours: purple-blue, black"],
     },
-  }),
+  }), [
+    {"fr": "Violet-bleu", "en": "Purple-blue", "slug": "violet", "images": ["/enceinte-loveyin-ai176-violet-1.jpg", "/enceinte-loveyin-ai176-violet-2.jpg"]},
+    {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/enceinte-loveyin-ai176-noir.jpg"]},
+  ]),
   newProduct("watch-day-date-palmier", "watches", {
     name: { fr: "Day-Date Palmier – Acier & Or jaune", en: "Day-Date Palm – Steel & Yellow Gold" },
     subcategory: "classic",
@@ -907,10 +956,14 @@ const catalogue: Product[] = [
     ["Coque turquoise clair, logo pomme – iPhone 12 Pro Max", "Light turquoise case with apple logo – iPhone 12 Pro Max"],
     ["Une coque unie turquoise clair avec le logo pomme blanc au centre : une couleur fraîche, un style simple et épuré, facile à assortir.", "A plain light turquoise case with a white apple logo in the centre: a fresh colour and a simple, clean style that is easy to match."],
     [["Logo pomme blanc au centre", "Coloris : turquoise clair"], ["White apple logo in the centre", "Colour: light turquoise"]]),
-  { ...caseProduct("tech-coque-12promax-silicone-anneau-contraste", "12 Pro Max", ["/coque-12promax-silicone-sauge.jpg", "/coque-12promax-silicone-mauve.jpg", "/coque-12promax-silicone-pervenche.jpg"],
+  ...splitColours(caseProduct("tech-coque-12promax-silicone-anneau-contraste", "12 Pro Max", ["/coque-12promax-silicone-sauge.jpg", "/coque-12promax-silicone-mauve.jpg", "/coque-12promax-silicone-pervenche.jpg"],
     ["Coque unie à anneau caméra contrasté – iPhone 12 Pro Max", "Plain case with contrast camera ring – iPhone 12 Pro Max"],
-    ["Une coque unie aux couleurs tendance, avec un anneau de caméra d’une teinte différente qui apporte la touche de style. Disponible en vert sauge, mauve et bleu pervenche.", "A plain case in trendy colours, with a camera ring in a different shade that adds the style touch. Available in sage green, mauve and periwinkle blue."],
-    [["Anneau de caméra contrasté", "Coloris : vert sauge, mauve, bleu pervenche"], ["Contrast camera ring", "Colours: sage green, mauve, periwinkle blue"]]), variants: ["Vert sauge", "Mauve", "Bleu pervenche"] },
+    ["Une coque unie aux couleurs tendance, avec un anneau de caméra d’une teinte différente qui apporte la touche de style.", "A plain case in trendy colours, with a camera ring in a different shade that adds the style touch."],
+    [["Anneau de caméra contrasté", "Coloris : vert sauge, mauve, bleu pervenche"], ["Contrast camera ring", "Colours: sage green, mauve, periwinkle blue"]]), [
+    {"fr": "Vert sauge", "en": "Sage green", "slug": "sauge", "images": ["/coque-12promax-silicone-sauge.jpg"]},
+    {"fr": "Mauve", "en": "Mauve", "slug": "mauve", "images": ["/coque-12promax-silicone-mauve.jpg"]},
+    {"fr": "Bleu pervenche", "en": "Periwinkle blue", "slug": "pervenche", "images": ["/coque-12promax-silicone-pervenche.jpg"]},
+  ]),
   caseProduct("tech-coque-17air-bleu-clair-plaque-verte", "17 Air", ["/coque-17air-bleu-clair-plaque-verte.jpg"],
     ["Coque bleu clair, plaque MagSafe menthe – iPhone 17 Air", "Light blue case with mint MagSafe panel – iPhone 17 Air"],
     ["Une coque bleu clair avec une grande plaque menthe au dos et un anneau MagSafe bien visible : un duo de couleurs doux et moderne, avec des ouvertures arrondies pour la caméra.", "A light blue case with a large mint panel on the back and a clearly visible MagSafe ring: a soft, modern colour pairing with rounded openings for the camera."],
@@ -923,18 +976,29 @@ const catalogue: Product[] = [
     ["Coque transparente, anneau MagSafe bleu – iPhone 17 Air", "Clear case with blue MagSafe ring – iPhone 17 Air"],
     ["Une coque transparente avec un anneau MagSafe bleu éclatant qui apporte la touche de couleur, et une large ouverture pour la caméra. Protège ton téléphone sans cacher son design.", "A clear case with a bright blue MagSafe ring that adds a pop of colour, and a wide opening for the camera. Protects your phone without hiding its design."],
     [["Transparente, bords renforcés", "Anneau MagSafe bleu visible", "Coloris : transparent / bleu"], ["Clear, reinforced edges", "Blue MagSafe ring visible", "Colour: clear / blue"]]),
-  { ...caseProduct("tech-coque-xr-magsafe-duo", "XR", ["/coque-xr-lilas.jpg", "/coque-xr-fuchsia.jpg", "/coque-xr-rose.jpg"],
+  ...splitColours(caseProduct("tech-coque-xr-magsafe-duo", "XR", ["/coque-xr-lilas.jpg", "/coque-xr-fuchsia.jpg", "/coque-xr-rose.jpg"],
     ["Coque duo de couleurs, motif MagSafe – iPhone XR", "Two-tone case with MagSafe design – iPhone XR"],
-    ["Une coque colorée avec une plaque d’une teinte différente et un motif en anneau MagSafe au dos : un style pop qui apporte de la couleur à ton téléphone. Trois coloris : lilas, rose fuchsia et rose clair.", "A colourful case with a panel in a different shade and a MagSafe ring design on the back: a pop style that brings colour to your phone. Three colours: lilac, fuchsia pink and light pink."],
-    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : lilas, rose fuchsia, rose clair"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: lilac, fuchsia pink, light pink"]]), variants: ["Lilas", "Rose fuchsia", "Rose clair"] },
-  { ...caseProduct("tech-coque-11-anneau-support", "11", ["/coque-11-bois-anneau.jpg", "/coque-11-noire-brossee-anneau.jpg"],
+    ["Une coque colorée avec une plaque d’une teinte différente et un motif en anneau MagSafe au dos : un style pop qui apporte de la couleur à ton téléphone.", "A colourful case with a panel in a different shade and a MagSafe ring design on the back: a pop style that brings colour to your phone."],
+    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : lilas, rose fuchsia, rose clair"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: lilac, fuchsia pink, light pink"]]), [
+    {"fr": "Lilas", "en": "Lilac", "slug": "lilas", "images": ["/coque-xr-lilas.jpg"]},
+    {"fr": "Rose fuchsia", "en": "Fuchsia pink", "slug": "fuchsia", "images": ["/coque-xr-fuchsia.jpg"]},
+    {"fr": "Rose clair", "en": "Light pink", "slug": "rose", "images": ["/coque-xr-rose.jpg"]},
+  ]),
+  ...splitColours(caseProduct("tech-coque-11-anneau-support", "11", ["/coque-11-bois-anneau.jpg", "/coque-11-noire-brossee-anneau.jpg"],
     ["Coque anneau MagSafe à support – iPhone 11", "MagSafe ring case with stand – iPhone 11"],
-    ["Une coque au look premium avec un grand anneau MagSafe doré ou noir doté d’une languette-support, une grille ronde décorative et une finition soignée : effet bois marron ou noir brossé, au choix.", "A premium-look case with a large gold or black MagSafe ring with a stand tab, a decorative round grille and a neat finish: brown wood effect or brushed black, your choice."],
-    [["Anneau MagSafe avec languette-support visible", "Grille ronde décorative", "Coloris : marron effet bois, noir brossé"], ["MagSafe ring with visible stand tab", "Decorative round grille", "Colours: brown wood effect, brushed black"]]), variants: ["Marron effet bois", "Noir brossé"] },
-  { ...caseProduct("tech-coque-11promax-magsafe-duo", "11 Pro Max", ["/coque-11promax-bleu.jpg", "/coque-11promax-blanc-gris.jpg", "/coque-11promax-lilas.jpg"],
+    ["Une coque au look premium avec un grand anneau MagSafe doté d’une languette-support, une grille ronde décorative et une finition soignée.", "A premium-look case with a large MagSafe ring with a stand tab, a decorative round grille and a neat finish."],
+    [["Anneau MagSafe avec languette-support visible", "Grille ronde décorative", "Coloris : marron effet bois, noir brossé"], ["MagSafe ring with visible stand tab", "Decorative round grille", "Colours: brown wood effect, brushed black"]]), [
+    {"fr": "Marron effet bois", "en": "Brown wood effect", "slug": "bois", "images": ["/coque-11-bois-anneau.jpg"]},
+    {"fr": "Noir brossé", "en": "Brushed black", "slug": "noir", "images": ["/coque-11-noire-brossee-anneau.jpg"]},
+  ]),
+  ...splitColours(caseProduct("tech-coque-11promax-magsafe-duo", "11 Pro Max", ["/coque-11promax-bleu.jpg", "/coque-11promax-blanc-gris.jpg", "/coque-11promax-lilas.jpg"],
     ["Coque duo de couleurs, motif MagSafe – iPhone 11 Pro Max", "Two-tone case with MagSafe design – iPhone 11 Pro Max"],
-    ["Une coque lisse aux couleurs douces avec une plaque d’une autre teinte et un motif en anneau MagSafe au dos : un style frais et net. Trois coloris : bleu, blanc et gris clair, lilas.", "A smooth case in soft colours with a panel in another shade and a MagSafe ring design on the back: a fresh, clean style. Three colours: blue, white and light grey, lilac."],
-    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : bleu, blanc et gris clair, lilas"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: blue, white and light grey, lilac"]]), variants: ["Bleu", "Blanc et gris clair", "Lilas"] },
+    ["Une coque lisse aux couleurs douces avec une plaque d’une autre teinte et un motif en anneau MagSafe au dos : un style frais et net.", "A smooth case in soft colours with a panel in another shade and a MagSafe ring design on the back: a fresh, clean style."],
+    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : bleu, blanc et gris clair, lilas"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: blue, white and light grey, lilac"]]), [
+    {"fr": "Bleu", "en": "Blue", "slug": "bleu", "images": ["/coque-11promax-bleu.jpg"]},
+    {"fr": "Blanc et gris clair", "en": "White and light grey", "slug": "blanc", "images": ["/coque-11promax-blanc-gris.jpg"]},
+    {"fr": "Lilas", "en": "Lilac", "slug": "lilas", "images": ["/coque-11promax-lilas.jpg"]},
+  ]),
   caseProduct("tech-coque-17pro-rose-degrade", "17 Pro", ["/coque-17pro-rose-degrade.jpg"],
     ["Coque rose dégradé, anneau MagSafe en relief – iPhone 17 Pro", "Gradient pink case with embossed MagSafe ring – iPhone 17 Pro"],
     ["Une coque rose dégradé avec un anneau MagSafe en relief au dos et un grand cadre blanc autour de la caméra : un look doux et moderne.", "A gradient pink case with an embossed MagSafe ring on the back and a large white frame around the camera: a soft, modern look."],
