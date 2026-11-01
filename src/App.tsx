@@ -1007,7 +1007,42 @@ const catalogue: Product[] = [
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
 const placeholders = emptySlots.filter((slot) => realProducts[slot.id] || !catalogue.some((item) => item.category === slot.category));
-const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue];
+// Prix des coques (FCFA). Les coques absentes de cette liste restent « Prix sur demande » tant que leur prix n'est pas confirmé.
+// 3900 : coques MagSafe · 3000 : strass · 3500 : strass transparent · 4000 : transparentes MagSafe · 2000 à 2300 : unies et translucides
+const casePrices: Record<string, number> = {
+  "tech-coque-12pro-magsafe-gris-mat": 3900,
+  "tech-coque-14pro-magsafe-bronze": 3900,
+  "tech-coque-11-bleue-volet-magsafe": 3900,
+  "tech-coque-13promax-menthe-magsafe": 3900,
+  "tech-coque-17air-bleu-clair-plaque-verte": 3900,
+  "tech-coque-xr-magsafe-duo-lilas": 3900,
+  "tech-coque-xr-magsafe-duo-fuchsia": 3900,
+  "tech-coque-xr-magsafe-duo-rose": 3900,
+  "tech-coque-11-anneau-support-bois": 3900,
+  "tech-coque-11-anneau-support-noir": 3900,
+  "tech-coque-11promax-magsafe-duo-bleu": 3900,
+  "tech-coque-11promax-magsafe-duo-blanc": 3900,
+  "tech-coque-11promax-magsafe-duo-lilas": 3900,
+  "tech-coque-17pro-rose-degrade": 3900,
+  "tech-coque-13promax-strass-vert-dragonne": 3000,
+  "tech-coque-14pro-fumee-phone-case": 4000,
+  "tech-coque-11-gris-fume-logo": 2000,
+  "tech-coque-11-noire-logo": 2000,
+  "tech-coque-11-bleu-roi": 2000,
+  "tech-coque-15promax-rose": 2000,
+  "tech-coque-15-magsafe-transparente": 4000,
+  "tech-coque-14pro-magsafe-blanche": 4000,
+  "tech-coque-17air-transparente-anneau-noir": 4000,
+  "tech-coque-17air-transparente-anneau-bleu": 4000,
+  "tech-coque-13promax-strass-papillon": 3500,
+  "tech-coque-14plus-alveoles-violet": 3500,
+  "tech-coque-13pro-monogramme-marron": 2300,
+  "tech-coque-11pro-argent-chrome": 3000,
+  "tech-coque-11pro-logo-violet": 2000,
+  "tech-coque-11pro-logo-creme": 2000,
+};
+const withPrice = (item: Product): Product => (casePrices[item.id] ? { ...item, price: casePrices[item.id], priceOnRequest: false } : item);
+const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue.map(withPrice)];
 
 const featuredProducts = products.filter((product) => product.featured);
 
