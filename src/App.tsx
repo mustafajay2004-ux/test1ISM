@@ -1003,6 +1003,74 @@ const catalogue: Product[] = [
     ["Coque rose dégradé, anneau MagSafe en relief – iPhone 17 Pro", "Gradient pink case with embossed MagSafe ring – iPhone 17 Pro"],
     ["Une coque rose dégradé avec un anneau MagSafe en relief au dos et un grand cadre blanc autour de la caméra : un look doux et moderne.", "A gradient pink case with an embossed MagSafe ring on the back and a large white frame around the camera: a soft, modern look."],
     [["Dégradé rose, cadre caméra blanc", "Anneau MagSafe en relief", "Coloris : rose"], ["Pink gradient, white camera frame", "Embossed MagSafe ring", "Colour: pink"]]),
+  newProduct("watch-femme-rado-argent", "watches", {
+    name: { fr: "Montre femme acier – Cadran argenté, bracelet maille", en: "Women’s steel watch – Silver dial, link bracelet" },
+    subcategory: "classic",
+    audience: "women",
+    price: 4000,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-rado-argent.jpg"],
+    description: {
+      fr: "Fine, lumineuse et facile à porter : boîtier coussin en acier poli, cadran argenté avec index façon diamant et date à 3 heures, sur un bracelet à maillons arrondis qui accroche la lumière. Inscription Rado sur le cadran. L’élégance discrète, du bureau aux soirées.",
+      en: "Slim, bright and easy to wear: a polished steel cushion case, a silver dial with diamond-style markers and a date at 3 o’clock, on a bracelet of rounded links that catches the light. Rado inscription on the dial. Discreet elegance, from the office to evenings out.",
+    },
+    features: {
+      fr: ["Inscription Rado sur le cadran", "Boîtier coussin et bracelet maille en acier poli", "Cadran argenté, index façon diamant", "Date à 3 heures", "Style : classique, pour femme"],
+      en: ["Rado inscription on the dial", "Polished steel cushion case and link bracelet", "Silver dial, diamond-style markers", "Date at 3 o’clock", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-michael-kors-rose", "watches", {
+    name: { fr: "Montre femme dorée – Cadran rose, trois sous-cadrans", en: "Women’s gold-tone watch – Pink dial, three sub-dials" },
+    subcategory: "classic",
+    audience: "women",
+    price: 3700,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-michael-kors-rose.jpg"],
+    description: {
+      fr: "Un éclat qui se remarque : boîtier et bracelet dorés, lunette facettée et cadran rose pastel à trois sous-cadrans. Inscription Michael Kors sur le cadran. Pour celles qui aiment le style affirmé et la touche de couleur.",
+      en: "A shine that gets noticed: gold-tone case and bracelet, faceted bezel and a pastel pink dial with three sub-dials. Michael Kors inscription on the dial. For those who like a confident style and a touch of colour.",
+    },
+    features: {
+      fr: ["Inscription Michael Kors sur le cadran", "Boîtier et bracelet dorés, lunette facettée", "Cadran rose, trois sous-cadrans", "Style : classique, pour femme"],
+      en: ["Michael Kors inscription on the dial", "Gold-tone case and bracelet, faceted bezel", "Pink dial, three sub-dials", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-rado-jubile-bicolore", "watches", {
+    name: { fr: "Montre femme bicolore – Cadran champagne, bracelet maille fine", en: "Women’s two-tone watch – Champagne dial, fine mesh bracelet" },
+    subcategory: "classic",
+    audience: "women",
+    price: 2500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-rado-jubile.jpg"],
+    description: {
+      fr: "Un petit cadran raffiné : boîtier rond fin, cadran champagne avec quatre index façon diamant et bracelet maille bicolore acier et or. Inscription Rado et jubilé sur le cadran. Un bijou autant qu’une montre.",
+      en: "A refined small dial: slim round case, champagne dial with four diamond-style markers and a two-tone steel and gold mesh bracelet. Rado and jubilé inscriptions on the dial. A piece of jewellery as much as a watch.",
+    },
+    features: {
+      fr: ["Inscription Rado et jubilé sur le cadran", "Boîtier rond fin, bracelet maille bicolore acier et or", "Cadran champagne, quatre index façon diamant", "Style : classique, pour femme"],
+      en: ["Rado and jubilé inscriptions on the dial", "Slim round case, two-tone steel and gold mesh bracelet", "Champagne dial, four diamond-style markers", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-chanel-champagne", "watches", {
+    name: { fr: "Montre femme bicolore – Cadran champagne, chiffres dorés", en: "Women’s two-tone watch – Champagne dial, gold numerals" },
+    subcategory: "classic",
+    audience: "women",
+    price: 2500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-chanel-champagne.jpg"],
+    description: {
+      fr: "Le chic intemporel : boîtier doré, cadran champagne avec chiffres arabes dorés et double C noir au centre, bracelet maille bicolore acier et or. Inscription Chanel sur le cadran. Une montre qui habille le poignet avec classe.",
+      en: "Timeless chic: gold-tone case, champagne dial with gold Arabic numerals and a black double-C in the centre, two-tone steel and gold mesh bracelet. Chanel inscription on the dial. A watch that dresses the wrist with class.",
+    },
+    features: {
+      fr: ["Inscription Chanel sur le cadran", "Boîtier doré, bracelet maille bicolore acier et or", "Cadran champagne, chiffres arabes dorés, double C noir", "Style : classique, pour femme"],
+      en: ["Chanel inscription on the dial", "Gold-tone case, two-tone steel and gold mesh bracelet", "Champagne dial, gold Arabic numerals, black double-C", "Style: classic, for women"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
