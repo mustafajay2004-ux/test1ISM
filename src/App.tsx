@@ -18,7 +18,7 @@ type Subcategory = { id: string; name: Record<Lang, string>; parent?: string };
 const sub = (id: string, fr: string, en: string, parent?: string): Subcategory => ({ id, name: { fr, en }, parent });
 
 // Modèles d'iPhone proposés comme sous-boutons (coques, verres trempés). Pour en ajouter un, l'ajouter à cette liste.
-const iphoneModels = ["11", "11 Pro", "11 Pro Max", "12", "12 Pro", "12 Pro Max", "13", "13 Pro", "13 Pro Max", "14", "14 Plus", "14 Pro", "14 Pro Max", "15", "15 Plus", "15 Pro", "15 Pro Max", "16", "16 Plus", "16 Pro", "16 Pro Max", "17", "17 Pro", "17 Pro Max"];
+const iphoneModels = ["XR", "11", "11 Pro", "11 Pro Max", "12", "12 Pro", "12 Pro Max", "13", "13 Pro", "13 Pro Max", "14", "14 Plus", "14 Pro", "14 Pro Max", "15", "15 Plus", "15 Pro", "15 Pro Max", "16", "16 Plus", "16 Pro", "16 Pro Max", "17", "17 Air", "17 Pro", "17 Pro Max"];
 const modelSubs = (prefix: string, parent: string) =>
   iphoneModels.map((model) => sub(`${prefix}-iphone-${model.toLowerCase().replace(/ /g, "-")}`, `iPhone ${model}`, `iPhone ${model}`, parent));
 
@@ -895,6 +895,50 @@ const catalogue: Product[] = [
       en: ["Brand on the dial: AULITER", "Carbon-look case, visible screws", "Skeleton dial, coloured hands", "Red silicone strap", "Style: sports"],
     },
   }),
+  caseProduct("tech-coque-11pro-argent-chrome", "11 Pro", ["/coque-11pro-argent-chrome.jpg"],
+    ["Coque argent miroir, anneau caméra chromé – iPhone 11 Pro", "Mirror silver case with chrome camera ring – iPhone 11 Pro"],
+    ["Une coque argentée à effet miroir avec anneau chromé autour de la caméra : un look métallisé, net et premium qui met ton téléphone en valeur.", "A mirror-effect silver case with a chrome ring around the camera: a sleek, premium metallic look that shows off your phone."],
+    [["Finition argentée effet miroir", "Anneau de caméra chromé", "Coloris : argent"], ["Mirror-effect silver finish", "Chrome camera ring", "Colour: silver"]]),
+  caseProduct("tech-coque-13promax-menthe-magsafe", "13 Pro Max", ["/coque-13promax-menthe-magsafe.jpg"],
+    ["Coque menthe, plaque MagSafe verte – iPhone 13 Pro Max", "Mint case with green MagSafe panel – iPhone 13 Pro Max"],
+    ["Une coque menthe douce avec une grande plaque verte au dos et un anneau MagSafe bien visible : un duo de couleurs frais pour un look pastel qui se remarque.", "A soft mint case with a large green panel on the back and a clearly visible MagSafe ring: a fresh two-tone colour combination for a pastel look that stands out."],
+    [["Duo de couleurs menthe et vert", "Anneau MagSafe visible", "Coloris : menthe / vert"], ["Mint and green two-tone", "MagSafe ring visible", "Colour: mint / green"]]),
+  caseProduct("tech-coque-12promax-turquoise-pomme", "12 Pro Max", ["/coque-12promax-turquoise-pomme.jpg"],
+    ["Coque turquoise clair, logo pomme – iPhone 12 Pro Max", "Light turquoise case with apple logo – iPhone 12 Pro Max"],
+    ["Une coque unie turquoise clair avec le logo pomme blanc au centre : une couleur fraîche, un style simple et épuré, facile à assortir.", "A plain light turquoise case with a white apple logo in the centre: a fresh colour and a simple, clean style that is easy to match."],
+    [["Logo pomme blanc au centre", "Coloris : turquoise clair"], ["White apple logo in the centre", "Colour: light turquoise"]]),
+  { ...caseProduct("tech-coque-12promax-silicone-anneau-contraste", "12 Pro Max", ["/coque-12promax-silicone-sauge.jpg", "/coque-12promax-silicone-mauve.jpg", "/coque-12promax-silicone-pervenche.jpg"],
+    ["Coque unie à anneau caméra contrasté – iPhone 12 Pro Max", "Plain case with contrast camera ring – iPhone 12 Pro Max"],
+    ["Une coque unie aux couleurs tendance, avec un anneau de caméra d’une teinte différente qui apporte la touche de style. Disponible en vert sauge, mauve et bleu pervenche.", "A plain case in trendy colours, with a camera ring in a different shade that adds the style touch. Available in sage green, mauve and periwinkle blue."],
+    [["Anneau de caméra contrasté", "Coloris : vert sauge, mauve, bleu pervenche"], ["Contrast camera ring", "Colours: sage green, mauve, periwinkle blue"]]), variants: ["Vert sauge", "Mauve", "Bleu pervenche"] },
+  caseProduct("tech-coque-17air-bleu-clair-plaque-verte", "17 Air", ["/coque-17air-bleu-clair-plaque-verte.jpg"],
+    ["Coque bleu clair, plaque MagSafe menthe – iPhone 17 Air", "Light blue case with mint MagSafe panel – iPhone 17 Air"],
+    ["Une coque bleu clair avec une grande plaque menthe au dos et un anneau MagSafe bien visible : un duo de couleurs doux et moderne, avec des ouvertures arrondies pour la caméra.", "A light blue case with a large mint panel on the back and a clearly visible MagSafe ring: a soft, modern colour pairing with rounded openings for the camera."],
+    [["Duo de couleurs bleu clair et menthe", "Anneau MagSafe visible", "Coloris : bleu clair / menthe"], ["Light blue and mint two-tone", "MagSafe ring visible", "Colour: light blue / mint"]]),
+  caseProduct("tech-coque-17air-transparente-anneau-noir", "17 Air", ["/coque-17air-transparente-anneau-noir.jpg"],
+    ["Coque transparente, anneau MagSafe noir – iPhone 17 Air", "Clear case with black MagSafe ring – iPhone 17 Air"],
+    ["Une coque transparente qui laisse voir la couleur de ton iPhone, avec un anneau MagSafe noir bien visible et des bords renforcés : discrète, protectrice et facile à assortir.", "A clear case that shows off your iPhone’s colour, with a clearly visible black MagSafe ring and reinforced edges: discreet, protective and easy to match."],
+    [["Transparente, bords renforcés", "Anneau MagSafe noir visible", "Coloris : transparent"], ["Clear, reinforced edges", "Black MagSafe ring visible", "Colour: clear"]]),
+  caseProduct("tech-coque-17air-transparente-anneau-bleu", "17 Air", ["/coque-17air-transparente-anneau-bleu.jpg"],
+    ["Coque transparente, anneau MagSafe bleu – iPhone 17 Air", "Clear case with blue MagSafe ring – iPhone 17 Air"],
+    ["Une coque transparente avec un anneau MagSafe bleu éclatant qui apporte la touche de couleur, et une large ouverture pour la caméra. Protège ton téléphone sans cacher son design.", "A clear case with a bright blue MagSafe ring that adds a pop of colour, and a wide opening for the camera. Protects your phone without hiding its design."],
+    [["Transparente, bords renforcés", "Anneau MagSafe bleu visible", "Coloris : transparent / bleu"], ["Clear, reinforced edges", "Blue MagSafe ring visible", "Colour: clear / blue"]]),
+  { ...caseProduct("tech-coque-xr-magsafe-duo", "XR", ["/coque-xr-lilas.jpg", "/coque-xr-fuchsia.jpg", "/coque-xr-rose.jpg"],
+    ["Coque duo de couleurs, motif MagSafe – iPhone XR", "Two-tone case with MagSafe design – iPhone XR"],
+    ["Une coque colorée avec une plaque d’une teinte différente et un motif en anneau MagSafe au dos : un style pop qui apporte de la couleur à ton téléphone. Trois coloris : lilas, rose fuchsia et rose clair.", "A colourful case with a panel in a different shade and a MagSafe ring design on the back: a pop style that brings colour to your phone. Three colours: lilac, fuchsia pink and light pink."],
+    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : lilas, rose fuchsia, rose clair"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: lilac, fuchsia pink, light pink"]]), variants: ["Lilas", "Rose fuchsia", "Rose clair"] },
+  { ...caseProduct("tech-coque-11-anneau-support", "11", ["/coque-11-bois-anneau.jpg", "/coque-11-noire-brossee-anneau.jpg"],
+    ["Coque anneau MagSafe à support – iPhone 11", "MagSafe ring case with stand – iPhone 11"],
+    ["Une coque au look premium avec un grand anneau MagSafe doré ou noir doté d’une languette-support, une grille ronde décorative et une finition soignée : effet bois marron ou noir brossé, au choix.", "A premium-look case with a large gold or black MagSafe ring with a stand tab, a decorative round grille and a neat finish: brown wood effect or brushed black, your choice."],
+    [["Anneau MagSafe avec languette-support visible", "Grille ronde décorative", "Coloris : marron effet bois, noir brossé"], ["MagSafe ring with visible stand tab", "Decorative round grille", "Colours: brown wood effect, brushed black"]]), variants: ["Marron effet bois", "Noir brossé"] },
+  { ...caseProduct("tech-coque-11promax-magsafe-duo", "11 Pro Max", ["/coque-11promax-bleu.jpg", "/coque-11promax-blanc-gris.jpg", "/coque-11promax-lilas.jpg"],
+    ["Coque duo de couleurs, motif MagSafe – iPhone 11 Pro Max", "Two-tone case with MagSafe design – iPhone 11 Pro Max"],
+    ["Une coque lisse aux couleurs douces avec une plaque d’une autre teinte et un motif en anneau MagSafe au dos : un style frais et net. Trois coloris : bleu, blanc et gris clair, lilas.", "A smooth case in soft colours with a panel in another shade and a MagSafe ring design on the back: a fresh, clean style. Three colours: blue, white and light grey, lilac."],
+    [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : bleu, blanc et gris clair, lilas"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: blue, white and light grey, lilac"]]), variants: ["Bleu", "Blanc et gris clair", "Lilas"] },
+  caseProduct("tech-coque-17pro-rose-degrade", "17 Pro", ["/coque-17pro-rose-degrade.jpg"],
+    ["Coque rose dégradé, anneau MagSafe en relief – iPhone 17 Pro", "Gradient pink case with embossed MagSafe ring – iPhone 17 Pro"],
+    ["Une coque rose dégradé avec un anneau MagSafe en relief au dos et un grand cadre blanc autour de la caméra : un look doux et moderne.", "A gradient pink case with an embossed MagSafe ring on the back and a large white frame around the camera: a soft, modern look."],
+    [["Dégradé rose, cadre caméra blanc", "Anneau MagSafe en relief", "Coloris : rose"], ["Pink gradient, white camera frame", "Embossed MagSafe ring", "Colour: pink"]]),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
