@@ -426,3 +426,8 @@ h3 { margin: 0; color: var(--navy); }
 .status.preorder i { background: var(--gold); }
 .status.unavailable i { background: #b5483a; }
 .subcategory-chips.audience-chips + .subcategory-chips { margin-top: 10px; }
+.subcategory-chips.child-chips { margin-top: 10px; }
+.subcategory-chips.child-chips button { background: var(--cream); }
+.subcategory-chips.child-chips button.active { background: var(--navy); }
+
+.old-price { margin-right: 8px; color: var(--muted); font-size: .8em; font-weight: 500; text-decoration: line-through; }
