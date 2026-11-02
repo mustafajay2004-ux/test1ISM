@@ -38,6 +38,7 @@ type Product = {
   featured: boolean;
   audience: "men" | "women" | "unisex" | null;
   priceOnRequest: boolean;
+  oldPrice?: number; // prix barré affiché à côté du prix promo
   imageFit?: "cover" | "contain";
 };
 
@@ -180,7 +181,9 @@ const realProducts: Record<string, Partial<Product>> = {
     },
     images: ["/rolex-day-date-1.jpg"],
     featured: true,
-    priceOnRequest: true,
+    price: 16500, // promo
+    oldPrice: 20000,
+    priceOnRequest: false,
   },
   "watches-slot-2": {
     name: { fr: "Audemars Piguet (modèle à préciser)", en: "Audemars Piguet (model to be specified)" },
@@ -1177,7 +1180,7 @@ const catalogue: Product[] = [
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
 const placeholders = emptySlots.filter((slot) => realProducts[slot.id] || !catalogue.some((item) => item.category === slot.category));
-// Prix des coques (FCFA). Les coques absentes de cette liste restent « Prix sur demande » tant que leur prix n'est pas confirmé.
+// Prix (FCFA) des coques et des montres. Les coques absentes de cette liste restent « Prix sur demande » tant que leur prix n'est pas confirmé.
 // 3900 : coques MagSafe · 3000 : strass · 3500 : strass transparent · 4000 : transparentes MagSafe · 2000 à 2300 : unies et translucides
 const casePrices: Record<string, number> = {
   "tech-coque-12pro-magsafe-gris-mat": 3900,
@@ -1220,6 +1223,15 @@ const casePrices: Record<string, number> = {
   "tech-coque-12promax-silicone-anneau-contraste-sauge": 2000,
   "tech-coque-12promax-silicone-anneau-contraste-mauve": 2000,
   "tech-coque-12promax-silicone-anneau-contraste-pervenche": 2000,
+  // Montres
+  "watch-day-date-palmier": 14000,
+  "watch-datejust-noire": 15000,
+  "watch-submariner-bleue": 16000,
+  "watch-oyster-perpetual-noire": 12500,
+  "watch-submariner-bicolore": 13500,
+  "watch-squelette-fashion-noire": 9000,
+  "watch-chrono-noire-rouge": 10000,
+  "watch-auliter-carbone-rouge": 11000,
 };
 const withPrice = (item: Product): Product => (casePrices[item.id] ? { ...item, price: casePrices[item.id], priceOnRequest: false } : item);
 const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue.map(withPrice)];
@@ -1567,7 +1579,7 @@ export default function App() {
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
           <div className="product-detail">
             <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} style={fitStyle(selectedProduct)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" style={fitStyle(selectedProduct)} /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
-            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{priceLabel(selectedProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
+            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(selectedProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
               {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
               {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
               <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : <div className="unconfigured-field">{lang === "fr" ? "Couleurs, tailles ou modèles à renseigner" : "Colours, sizes or models to complete"}</div>}</div>
@@ -1599,7 +1611,7 @@ function ProductCard({ product, lang, onOpen }: { product: Product; lang: Lang; 
   const t = copy[lang];
   const hasPrice = product.price !== null || product.priceOnRequest;
   const audience = audienceLabel(product, lang);
-  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} style={fitStyle(product)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{priceLabel(product, lang)}</strong></div></article>;
+  return <article className="product-card placeholder-card" onClick={() => onOpen(product)}><div className="product-image">{product.images[0] ? <img src={product.images[0]} alt={displayName(product, lang)} style={fitStyle(product)} /> : <ProductPlaceholder category={product.category} />}<Status lang={lang} availability={product.availability} /><button aria-label={t.details}><Icon name="arrow" /></button></div><div className="product-card-info"><span>{getCategory(product.category).name[lang]}{product.name ? (audience ? ` · ${audience}` : "") : ` · ${t.placeholder}`}</span><h3>{displayName(product, lang)}</h3><strong className={hasPrice ? "" : "price-placeholder"}>{product.oldPrice && <s className="old-price">{product.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(product, lang)}</strong></div></article>;
 }
 
 function ShowcaseCard({ showcase, lang, onOpen }: { showcase: Showcase; lang: Lang; onOpen: (showcase: Showcase) => void }) {
