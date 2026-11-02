@@ -1071,6 +1071,108 @@ const catalogue: Product[] = [
       en: ["Chanel inscription on the dial", "Gold-tone case, two-tone steel and gold mesh bracelet", "Champagne dial, gold Arabic numerals, black double-C", "Style: classic, for women"],
     },
   }),
+  newProduct("watch-femme-doree-carree-double-c", "watches", {
+    name: { fr: "Montre dorée carrée – Cadran champagne, double C noir", en: "Gold-tone square watch – Champagne dial, black double-C" },
+    subcategory: "classic",
+    audience: "women",
+    price: 2500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-doree-carree-double-c.jpg"],
+    description: {
+      fr: "Le petit détail qui fait toute la différence : un boîtier doré aux lignes carrées, un cadran champagne avec chiffres arabes et un grand double C noir au centre. Elle brille au poignet, se porte seule ou avec tes bracelets préférés, et donne un look chic à toutes tes tenues.",
+      en: "The little detail that makes all the difference: a gold-tone case with square lines, a champagne dial with Arabic numerals and a large black double-C in the centre. It shines on the wrist, worn alone or stacked with your favourite bracelets, and gives every outfit a chic touch.",
+    },
+    features: {
+      fr: ["Boîtier doré aux lignes carrées, bracelet maille dorée", "Cadran champagne, chiffres arabes, double C noir au centre", "Petits index façon diamant", "Style : classique, pour femme"],
+      en: ["Gold-tone case with square lines, gold-tone link bracelet", "Champagne dial, Arabic numerals, black double-C in the centre", "Small diamond-style markers", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-doree-strass-octogonale", "watches", {
+    name: { fr: "Montre dorée à strass – Cadran blanc, trois sous-cadrans", en: "Gold-tone watch with crystals – White dial, three sub-dials" },
+    subcategory: "classic",
+    audience: "women",
+    price: 3500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-doree-strass-octogonale.jpg"],
+    description: {
+      fr: "Pour celles qui aiment briller : une lunette octogonale entièrement sertie de strass, un cadran blanc délicat à trois sous-cadrans et un bracelet doré tout en éclat. Une montre glamour qui attire les regards à chaque sortie, parfaite pour les soirées comme pour un joli cadeau.",
+      en: "For those who love to sparkle: an octagonal bezel fully set with crystals, a delicate white dial with three sub-dials and a shiny gold-tone bracelet. A glamorous watch that turns heads at every outing, perfect for evenings out or as a lovely gift.",
+    },
+    features: {
+      fr: ["Lunette octogonale sertie de strass", "Cadran blanc, trois sous-cadrans, date", "Boîtier et bracelet dorés", "Style : classique, pour femme"],
+      en: ["Octagonal bezel set with crystals", "White dial, three sub-dials, date", "Gold-tone case and bracelet", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-acier-chiffres-romains", "watches", {
+    name: { fr: "Montre acier chiffres romains – Cadran blanc, bracelet maille galbée", en: "Steel watch with Roman numerals – White dial, curved link bracelet" },
+    subcategory: "classic",
+    audience: "women",
+    price: 4000,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-acier-chiffres-romains.jpg"],
+    description: {
+      fr: "Un style intemporel, tout en finesse : boîtier galbé en acier poli, cadran blanc aux chiffres romains et aiguilles bleues, sur un bracelet aux maillons arrondis qui accroche la lumière. Inscription Cartier sur le cadran. L’allure élégante qui va avec tout, du quotidien aux grandes occasions.",
+      en: "A timeless, refined style: a curved polished steel case, a white dial with Roman numerals and blue hands, on a bracelet of rounded links that catches the light. Cartier inscription on the dial. The elegant look that goes with everything, from everyday to special occasions.",
+    },
+    features: {
+      fr: ["Inscription Cartier sur le cadran", "Boîtier galbé et bracelet maille en acier poli", "Cadran blanc, chiffres romains, aiguilles bleues", "Style : classique, pour femme"],
+      en: ["Cartier inscription on the dial", "Curved polished steel case and link bracelet", "White dial, Roman numerals, blue hands", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-acier-rectangulaire-date", "watches", {
+    name: { fr: "Montre acier rectangulaire – Cadran blanc, date", en: "Rectangular steel watch – White dial, date" },
+    subcategory: "classic",
+    audience: "women",
+    price: 3500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-acier-rectangulaire-date.jpg"],
+    description: {
+      fr: "Une montre moderne et affirmée : boîtier rectangulaire en acier poli, cadran blanc finement texturé avec fenêtre de date et bracelet maille brillant. Un look épuré et tendance qui s’accorde aussi bien avec une tenue de tous les jours qu’avec une tenue plus habillée.",
+      en: "A modern, confident watch: a rectangular polished steel case, a finely textured white dial with a date window and a shiny link bracelet. A clean, trendy look that suits both everyday outfits and dressier ones.",
+    },
+    features: {
+      fr: ["Boîtier rectangulaire et bracelet maille en acier poli", "Cadran blanc texturé, date", "Style : classique, pour femme"],
+      en: ["Rectangular polished steel case and link bracelet", "Textured white dial, date", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-doree-bleu-marine", "watches", {
+    name: { fr: "Montre dorée rectangulaire – Cadran bleu marine", en: "Gold-tone rectangular watch – Navy blue dial" },
+    subcategory: "classic",
+    audience: "women",
+    price: 2500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-doree-bleu-marine.jpg"],
+    description: {
+      fr: "Le duo or et bleu marine qui fait chic : boîtier rectangulaire doré, cadran bleu profond aux reflets satinés et petits index dorés, sur un bracelet doré tout en souplesse visuelle. Inscription Dior sur le cadran. Une montre élégante, fine et féminine pour sublimer ton poignet.",
+      en: "The gold and navy duo that looks chic: a gold-tone rectangular case, a deep blue dial with satin reflections and small gold markers, on a gold-tone bracelet. Dior inscription on the dial. An elegant, slim, feminine watch to enhance your wrist.",
+    },
+    features: {
+      fr: ["Inscription Dior sur le cadran", "Boîtier rectangulaire et bracelet dorés", "Cadran bleu marine, index dorés", "Style : classique, pour femme"],
+      en: ["Dior inscription on the dial", "Gold-tone rectangular case and bracelet", "Navy blue dial, gold-tone markers", "Style: classic, for women"],
+    },
+  }),
+  newProduct("watch-femme-datejust-doree", "watches", {
+    name: { fr: "Montre Datejust dorée – Cadran champagne, lunette cannelée", en: "Gold-tone Datejust watch – Champagne dial, fluted bezel" },
+    subcategory: "classic",
+    audience: "women",
+    price: 4500,
+    priceOnRequest: false,
+    availability: "available",
+    images: ["/montre-femme-datejust-doree.jpg"],
+    description: {
+      fr: "La montre qui se remarque : lunette cannelée dorée, cadran champagne lumineux, date à 3 heures et bracelet maille dorée qui brille à chaque mouvement. Inscription Rolex sur le cadran, modèle Datejust. Un look riche et élégant, pour celles qui aiment les belles pièces.",
+      en: "The watch that gets noticed: a gold-tone fluted bezel, a bright champagne dial, date at 3 o’clock and a gold-tone link bracelet that shines with every move. Rolex inscription on the dial, Datejust model. A rich, elegant look for those who love beautiful pieces.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet maille dorés", "Cadran champagne, index en bâtons, date à 3 heures", "Style : classique, pour femme"],
+      en: ["Rolex inscription on the dial, Datejust model", "Gold-tone fluted bezel, case and link bracelet", "Champagne dial, bar markers, date at 3 o’clock", "Style: classic, for women"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
