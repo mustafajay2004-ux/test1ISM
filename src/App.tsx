@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 
 type Lang = "fr" | "en";
 type Page = "home" | "shop" | "category" | "product" | "about" | "faq" | "system";
-type CategoryId = "watches" | "jewelry" | "bags" | "scarves" | "fashion" | "tech";
+type CategoryId = "watches" | "jewelry" | "bags" | "scarves" | "fashion" | "tech" | "cosmetics";
 
 type Category = {
   id: CategoryId;
@@ -137,6 +137,30 @@ const categories: Category[] = [
     filters: {
       fr: ["Type d’accessoire", "Compatibilité", "Connectivité", "Prix"],
       en: ["Accessory type", "Compatibility", "Connectivity", "Price"],
+    },
+  },
+  {
+    id: "cosmetics",
+    name: { fr: "Cosmétiques & parfums", en: "Beauty & fragrance" },
+    description: {
+      fr: "Soins du corps, des cheveux et parfums : gels de douche, shampoings, déodorants, laits de corps, eaux de toilette et parfums.",
+      en: "Body care, hair care and fragrance: shower gels, shampoos, deodorants, body milks, eaux de toilette and perfumes.",
+    },
+    subcategories: [
+      sub("shower-gel", "Gels de douche", "Shower gels"),
+      sub("shower-milk", "Laits de douche", "Shower milks"),
+      sub("bath", "Bains moussants et relaxants", "Bubble & relaxing baths"),
+      sub("body-milk", "Laits de corps", "Body milks"),
+      sub("balm", "Baumes", "Balms"),
+      sub("shampoo", "Shampoings", "Shampoos"),
+      sub("deodorant", "Déodorants", "Deodorants"),
+      sub("antiperspirant", "Anti-transpirants", "Antiperspirants"),
+      sub("edt", "Eaux de toilette", "Eaux de toilette"),
+      sub("perfume", "Parfums", "Perfumes"),
+    ],
+    filters: {
+      fr: ["Type de soin", "Pour qui", "Parfum / senteur", "Contenance", "Prix"],
+      en: ["Care type", "For whom", "Scent", "Size", "Price"],
     },
   },
 ];
