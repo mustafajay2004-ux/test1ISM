@@ -1176,6 +1176,230 @@ const catalogue: Product[] = [
       en: ["Rolex inscription on the dial, Datejust model", "Gold-tone fluted bezel, case and link bracelet", "Champagne dial, bar markers, date at 3 o’clock", "Style: classic, for women"],
     },
   }),
+  newProduct("watch-homme-aic-rouge", "watches", {
+    name: { fr: "Montre carrée AIC – Cadran rouge, bracelet silicone", en: "AIC square watch – Red dial, silicone strap" },
+    subcategory: "sports",
+    audience: "men",
+    price: 5000,
+    priceOnRequest: false,
+    images: ["/montre-homme-aic-rouge.jpg"],
+    description: {
+      fr: "Une montre qui a du caractère : boîtier carré à pans coupés en acier brossé, cadran dégradé rouge et noir à trois sous-cadrans, trotteuse rouge et bracelet silicone noir texturé. Un look moderne, sportif et affirmé, qui se remarque tout de suite au poignet.",
+      en: "A watch with character: a square cut-corner brushed steel case, a red and black gradient dial with three sub-dials, a red seconds hand and a textured black silicone strap. A modern, sporty and confident look that stands out right away on the wrist.",
+    },
+    features: {
+      fr: ["Logo AIC sur le cadran", "Boîtier carré à pans coupés, acier brossé", "Cadran dégradé rouge et noir, trois sous-cadrans, trotteuse rouge", "Bracelet silicone noir texturé", "Style : sportive, pour homme"],
+      en: ["AIC logo on the dial", "Square cut-corner case, brushed steel", "Red and black gradient dial, three sub-dials, red seconds hand", "Textured black silicone strap", "Style: sports, for men"],
+    },
+  }),
+  newProduct("watch-homme-amiebr-chiffres-arabes", "watches", {
+    name: { fr: "Montre carrée chiffres arabes – Cadran gris, bracelet cuir noir", en: "Square watch with Arabic numerals – Grey dial, black leather strap" },
+    subcategory: "classic",
+    audience: "men",
+    price: 5000,
+    priceOnRequest: false,
+    images: ["/montre-homme-amiebr-arabe.jpg"],
+    description: {
+      fr: "Le style qui sort de l’ordinaire : boîtier carré à lunette texturée, cadran gris dégradé aux chiffres arabes orientaux, date à 3 heures et bracelet en cuir noir surpiqué. Une montre élégante et originale, pour ceux qui aiment les détails qui font la différence.",
+      en: "A style that stands out: a square case with a textured bezel, a gradient grey dial with Eastern Arabic numerals, a date at 3 o’clock and a stitched black leather strap. An elegant, original watch for those who love details that make a difference.",
+    },
+    features: {
+      fr: ["Inscription AMIEBR TiMM sur le cadran, mention Quartz", "Boîtier carré, lunette texturée", "Cadran gris dégradé, chiffres arabes orientaux, date à 3 heures", "Bracelet cuir noir surpiqué", "Style : classique, pour homme"],
+      en: ["AMIEBR TiMM inscription on the dial, Quartz marking", "Square case, textured bezel", "Gradient grey dial, Eastern Arabic numerals, date at 3 o’clock", "Stitched black leather strap", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-cristaux-argent", "watches", {
+    name: { fr: "Montre argent sertie de strass – Cadran scintillant, bracelet maille", en: "Silver watch set with crystals – Sparkling dial, mesh bracelet" },
+    subcategory: "classic",
+    audience: "men",
+    price: 4000,
+    priceOnRequest: false,
+    images: ["/montre-homme-cristaux-argent.jpg"],
+    description: {
+      fr: "Pour ceux qui aiment briller : lunette sertie de strass taillés en baguettes, cadran entièrement pavé de cristaux avec petites touches rouges aux heures et bracelet maille argenté. Une montre éclatante qui attire tous les regards.",
+      en: "For those who love to shine: a bezel set with baguette-cut crystals, a dial fully paved with crystals with small red touches at the hours and a silver mesh bracelet. A dazzling watch that draws every eye.",
+    },
+    features: {
+      fr: ["Lunette sertie de strass taillés en baguettes", "Cadran pavé de cristaux, repères rouges", "Boîtier et bracelet maille argentés", "Style : classique, pour homme"],
+      en: ["Bezel set with baguette-cut crystals", "Crystal-paved dial, red markers", "Silver case and mesh bracelet", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-bulova-chrono", "watches", {
+    name: { fr: "Montre à deux compteurs noir et blanc – Bracelet cuir noir", en: "Two-sub-dial black and white watch – Black leather strap" },
+    subcategory: "classic",
+    audience: "men",
+    price: 4000,
+    priceOnRequest: false,
+    images: ["/montre-homme-bulova-chrono.jpg"],
+    description: {
+      fr: "Sobre et élégante : boîtier rond en acier poli, cadran dégradé noir et blanc finement texturé avec deux compteurs, et bracelet en cuir noir surpiqué. Une montre polyvalente qui va aussi bien avec une chemise qu’avec un look décontracté.",
+      en: "Sober and elegant: a round polished steel case, a finely textured black and white gradient dial with two sub-dials and a stitched black leather strap. A versatile watch that goes as well with a shirt as with a casual look.",
+    },
+    features: {
+      fr: ["Inscription Bulova sur le cadran, mention Quartz", "Boîtier rond en acier poli", "Cadran dégradé noir et blanc, deux compteurs", "Bracelet cuir noir surpiqué", "Style : classique, pour homme"],
+      en: ["Bulova inscription on the dial, Quartz marking", "Round polished steel case", "Black and white gradient dial, two sub-dials", "Stitched black leather strap", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-kelex-marron", "watches", {
+    name: { fr: "Montre or rose – Cadran marron, bracelet silicone", en: "Rose gold watch – Brown dial, silicone strap" },
+    subcategory: "classic",
+    audience: "men",
+    price: 5000,
+    priceOnRequest: false,
+    images: ["/montre-homme-kelex-marron.jpg"],
+    description: {
+      fr: "Le look chaud et élégant : lunette cannelée or rose, cadran marron texturé avec index sertis façon diamant, et bracelet silicone marron souple et confortable. Une montre raffinée qui se porte tous les jours comme pour les grandes occasions.",
+      en: "The warm, elegant look: a rose gold fluted bezel, a textured brown dial with diamond-style set markers and a soft, comfortable brown silicone strap. A refined watch for every day as well as for special occasions.",
+    },
+    features: {
+      fr: ["Inscription Kelex sur le cadran, mention Quartz", "Lunette cannelée et boîtier or rose", "Cadran marron texturé, index sertis façon diamant", "Bracelet silicone marron", "Style : classique, pour homme"],
+      en: ["Kelex inscription on the dial, Quartz marking", "Rose gold fluted bezel and case", "Textured brown dial, diamond-style set markers", "Brown silicone strap", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-bk-bicolore", "watches", {
+    name: { fr: "Montre carrée bicolore – Cadran champagne, chiffres romains", en: "Two-tone square watch – Champagne dial, Roman numerals" },
+    subcategory: "classic",
+    audience: "men",
+    price: 6500,
+    priceOnRequest: false,
+    images: ["/montre-homme-bk-bicolore.jpg"],
+    description: {
+      fr: "Le grand style en or et acier : boîtier carré avec vis apparentes, cadran champagne aux grands chiffres romains, date à 6 heures et bracelet bicolore assorti. Une montre de caractère, élégante et affirmée, pour un poignet qui impose le respect.",
+      en: "The great style in gold and steel: a square case with visible screws, a champagne dial with large Roman numerals, a date at 6 o’clock and a matching two-tone bracelet. A watch with character, elegant and confident, for a wrist that commands respect.",
+    },
+    features: {
+      fr: ["Logo BK sur le cadran, mention Quartz", "Boîtier carré à vis apparentes, bracelet bicolore or et acier", "Cadran champagne, chiffres romains, date à 6 heures", "Style : classique, pour homme"],
+      en: ["BK logo on the dial, Quartz marking", "Square case with visible screws, two-tone gold and steel bracelet", "Champagne dial, Roman numerals, date at 6 o’clock", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-bk-noire", "watches", {
+    name: { fr: "Montre carrée acier – Cadran noir, chiffres romains", en: "Square steel watch – Black dial, Roman numerals" },
+    subcategory: "classic",
+    audience: "men",
+    price: 6500,
+    priceOnRequest: false,
+    images: ["/montre-homme-bk-noire.jpg"],
+    description: {
+      fr: "Noir et argent, un duo qui ne se démode pas : boîtier carré en acier avec vis apparentes, cadran noir aux grands chiffres romains blancs et bracelet acier assorti. Une montre puissante et élégante qui donne de l’allure à toutes les tenues.",
+      en: "Black and silver, a duo that never goes out of style: a square steel case with visible screws, a black dial with large white Roman numerals and a matching steel bracelet. A strong, elegant watch that adds presence to every outfit.",
+    },
+    features: {
+      fr: ["Logo BK sur le cadran", "Boîtier carré à vis apparentes, bracelet acier", "Cadran noir, grands chiffres romains blancs", "Style : classique, pour homme"],
+      en: ["BK logo on the dial", "Square case with visible screws, steel bracelet", "Black dial, large white Roman numerals", "Style: classic, for men"],
+    },
+  }),
+  newProduct("watch-homme-boutique-gris", "watches", {
+    name: { fr: "Montre chronographe grise – Bracelet effet daim", en: "Grey chronograph-style watch – Suede-effect strap" },
+    subcategory: "sports",
+    audience: "men",
+    price: 4000,
+    priceOnRequest: false,
+    images: ["/montre-homme-boutique-gris.jpg"],
+    description: {
+      fr: "Le style aviateur au poignet : boîtier rond en acier poli, cadran gris dégradé à trois compteurs aux aiguilles orange, date à 4 heures et bracelet gris effet daim. Une montre sportive et élégante, parfaite pour un look décontracté chic.",
+      en: "The pilot style on your wrist: a round polished steel case, a gradient grey dial with three sub-dials and orange hands, a date at 4 o’clock and a grey suede-effect strap. A sporty, elegant watch, perfect for a smart-casual look.",
+    },
+    features: {
+      fr: ["Inscription Boutique sur le cadran, mention Quartz", "Boîtier rond en acier poli", "Cadran gris dégradé, trois compteurs, date", "Bracelet gris effet daim", "Style : sportive, pour homme"],
+      en: ["Boutique inscription on the dial, Quartz marking", "Round polished steel case", "Gradient grey dial, three sub-dials, date", "Grey suede-effect strap", "Style: sports, for men"],
+    },
+  }),
+  newProduct("watch-land-dweller-doree-verte", "watches", {
+    name: { fr: "Land-Dweller dorée – Cadran vert alvéolé", en: "Gold-tone Land-Dweller – Honeycomb green dial" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-land-dweller-doree-verte.jpg"],
+    description: {
+      fr: "Le vert qui fait toute la différence : cadran vert éclatant à motif alvéolé, lunette cannelée dorée, date à 3 heures et bracelet doré à maillons polis. Inscription Rolex sur le cadran, modèle Land-Dweller. Une montre riche en couleur et en éclat, qui se remarque dès qu’on la porte.",
+      en: "Green that makes all the difference: a vivid green honeycomb-pattern dial, a gold-tone fluted bezel, a date at 3 o’clock and a gold-tone bracelet with polished links. Rolex inscription on the dial, Land-Dweller model. A watch rich in colour and shine that gets noticed as soon as you wear it.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet dorés", "Cadran vert à motif alvéolé, date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Land-Dweller model", "Gold-tone fluted bezel, case and bracelet", "Green honeycomb-pattern dial, date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-datejust-doree-champagne", "watches", {
+    name: { fr: "Datejust dorée – Cadran champagne alvéolé", en: "Gold-tone Datejust – Honeycomb champagne dial" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-datejust-doree-champagne.jpg"],
+    description: {
+      fr: "L’élégance dorée à l’état pur : cadran champagne finement alvéolé avec anneau blanc, lunette cannelée dorée, date à 3 heures et bracelet doré aux maillons brillants. Inscription Rolex sur le cadran, modèle Datejust. Une montre lumineuse qui habille le poignet avec classe.",
+      en: "Pure golden elegance: a finely honeycombed champagne dial with a white ring, a gold-tone fluted bezel, a date at 3 o’clock and a gold-tone bracelet with shiny links. Rolex inscription on the dial, Datejust model. A bright watch that dresses the wrist with class.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet dorés", "Cadran champagne alvéolé, anneau blanc, date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Datejust model", "Gold-tone fluted bezel, case and bracelet", "Honeycomb champagne dial, white ring, date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-datejust-acier-blanc", "watches", {
+    name: { fr: "Datejust acier – Cadran blanc texturé", en: "Steel Datejust – Textured white dial" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-datejust-acier-blanc.jpg"],
+    description: {
+      fr: "Claire, nette et intemporelle : cadran blanc au motif texturé délicat, lunette cannelée, date à 3 heures et bracelet acier aux maillons polis. Inscription Rolex sur le cadran, modèle Datejust. La montre polyvalente qui va avec toutes les tenues, du quotidien aux grandes occasions.",
+      en: "Bright, clean and timeless: a white dial with a delicate textured pattern, a fluted bezel, a date at 3 o’clock and a steel bracelet with polished links. Rolex inscription on the dial, Datejust model. The versatile watch that goes with every outfit, from everyday to special occasions.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet en acier", "Cadran blanc texturé, date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Datejust model", "Fluted bezel, steel case and bracelet", "Textured white dial, date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-land-dweller-acier-noire", "watches", {
+    name: { fr: "Land-Dweller acier – Cadran noir alvéolé", en: "Steel Land-Dweller – Honeycomb black dial" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-land-dweller-acier-noire.jpg"],
+    description: {
+      fr: "Sobre avec du caractère : cadran noir au motif alvéolé, lunette cannelée en acier, date à 3 heures et bracelet acier brillant. Inscription Rolex sur le cadran, modèle Land-Dweller. Un look sombre et élégant qui s’accorde avec tout.",
+      en: "Understated with character: a black honeycomb-pattern dial, a steel fluted bezel, a date at 3 o’clock and a shiny steel bracelet. Rolex inscription on the dial, Land-Dweller model. A dark, elegant look that goes with everything.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet en acier", "Cadran noir à motif alvéolé, date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Land-Dweller model", "Fluted bezel, steel case and bracelet", "Black honeycomb-pattern dial, date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-land-dweller-acier-champagne-bleu", "watches", {
+    name: { fr: "Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Steel Land-Dweller – Champagne dial, light blue ring" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-land-dweller-acier-champagne-bleu.jpg"],
+    description: {
+      fr: "Le détail qui change tout : cadran champagne alvéolé entouré d’un anneau bleu clair, lunette cannelée en acier, date à 3 heures et bracelet acier brillant. Inscription Rolex sur le cadran, modèle Land-Dweller. Une montre fraîche, originale et facile à porter.",
+      en: "The detail that changes everything: a honeycomb champagne dial surrounded by a light blue ring, a steel fluted bezel, a date at 3 o’clock and a shiny steel bracelet. Rolex inscription on the dial, Land-Dweller model. A fresh, original, easy-to-wear watch.",
+    },
+    features: {
+      fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet en acier", "Cadran champagne alvéolé, anneau bleu clair, date à 3 heures", "Style : classique"],
+      en: ["Rolex inscription on the dial, Land-Dweller model", "Fluted bezel, steel case and bracelet", "Honeycomb champagne dial, light blue ring, date at 3 o’clock", "Style: classic"],
+    },
+  }),
+  newProduct("watch-acier-motif-logo-president", "watches", {
+    name: { fr: "Montre acier – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
+    subcategory: "classic",
+    audience: "unisex",
+    price: 12500,
+    priceOnRequest: false,
+    images: ["/montre-acier-motif-logo-president.jpg"],
+    description: {
+      fr: "Le cadran qui ne ressemble à aucun autre : fond champagne au motif graphique repris sur toute la surface, index sertis façon diamant, date à 3 heures, lunette cannelée et bracelet President en acier poli. Couronne Rolex sur le cadran. Une montre travaillée dans les moindres détails.",
+      en: "A dial like no other: a champagne background with a graphic pattern across the whole surface, diamond-style set markers, a date at 3 o’clock, a fluted bezel and a polished steel President bracelet. Rolex crown on the dial. A watch crafted down to the smallest detail.",
+    },
+    features: {
+      fr: ["Couronne Rolex sur le cadran", "Lunette cannelée, boîtier et bracelet President en acier poli", "Cadran champagne à motif graphique, index façon diamant, date à 3 heures", "Style : classique"],
+      en: ["Rolex crown on the dial", "Fluted bezel, polished steel case and President bracelet", "Champagne dial with graphic pattern, diamond-style markers, date at 3 o’clock", "Style: classic"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
