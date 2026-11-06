@@ -2307,6 +2307,278 @@ const catalogue: Product[] = [
       en: ["Colour: bright yellow", "Embossed pattern all over", "Zipped front pocket, engraved plate", "Carry handle"],
     },
   }),
+  newProduct("sac-quilted-camel-wallet", "bags", {
+    name: { fr: "Sac matelassé camel, charm et portefeuille", en: "Camel quilted bag, charm and wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-quilted-camel-wallet.jpg"],
+    description: {
+      fr: "Des surpiqûres claires tracent un réseau de losanges sur toute la façade, avec une anse arrondie et un charm noir et doré noué à un cordon. La photo montre aussi un portefeuille zippé assorti (à confirmer s’il est inclus). Le camel passe avec presque toutes les tenues.",
+      en: "Light stitching draws a network of diamonds across the front, with a rounded handle and a black and gold charm tied to a cord. The photo also shows a matching zipped wallet (to be confirmed whether it is included). The camel goes with almost any outfit.",
+    },
+    features: {
+      fr: ["Coloris : camel", "Surpiqûres en losanges sur la façade", "Charm noir et doré sur cordon", "Portefeuille zippé sur la photo (à confirmer)"],
+      en: ["Colour: camel", "Diamond stitching on the front", "Black and gold charm on a cord", "Zipped wallet in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-quilted-cream-wallet", "bags", {
+    name: { fr: "Sac matelassé crème, charm et portefeuille", en: "Cream quilted bag, charm and wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-quilted-cream-wallet.jpg"],
+    description: {
+      fr: "Le crème est rehaussé par l’intérieur de l’anse, bordé de noir, et par un charm en forme de fleur noire sur cordon. Les surpiqûres dessinent des losanges sur la façade. Un portefeuille zippé assorti figure sur la photo (à confirmer s’il est inclus).",
+      en: "The cream is set off by the black-edged handle and a black flower charm on a cord. Stitching draws diamonds across the front. A matching zipped wallet appears in the photo (to be confirmed whether it is included).",
+    },
+    features: {
+      fr: ["Coloris : crème", "Anse bordée de noir", "Charm fleur noire sur cordon", "Portefeuille zippé sur la photo (à confirmer)"],
+      en: ["Colour: cream", "Handle edged in black", "Black flower charm on a cord", "Zipped wallet in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-quilted-red", "bags", {
+    name: { fr: "Sac à main rouge à surpiqûres en losanges, charm doré", en: "Red handbag with diamond stitching, gold charm" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 7800,
+    priceOnRequest: false,
+    images: ["/sac-quilted-red.jpg"],
+    description: {
+      fr: "Un rouge franc, avec des surpiqûres assorties qui forment des losanges sur la façade. Deux perles dorées et un charm métallique sont accrochés au cordon noué sur l’anse. Une plaque dorée est posée en bas, au centre.",
+      en: "A strong red, with matching stitching forming diamonds across the front. Two gold beads and a metal charm hang from the cord knotted on the handle. A gold plate sits at the bottom centre.",
+    },
+    features: {
+      fr: ["Coloris : rouge", "Surpiqûres en losanges", "Charm et perles dorées sur cordon", "Plaque dorée en bas de la façade"],
+      en: ["Colour: red", "Diamond stitching", "Gold charm and beads on a cord", "Gold plate at the bottom of the front"],
+    },
+  }),
+  newProduct("sac-vernis-bordeaux", "bags", {
+    name: { fr: "Sac à rabat vernis bordeaux, anse unique", en: "Burgundy patent flap bag, single handle" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-vernis-bordeaux.jpg"],
+    description: {
+      fr: "Le vernis très brillant renvoie la lumière sur tout le rabat, bordé d’une fine surpiqûre en picots. L’anse est fixée par des anneaux dorés, et des anneaux sont aussi visibles sur les côtés pour une bandoulière. Quatre petits pieds dorés protègent le dessous du sac.",
+      en: "The very glossy patent catches the light across the whole flap, edged with fine scalloped stitching. The handle is fixed with gold rings, and rings are also visible on the sides for a strap. Four small gold feet protect the base.",
+    },
+    features: {
+      fr: ["Coloris : bordeaux", "Finition vernie brillante", "Anse unique, anneaux dorés sur les côtés", "Pieds dorés sous le sac"],
+      en: ["Colour: burgundy", "Glossy patent finish", "Single handle, gold rings on the sides", "Gold feet on the base"],
+    },
+  }),
+  newProduct("sac-vernis-terracotta", "bags", {
+    name: { fr: "Sac à rabat vernis terracotta, anse unique", en: "Terracotta patent flap bag, single handle" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-vernis-terracotta.jpg"],
+    description: {
+      fr: "Une teinte terracotta brillante, avec un rabat large et une couture verticale au centre. L’anse arrondie est fine et le sac reste compact, avec une forme basse et allongée. Aucun fermoir n’apparaît sur la photo.",
+      en: "A glossy terracotta shade, with a wide flap and a vertical seam down the centre. The rounded handle is slim and the bag stays compact, low and elongated. No clasp is visible in the photo.",
+    },
+    features: {
+      fr: ["Coloris : terracotta", "Finition vernie brillante", "Rabat large, couture centrale", "Anse unique"],
+      en: ["Colour: terracotta", "Glossy patent finish", "Wide flap, central seam", "Single handle"],
+    },
+  }),
+  newProduct("sac-cabas-monogramme-rose", "bags", {
+    name: { fr: "Cabas à motifs de fleurs, touches roses, avec pochette", en: "Floral-pattern tote, pink accents, with pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-cabas-monogramme-rose.jpg"],
+    description: {
+      fr: "Le fond marron est couvert de fleurs et de losanges, avec des touches de rose vif et de grandes initiales blanches. Les anses en cuir clair se resserrent sur les côtés grâce à des liens ajustables, et le bord est surpiqué de jaune. Une pochette zippée au même motif est posée devant (à confirmer si elle est incluse).",
+      en: "The brown background is covered with flowers and diamonds, with bright pink touches and large white initials. The light leather handles can be tightened at the sides with adjustable ties, and the edge is stitched in yellow. A zipped pouch in the same pattern sits in front (to be confirmed whether it is included).",
+    },
+    features: {
+      fr: ["Coloris : marron, touches roses", "Motif de fleurs et losanges, initiales blanches", "Côtés ajustables par liens", "Pochette zippée sur la photo (à confirmer)"],
+      en: ["Colour: brown, pink accents", "Flower and diamond pattern, white initials", "Side ties to adjust the shape", "Zipped pouch in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-cabas-gaufre-cognac", "bags", {
+    name: { fr: "Cabas cognac à motifs gaufrés, avec pochette", en: "Cognac tote with embossed pattern, with pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-cabas-gaufre-cognac.jpg"],
+    description: {
+      fr: "Le motif en relief, fleurs et initiales, est gaufré directement dans le cuir cognac, sans changement de couleur. Les anses plus foncées, les liens latéraux et la petite étiquette fixée à l’anse reprennent un brun plus profond. Une pochette zippée à mousqueton est présentée devant (à confirmer si elle est incluse).",
+      en: "The raised pattern of flowers and initials is embossed directly into the cognac material, with no change of colour. The darker handles, the side ties and the small tag on the handle pick up a deeper brown. A zipped pouch with a clip is shown in front (to be confirmed whether it is included).",
+    },
+    features: {
+      fr: ["Coloris : cognac", "Motif gaufré en relief", "Liens latéraux, étiquette sur l’anse", "Pochette zippée à mousqueton (à confirmer)"],
+      en: ["Colour: cognac", "Embossed raised pattern", "Side ties, tag on the handle", "Zipped pouch with clip (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-vernis-noir", "bags", {
+    name: { fr: "Sac à rabat vernis noir, anse unique", en: "Black patent flap bag, single handle" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-vernis-noir.jpg"],
+    description: {
+      fr: "Le noir verni est très brillant, avec un rabat replié et une couture verticale au centre. L’anse est fixée par des attaches dorées, seul détail de couleur. La forme est large et se plisse légèrement sur les côtés.",
+      en: "The black patent is very glossy, with a folded-over flap and a vertical seam down the centre. The handle is fixed with gold attachments, the only touch of colour. The shape is wide and gathers slightly at the sides.",
+    },
+    features: {
+      fr: ["Coloris : noir", "Finition vernie brillante", "Attaches dorées sur l’anse", "Rabat replié, couture centrale"],
+      en: ["Colour: black", "Glossy patent finish", "Gold attachments on the handle", "Folded flap, central seam"],
+    },
+  }),
+  newProduct("sac-tisse-noir", "bags", {
+    name: { fr: "Sac à main noir, panneau tissé et fermoir à fleur dorée", en: "Black handbag, woven panel and gold flower clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-tisse-noir.jpg"],
+    description: {
+      fr: "Le panneau de devant a un aspect tissé, encadré de cuir lisse sur les côtés. Un rabat se ferme avec un fermoir doré en forme de fleur à quatre pétales, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière. Une étiquette est encore attachée sur la photo.",
+      en: "The front panel has a woven look, framed by smooth side panels. A flap closes with a gold four-petal flower clasp, and two plates with gold studs hold the handles. Gold rings on the sides allow a strap to be added. A tag is still attached in the photo.",
+    },
+    features: {
+      fr: ["Coloris : noir", "Panneau avant tissé, côtés lisses", "Fermoir doré en forme de fleur", "Anneaux dorés sur les côtés"],
+      en: ["Colour: black", "Woven front panel, smooth sides", "Gold flower-shaped clasp", "Gold rings on the sides"],
+    },
+  }),
+  newProduct("sac-tisse-violet", "bags", {
+    name: { fr: "Sac à main violet, panneau tissé et fermoir doré et noir", en: "Purple handbag, woven panel and gold and black clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-tisse-violet.jpg"],
+    description: {
+      fr: "Un violet doux pour les côtés lisses et les anses, avec un panneau de devant tissé dans une teinte plus grisée. Le fermoir associe or et noir, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés peuvent accueillir une bandoulière.",
+      en: "A soft purple for the smooth sides and handles, with a woven front panel in a greyer shade. The clasp combines gold and black, and two plates with gold studs hold the handles. Gold rings on the sides can take a strap.",
+    },
+    features: {
+      fr: ["Coloris : violet", "Panneau avant tissé, côtés lisses", "Fermoir doré et noir", "Anneaux dorés sur les côtés"],
+      en: ["Colour: purple", "Woven front panel, smooth sides", "Gold and black clasp", "Gold rings on the sides"],
+    },
+  }),
+  newProduct("sac-tisse-cognac", "bags", {
+    name: { fr: "Sac à main cognac, panneau tissé et fermoir doré et noir", en: "Cognac handbag, woven panel and gold and black clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-tisse-cognac.jpg"],
+    description: {
+      fr: "Ici, le tissage prend un ton paille chaud, bien visible sur le panneau de devant, alors que les côtés et les anses sont en brun roux lisse. Le rabat se ferme avec un fermoir doré à centre noir, et deux plaques à clous dorés tiennent les anses. Le contraste entre matières donne tout son relief au sac.",
+      en: "Here the weave takes on a warm straw tone, clearly visible on the front panel, while the sides and handles are in smooth russet brown. The flap closes with a gold clasp with a black centre, and two plates with gold studs hold the handles. The contrast between materials gives the bag its character.",
+    },
+    features: {
+      fr: ["Coloris : cognac et brun roux", "Panneau avant tissé, côtés lisses", "Fermoir doré à centre noir", "Anneaux dorés sur les côtés"],
+      en: ["Colour: cognac and russet brown", "Woven front panel, smooth sides", "Gold clasp with black centre", "Gold rings on the sides"],
+    },
+  }),
+  newProduct("sac-rond-cordon-marron", "bags", {
+    name: { fr: "Sac rond marron à cordon, lettres dorées sur sangle", en: "Round brown drawstring bag, gold letters on strap" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 7800,
+    priceOnRequest: false,
+    images: ["/sac-rond-cordon-marron.jpg"],
+    description: {
+      fr: "La forme est arrondie, avec deux lobes lisses séparés par une sangle ornée de lettres métalliques dorées. Le haut se resserre par un cordon, entre deux anses principales et une petite anse centrale. Le marron est profond et uni.",
+      en: "The shape is rounded, with two smooth lobes separated by a strap decorated with gold-tone metal letters. The top gathers with a drawstring, between two main handles and a small central handle. The brown is deep and plain.",
+    },
+    features: {
+      fr: ["Coloris : marron", "Forme ronde, fermeture par cordon", "Sangle à lettres métalliques dorées", "Trois anses"],
+      en: ["Colour: brown", "Round shape, drawstring closure", "Strap with gold-tone metal letters", "Three handles"],
+    },
+  }),
+  newProduct("sac-structure-gris", "bags", {
+    name: { fr: "Sac à main gris, panneau tissé et fermoir doré et noir", en: "Grey handbag, woven panel and gold and black clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-structure-gris.jpg"],
+    description: {
+      fr: "Un gris taupe pour les côtés lisses et les anses, avec un panneau de devant tissé dans un gris plus clair. Le fermoir reprend l’or et le noir, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière.",
+      en: "A taupe grey for the smooth sides and handles, with a woven front panel in a lighter grey. The clasp again combines gold and black, and two plates with gold studs hold the handles. Gold rings on the sides allow a strap to be added.",
+    },
+    features: {
+      fr: ["Coloris : gris taupe", "Panneau avant tissé, côtés lisses", "Fermoir doré et noir", "Anneaux dorés sur les côtés"],
+      en: ["Colour: taupe grey", "Woven front panel, smooth sides", "Gold and black clasp", "Gold rings on the sides"],
+    },
+  }),
+  newProduct("sac-structure-beige", "bags", {
+    name: { fr: "Sac à main beige, côtés tissés et ferrures argentées", en: "Beige handbag, woven sides and silver-tone fittings" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8600,
+    priceOnRequest: false,
+    images: ["/sac-structure-beige.jpg"],
+    description: {
+      fr: "Le cuir lisse beige occupe le centre et le dessus, alors que les deux côtés sont en matière tissée, claire et légèrement nacrée. Les attaches des anses sont en métal argenté gravé d’épis, et le nom du modèle est posé en lettres dorées sur le devant. La forme est droite et structurée.",
+      en: "Smooth beige material covers the centre and top, while the two sides are in a light, slightly pearly woven material. The handle attachments are silver-tone metal engraved with ears of wheat, and the model name is set in gold letters on the front. The shape is straight and structured.",
+    },
+    features: {
+      fr: ["Coloris : beige", "Côtés en matière tissée", "Attaches argentées gravées", "Lettres dorées sur le devant"],
+      en: ["Colour: beige", "Woven side panels", "Engraved silver-tone attachments", "Gold letters on the front"],
+    },
+  }),
+  newProduct("sac-texture-bleu-ciel", "bags", {
+    name: { fr: "Sac à main bleu ciel texturé, anses rigides", en: "Sky-blue textured handbag, rigid handles" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8600,
+    priceOnRequest: false,
+    images: ["/sac-texture-bleu-ciel.jpg"],
+    description: {
+      fr: "Un bleu ciel franc avec une surface texturée, à petits motifs en relief. Les anses rigides, bordées de métal argenté, sont fixées de chaque côté, et deux anneaux argentés sont visibles sur les flancs. Une plaque argentée est posée au centre.",
+      en: "A bright sky blue with a textured surface and small raised patterns. The rigid handles, capped with silver-tone metal, are attached on each side, and two silver rings are visible on the flanks. A silver plate sits in the centre.",
+    },
+    features: {
+      fr: ["Coloris : bleu ciel", "Surface texturée en relief", "Anses rigides, embouts argentés", "Anneaux argentés sur les côtés"],
+      en: ["Colour: sky blue", "Raised textured surface", "Rigid handles, silver-tone caps", "Silver rings on the sides"],
+    },
+  }),
+  newProduct("sac-rond-cordon-jaune", "bags", {
+    name: { fr: "Sac rond jaune à cordon, lettres dorées sur sangle", en: "Round yellow drawstring bag, gold letters on strap" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 7800,
+    priceOnRequest: false,
+    images: ["/sac-rond-cordon-jaune.jpg"],
+    description: {
+      fr: "Jaune vif et uni, avec la même forme arrondie à deux lobes que son équivalent marron. La sangle centrale porte de grandes lettres métalliques dorées, et le haut se resserre par un cordon, entre deux anses principales et une petite anse centrale.",
+      en: "Bright, plain yellow, with the same rounded two-lobed shape as the brown version. The central strap carries large gold-tone metal letters, and the top gathers with a drawstring, between two main handles and a small central handle.",
+    },
+    features: {
+      fr: ["Coloris : jaune vif", "Forme ronde, fermeture par cordon", "Sangle à lettres métalliques dorées", "Trois anses"],
+      en: ["Colour: bright yellow", "Round shape, drawstring closure", "Strap with gold-tone metal letters", "Three handles"],
+    },
+  }),
+  newProduct("sac-ensemble-bleu", "bags", {
+    name: { fr: "Ensemble sac à main et petit sac, bleu marine et bleu clair", en: "Handbag and small bag set, navy and light blue" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-bleu.jpg"],
+    description: {
+      fr: "Deux sacs assortis sont présentés ensemble : un sac à main à anses rondes, et un petit sac à rabat. Les deux jouent sur le bleu marine, avec des côtés bleu clair et des bandes tissées. Le grand sac se ferme avec un fermoir doré ovale, le petit avec une sangle et une plaque dorée (à confirmer que les deux sont inclus).",
+      en: "Two matching bags are shown together: a handbag with rounded handles and a small flap bag. Both play on navy blue, with light blue sides and woven bands. The large bag closes with an oval gold clasp, the small one with a strap and gold plate (to be confirmed that both are included).",
+    },
+    features: {
+      fr: ["Coloris : bleu marine et bleu clair", "Bandes tissées sur les deux sacs", "Fermoir doré ovale sur le grand sac", "Deux sacs sur la photo (à confirmer)"],
+      en: ["Colour: navy and light blue", "Woven bands on both bags", "Oval gold clasp on the large bag", "Two bags in the photo (to be confirmed)"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
