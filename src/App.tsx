@@ -2579,6 +2579,258 @@ const catalogue: Product[] = [
       en: ["Colour: navy and light blue", "Woven bands on both bags", "Oval gold clasp on the large bag", "Two bags in the photo (to be confirmed)"],
     },
   }),
+  newProduct("cosmetique-parfum-01-is", "cosmetics", {
+    name: { fr: "iS, eau de parfum 100 ml", en: "iS, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-01-is.jpg"],
+    description: {
+      fr: "Un jus ambré derrière un verre épais et transparent, fermé par un grand bouchon noir brillant en forme d’œuf. Le coffret champagne reste très simple : seul le logo y figure, un petit trèfle posé sur les deux lettres. Un flacon sobre, facile à offrir, qui trouve sa place sur une coiffeuse comme dans un sac.",
+      en: "An amber liquid behind thick, clear glass, closed with a large glossy black egg-shaped cap. The champagne-coloured box stays very simple: only the logo appears, a small clover set above the two letters. A plain bottle that is easy to give as a gift and sits just as well on a dressing table as in a bag.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Jus ambré", "Bouchon noir en forme d’œuf", "Coffret champagne", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Amber liquid", "Black egg-shaped cap", "Champagne-coloured box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-02-ciiq-pour-homme", "cosmetics", {
+    name: { fr: "CIIQ pour homme, eau de parfum 100 ml", en: "CIIQ for men, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "men",
+    images: ["/cosmetique-parfum-02-ciiq-pour-homme.jpg"],
+    description: {
+      fr: "Le flacon en verre dépoli, beige clair, se ferme avec un bouchon gris anthracite, et le nom est écrit en grandes lettres noires. Le coffret sable est aussi sobre : « eau de parfum pour homme » et le volume, rien de plus. Une présentation discrète, qui va aussi bien avec les cours qu’avec les sorties.",
+      en: "The frosted glass bottle is pale beige, closed with a charcoal-grey cap, and the name is written in large black letters. The sand-coloured box is just as plain: “eau de parfum pour homme” and the volume, nothing more. A discreet presentation that suits classes as well as nights out.",
+    },
+    features: {
+      fr: ["Eau de parfum pour homme, 100 ml", "Flacon en verre dépoli", "Bouchon gris anthracite", "Coffret sable", "Importé du Maroc"],
+      en: ["Eau de parfum for men, 100 ml", "Frosted glass bottle", "Charcoal-grey cap", "Sand-coloured box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-03-voyager-deep-blue", "cosmetics", {
+    name: { fr: "Voyager Deep Blue, eau de parfum 100 ml", en: "Voyager Deep Blue, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "men",
+    images: ["/cosmetique-parfum-03-voyager-deep-blue.jpg"],
+    description: {
+      fr: "Le jus bleu turquoise se voit à travers un flacon carré en verre épais, surmonté d’une boule argentée. Un petit voilier est dessiné sur la face avant, et le coffret imite des vagues dans un bleu profond. Le thème est clair : la mer et l’évasion, dans un format de 100 ml.",
+      en: "The turquoise liquid shows through a square bottle of thick glass, topped with a silver ball cap. A small sailing boat is drawn on the front, and the box imitates waves in a deep blue. The theme is clear: the sea and escape, in a 100 ml size.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Jus bleu turquoise", "Bouchon boule argenté", "Voilier sur le flacon", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Turquoise liquid", "Silver ball cap", "Sailing boat on the bottle", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-04-amazing-gold", "cosmetics", {
+    name: { fr: "Amazing Gold, eau de parfum 100 ml", en: "Amazing Gold, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-04-amazing-gold.jpg"],
+    description: {
+      fr: "Le flacon à facettes laisse voir un jus rose pâle, avec un bouchon doré de forme carrée. Le coffret doré, bordé d’un liseré brillant, porte le nom en grandes lettres sur un cartouche. Il se remarque dès l’emballage, ce qui en fait un cadeau simple à choisir.",
+      en: "The faceted bottle shows a pale pink liquid, with a square gold-tone cap. The gold box, edged with a shiny border, carries the name in large letters on a panel. It stands out from the moment it is wrapped, which makes it an easy gift to choose.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Flacon à facettes, jus rose pâle", "Bouchon doré carré", "Coffret doré", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Faceted bottle, pale pink liquid", "Square gold-tone cap", "Gold box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-05-stunner-pour-femme", "cosmetics", {
+    name: { fr: "Stunner pour femme, eau de parfum", en: "Stunner for women, eau de parfum" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-05-stunner-pour-femme.jpg"],
+    description: {
+      fr: "Le bouchon doré représente deux jambes croisées, posé sur un flacon rose aux reflets taillés. Le coffret fuchsia est orné d’un grand diamant et d’ailes dessinées au trait. Côté parfum, les notes annoncées sont la fraise, le lys et la tubéreuse en tête, le jasmin et la mandarine au cœur, la vanille et le musc au fond.",
+      en: "The gold-tone cap shows two crossed legs, set on a pink bottle with cut-glass reflections. The fuchsia box is decorated with a large diamond and wings drawn in fine lines. As for the scent, the announced notes are strawberry, lily and tuberose at the top, jasmine and mandarin in the heart, vanilla and musk at the base.",
+    },
+    features: {
+      fr: ["Eau de parfum", "Notes annoncées : fraise, lys, tubéreuse, jasmin, mandarine, vanille, musc", "Bouchon doré en forme de jambes", "Coffret fuchsia", "Importé du Maroc"],
+      en: ["Eau de parfum", "Announced notes: strawberry, lily, tuberose, jasmine, mandarin, vanilla, musk", "Gold-tone leg-shaped cap", "Fuchsia box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-06-black-addiction", "cosmetics", {
+    name: { fr: "Black Addiction, eau de parfum 80 ml", en: "Black Addiction, eau de parfum 80 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-06-black-addiction.jpg"],
+    description: {
+      fr: "Un flacon noir brillant qui vire au cuivre en bas, avec un bouchon noir en dôme. Une pastille rose pâle au centre porte le nom et le volume. Le format de 80 ml se glisse facilement dans un sac.",
+      en: "A glossy black bottle that fades to copper at the bottom, with a black dome-shaped cap. A pale pink disc in the centre carries the name and the volume. The 80 ml size slips easily into a bag.",
+    },
+    features: {
+      fr: ["Eau de parfum, 80 ml", "Flacon noir dégradé cuivre", "Bouchon en dôme", "Pastille rose", "Importé du Maroc"],
+      en: ["Eau de parfum, 80 ml", "Black bottle fading to copper", "Dome cap", "Pink disc", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-07-sexy-sexy", "cosmetics", {
+    name: { fr: "Sexy Sexy, eau de parfum", en: "Sexy Sexy, eau de parfum" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-07-sexy-sexy.jpg"],
+    description: {
+      fr: "Le flacon arrondi mêle le rouge et le rose, avec un bouchon argenté qui se termine par deux pointes recourbées. L’étiquette argentée, au nom un peu provocant, est posée sur le devant. Un flacon qui attire l’œil sur une étagère.",
+      en: "The rounded bottle mixes red and pink, with a silver-tone cap ending in two curved tips. The silver label, with its cheeky name, sits on the front. A bottle that catches the eye on a shelf.",
+    },
+    features: {
+      fr: ["Eau de parfum", "Flacon arrondi rouge et rose", "Bouchon argenté à deux pointes", "Étiquette argentée", "Importé du Maroc"],
+      en: ["Eau de parfum", "Round red and pink bottle", "Silver-tone cap with two tips", "Silver label", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-08-royal-sweety-in-love", "cosmetics", {
+    name: { fr: "Royal Sweety In Love, Y.M.LOVE, eau de parfum 100 ml", en: "Royal Sweety In Love, Y.M.LOVE, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-08-royal-sweety-in-love.jpg"],
+    description: {
+      fr: "Un flacon pêche aux reflets, dont le verre torsadé rappelle des pétales, fermé par un bouchon en métal cuivré rosé. L’étiquette indique « Royal Sweety in love » avec la mention Y.M.LOVE. Un volume de 100 ml, et une présentation qui convient à un cadeau.",
+      en: "A peach-coloured bottle with a shimmering look, its twisted glass recalling petals, closed with a rose-copper metal cap. The label reads “Royal Sweety in love” with the Y.M.LOVE mention. A 100 ml size and a presentation that works for a gift.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Verre torsadé couleur pêche", "Bouchon cuivré rosé", "Mention Y.M.LOVE", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Peach-coloured twisted glass", "Rose-copper cap", "Y.M.LOVE mention", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-09-stronger-with-you", "cosmetics", {
+    name: { fr: "Stronger With You, eau de toilette 100 ml", en: "Stronger With You, eau de toilette 100 ml" },
+    subcategory: "edt",
+    audience: "men",
+    images: ["/cosmetique-parfum-09-stronger-with-you.jpg"],
+    description: {
+      fr: "Un jus ambré foncé dans un flacon carré en verre épais, avec une grosse boule argentée en bouchon. Le nom est écrit en grandes lettres sur le devant. Les notes annoncées : cardamome, poivre rose et feuilles de violette en tête, lavande et sauge au cœur, vanille et accord de châtaigne au fond.",
+      en: "A dark amber liquid in a square bottle of thick glass, with a large silver ball for a cap. The name is written in big letters on the front. The announced notes: cardamom, pink pepper and violet leaves at the top, lavender and sage in the heart, vanilla and a chestnut accord at the base.",
+    },
+    features: {
+      fr: ["Eau de toilette, 100 ml", "Notes annoncées : cardamome, poivre rose, lavande, sauge, vanille, châtaigne", "Bouchon boule argenté", "Importé du Maroc"],
+      en: ["Eau de toilette, 100 ml", "Announced notes: cardamom, pink pepper, lavender, sage, vanilla, chestnut", "Silver ball cap", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-10-diamant-ambre", "cosmetics", {
+    name: { fr: "Diamant Ambré, eau de parfum", en: "Amber Diamond, eau de parfum" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-10-diamant-ambre.jpg"],
+    description: {
+      fr: "Un jus ambré dans un flacon taillé en facettes, surmonté d’un grand bouchon noir et bronze qui rappelle un diamant. Aucun nom n’est écrit sur le flacon : il se reconnaît à sa forme. Un flacon qui se remarque tout de suite.",
+      en: "An amber liquid in a faceted bottle, topped with a large black and bronze cap that recalls a diamond. No name is written on the bottle: it is recognised by its shape. A bottle that gets noticed right away.",
+    },
+    features: {
+      fr: ["Eau de parfum", "Jus ambré", "Flacon à facettes", "Bouchon noir et bronze", "Importé du Maroc"],
+      en: ["Eau de parfum", "Amber liquid", "Faceted bottle", "Black and bronze cap", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-11-shining-rock", "cosmetics", {
+    name: { fr: "Shining Rock, eau de parfum", en: "Shining Rock, eau de parfum" },
+    subcategory: "perfume",
+    audience: "unisex",
+    images: ["/cosmetique-parfum-11-shining-rock.jpg"],
+    description: {
+      fr: "Un flacon noir semé de paillettes, avec une grande pastille couleur sable au centre et un bouchon noir en dôme. Le visuel est sombre et sans excès, et se porte aussi bien au masculin qu’au féminin. Un parfum à partager ou à garder pour soi.",
+      en: "A black bottle sprinkled with glitter, with a large sand-coloured disc in the centre and a black dome cap. The look is dark and understated, and works for men and women alike. A fragrance to share or to keep for yourself.",
+    },
+    features: {
+      fr: ["Eau de parfum", "Mixte", "Flacon noir pailleté", "Pastille sable", "Bouchon en dôme", "Importé du Maroc"],
+      en: ["Eau de parfum", "Unisex", "Glittery black bottle", "Sand-coloured disc", "Dome cap", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-12-halle-women", "cosmetics", {
+    name: { fr: "Halle Women, eau de parfum 100 ml", en: "Halle Women, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-12-halle-women.jpg"],
+    description: {
+      fr: "Le flacon en forme de cloche, rempli d’un jus rose, est fermé par une grosse boule argentée et repose sur une base argentée. Famille annoncée : floral oriental. Notes annoncées : violette, accords marins et feuille de bananier en tête, magnolia, tubéreuse, muguet et poivre au cœur, santal, vanille, encens et myrrhe au fond.",
+      en: "The bell-shaped bottle, filled with a pink liquid, is closed with a large silver ball and rests on a silver base. Announced family: oriental floral. Announced notes: violet, marine accords and banana leaf at the top, magnolia, tuberose, lily of the valley and pepper in the heart, sandalwood, vanilla, incense and myrrh at the base.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Floral oriental", "Flacon en cloche, jus rose", "Bouchon boule et base argentés", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Oriental floral", "Bell-shaped bottle, pink liquid", "Silver ball cap and base", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-13-spark", "cosmetics", {
+    name: { fr: "Spark, eau de parfum 100 ml", en: "Spark, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-13-spark.jpg"],
+    description: {
+      fr: "Un flacon rond, taillé de facettes lilas, avec un bouchon violet brillant et un pompon duveteux fixé à côté. Le coffret gris et violet affiche un portrait en noir et blanc, et le nom en lettres irisées. Un parfum pour celles qui aiment les flacons qui sortent de l’ordinaire.",
+      en: "A round bottle cut with lilac facets, with a shiny purple cap and a fluffy pompom attached beside it. The grey and purple box shows a black and white portrait, with the name in iridescent letters. A fragrance for those who like bottles that stand out.",
+    },
+    features: {
+      fr: ["Eau de parfum, 100 ml", "Flacon rond à facettes lilas", "Pompon violet", "Coffret gris et violet", "Importé du Maroc"],
+      en: ["Eau de parfum, 100 ml", "Round faceted lilac bottle", "Purple pompom", "Grey and purple box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-14-legende-eternelle", "cosmetics", {
+    name: { fr: "Légende Éternelle, eau de toilette 100 ml", en: "Eternal Legend, eau de toilette 100 ml" },
+    subcategory: "edt",
+    audience: "men",
+    images: ["/cosmetique-parfum-14-legende-eternelle.jpg"],
+    description: {
+      fr: "Le flacon noir brillant est surmonté d’un col argenté, avec une étoile à côté du nom. Le coffret noir et argent reprend un motif tressé. Signature annoncée : fraîcheur d’agrumes, douceur florale, fond légèrement terreux.",
+      en: "The glossy black bottle has a silver collar, with a star beside the name. The black and silver box repeats a woven pattern. Announced signature: citrus freshness, floral softness, a slightly earthy base.",
+    },
+    features: {
+      fr: ["Eau de toilette, 100 ml", "Signature annoncée : agrumes, floral, terreux", "Flacon noir, col argenté", "Coffret noir et argent", "Importé du Maroc"],
+      en: ["Eau de toilette, 100 ml", "Announced signature: citrus, floral, earthy", "Black bottle, silver collar", "Black and silver box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-15-catch-ss", "cosmetics", {
+    name: { fr: "Catch SS, Lovali, eau de parfum 100 ml", en: "Catch SS, Lovali, eau de parfum 100 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-15-catch-ss.jpg"],
+    description: {
+      fr: "Un jus rose bonbon dans un flacon carré, avec un bouchon transparent à facettes. Le coffret blanc est couvert de grands « C » multicolores en relief. Univers annoncé : floral, fruité et sucré, avec une tenue annoncée au-delà de 24 heures, selon la peau et les conditions d’utilisation.",
+      en: "A candy-pink liquid in a square bottle, with a clear faceted cap. The white box is covered with large multicoloured raised “C” shapes. Announced character: floral, fruity and sweet, with a hold announced beyond 24 hours, depending on skin and conditions of use.",
+    },
+    features: {
+      fr: ["Marque : Lovali", "Eau de parfum, 100 ml", "Floral, fruité, sucré", "Tenue annoncée : plus de 24 h", "Importé du Maroc"],
+      en: ["Brand: Lovali", "Eau de parfum, 100 ml", "Floral, fruity, sweet", "Announced hold: over 24 h", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-16-black-addiction-glitter", "cosmetics", {
+    name: { fr: "Black Addiction Glitter, Lovali, eau de parfum 80 ml", en: "Black Addiction Glitter, Lovali, eau de parfum 80 ml" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-16-black-addiction-glitter.jpg"],
+    description: {
+      fr: "Un flacon gris argenté pailleté, avec un bouchon noir en dôme et une pastille rouge au centre. Univers annoncé : fruité et floral, avec des accords gourmands de café, de guimauve et de vanille. Tenue annoncée au-delà de 24 heures, selon la peau.",
+      en: "A glittery silver-grey bottle, with a black dome cap and a red disc in the centre. Announced character: fruity and floral, with gourmand accords of coffee, marshmallow and vanilla. Hold announced beyond 24 hours, depending on skin.",
+    },
+    features: {
+      fr: ["Marque : Lovali", "Eau de parfum, 80 ml", "Fruité, floral, gourmand", "Café, guimauve, vanille", "Tenue annoncée : plus de 24 h"],
+      en: ["Brand: Lovali", "Eau de parfum, 80 ml", "Fruity, floral, gourmand", "Coffee, marshmallow, vanilla", "Announced hold: over 24 h"],
+    },
+  }),
+  newProduct("cosmetique-parfum-17-v-v-love", "cosmetics", {
+    name: { fr: "V.V.LOVE, coffret eau de parfum et crème corps", en: "V.V.LOVE, eau de parfum and body cream set" },
+    subcategory: "perfume",
+    audience: "women",
+    images: ["/cosmetique-parfum-17-v-v-love.jpg"],
+    description: {
+      fr: "Un coffret bleu lavande qui réunit un flacon en verre taillé à bouchon doré et un tube de crème corps « After Bath » de 80 ml, assortie. La crème s’applique sur la peau après la douche, et le parfum complète la routine. Pratique pour offrir : les deux produits sont dans la même boîte.",
+      en: "A lavender-blue set bringing together a cut-glass bottle with a gold-tone cap and a matching 80 ml “After Bath” body cream tube. The cream goes on the skin after the shower, and the perfume completes the routine. Handy as a gift: both products are in the same box.",
+    },
+    features: {
+      fr: ["Coffret : eau de parfum + crème corps 80 ml", "Flacon en verre taillé, bouchon doré", "Coffret bleu lavande", "Importé du Maroc"],
+      en: ["Set: eau de parfum + 80 ml body cream", "Cut-glass bottle, gold-tone cap", "Lavender-blue box", "Imported from Morocco"],
+    },
+  }),
+  newProduct("cosmetique-parfum-18-ser-al-lail", "cosmetics", {
+    name: { fr: "Ser Al Lail, coffret brume parfumée et gel douche", en: "Ser Al Lail, fragrance mist and shower gel set" },
+    subcategory: "perfume",
+    audience: "unisex",
+    images: ["/cosmetique-parfum-18-ser-al-lail.jpg"],
+    description: {
+      fr: "Un coffret bleu nuit et or, avec une brume parfumée de 100 ml et un gel douche de 175 ml. Les deux produits portent le nom en lettres latines et arabes, avec des motifs dorés en forme de V. Une brume pour parfumer le corps, un gel pour la douche : une idée de cadeau complète.",
+      en: "A navy and gold set, with a 100 ml fragrance mist and a 175 ml shower gel. Both products carry the name in Latin and Arabic letters, with gold V-shaped patterns. A mist to scent the body, a gel for the shower: a complete gift idea.",
+    },
+    features: {
+      fr: ["Coffret : brume parfumée 100 ml + gel douche 175 ml", "Bleu nuit et or", "Nom en lettres latines et arabes", "Importé du Maroc"],
+      en: ["Set: 100 ml fragrance mist + 175 ml shower gel", "Navy and gold", "Name in Latin and Arabic letters", "Imported from Morocco"],
+    },
+  }),
 ];
 
 // Les emplacements vides d'une catégorie disparaissent dès qu'elle contient de vrais produits.
