@@ -199,8 +199,8 @@ const realProducts: Record<string, Partial<Product>> = {
     subcategory: "classic",
     audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
-      fr: "Le Day-Date en 36 mm, un format classique pour une montre habillée. Livrée avec sa boîte. Pas de certificat ni de facture d’origine.",
-      en: "The Day-Date in 36 mm, a classic size for a dressy watch. Supplied with its box. No original certificate or invoice.",
+      fr: "Cette montre Day-Date de 36 mm adopte un format classique, facile à porter avec une tenue habillée. Elle est fournie avec sa boîte. À noter : aucun certificat ni facture d’origine n’est fourni.",
+      en: "This 36 mm Day-Date watch has a classic size that pairs easily with dressier outfits. It comes with its box. Please note: no original certificate or invoice is supplied.",
     },
     features: {
       fr: ["Marque : Rolex", "Modèle : Day-Date 36 mm", "Avec boîte", "Sans certificat ni facture d’origine"],
@@ -217,8 +217,8 @@ const realProducts: Record<string, Partial<Product>> = {
     subcategory: "classic",
     audience: "unisex", // à remplacer par "men" ou "women" quand le public est décidé
     description: {
-      fr: "Une Audemars Piguet livrée avec sa boîte. Le modèle et la référence restent à préciser.",
-      en: "An Audemars Piguet supplied with its box. The model and reference are still to be specified.",
+      fr: "Cette montre est présentée sous le nom Audemars Piguet et fournie avec sa boîte. Le modèle exact et sa référence restent à confirmer avant publication de la fiche.",
+      en: "This watch is presented under the Audemars Piguet name and comes with its box. The exact model and reference still need to be confirmed before the listing is published.",
     },
     features: {
       fr: ["Marque : Audemars Piguet", "Avec boîte", "Modèle et référence à préciser"],
@@ -279,8 +279,8 @@ const catalogue: Product[] = [
     subcategory: "cable-usbc-lightning",
     images: ["/cable-tdkc313-lightning.jpg"],
     description: {
-      fr: "Câble USB-C vers Lightning de 1 m pour charger rapidement un iPhone. L’emballage indique 27 W Power Delivery.",
-      en: "1 m USB-C to Lightning cable for fast-charging an iPhone. The packaging states 27 W Power Delivery.",
+      fr: "Pour relier un appareil équipé d’un port Lightning à un chargeur USB-C, ce câble TDKC 313 mesure 1 m. La puissance de 27 W Power Delivery est indiquée sur l’emballage.",
+      en: "Connect an iPhone with a Lightning port to a USB-C charger with this 1 m TDKC 313 cable. The packaging lists 27 W Power Delivery.",
     },
     features: {
       fr: ["Connecteurs : USB-C et Lightning", "Longueur : 1 m", "Puissance indiquée sur l’emballage : 27 W", "Modèle : TDKC 313"],
@@ -292,8 +292,8 @@ const catalogue: Product[] = [
     subcategory: "cable-usbc-lightning",
     images: ["/cable-apple-lightning-1m.jpg"],
     description: {
-      fr: "Câble USB-C vers Lightning d’Apple, 1 m, vendu dans sa boîte.",
-      en: "Apple USB-C to Lightning cable, 1 m, sold in its box.",
+      fr: "Un câble Apple USB-C vers Lightning de 1 m, présenté dans sa boîte. Un indispensable à garder près du chargeur ou à glisser dans son sac.",
+      en: "A 1 m Apple USB-C to Lightning cable, supplied in its box. A useful everyday cable to keep by your charger or carry in your bag.",
     },
     features: {
       fr: ["Marque : Apple", "Connecteurs : USB-C et Lightning", "Longueur : 1 m", "Avec boîte"],
@@ -305,8 +305,8 @@ const catalogue: Product[] = [
     subcategory: "cable-usbc-usbc",
     images: ["/cable-apple-usbc-2m.jpg"],
     description: {
-      fr: "Câble USB-C vers USB-C d’Apple, 2 m : assez long pour charger depuis une prise éloignée du lit. Vendu dans sa boîte.",
-      en: "Apple USB-C to USB-C cable, 2 m: long enough to charge from an outlet that is far from the bed. Sold in its box.",
+      fr: "Avec ses 2 m, ce câble Apple USB-C vers USB-C laisse davantage de liberté pour installer son téléphone ou sa tablette pendant la charge. Il est vendu dans sa boîte.",
+      en: "At 2 m long, this Apple USB-C to USB-C cable gives you more freedom to use your phone or tablet while it charges. Supplied in its box.",
     },
     features: {
       fr: ["Marque : Apple", "Connecteurs : USB-C des deux côtés", "Longueur : 2 m", "Avec boîte"],
@@ -318,8 +318,8 @@ const catalogue: Product[] = [
     subcategory: "charger-usbc",
     images: ["/chargeur-45w-usbc.jpg"],
     description: {
-      fr: "Chargeur secteur 45 W Power Delivery. Un câble USB-C vers USB-C (5 A) est inclus dans la boîte.",
-      en: "45 W Power Delivery wall charger. A USB-C to USB-C cable (5 A) is included in the box.",
+      fr: "Le chargeur secteur USB-C de 45 W annoncé Power Delivery est accompagné d’un câble USB-C vers USB-C de 5 A. Un ensemble prêt à intégrer à son installation de charge.",
+      en: "This 45 W USB-C wall charger is marked as Power Delivery and comes with a 5 A USB-C to USB-C cable. A convenient set for your charging setup.",
     },
     features: {
       fr: ["Puissance indiquée sur l’emballage : 45 W (PD)", "Sortie : USB-C", "Câble USB-C vers USB-C (5 A) inclus", "Prise européenne", "Coloris : noir"],
@@ -332,8 +332,8 @@ const catalogue: Product[] = [
     images: ["/chargeur-iphone-blanc.jpg", "/chargeur-iphone-orange.jpg", "/chargeur-iphone-jaune.jpg", "/chargeur-iphone-rose.jpg"],
     variants: ["Blanc", "Orange", "Jaune", "Rose"],
     description: {
-      fr: "Chargeur secteur USB-A pour iPhone, vendu avec son câble USB-A vers Lightning.",
-      en: "USB-A wall charger for iPhone, sold with its USB-A to Lightning cable.",
+      fr: "Un chargeur secteur USB-A accompagné de son câble USB-A vers Lightning. Il réunit les deux éléments essentiels pour recharger un appareil compatible, avec plusieurs coloris au choix.",
+      en: "A USB-A wall charger supplied with a USB-A to Lightning cable. The set brings together the two essentials for charging a compatible device, with several colours to choose from.",
     },
     features: {
       fr: ["Câble : USB-A vers Lightning inclus", "Pour iPhone", "Prise européenne", "Coloris : blanc, orange, jaune, rose"],
@@ -350,8 +350,8 @@ const catalogue: Product[] = [
     subcategory: "charger-iphone",
     images: ["/chargeur-35w-lightning-orange.jpg"],
     description: {
-      fr: "Chargeur secteur orange de 35 W avec sortie USB-C. Le câble USB-C vers Lightning est inclus.",
-      en: "Orange 35 W wall charger with a USB-C output. The USB-C to Lightning cable is included.",
+      fr: "Ce chargeur orange de 35 W dispose d’une sortie USB-C et est fourni avec un câble USB-C vers Lightning. Le nécessaire pour retrouver chargeur et câble dans un même ensemble.",
+      en: "This orange 35 W charger has a USB-C output and comes with a USB-C to Lightning cable. The charger and cable are brought together in one set.",
     },
     features: {
       fr: ["Puissance indiquée sur l’emballage : 35 W", "Sortie : USB-C", "Câble USB-C vers Lightning inclus", "Prise européenne", "Coloris : orange"],
@@ -363,8 +363,8 @@ const catalogue: Product[] = [
     subcategory: "charger-samsung",
     images: ["/chargeur-s8-noir.jpg"],
     description: {
-      fr: "Petit chargeur secteur « Adaptive Fast Charging » à sortie USB-A, vendu avec un câble USB-A vers USB-C.",
-      en: "Small “Adaptive Fast Charging” wall charger with a USB-A output, sold with a USB-A to USB-C cable.",
+      fr: "Le chargeur TDKC 313 S8 possède une sortie USB-A et porte la mention « Adaptive Fast Charging ». Il est livré avec un câble USB-A vers USB-C pour disposer des deux éléments ensemble.",
+      en: "The TDKC 313 S8 charger has a USB-A output and is marked “Adaptive Fast Charging”. It comes with a USB-A to USB-C cable, so both pieces are supplied together.",
     },
     features: {
       fr: ["Mention « Adaptive Fast Charging » sur l’emballage", "Sortie : USB-A", "Câble USB-A vers USB-C inclus", "Modèle : TDKC 313 S8", "Coloris : noir"],
@@ -376,8 +376,8 @@ const catalogue: Product[] = [
     subcategory: "charger-samsung",
     images: ["/chargeur-grand-s6-blanc.jpg"],
     description: {
-      fr: "Chargeur secteur blanc « Adaptive Fast Charging » à sortie USB-A. Le câble USB-A vers Micro USB est fourni.",
-      en: "White “Adaptive Fast Charging” wall charger with a USB-A output. The USB-A to Micro USB cable is supplied.",
+      fr: "Ce chargeur blanc GRAND S6 est doté d’une sortie USB-A et porte la mention « Adaptive Fast Charging ». Le câble USB-A vers Micro USB est fourni avec le chargeur.",
+      en: "This white GRAND S6 charger has a USB-A output and is marked “Adaptive Fast Charging”. A USB-A to Micro USB cable is included.",
     },
     features: {
       fr: ["Mention « Adaptive Fast Charging » sur l’emballage", "Sortie : USB-A", "Câble USB-A vers Micro USB inclus", "Modèle : GRAND S6", "Coloris : blanc"],
@@ -389,8 +389,8 @@ const catalogue: Product[] = [
     subcategory: "cable-micro",
     images: ["/cable-micro-usb-tdkc313.jpg"],
     description: {
-      fr: "Câble blanc USB-A vers Micro USB, pour la charge et le transfert de données.",
-      en: "White USB-A to Micro USB cable, for charging and data transfer.",
+      fr: "Un câble blanc TDKC313 avec connecteurs USB-A et Micro USB. Il convient à la charge et au transfert de données sur les appareils équipés d’un port Micro USB.",
+      en: "A white TDKC313 cable with USB-A and Micro USB connectors. It supports charging and data transfer on devices with a Micro USB port.",
     },
     features: {
       fr: ["Connecteurs : USB-A et Micro USB", "Charge rapide et transfert de données (mention de l’emballage)", "Modèle : TDKC313", "Coloris : blanc"],
@@ -402,8 +402,8 @@ const catalogue: Product[] = [
     subcategory: "cable-3in1",
     images: ["/cable-3-en-1.jpg"],
     description: {
-      fr: "Un seul câble USB-A, trois embouts : USB-C, Lightning et Micro USB. Gaine en nylon tressé, 1,2 m de long. Pratique quand on a plusieurs appareils différents à charger.",
-      en: "One USB-A cable, three tips: USB-C, Lightning and Micro USB. Braided nylon sheath, 1.2 m long. Handy when you have several different devices to charge.",
+      fr: "Un seul câble USB-A réunit trois embouts : USB-C, Lightning et Micro USB. Sa gaine en nylon tressé et sa longueur de 1,2 m en font un compagnon pratique lorsqu’on utilise plusieurs types d’appareils.",
+      en: "One USB-A cable comes with three connectors: USB-C, Lightning and Micro USB. Its braided nylon sheath and 1.2 m length make it a practical option when you use different types of devices.",
     },
     features: {
       fr: ["Embouts : USB-C, Lightning, Micro USB", "Longueur : 1,2 m", "Nylon tressé", "Charge et transfert de données (mention de l’emballage)", "Coloris : noir"],
@@ -415,8 +415,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-2smc-m8c70.jpg"],
     description: {
-      fr: "Ce power bank se fixe au dos du téléphone grâce à ses ventouses, et la dragonne passe au poignet ou au sac. 10 000 mAh, 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) : le bon câble est toujours là, iPhone ou Android. Câble USB-A vers USB-C fourni, garantie 365 jours.",
-      en: "This power bank sticks to the back of your phone with suction cups, and the strap goes round your wrist or on a bag. 10,000 mAh, 4 built-in cables (USB-A, USB-C, Lightning, Micro USB): the right cable is always there, iPhone or Android. USB-A to USB-C cable supplied, 365-day warranty.",
+      fr: "Pensé pour garder la charge à portée de main, ce power bank 2SMC de 10 000 mAh se fixe au dos du téléphone grâce à ses ventouses. Ses quatre câbles intégrés couvrent USB-A, USB-C, Lightning et Micro USB ; la dragonne permet aussi de l’attacher à un sac ou de le garder au poignet. Câble USB-A vers USB-C fourni. Garantie annoncée : 365 jours.",
+      en: "Designed to keep power close at hand, this 10,000 mAh 2SMC power bank attaches to the back of a phone with suction cups. Its four built-in cables cover USB-A, USB-C, Lightning and Micro USB, while the strap can be attached to a bag or worn around the wrist. USB-A to USB-C cable included. Stated warranty: 365 days.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Ventouses au dos et dragonne", "Câble USB-A vers USB-C fourni", "Marque : 2SMC – modèle M8C70", "Coloris : noir"],
@@ -428,8 +428,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-aroimac-ard67.jpg"],
     description: {
-      fr: "10 000 mAh dans un boîtier blanc fin, facile à glisser dans un sac. Il a 4 câbles de sortie intégrés et une entrée/sortie USB-C, qui sert à le recharger plus vite ou à charger un appareil USB-C. Garantie 365 jours.",
-      en: "10,000 mAh in a slim white body that slips easily into a bag. It has 4 built-in output cables and a USB-C input/output, used to recharge it faster or to charge a USB-C device. 365-day warranty.",
+      fr: "Avec sa capacité indiquée de 10 000 mAh et son boîtier blanc fin, l’Aroimac ARD67 se glisse facilement dans un sac. Quatre câbles de sortie sont intégrés et son port USB-C sert à l’entrée comme à la sortie. Garantie annoncée : 365 jours.",
+      en: "With a stated capacity of 10,000 mAh and a slim white body, the Aroimac ARD67 is easy to slip into a bag. It has four built-in output cables and a USB-C port for both input and output. Stated warranty: 365 days.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "4 câbles de sortie intégrés", "Entrée / sortie USB-C", "Protection de sécurité (mention de l’emballage)", "Marque : Aroimac – modèle ARD67", "Coloris : blanc"],
@@ -441,8 +441,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-dakewei-p15.jpg"],
     description: {
-      fr: "Un écran LED indique le niveau de charge (25, 50, 75, 100) de ce power bank blanc de 10 000 mAh. Il a 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) pour iPhone, Android et accessoires. Câble USB-A vers USB-C fourni, charge rapide annoncée sur l’emballage.",
-      en: "An LED screen shows the charge level (25, 50, 75, 100) on this white 10,000 mAh power bank. It has 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) for iPhone, Android and accessories. USB-A to USB-C cable supplied, fast charging stated on the packaging.",
+      fr: "Ce power bank Dakewei de 10 000 mAh affiche le niveau de charge sur son écran LED, par paliers de 25, 50, 75 et 100 %. Quatre câbles intégrés — USB-A, USB-C, Lightning et Micro USB — facilitent la connexion de différents appareils. Un câble USB-A vers USB-C est également fourni ; la charge rapide est annoncée sur l’emballage.",
+      en: "This 10,000 mAh Dakewei power bank shows its charge level on an LED display in 25, 50, 75 and 100% increments. Four built-in cables — USB-A, USB-C, Lightning and Micro USB — make it easier to connect different devices. A USB-A to USB-C cable is also included; fast charging is stated on the packaging.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "4 câbles intégrés : USB-A, USB-C, Lightning, Micro USB", "Câble USB-A vers USB-C fourni", "Marque : Dakewei – modèle DKW-P15", "Coloris : blanc"],
@@ -454,8 +454,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-10000",
     images: ["/powerbank-tdk551-1.jpg", "/powerbank-tdk551-2.jpg"],
     description: {
-      fr: "Il se colle à l’arrière du téléphone grâce à l’aimant et le recharge sans câble (15 W annoncés). Un petit support permet aussi de regarder des vidéos. 10 000 mAh, charge rapide 22,5 W (PD + QC), une sortie USB-C et une sortie USB-A pour charger d’autres appareils en même temps. Câble USB-C vers USB-C et dragonne inclus.",
-      en: "It clips magnetically to the back of your phone and charges it without a cable (15 W stated). A small stand also lets you watch videos. 10,000 mAh, 22.5 W fast charging (PD + QC), plus a USB-C and a USB-A output to charge other devices at the same time. USB-C to USB-C cable and strap included.",
+      fr: "Le TDKC313 TDK551 associe une recharge magnétique sans fil annoncée à 15 W à une capacité de 10 000 mAh. Son support intégré permet de poser le téléphone pour regarder une vidéo, tandis que les sorties USB-C et USB-A servent à alimenter d’autres appareils. La puissance de 22,5 W (PD + QC) est indiquée sur le produit. Câble USB-C vers USB-C et dragonne fournis.",
+      en: "The TDKC313 TDK551 combines a 10,000 mAh capacity with magnetic wireless charging stated at 15 W. Its built-in stand lets you prop up your phone to watch a video, while the USB-C and USB-A outputs can power other devices. The product lists 22.5 W (PD + QC). USB-C to USB-C cable and strap included.",
     },
     features: {
       fr: ["Capacité indiquée : 10 000 mAh", "Recharge sans fil magnétique : 15 W (mention de l’emballage)", "Puissance indiquée : 22,5 W (PD + QC)", "Entrée / sortie USB-C et sortie USB-A", "Câble USB-C vers USB-C fourni", "Marque : TDKC313 – modèle TDK551", "Coloris : noir"],
@@ -467,8 +467,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-15000",
     images: ["/powerbank-15000.jpg"],
     description: {
-      fr: "15 000 mAh, avec un écran LED qui affiche le pourcentage exact de charge. 4 câbles intégrés (USB-A, USB-C, Lightning, Micro USB) et 4 sorties : téléphone, écouteurs et tablette peuvent se charger ensemble. Charge rapide annoncée sur l’emballage.",
-      en: "15,000 mAh, with an LED screen showing the exact charge percentage. 4 built-in cables (USB-A, USB-C, Lightning, Micro USB) and 4 outputs: phone, earbuds and tablet can charge together. Fast charging stated on the packaging.",
+      fr: "Avec ses 15 000 mAh, ce power bank dispose d’un écran LED qui indique le niveau de charge et de quatre câbles intégrés : USB-A, USB-C, Lightning et Micro USB. Ses quatre sorties permettent de brancher plusieurs appareils selon leurs connecteurs. La charge rapide est mentionnée sur l’emballage.",
+      en: "With 15,000 mAh, this power bank features an LED screen showing the charge level and four built-in cables: USB-A, USB-C, Lightning and Micro USB. Its four outputs let you connect several devices with compatible connectors. Fast charging is stated on the packaging.",
     },
     features: {
       fr: ["Capacité indiquée : 15 000 mAh", "Écran LED affichant le pourcentage", "4 câbles intégrés", "4 sorties (mention de l’emballage)", "Charge rapide (mention de l’emballage)", "Coloris : noir"],
@@ -480,8 +480,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-20000",
     images: ["/powerbank-tdkc313-20000.jpg"],
     description: {
-      fr: "20 000 mAh dans un format compact. Charge rapide 22,5 W (PD, QC3.0), écran LED du niveau de charge, câble USB-C intégré, plus un câble USB-C vers USB-C fourni. Il convient aux longues journées et aux voyages. Garantie 365 jours.",
-      en: "20,000 mAh in a compact format. 22.5 W fast charging (PD, QC3.0), an LED charge-level screen, a built-in USB-C cable, plus a USB-C to USB-C cable supplied. Suited to long days and travel. 365-day warranty.",
+      fr: "Pour les journées où l’on a besoin de davantage de réserve, ce power bank TDKC313 offre une capacité indiquée de 20 000 mAh. Il réunit une puissance annoncée de 22,5 W (PD, QC3.0), un écran de niveau de charge et un câble USB-C intégré ; un second câble USB-C vers USB-C est fourni. Garantie annoncée : 365 jours.",
+      en: "For days when you need more power in reserve, this TDKC313 power bank has a stated capacity of 20,000 mAh. It combines stated 22.5 W output (PD, QC3.0), a charge-level display and a built-in USB-C cable; a second USB-C to USB-C cable is included. Stated warranty: 365 days.",
     },
     features: {
       fr: ["Capacité indiquée : 20 000 mAh", "Charge rapide indiquée : 22,5 W (PD, QC3.0)", "Écran LED du niveau de charge", "Câble USB-C intégré + câble USB-C vers USB-C fourni", "Marque : TDKC313", "Coloris : blanc"],
@@ -493,8 +493,8 @@ const catalogue: Product[] = [
     subcategory: "powerbank-20000",
     images: ["/powerbank-dakewei-p26a.jpg"],
     description: {
-      fr: "20 000 mAh, écran LED du niveau de charge (25, 50, 75, 100), câbles intégrés et dragonne pour le transporter. Un bon choix si tu charges plusieurs appareils ou si tu passes la journée dehors.",
-      en: "20,000 mAh, an LED charge-level screen (25, 50, 75, 100), built-in cables and a strap for carrying. A good choice if you charge several devices or spend the whole day out.",
+      fr: "Le Dakewei DKW-P26A réunit une capacité indiquée de 20 000 mAh, des câbles intégrés et une dragonne pour le transport. Son écran LED affiche le niveau de charge par paliers de 25, 50, 75 et 100 %. Un format pensé pour garder une réserve d’énergie avec soi au fil de la journée.",
+      en: "The Dakewei DKW-P26A combines a stated 20,000 mAh capacity, built-in cables and a carrying strap. Its LED display shows the charge level in 25, 50, 75 and 100% increments. A practical way to keep extra power with you throughout the day.",
     },
     features: {
       fr: ["Capacité indiquée : 20 000 mAh", "Écran LED du niveau de charge (25 / 50 / 75 / 100)", "Câbles intégrés", "Dragonne", "Marque : Dakewei – modèle DKW-P26A", "Coloris : noir"],
@@ -506,8 +506,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-openear",
     images: ["/earbuds-langeer-lge-ne55-1.jpg", "/earbuds-langeer-lge-ne55-2.jpg"],
     description: {
-      fr: "Ces écouteurs à clip se posent sur l’oreille sans la boucher : tu entends toujours ce qui se passe autour. Commandes tactiles, micro HD pour les appels, son Hi-Fi avec extra bass, et boîtier de charge USB-C argenté. Câble de charge et embouts fournis.",
-      en: "These clip-on earbuds sit on the ear without blocking it, so you still hear what’s going on around you. Touch controls, an HD mic for calls, Hi-Fi sound with extra bass, and a silver USB-C charging case. Charging cable and ear tips supplied.",
+      fr: "Le format à clip de ces Langeer LGE-NE55 se pose sur l’oreille sans la couvrir. Ils disposent de commandes tactiles et d’un micro HD pour les appels ; le boîtier de charge argenté se recharge en USB-C. Le son Hi-Fi et les basses renforcées sont également annoncés. Câble et embouts fournis.",
+      en: "The clip-on design of the Langeer LGE-NE55 sits on the ear without covering it. They feature touch controls and an HD microphone for calls, while the silver charging case uses USB-C. Hi-Fi sound and enhanced bass are also stated. Cable and ear tips included.",
     },
     features: {
       fr: ["Format open-ear à clip", "Commandes tactiles", "Micro HD intégré", "Son Hi-Fi, extra bass", "Portée indiquée : 10 m ou plus", "Autonomie indiquée : écoute 3 à 4 h, appels 4 h ou plus", "Résistance à l’eau et à la transpiration (mention de l’emballage)", "Boîtier de charge USB-C", "Marque : Langeer – modèle LGE-NE55", "Coloris : argent"],
@@ -519,8 +519,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-openear",
     images: ["/earbuds-freeclip-lge-08.jpg"],
     description: {
-      fr: "Open-ear, noirs et légers : l’oreille reste libre. Son Hi-Fi, longue autonomie annoncée, boîtier de charge USB-C. Câble de charge et 4 embouts fournis.",
-      en: "Open-ear, black and light: your ear stays free. Hi-Fi sound, long battery life stated, USB-C charging case. Charging cable and 4 ear tips supplied.",
+      fr: "Avec leur conception open-ear, ces écouteurs noirs se portent sans embout intra-auriculaire. Le boîtier de charge USB-C accompagne les écouteurs, avec le câble de charge et quatre embouts fournis. L’autonomie prolongée est annoncée sur l’emballage.",
+      en: "With their open-ear design, these black earbuds sit without an in-ear tip. The USB-C charging case comes with the earbuds, along with a charging cable and four ear tips. Extended battery life is stated on the packaging.",
     },
     features: {
       fr: ["Format open-ear", "Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Design léger", "Câble USB-A vers USB-C et 4 embouts fournis", "Marque : FreeClip – modèle LGE-08", "Coloris : noir"],
@@ -532,8 +532,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-openear",
     images: ["/earbuds-seufre.jpg"],
     description: {
-      fr: "Bluetooth 5.3 et crochet d’oreille pour qu’ils tiennent en place, au sport comme en cours. Son Hi-Fi, boîtier de charge avec affichage LED du niveau de batterie, pochette de rangement avec mousqueton fournie.",
-      en: "Bluetooth 5.3 and an ear hook to keep them in place, at the gym or in class. Hi-Fi sound, a charging case with an LED battery display, and a storage pouch with carabiner supplied.",
+      fr: "Le crochet d’oreille aide à maintenir ces écouteurs Seufre en place, et le Bluetooth 5.3 assure la connexion sans fil. Le boîtier affiche le niveau de batterie par LED. Une pochette avec mousqueton, six embouts et un câble USB-A vers USB-C sont fournis pour le rangement et la recharge.",
+      en: "The ear hook helps keep these Seufre earbuds in place, while Bluetooth 5.3 provides the wireless connection. The case displays the battery level with LEDs. A pouch with carabiner, six ear tips and a USB-A to USB-C cable are included for storage and charging.",
     },
     features: {
       fr: ["Bluetooth 5.3", "Crochet d’oreille, port confortable", "Son Hi-Fi", "Boîtier de charge avec affichage LED", "Câble USB-A vers USB-C, 6 embouts et pochette fournis", "Marque : Seufre", "Coloris : noir"],
@@ -545,8 +545,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-openear",
     images: ["/earbuds-calus-m02-prox.jpg"],
     description: {
-      fr: "Noirs, à clip, en Bluetooth 5.3, pour la musique, les appels et le jeu. Basses profondes, latence annoncée nulle, connexion stable. Livrés avec câble de charge et 6 embouts.",
-      en: "Black, clip-on, Bluetooth 5.3, for music, calls and gaming. Deep bass, zero latency stated, stable connection. Supplied with a charging cable and 6 ear tips.",
+      fr: "Ces écouteurs Calus M02 PROX adoptent un format à clip et une connexion Bluetooth 5.3. Ils sont présentés pour la musique, les appels et le jeu, avec des basses profondes et une latence annoncée comme nulle sur l’emballage. Le câble de charge et six embouts sont fournis.",
+      en: "These Calus M02 PROX earbuds use a clip-on design and Bluetooth 5.3. They are presented for music, calls and gaming, with deep bass and zero latency stated on the packaging. A charging cable and six ear tips are included.",
     },
     features: {
       fr: ["Bluetooth 5.3", "Son Hi-Fi, basses profondes", "Latence nulle annoncée, son surround 360° (mention de l’emballage)", "Pour musique, appels et jeu", "Câble USB-A vers USB-C et 6 embouts fournis", "Marque : Calus – modèle M02 PROX", "Coloris : noir"],
@@ -558,8 +558,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-entry",
     images: ["/earbuds-oraimo-i12.jpg"],
     description: {
-      fr: "Simples et blancs, sans fil. Chaque écouteur tient environ 2,5 h, et le boîtier de 350 mAh les recharge environ 4 fois. Une bonne façon de passer au sans fil pour une première paire.",
-      en: "Simple and white, wireless. Each earbud lasts about 2.5 h, and the 350 mAh case recharges them about 4 times. A good way to go wireless with a first pair.",
+      fr: "Une paire sans fil blanche pour découvrir les écouteurs TWS au quotidien. Chaque écouteur annonce environ 2,5 heures d’autonomie ; le boîtier de 350 mAh est indiqué pour environ quatre recharges. Un modèle simple, accompagné de son câble USB-A vers Micro USB.",
+      en: "A white wireless pair for everyday use and an easy introduction to TWS earbuds. Each earbud is rated for around 2.5 hours of use, while the 350 mAh case is stated to provide about four recharges. A straightforward model supplied with a USB-A to Micro USB cable.",
     },
     features: {
       fr: ["Autonomie indiquée : 2,5 h par charge des écouteurs (35 mAh)", "Boîtier de charge 350 mAh : environ 4 recharges", "Son Hi-Fi, connexion stable", "Design léger", "Câble de charge USB-A vers Micro USB fourni", "Marque : oraimo – modèle i12-TWS", "Coloris : blanc"],
@@ -571,8 +571,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-mid",
     images: ["/earbuds-tws-blanc-etui.jpg"],
     description: {
-      fr: "Blancs, sans fil, avec micro pour les appels et son Hi-Fi. Dans la boîte : boîtier de charge compact, étui en silicone avec mousqueton, 6 embouts et un câble USB-A vers USB-C.",
-      en: "White, wireless, with a mic for calls and Hi-Fi sound. In the box: a compact charging case, a silicone pouch with carabiner, 6 ear tips and a USB-A to USB-C cable.",
+      fr: "Ces écouteurs TWS blancs sont accompagnés d’un boîtier de charge compact et d’un micro intégré pour les appels. L’ensemble comprend aussi un étui en silicone avec mousqueton, six embouts et un câble USB-A vers USB-C : de quoi ranger et transporter les accessoires avec les écouteurs.",
+      en: "These white TWS earbuds come with a compact charging case and a built-in microphone for calls. The set also includes a silicone case with carabiner, six ear tips and a USB-A to USB-C cable, keeping the accessories together with the earbuds.",
     },
     features: {
       fr: ["Micro intégré pour les appels", "Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Étui silicone avec mousqueton, 6 embouts et câble USB-A vers USB-C fournis", "Coloris : blanc"],
@@ -584,8 +584,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-mid",
     images: ["/earbuds-true-wireless-blanc.jpg"],
     description: {
-      fr: "Blancs, sans fil, avec un boîtier de charge compact. Port confortable, son de qualité, connexion stable et longue autonomie annoncée.",
-      en: "White, wireless, with a compact charging case. Comfortable fit, quality sound, stable connection and long battery life stated.",
+      fr: "Une paire d’écouteurs True Wireless blanche avec son boîtier de charge compact. Le modèle est présenté avec une connexion stable, un port confortable et une autonomie prolongée annoncée sur l’emballage. Une silhouette discrète qui s’intègre facilement aux habitudes de tous les jours.",
+      en: "A white pair of True Wireless earbuds supplied with a compact charging case. The model is presented with a stable connection, a comfortable fit and extended battery life stated on the packaging. A simple design that fits easily into everyday routines.",
     },
     features: {
       fr: ["Son Hi-Fi", "Longue autonomie (mention de l’emballage)", "Connexion stable", "Design léger et port confortable", "Coloris : blanc"],
@@ -597,8 +597,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-mid",
     images: ["/earbuds-airpods-3.jpg"],
     description: {
-      fr: "Sans embouts et légers, ils se connectent facilement à un iPhone. Dans la boîte : boîtier de charge, câble USB-C vers Lightning et notice.",
-      en: "No ear tips and lightweight, they connect easily to an iPhone. In the box: charging case, USB-C to Lightning cable and instructions.",
+      fr: "Avec leur format sans embouts, les AirPods 3 offrent une silhouette légère et se connectent facilement à un iPhone. Le boîtier de charge, le câble USB-C vers Lightning et la notice sont inclus dans la boîte.",
+      en: "With their ear-tip-free design, AirPods 3 have a lightweight profile and connect easily to an iPhone. The charging case, USB-C to Lightning cable and instructions are included in the box.",
     },
     features: {
       fr: ["Modèle : AirPods 3", "Boîtier de charge inclus", "Câble USB-C vers Lightning fourni", "Avec boîte et notice", "Coloris : blanc"],
@@ -610,8 +610,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-top",
     images: ["/earbuds-airpods-pro.jpg"],
     description: {
-      fr: "Embouts en silicone pour un port bien ajusté. Boîtier de charge, câble USB-C vers USB-C et notice dans la boîte. C’est le modèle haut de gamme de notre sélection d’écouteurs.",
-      en: "Silicone ear tips for a snug fit. Charging case, USB-C to USB-C cable and instructions in the box. This is the high-end model of our earbud selection.",
+      fr: "Les AirPods Pro sont présentés avec des embouts en silicone pour un maintien ajusté. Le boîtier de charge, le câble USB-C vers USB-C et la notice sont fournis dans la boîte. Les éléments essentiels sont réunis pour retrouver l’ensemble au même endroit.",
+      en: "AirPods Pro come with silicone ear tips for an adjusted fit. The charging case, USB-C to USB-C cable and instructions are supplied in the box. The key items are brought together in one package.",
     },
     features: {
       fr: ["Modèle : AirPods Pro", "Embouts en silicone", "Boîtier de charge inclus", "Câble USB-C vers USB-C fourni", "Avec boîte et notice", "Coloris : blanc"],
@@ -623,8 +623,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-mid",
     images: ["/earbuds-free-buds-lge-20.jpg"],
     description: {
-      fr: "Intra-auriculaires Bluetooth 5.3 noirs, avec isolation du bruit, basses précises et micro pour les appels. Le boîtier affiche le niveau de batterie en pourcentage. Jusqu’à 5,5 h d’écoute par charge, 20 h avec le boîtier. Câble USB-A vers USB-C fourni.",
-      en: "Black in-ear Bluetooth 5.3 earbuds with noise isolation, precise bass and a mic for calls. The case shows the battery level as a percentage. Up to 5.5 h of listening per charge, 20 h with the case. USB-A to USB-C cable supplied.",
+      fr: "Ces Free Buds LGE-20 sont des écouteurs intra-auriculaires Bluetooth 5.3 avec micro pour les appels et isolation du bruit annoncée. Le boîtier affiche le niveau de batterie en pourcentage. L’autonomie indiquée peut atteindre 5,5 h par charge et 20 h avec le boîtier ; câble USB-A vers USB-C fourni.",
+      en: "These Free Buds LGE-20 are Bluetooth 5.3 in-ear earbuds with a microphone for calls and stated noise isolation. The case displays the battery level as a percentage. Stated battery life is up to 5.5 hours per charge and 20 hours with the case; USB-A to USB-C cable included.",
     },
     features: {
       fr: ["Bluetooth 5.3", "Isolation du bruit, basses précises, son Hi-Fi", "Micro intégré", "Autonomie indiquée : 5,5 h par charge, jusqu’à 20 h avec le boîtier", "Boîtier de charge avec affichage LED du niveau de batterie", "Résistance à l’eau IPX5 (mention de l’emballage)", "Câble USB-A vers USB-C fourni", "Modèle : Free Buds LGE-20", "Coloris : noir"],
@@ -636,8 +636,8 @@ const catalogue: Product[] = [
     subcategory: "earbuds-openear",
     images: ["/earbuds-ormushie-oms-free.jpg"],
     description: {
-      fr: "Le boîtier en tissu et les finitions brillantes donnent à ces écouteurs à clip un look soigné. Ils se portent confortablement sur l’oreille, avec un son Hi-Fi (Hi-Res Audio), des basses renforcées et une bonne qualité d’appel. Câble USB-A vers USB-C, 6 embouts et notice fournis.",
-      en: "The fabric case and glossy finishes give these clip-on earbuds a neat look. They sit comfortably on the ear, with Hi-Fi sound (Hi-Res Audio), boosted bass and good call quality. USB-A to USB-C cable, 6 ear tips and instructions supplied.",
+      fr: "Le boîtier en tissu et les finitions brillantes donnent aux Ormushie OMS-FREE une présentation soignée. Leur format à clip se pose sur l’oreille ; le son Hi-Fi, les basses renforcées et la qualité des appels sont annoncés pour ce modèle. Câble USB-A vers USB-C, six embouts et notice fournis.",
+      en: "The fabric case and glossy details give the Ormushie OMS-FREE a neat presentation. Their clip-on design sits on the ear; Hi-Fi sound, enhanced bass and call quality are stated for this model. USB-A to USB-C cable, six ear tips and instructions included.",
     },
     features: {
       fr: ["Format à clip, port confortable", "Son Hi-Fi, Hi-Res Audio (mention de l’emballage)", "Basses renforcées", "Pour appels téléphoniques", "Câble USB-A vers USB-C et 6 embouts fournis", "Marque : Ormushie – modèle OMS-FREE", "Coloris visibles sur l’emballage : noir, beige doré, violet"],
@@ -650,8 +650,8 @@ const catalogue: Product[] = [
     images: ["/casque-sony-wh-xm5-blanc.jpg", "/casque-sony-wh-xm5-noir.jpg"],
     variants: ["Blanc", "Noir"],
     description: {
-      fr: "Réduction de bruit active, jusqu’à 30 h d’autonomie annoncées et son 360 Reality Audio. Utile pour réviser, dans les transports ou en voyage. Livré avec étui de transport, câble USB-A vers USB-C, câble audio jack 3,5 mm et adaptateur avion.",
-      en: "Active noise cancelling, up to 30 h of stated battery life and 360 Reality Audio. Useful for revising, on public transport or when travelling. Supplied with a carrying case, USB-A to USB-C cable, 3.5 mm audio cable and airplane adapter.",
+      fr: "Le Sony WH-XM5 associe réduction de bruit active et son 360 Reality Audio. L’autonomie annoncée peut atteindre 30 heures. Pour les déplacements ou les moments d’écoute au calme, il est livré avec un étui de transport, deux câbles, dont un audio jack 3,5 mm, et un adaptateur avion.",
+      en: "The Sony WH-XM5 combines active noise cancelling with 360 Reality Audio. Stated battery life is up to 30 hours. For travel or quieter listening moments, it comes with a carrying case, two cables including a 3.5 mm audio cable, and an airplane adapter.",
     },
     features: {
       fr: ["Réduction de bruit active", "Autonomie indiquée : 30 h", "360 Reality Audio (mention de l’emballage)", "Étui, câble USB-A vers USB-C, câble jack 3,5 mm et adaptateur avion fournis", "Marque : Sony – modèle WH-XM5", "Coloris : blanc, noir"],
@@ -667,8 +667,8 @@ const catalogue: Product[] = [
     images: ["/casque-jbl-a18-orange.jpg", "/casque-jbl-a18-blanc.jpg", "/casque-jbl-a18-gris.jpg", "/casque-jbl-a18-noir.jpg"],
     variants: ["Orange", "Blanc", "Gris", "Noir"],
     description: {
-      fr: "Casque Bluetooth léger et pliable, au son Hi-Fi avec des basses marquées. Il se range dans sa pochette, facile à glisser dans un sac pour aller en cours. Câble USB-A vers Micro USB fourni.",
-      en: "Light, foldable Bluetooth headphones with Hi-Fi sound and strong bass. They fit in their pouch, easy to slip into a bag for class. USB-A to Micro USB cable supplied.",
+      fr: "Ce casque JBL Pure Bass A18 est Bluetooth, léger et pliable. Son format se range facilement dans la pochette fournie, pratique pour le glisser dans un sac entre deux utilisations. Le son Hi-Fi et les basses marquées font partie des caractéristiques annoncées. Câble USB-A vers Micro USB fourni.",
+      en: "The JBL Pure Bass A18 is a lightweight, foldable Bluetooth headset. It fits into the supplied pouch, making it easy to carry in a bag between uses. Hi-Fi sound and pronounced bass are among its stated features. USB-A to Micro USB cable included.",
     },
     features: {
       fr: ["Bluetooth", "Son Hi-Fi, Pure Bass", "Pliable et léger", "Port confortable", "Pochette et câble USB-A vers Micro USB fournis", "Marque : JBL – modèle Pure Bass A18", "Coloris : orange, blanc, gris, noir"],
@@ -685,8 +685,8 @@ const catalogue: Product[] = [
     subcategory: "headphones",
     images: ["/casque-jbl-live-660nc.jpg"],
     description: {
-      fr: "Réduction de bruit active, jusqu’à 50 h d’autonomie annoncées sur l’emballage, et appairage rapide Fast Pair pour se connecter vite à un téléphone Android. Coloris noir.",
-      en: "Active noise cancelling, up to 50 h of battery life stated on the packaging, and Fast Pair for connecting quickly to an Android phone. Black.",
+      fr: "Le JBL Live 660NC est équipé d’une réduction de bruit active. L’autonomie pouvant atteindre 50 heures est annoncée sur l’emballage, tout comme la fonction Fast Pair pour faciliter l’appairage avec un téléphone Android. Coloris noir.",
+      en: "The JBL Live 660NC features active noise cancelling. Battery life of up to 50 hours is stated on the packaging, along with Fast Pair for easier pairing with an Android phone. Black.",
     },
     features: {
       fr: ["Réduction de bruit active", "Bluetooth", "Autonomie indiquée : 50 h", "Fast Pair", "Marque : JBL – modèle Live 660NC", "Coloris : noir"],
@@ -698,8 +698,8 @@ const catalogue: Product[] = [
     subcategory: "headphones",
     images: ["/casque-jbl-super-bass-i12.jpg"],
     description: {
-      fr: "Casque Bluetooth circum-aural conçu pour les basses : grands coussinets, arceau rembourré, commandes sur l’oreillette pour la musique et les appels. En noir.",
-      en: "Over-ear Bluetooth headphones designed for bass: large ear cushions, a padded headband and controls on the earcup for music and calls. In black.",
+      fr: "Le JBL Super Bass I12 couvre les oreilles avec de grands coussinets et un arceau rembourré. Les commandes placées sur l’oreillette permettent de gérer la musique et les appels sans chercher son téléphone. Un casque Bluetooth noir au style enveloppant.",
+      en: "The JBL Super Bass I12 sits over the ears with large cushions and a padded headband. Controls on the earcup let you manage music and calls without reaching for your phone. A black Bluetooth headset with an enveloping fit.",
     },
     features: {
       fr: ["Bluetooth", "Super Bass", "Grands coussinets, arceau rembourré", "Boutons de commande sur l’oreillette", "Marque : JBL – modèle I12", "Coloris : noir"],
@@ -712,8 +712,8 @@ const catalogue: Product[] = [
     images: ["/casque-airpods-max-boite.jpg", "/casque-airpods-max-argent.jpg", "/casque-airpods-max-vert.jpg", "/casque-airpods-max-bleu.jpg", "/casque-airpods-max-rouge.jpg", "/casque-airpods-max-noir.jpg"],
     variants: ["Argent", "Vert", "Bleu", "Rouge", "Noir"],
     description: {
-      fr: "Structure en aluminium, mailles et coussinets enveloppants. Livré dans sa boîte avec son étui, un câble USB-C vers USB-C et la notice.",
-      en: "Aluminium structure, mesh and enveloping ear cushions. Supplied in its box with its case, a USB-C to USB-C cable and the instructions.",
+      fr: "Les AirPods Max se distinguent par leur structure en aluminium, leurs mailles et leurs coussinets enveloppants. Ils sont fournis dans leur boîte avec un étui, un câble USB-C vers USB-C et la notice.",
+      en: "AirPods Max feature an aluminium structure, mesh and enveloping ear cushions. They are supplied in their box with a case, a USB-C to USB-C cable and the instructions.",
     },
     features: {
       fr: ["Modèle : AirPods Max", "Étui, câble USB-C vers USB-C et notice fournis", "Avec boîte", "Coloris : argent, vert, bleu, rouge, noir"],
@@ -731,8 +731,8 @@ const catalogue: Product[] = [
     subcategory: "headphones",
     images: ["/casque-bose-quietcomfort-ultra.jpg"],
     description: {
-      fr: "Réduction de bruit, son premium, longue autonomie annoncée et coussinets doux pour les longues écoutes. Livré avec un étui rigide, un câble USB-A vers USB-C et un câble audio jack 3,5 mm. Coloris noir.",
-      en: "Noise cancelling, premium sound, long stated battery life and soft cushions for long listening sessions. Supplied with a hard case, a USB-A to USB-C cable and a 3.5 mm audio cable. Black.",
+      fr: "Le Bose QuietComfort Ultra associe réduction de bruit et coussinets doux, avec une autonomie prolongée annoncée. Il est fourni avec un étui rigide, un câble USB-A vers USB-C et un câble audio jack 3,5 mm. Coloris noir.",
+      en: "The Bose QuietComfort Ultra combines noise cancelling with soft ear cushions and extended battery life as stated. It comes with a hard case, a USB-A to USB-C cable and a 3.5 mm audio cable. Black.",
     },
     features: {
       fr: ["Réduction de bruit", "Son premium, longue autonomie (mention de l’emballage)", "Port confortable", "Étui rigide, câble USB-A vers USB-C et câble jack 3,5 mm fournis", "Marque : Bose – modèle QuietComfort Ultra", "Coloris : noir"],
@@ -741,90 +741,90 @@ const catalogue: Product[] = [
   }),
   caseProduct("tech-coque-14plus-alveoles-violet", "14 Plus", ["/coque-14plus-alveoles-violet.jpg"],
     ["Coque alvéoles violette – iPhone 14 Plus", "Purple honeycomb case – iPhone 14 Plus"],
-    ["Violette, avec un motif alvéolé (hexagones) brillant. Elle sort du lot sans être chargée.", "Purple, with a glossy honeycomb (hexagon) pattern. It stands out without being busy."],
+    ["Le violet et le motif alvéolé brillant donnent à cette coque un relief graphique sans surcharger le dos du téléphone. Les boutons sont recouverts pour garder une finition uniforme.", "Glossy purple and a honeycomb pattern give this case a graphic look without making the back feel busy. The covered buttons keep the finish consistent."],
     [["Motif alvéoles (hexagones)", "Boutons recouverts", "Coloris : violet"], ["Honeycomb (hexagon) pattern", "Covered buttons", "Colour: purple"]]),
   caseProduct("tech-coque-13pro-monogramme-marron", "13 Pro", ["/coque-13pro-monogramme-marron-1.jpg", "/coque-13pro-monogramme-marron-2.jpg"],
     ["Coque marron à motif monogramme – iPhone 13 Pro", "Brown monogram-pattern case – iPhone 13 Pro"],
-    ["Finition aspect cuir marron avec un monogramme en relief, entourée de bords noirs. Un style plutôt classique.", "Brown leather-look finish with an embossed monogram, framed by black edges. A rather classic style."],
+    ["Le marron à effet cuir est marqué par un monogramme en relief, encadré de bords noirs. Une coque aux tons classiques, avec un motif qui se remarque de près.", "The brown leather-look finish features a raised monogram framed by black edges. A classic colour combination with a pattern that stands out on closer look."],
     [["Finition aspect cuir, motif monogramme en relief", "Bords noirs", "Coloris : marron"], ["Leather-look finish, embossed monogram pattern", "Black edges", "Colour: brown"]]),
   caseProduct("tech-coque-15-magsafe-transparente", "15", ["/coque-15-magsafe-transparente.jpg"],
     ["Coque transparente MagSafe antichoc – iPhone 15", "Clear shockproof MagSafe case – iPhone 15"],
-    ["Transparente, elle laisse voir la couleur de ton iPhone. Coins renforcés et anneau MagSafe pour la poser sur un chargeur ou un support magnétique.", "Clear, so your iPhone’s colour still shows. Reinforced corners and a MagSafe ring for placing it on a magnetic charger or mount."],
+    ["Son dos transparent laisse apparaître la couleur de l’iPhone, tandis que les coins renforcés et l’anneau MagSafe ajoutent des détails pratiques au quotidien. Elle peut être utilisée avec un chargeur ou un support magnétique compatible.", "The clear back lets the iPhone’s colour show through, while reinforced corners and a MagSafe ring add practical details for everyday use. It can be used with a compatible magnetic charger or mount."],
     [["Transparente", "Coins renforcés antichoc", "Anneau MagSafe visible", "Coloris : transparent"], ["Clear", "Reinforced shockproof corners", "MagSafe ring visible", "Colour: clear"]]),
   caseProduct("tech-coque-12pro-magsafe-gris-mat", "12 Pro", ["/coque-12pro-magsafe-gris-mat.jpg"],
     ["Coque MagSafe gris mat, bord noir – iPhone 12 Pro", "Matte grey MagSafe case with black edge – iPhone 12 Pro"],
-    ["Dos gris mat translucide, bord noir et anneau MagSafe. Une couleur neutre qui va avec tout.", "Translucent matte grey back, black edge and a MagSafe ring. A neutral colour that goes with everything."],
+    ["Le dos gris mat translucide est souligné par un bord noir et un anneau MagSafe visible. Une combinaison sobre qui laisse deviner le téléphone tout en lui donnant une finition plus contrastée.", "The translucent matte grey back is outlined by a black edge and a visible MagSafe ring. An understated combination that lets the phone show through while adding contrast."],
     [["Dos gris mat, bord noir", "Anneau MagSafe visible", "Coloris : gris / noir"], ["Matte grey back, black edge", "MagSafe ring visible", "Colour: grey / black"]]),
   caseProduct("tech-coque-16pro-orange-tisse", "16 Pro", ["/coque-16pro-orange-tisse.jpg"],
     ["Coque orange motif tissé – iPhone 16 Pro", "Orange woven-pattern case – iPhone 16 Pro"],
-    ["Orange brillant, avec un motif tissé noir et beige. Un protège-objectifs doré est intégré autour des caméras.", "Glossy orange with a black and beige woven pattern. A gold lens protector is built in around the cameras."],
+    ["L’orange brillant attire le regard, avec un motif tissé noir et beige qui donne du relief au dos. Les contours dorés autour des caméras prolongent les détails de la coque.", "Glossy orange catches the eye, while the black and beige woven pattern adds texture to the back. Gold-tone camera surrounds carry the detailing through the design."],
     [["Finition brillante, motif tissé noir et beige", "Contours dorés autour des caméras", "Coloris : orange"], ["Glossy finish, black and beige woven pattern", "Gold rings around the cameras", "Colour: orange"]]),
   caseProduct("tech-coque-17pro-noire-tisse", "17 Pro", ["/coque-17pro-noire-tisse.jpg"],
     ["Coque noire motif tissé – iPhone 17 Pro", "Black woven-pattern case – iPhone 17 Pro"],
-    ["Noire brillante, motif tissé gris et noir, contours argentés autour des caméras.", "Glossy black, grey and black woven pattern, silver trim around the cameras."],
+    ["Le noir brillant est travaillé par un motif tissé gris et noir. Les contours argentés autour des caméras apportent un contraste discret à cette coque au style sombre.", "Glossy black is detailed with a grey-and-black woven pattern. Silver-tone camera surrounds add a subtle contrast to this dark design."],
     [["Finition brillante, motif tissé noir et gris", "Contours argentés autour des caméras", "Coloris : noir"], ["Glossy finish, black and grey woven pattern", "Silver rings around the cameras", "Colour: black"]]),
   caseProduct("tech-coque-14pro-magsafe-blanche", "14 Pro", ["/coque-14pro-magsafe-blanche.jpg"],
     ["Coque transparente blanche MagSafe – iPhone 14 Pro", "White-tinted clear MagSafe case – iPhone 14 Pro"],
-    ["Dos blanc cassé transparent, anneau MagSafe sombre et coins renforcés pour protéger les angles du téléphone.", "Transparent off-white back, dark MagSafe ring and reinforced corners to protect the phone’s corners."],
+    ["Le dos blanc cassé transparent laisse entrevoir le téléphone, avec un anneau MagSafe sombre qui ressort au centre. Les coins renforcés complètent cette coque aux tons clairs.", "The translucent off-white back lets the phone show through, with a dark MagSafe ring standing out at the centre. Reinforced corners complete this light-toned case."],
     [["Dos blanc cassé, transparente", "Coins renforcés", "Anneau MagSafe visible", "Coloris : blanc / transparent"], ["Off-white back, clear", "Reinforced corners", "MagSafe ring visible", "Colour: white / clear"]]),
   caseProduct("tech-coque-13pro-fleurs-violet", "13 Pro", ["/coque-13pro-fleurs-violet.jpg"],
     ["Coque violette fleurs et papillon « Smile » – iPhone 13 Pro", "Purple flowers and butterfly “Smile” case – iPhone 13 Pro"],
-    ["Violette, décorée de fleurs en relief, de perles et d’un papillon translucide, avec le message « A smile is the prettiest thing you can wear ». Pour celles qui aiment les coques colorées et pleines de détails.", "Purple, decorated with embossed flowers, pearls and a translucent butterfly, with the message “A smile is the prettiest thing you can wear”. For those who like colourful cases full of detail."],
+    ["Fleurs en relief, perles et papillon translucide composent le décor de cette coque violette. Le message « A smile is the prettiest thing you can wear » ajoute une touche personnelle à son style très détaillé.", "Raised flowers, pearls and a translucent butterfly decorate this purple case. The message “A smile is the prettiest thing you can wear” adds a personal touch to its detailed look."],
     [["Décor 3D : fleurs, perles et papillon", "Message « Nice / Smile »", "Coloris : violet"], ["3D decoration: flowers, pearls and butterfly", "“Nice / Smile” message", "Colour: purple"]]),
   caseProduct("tech-coque-14pro-fumee-phone-case", "14 Pro", ["/coque-14pro-fumee-phone-case.jpg"],
     ["Coque fumée transparente – iPhone 14 Pro", "Smoke-tint clear case – iPhone 14 Pro"],
-    ["Transparente teintée fumée, avec un motif en relief et des coins renforcés. Elle reste sombre tout en laissant voir le téléphone.", "Smoke-tinted transparent, with a raised pattern and reinforced corners. It stays dark while still showing the phone."],
+    ["La teinte fumée laisse encore deviner le téléphone, tandis que le motif en relief et les coins renforcés donnent du caractère à la coque. Un choix sombre, sans être complètement opaque.", "The smoke tint still lets the phone show through, while the raised pattern and reinforced corners give the case added character. A dark look without being fully opaque."],
     [["Transparente teintée fumée", "Motif en relief", "Coins renforcés", "Coloris : fumé / noir"], ["Smoke-tinted clear", "Embossed pattern", "Reinforced corners", "Colour: smoke / black"]]),
   caseProduct("tech-coque-14pro-rose-transparente", "14 Pro", ["/coque-14pro-rose-transparente.jpg"],
     ["Coque rose à bord transparent – iPhone 14 Pro", "Pink case with clear edge – iPhone 14 Pro"],
-    ["Rose vif brillant, avec un bord transparent antichoc qui protège les coins.", "Bright glossy pink, with a transparent shockproof edge that protects the corners."],
+    ["Le rose vif et brillant donne immédiatement le ton. Le bord transparent apporte un contraste léger autour de la coque et les angles sont conçus pour être renforcés.", "Bright glossy pink sets the tone straight away. The clear edge adds a light contrast around the case, with reinforced corners."],
     [["Dos rose brillant, bord transparent", "Coins renforcés", "Coloris : rose"], ["Glossy pink back, clear edge", "Reinforced corners", "Colour: pink"]]),
   caseProduct("tech-coque-14pro-magsafe-bronze", "14 Pro", ["/coque-14pro-magsafe-bronze.jpg"],
     ["Coque MagSafe doré / bronze – iPhone 14 Pro", "Gold / bronze MagSafe case – iPhone 14 Pro"],
-    ["Dos doré translucide, bord bronze et anneau MagSafe. Des tons chauds qui font ressortir la couleur du téléphone.", "Translucent gold back, bronze edge and a MagSafe ring. Warm tones that bring out the phone’s colour."],
+    ["Le dos doré translucide rencontre un bord bronze et un anneau MagSafe bien visible. Les tons chauds donnent à cette coque un aspect lumineux tout en laissant apparaître une partie du téléphone.", "The translucent gold back meets a bronze edge and a clearly visible MagSafe ring. Warm tones give this case a bright look while allowing part of the phone to show through."],
     [["Dos doré, bord bronze", "Anneau MagSafe visible", "Coloris : doré / bronze"], ["Gold back, bronze edge", "MagSafe ring visible", "Colour: gold / bronze"]]),
   caseProduct("tech-coque-13promax-strass-papillon", "13 Pro Max", ["/coque-13promax-strass-papillon.jpg"],
     ["Coque transparente strass dorés et papillon – iPhone 13 Pro Max", "Clear case with gold rhinestones and butterfly – iPhone 13 Pro Max"],
-    ["Fond doré pailleté entouré de strass, avec un papillon en relief. Les coins sont renforcés. Une coque pour celles qui aiment ce qui brille.", "Glittery gold background surrounded by rhinestones, with an embossed butterfly. The corners are reinforced. A case for those who like things that sparkle."],
+    ["Un fond doré pailleté, des strass et un papillon en relief composent le décor de cette coque transparente. Les coins renforcés complètent le modèle, pensé pour celles et ceux qui aiment les détails brillants.", "A glittery gold base, rhinestones and a raised butterfly create the look of this clear case. Reinforced corners complete the design, made for those who enjoy sparkling details."],
     [["Strass et contour doré", "Fond pailleté, papillon décoratif", "Coins renforcés", "Coloris : transparent / doré"], ["Rhinestones and gold frame", "Glitter background, decorative butterfly", "Reinforced corners", "Colour: clear / gold"]]),
   caseProduct("tech-coque-13promax-alveoles-noire", "13 Pro Max", ["/coque-13promax-alveoles-noire.jpg"],
     ["Coque fumée alvéoles antichoc – iPhone 13 Pro Max", "Smoke honeycomb shockproof case – iPhone 13 Pro Max"],
-    ["Noire fumée, motif alvéolé, coins renforcés pour mieux encaisser les chutes.", "Smoked black, honeycomb pattern, reinforced corners to better absorb drops."],
+    ["La teinte noire fumée et le motif alvéolé donnent à cette coque un aspect texturé et discret. Les coins renforcés ajoutent un détail fonctionnel à son dessin géométrique.", "The smoked black tint and honeycomb pattern give this case a subtle, textured look. Reinforced corners add a practical detail to its geometric design."],
     [["Motif alvéoles", "Coins renforcés antichoc", "Coloris : noir fumé"], ["Honeycomb pattern", "Reinforced shockproof corners", "Colour: smoke black"]]),
   caseProduct("tech-coque-13promax-strass-vert-dragonne", "13 Pro Max", ["/coque-13promax-strass-vert-dragonne.jpg"],
     ["Coque strass verts avec dragonne et breloques – iPhone 13 Pro Max", "Green rhinestone case with strap and charms – iPhone 13 Pro Max"],
-    ["Transparente et pailletée, bordée de strass verts. Elle vient avec une dragonne tressée verte et des breloques (trèfle, papillons, médailles), pratiques pour tenir le téléphone.", "Clear and glittery, edged with green rhinestones. It comes with a braided green strap and charms (clover, butterflies, medals), handy for holding the phone."],
+    ["Les strass verts bordent le dos transparent et pailleté, accompagnés d’une dragonne tressée et de petites breloques : trèfle, papillons et médailles. Un modèle décoratif qui permet aussi de garder le téléphone en main grâce à sa dragonne.", "Green rhinestones frame the clear glittery back, alongside a braided strap and small charms: a clover, butterflies and medallions. A decorative design that also gives you a strap to hold the phone."],
     [["Strass verts, fond pailleté", "Dragonne tressée verte et breloques", "Coins renforcés", "Coloris : vert / transparent"], ["Green rhinestones, glitter background", "Green braided strap and charms", "Reinforced corners", "Colour: green / clear"]]),
   caseProduct("tech-coque-15promax-rose", "15 Pro Max", ["/coque-15promax-rose.jpg"],
     ["Coque rose brillant – iPhone 15 Pro Max", "Glossy pink case – iPhone 15 Pro Max"],
-    ["Rose vif, brillante et translucide, avec un large contour autour des caméras.", "Bright pink, glossy and translucent, with a wide surround around the cameras."],
+    ["Rose vif, finition brillante et légèrement translucide : cette coque mise sur une couleur franche. Son large contour autour des caméras souligne le haut du téléphone.", "Bright pink with a glossy, slightly translucent finish: this case is all about a bold colour. Its wide camera surround draws attention to the top of the phone."],
     [["Finition brillante translucide", "Boutons recouverts", "Coloris : rose"], ["Glossy translucent finish", "Covered buttons", "Colour: pink"]]),
   caseProduct("tech-coque-14promax-beige", "14 Pro Max", ["/coque-14promax-beige.jpg"],
     ["Coque beige à bord transparent – iPhone 14 Pro Max", "Beige case with clear edge – iPhone 14 Pro Max"],
-    ["Dos beige doux, bord transparent et contour caméra crème. Une teinte neutre.", "Soft beige back, transparent edge and a cream camera surround. A neutral shade."],
+    ["Le dos beige doux contraste avec le bord transparent et le contour crème autour de la caméra. Une association neutre et facile à assortir, sans motif supplémentaire.", "The soft beige back contrasts with the clear edge and cream camera surround. A neutral combination that is easy to pair, without an extra pattern."],
     [["Dos beige, bord transparent", "Contour caméra crème", "Coloris : beige / transparent"], ["Beige back, clear edge", "Cream camera frame", "Colour: beige / clear"]]),
   ...splitColours(caseProduct("tech-coque-11pro-logo", "11 Pro", ["/coque-11pro-violet-logo.jpg", "/coque-11pro-creme-logo.jpg"],
     ["Coque translucide logo pomme – iPhone 11 Pro", "Translucent case with apple logo – iPhone 11 Pro"],
-    ["Translucide et teintée, avec un logo pomme au dos. On devine la couleur du téléphone à travers.", "Translucent and tinted, with an apple logo on the back. You can make out your phone’s colour through it."],
+    ["La finition translucide teintée laisse deviner la couleur du téléphone, avec un logo pomme visible au dos. Une coque simple, relevée par ce détail central.", "The tinted translucent finish lets the phone’s colour show through, with an apple logo visible on the back. A simple case highlighted by this central detail."],
     [["Translucide teintée, logo pomme au dos", "Bord transparent", "Coloris : violet clair, crème"], ["Tinted translucent, apple logo on the back", "Clear edge", "Colours: light purple, cream"]]), [
     {"fr": "Violet clair", "en": "Light purple", "slug": "violet", "images": ["/coque-11pro-violet-logo.jpg"]},
     {"fr": "Crème", "en": "Cream", "slug": "creme", "images": ["/coque-11pro-creme-logo.jpg"]},
   ]),
   caseProduct("tech-coque-11-gris-fume-logo", "11", ["/coque-11-gris-fume-logo.jpg"],
     ["Coque gris fumé logo pomme – iPhone 11", "Smoke grey case with apple logo – iPhone 11"],
-    ["Translucide gris fumé, logo pomme au dos et contour caméra blanc.", "Translucent smoke grey, apple logo on the back and a white camera surround."],
+    ["Le gris fumé translucide donne un aspect discret à cette coque, avec le logo pomme au dos et un contour blanc autour de la caméra. Un modèle sobre avec un contraste clair au niveau de l’objectif.", "The translucent smoke-grey finish gives this case a subtle look, with an apple logo on the back and a white camera surround. An understated design with a light contrast around the camera."],
     [["Translucide gris fumé, logo pomme au dos", "Contour caméra blanc", "Coloris : gris fumé"], ["Translucent smoke grey, apple logo on the back", "White camera frame", "Colour: smoke grey"]]),
   caseProduct("tech-coque-11-noire-logo", "11", ["/coque-11-noire-logo.jpg"],
     ["Coque noire brillante logo pomme – iPhone 11", "Glossy black case with apple logo – iPhone 11"],
-    ["Noire brillante et translucide, avec un logo pomme au dos.", "Glossy translucent black, with an apple logo on the back."],
+    ["Noire, brillante et translucide, cette coque laisse légèrement apparaître le téléphone. Le logo pomme au dos apporte le seul détail graphique à sa finition épurée.", "Glossy, translucent black lets the phone show through slightly. The apple logo on the back is the main graphic detail in this clean finish."],
     [["Noire brillante translucide, logo pomme au dos", "Coloris : noir"], ["Glossy translucent black, apple logo on the back", "Colour: black"]]),
   caseProduct("tech-coque-11-bleu-roi", "11", ["/coque-11-bleu-roi.jpg"],
     ["Coque bleu roi brillant – iPhone 11", "Glossy royal blue case – iPhone 11"],
-    ["Unie, d’un bleu roi brillant et profond. Une couleur franche, sans motif.", "Plain, a deep glossy royal blue. A bold colour, no pattern."],
+    ["Un bleu roi profond et brillant, sans motif ni détail superflu. Cette coque mise sur une couleur uniforme pour donner un ton plus marqué au téléphone.", "A deep, glossy royal blue with no pattern or extra detailing. This case relies on a solid colour to give the phone a stronger look."],
     [["Finition brillante unie", "Coloris : bleu roi"], ["Plain glossy finish", "Colour: royal blue"]]),
   caseProduct("tech-coque-11-bleue-volet-magsafe", "11", ["/coque-11-bleue-volet-magsafe.jpg"],
     ["Coque bleue MagSafe avec volet caméra coulissant – iPhone 11", "Blue MagSafe case with sliding camera cover – iPhone 11"],
-    ["Bleue, avec un volet coulissant qui cache la caméra quand tu ne t’en sers pas, et un anneau MagSafe au dos.", "Blue, with a sliding cover that hides the camera when you’re not using it, and a MagSafe ring on the back."],
+    ["Cette coque bleue associe un anneau MagSafe au dos à un volet coulissant qui recouvre la caméra lorsqu’elle n’est pas utilisée. Deux détails qui distinguent son design des coques classiques.", "This blue case combines a MagSafe ring on the back with a sliding cover that closes over the camera when it is not in use. Two details that set it apart from a basic case."],
     [["Volet coulissant sur la caméra", "Anneau MagSafe visible", "Coloris : bleu"], ["Sliding camera cover", "MagSafe ring visible", "Colour: blue"]]),
   ...splitColours(newProduct("tech-enceinte-music-x2651", "tech", {
     name: { fr: "Enceinte portable MUSIC X-2651", en: "MUSIC X-2651 portable speaker" },
@@ -832,8 +832,8 @@ const catalogue: Product[] = [
     images: ["/enceinte-music-x2651-bleu.jpg", "/enceinte-music-x2651-orange.jpg", "/enceinte-music-x2651-vert.jpg", "/enceinte-music-x2651-noir.jpg"],
     variants: ["Bleu clair", "Orange", "Vert", "Noir"],
     description: {
-      fr: "Petite enceinte ronde sans fil, façade en tissu et boutons de commande sur le dessus. La dragonne, assortie à la couleur, permet de l’accrocher à un sac ou de la tenir à la main. Câble de charge USB fourni.",
-      en: "Small round wireless speaker with a fabric front and control buttons on top. The strap, matched to the colour, lets you hang it from a bag or hold it in your hand. USB charging cable supplied.",
+      fr: "Compacte et ronde, l’enceinte MUSIC X-2651 associe une façade en tissu à des commandes placées sur le dessus. Sa dragonne assortie permet de la tenir facilement ou de l’accrocher à un sac. Le câble de charge USB est fourni.",
+      en: "Compact and round, the MUSIC X-2651 speaker pairs a fabric front with controls on top. Its matching strap makes it easy to carry by hand or attach to a bag. USB charging cable included.",
     },
     features: {
       fr: ["Enceinte portable sans fil (mention de l’emballage)", "Façade en tissu, boutons de commande sur le dessus", "Dragonne fournie", "Câble de charge USB fourni : {x}", "Marque : MUSIC – modèle X-2651", "Coloris : bleu clair, orange, vert, noir"],
@@ -851,8 +851,8 @@ const catalogue: Product[] = [
     images: ["/enceinte-loveyin-ai176-violet-1.jpg", "/enceinte-loveyin-ai176-violet-2.jpg", "/enceinte-loveyin-ai176-noir.jpg"],
     variants: ["Violet-bleu", "Noir"],
     description: {
-      fr: "10 W annoncés, barres lumineuses colorées, poignée de transport et batterie de 1200 mAh. Bluetooth, radio FM, lecture depuis une carte TF ou une clé USB. Avec deux enceintes, le mode TWS les jumelle en stéréo.",
-      en: "10 W stated, coloured light bars, a carrying handle and a 1200 mAh battery. Bluetooth, FM radio, playback from a TF card or USB stick. With two speakers, TWS mode pairs them in stereo.",
+      fr: "Avec ses barres lumineuses colorées et sa poignée, la Loveyin Ai-176 apporte aussi un effet visuel à l’écoute. Elle propose une connexion Bluetooth, la radio FM et la lecture depuis une carte TF ou une clé USB. Sa puissance de 10 W et sa batterie de 1 200 mAh sont indiquées ; le mode TWS permet de jumeler deux enceintes compatibles.",
+      en: "With coloured light bars and a carrying handle, the Loveyin Ai-176 adds a visual element to listening. It offers Bluetooth, FM radio and playback from a TF card or USB drive. Its stated output is 10 W and its battery is 1,200 mAh; TWS mode pairs two compatible speakers.",
     },
     features: {
       fr: ["Puissance 10 W (mention de l’emballage)", "Bluetooth, radio FM, carte TF, clé USB", "Jumelage de 2 enceintes (TWS)", "Barres lumineuses LED, mode lumière réglable avec la touche M", "Batterie Li-ion 1200 mAh (mention de l’emballage)", "Poignée de transport, interrupteur marche/arrêt, boutons précédent / suivant / volume / lecture", "Câble de charge, câble jack 3,5 mm et adaptateur ou notice selon le lot (voir photos)", "Marque : Loveyin – modèle Ai-176", "Coloris : violet-bleu, noir"],
@@ -868,8 +868,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-day-date-palmier.jpg"],
     description: {
-      fr: "Acier et or jaune sur le bracelet President, lunette cannelée dorée, cadran noir à motif palmier avec des index façon diamant. Il indique le jour et la date, et l’inscription Rolex figure sur le cadran. Une montre habillée, qui va aussi bien avec une chemise qu’avec un blazer.",
-      en: "Steel and yellow gold on the President bracelet, a gold fluted bezel and a black palm-pattern dial with diamond-style markers. It shows the day and date, with the Rolex inscription on the dial. A dressy watch that goes as well with a shirt as with a blazer.",
+      fr: "Le cadran noir à motif palmier attire le regard, tandis que les index façon diamant et la lunette cannelée dorée apportent une finition plus habillée. Le bracelet President mêle acier et doré ; l’affichage indique le jour et la date. Une montre qui accompagne aussi bien une chemise qu’une tenue plus soignée.",
+      en: "The black palm-pattern dial draws the eye, while the diamond-style markers and gold-tone fluted bezel give it a dressier finish. The President bracelet combines steel and gold tones, and the display shows the day and date. An easy match for a shirt or a more polished outfit.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Day-Date", "Bracelet President acier et or jaune, lunette cannelée", "Cadran noir motif palmier, index façon diamant", "Affichage du jour et de la date", "Style : classique"],
@@ -882,8 +882,8 @@ const catalogue: Product[] = [
     audience: "unisex",
     images: ["/montre-datejust-noire.jpg"],
     description: {
-      fr: "Tout est noir sauf le cadran argenté, qui ressort bien : boîtier, lunette cannelée et bracelet President. La date est à 3 heures et le cadran porte l’inscription Rolex. Sombre mais très lisible, elle convient aussi bien aux hommes qu’aux femmes.",
-      en: "Everything is black except the silver dial, which stands out: case, fluted bezel and President bracelet. The date is at 3 o’clock and the dial carries the Rolex inscription. Dark but very readable, it suits men and women alike.",
+      fr: "Le boîtier, la lunette cannelée et le bracelet President sont noirs ; le cadran argenté crée un contraste net. La date apparaît à 3 heures. Une combinaison sombre et graphique, avec un cadran qui reste bien visible.",
+      en: "The case, fluted bezel and President bracelet are black, set against a contrasting silver dial. The date window sits at 3 o’clock. A dark, graphic look with a dial that stands out clearly.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Boîtier, lunette cannelée et bracelet President noirs", "Cadran argenté, index façon diamant et baguettes", "Date à 3 heures", "Style : classique"],
@@ -896,8 +896,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-submariner-bleue.jpg"],
     description: {
-      fr: "Bleu électrique du boîtier au bracelet, avec un cadran rouge en dégradé et une lunette cannelée. On la choisit quand on aime les couleurs franches. Date à 3 heures, inscription Rolex sur le cadran, modèle Submariner.",
-      en: "Electric blue from case to bracelet, with a gradient red dial and a fluted bezel. The one to pick if you like bold colours. Date at 3 o’clock, Rolex inscription on the dial, Submariner model.",
+      fr: "Le bleu électrique habille le boîtier et le bracelet, relevé par un cadran rouge dégradé. La lunette cannelée et la date à 3 heures complètent le modèle. Une montre aux couleurs franches, faite pour ne pas passer inaperçue.",
+      en: "Electric blue covers the case and bracelet, balanced by a red gradient dial. A fluted bezel and date window at 3 o’clock complete the design. A bold colour combination that is hard to miss.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Submariner", "Boîtier et bracelet President bleu électrique", "Cadran dégradé rouge, index façon diamant", "Date à 3 heures", "Style : sportive"],
@@ -910,8 +910,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-oyster-perpetual-noire.jpg"],
     description: {
-      fr: "Une montre simple : acier, cadran noir, date à 3 heures, et une touche de rouge sur la couronne comme seul détail de couleur. Inscription Rolex sur le cadran, modèle Oyster Perpetual. Elle passe aussi bien en cours qu’en soirée.",
-      en: "A simple watch: steel, a black dial, the date at 3 o’clock and a touch of red on the crown as the only colour detail. Rolex inscription on the dial, Oyster Perpetual model. It works as well in class as in the evening.",
+      fr: "Le cadran noir et le bracelet en acier donnent à cette montre une allure sobre. La date se lit à 3 heures ; une touche de rouge sur la couronne vient ponctuer l’ensemble. Un modèle facile à associer, du quotidien aux sorties.",
+      en: "A black dial and steel bracelet give this watch a clean, understated look. The date sits at 3 o’clock, with a small red detail on the crown. An easy style to pair with everyday outfits or evening looks.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Oyster Perpetual", "Bracelet Oyster en acier, lunette lisse", "Cadran noir, index en bâtons, couronne à touche rouge", "Date à 3 heures", "Style : classique"],
@@ -924,8 +924,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-submariner-bicolore.jpg"],
     description: {
-      fr: "La lunette noire graduée, avec son liseré doré, rencontre un bracelet Oyster bicolore acier et or. Le cadran noir a des index façon diamant et une date à 3 heures. Inscription Rolex sur le cadran, modèle Submariner. Un style sportif avec une touche dorée.",
-      en: "The black graduated bezel with gold trim meets a two-tone steel and gold Oyster bracelet. The black dial has diamond-style markers and a date at 3 o’clock. Rolex inscription on the dial, Submariner model. A sporty style with a gold touch.",
+      fr: "La lunette noire graduée et son liseré doré répondent au bracelet Oyster bicolore. Le cadran noir est ponctué d’index façon diamant et d’une date à 3 heures. L’ensemble garde une allure sportive, avec juste ce qu’il faut de doré.",
+      en: "The graduated black bezel with its gold-tone edge pairs with a two-tone Oyster bracelet. Diamond-style markers and a date at 3 o’clock detail the black dial. A sporty design with a considered touch of gold.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Submariner", "Bracelet Oyster acier et or, lunette noire graduée", "Cadran noir, index façon diamant", "Date à 3 heures", "Style : sportive"],
@@ -938,8 +938,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-squelette-fashion-noire.jpg"],
     description: {
-      fr: "Le cadran squelette laisse voir les rouages, ce qui donne du relief à une montre toute noire. Boîtier noir à vis apparentes, grands chiffres bien lisibles, bracelet silicone souple. Plus mode que classique, elle se porte au quotidien.",
-      en: "The skeleton dial shows the gears, which gives an all-black watch some depth. Black case with visible screws, large easy-to-read numerals, soft silicone strap. More fashion than classic, and easy to wear every day.",
+      fr: "Le cadran squelette dévoile les rouages et donne du relief à la silhouette entièrement noire. Les vis apparentes du boîtier et les grands chiffres renforcent son caractère, tandis que le bracelet en silicone apporte une note plus décontractée. À porter quand on veut sortir du classique.",
+      en: "The skeleton dial reveals the inner gears and adds depth to the all-black design. Visible case screws and large numerals give it character, while the silicone strap keeps the look casual. A choice for anyone looking beyond the classic watch.",
     },
     features: {
       fr: ["Marque inscrite sur le cadran : Fashion", "Boîtier tonneau noir, vis apparentes", "Cadran squelette, grands chiffres", "Bracelet silicone noir", "Style : sportive"],
@@ -952,8 +952,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-chrono-noire-rouge.jpg"],
     description: {
-      fr: "Boîtier tonneau noir mat, cadran squelette à trois compteurs et touches rouges qui animent l’ensemble. La date est à 6 heures et le bracelet est en silicone noir. Un look sportif, assumé.",
-      en: "Matte black tonneau case, a skeleton dial with three sub-dials and red accents that liven it up. The date is at 6 o’clock and the strap is black silicone. A sporty, confident look.",
+      fr: "Le boîtier tonneau noir mat accueille un cadran squelette à trois compteurs, animé de détails rouges. La date se trouve à 6 heures et le bracelet est en silicone noir. Une montre au style sportif et affirmé.",
+      en: "The matte-black tonneau case frames a skeleton dial with three sub-dials and red accents. The date sits at 6 o’clock, and the strap is black silicone. A watch with a confident, sporty look.",
     },
     features: {
       fr: ["Boîtier tonneau noir mat, vis apparentes", "Cadran squelette, trois compteurs, touches rouges", "Date à 6 heures", "Bracelet silicone noir", "Style : sportive"],
@@ -966,8 +966,8 @@ const catalogue: Product[] = [
     audience: "men",
     images: ["/montre-auliter-carbone-rouge.jpg"],
     description: {
-      fr: "Boîtier effet carbone, cadran squelette traversé d’aiguilles rouge, vert et bleu, bracelet silicone rouge vif. Une montre colorée qui n’essaie pas de passer inaperçue. La marque AULITER est inscrite sur le cadran.",
-      en: "Carbon-look case, a skeleton dial crossed by red, green and blue hands, a bright red silicone strap. A colourful watch that doesn’t try to go unnoticed. AULITER brand on the dial.",
+      fr: "L’effet carbone du boîtier donne le ton, accompagné d’un cadran squelette traversé d’aiguilles rouges, vertes et bleues. Le bracelet rouge vif prolonge cette palette contrastée. Un modèle coloré qui assume pleinement son style.",
+      en: "The case’s carbon effect sets the tone, alongside a skeleton dial with red, green and blue hands. The bright red strap carries the bold palette through. A colourful model that fully owns its look.",
     },
     features: {
       fr: ["Marque inscrite sur le cadran : AULITER", "Boîtier effet carbone, vis apparentes", "Cadran squelette, aiguilles colorées", "Bracelet silicone rouge", "Style : sportive"],
@@ -976,19 +976,19 @@ const catalogue: Product[] = [
   }),
   caseProduct("tech-coque-11pro-argent-chrome", "11 Pro", ["/coque-11pro-argent-chrome.jpg"],
     ["Coque argent miroir, anneau caméra chromé – iPhone 11 Pro", "Mirror silver case with chrome camera ring – iPhone 11 Pro"],
-    ["Argentée à effet miroir, avec un anneau chromé autour de la caméra. Finition métallisée.", "Mirror-effect silver, with a chrome ring around the camera. Metallic finish."],
+    ["La finition argentée effet miroir donne à cette coque un aspect métallisé. Un anneau chromé autour de la caméra prolonge le reflet et souligne le haut du téléphone.", "The mirror-effect silver finish gives this case a metallic look. A chrome ring around the camera carries the reflective detail through and highlights the top of the phone."],
     [["Finition argentée effet miroir", "Anneau de caméra chromé", "Coloris : argent"], ["Mirror-effect silver finish", "Chrome camera ring", "Colour: silver"]]),
   caseProduct("tech-coque-13promax-menthe-magsafe", "13 Pro Max", ["/coque-13promax-menthe-magsafe.jpg"],
     ["Coque menthe, plaque MagSafe verte – iPhone 13 Pro Max", "Mint case with green MagSafe panel – iPhone 13 Pro Max"],
-    ["Menthe douce, avec une grande plaque verte au dos et un anneau MagSafe bien visible. Un duo de couleurs pastel.", "Soft mint, with a large green plate on the back and a clearly visible MagSafe ring. A pastel colour duo."],
+    ["Le vert menthe de la coque s’associe à une grande plaque verte et à un anneau MagSafe visible au dos. Un duo de tons doux qui apporte une touche pastel au téléphone.", "The mint shade pairs with a large green panel and a visible MagSafe ring on the back. A soft two-tone combination that gives the phone a pastel accent."],
     [["Duo de couleurs menthe et vert", "Anneau MagSafe visible", "Coloris : menthe / vert"], ["Mint and green two-tone", "MagSafe ring visible", "Colour: mint / green"]]),
   caseProduct("tech-coque-12promax-turquoise-pomme", "12 Pro Max", ["/coque-12promax-turquoise-pomme.jpg"],
     ["Coque turquoise clair, logo pomme – iPhone 12 Pro Max", "Light turquoise case with apple logo – iPhone 12 Pro Max"],
-    ["Unie, turquoise clair, avec le logo pomme blanc au centre.", "Plain light turquoise, with the white apple logo in the centre."],
+    ["Le turquoise clair habille cette coque unie, avec un logo pomme blanc placé au centre. Une couleur lumineuse pour celles et ceux qui préfèrent un dos sans motif chargé.", "Light turquoise colours this plain case, with a white apple logo at the centre. A bright option for anyone who prefers a back without a busy pattern."],
     [["Logo pomme blanc au centre", "Coloris : turquoise clair"], ["White apple logo in the centre", "Colour: light turquoise"]]),
   ...splitColours(caseProduct("tech-coque-12promax-silicone-anneau-contraste", "12 Pro Max", ["/coque-12promax-silicone-sauge.jpg", "/coque-12promax-silicone-mauve.jpg", "/coque-12promax-silicone-pervenche.jpg"],
     ["Coque unie à anneau caméra contrasté – iPhone 12 Pro Max", "Plain case with contrast camera ring – iPhone 12 Pro Max"],
-    ["Unie, avec un anneau de caméra d’une teinte différente de celle de la coque.", "Plain, with a camera ring in a different shade from the case."],
+    ["Une coque unie dont l’anneau autour de la caméra contraste avec la couleur principale. Le détail bicolore reste discret et donne une finition plus travaillée au dos.", "A plain case with a camera ring in a contrasting shade. The two-tone detail stays subtle while giving the back a more considered finish."],
     [["Anneau de caméra contrasté", "Coloris : vert sauge, mauve, bleu pervenche"], ["Contrast camera ring", "Colours: sage green, mauve, periwinkle blue"]]), [
     {"fr": "Vert sauge", "en": "Sage green", "slug": "sauge", "images": ["/coque-12promax-silicone-sauge.jpg"]},
     {"fr": "Mauve", "en": "Mauve", "slug": "mauve", "images": ["/coque-12promax-silicone-mauve.jpg"]},
@@ -996,19 +996,19 @@ const catalogue: Product[] = [
   ]),
   caseProduct("tech-coque-17air-bleu-clair-plaque-verte", "17 Air", ["/coque-17air-bleu-clair-plaque-verte.jpg"],
     ["Coque bleu clair, plaque MagSafe menthe – iPhone 17 Air", "Light blue case with mint MagSafe panel – iPhone 17 Air"],
-    ["Bleu clair avec une grande plaque menthe au dos et un anneau MagSafe visible. Les ouvertures de la caméra sont arrondies.", "Light blue with a large mint plate on the back and a visible MagSafe ring. The camera openings are rounded."],
+    ["Le bleu clair rencontre une plaque menthe au dos, traversée par un anneau MagSafe bien visible. Les ouvertures arrondies de la caméra complètent cette association de couleurs fraîches.", "Light blue meets a mint panel on the back, marked by a clearly visible MagSafe ring. Rounded camera openings complete this fresh colour combination."],
     [["Duo de couleurs bleu clair et menthe", "Anneau MagSafe visible", "Coloris : bleu clair / menthe"], ["Light blue and mint two-tone", "MagSafe ring visible", "Colour: light blue / mint"]]),
   caseProduct("tech-coque-17air-transparente-anneau-noir", "17 Air", ["/coque-17air-transparente-anneau-noir.jpg"],
     ["Coque transparente, anneau MagSafe noir – iPhone 17 Air", "Clear case with black MagSafe ring – iPhone 17 Air"],
-    ["Transparente, avec un anneau MagSafe noir bien visible et des bords renforcés.", "Clear, with a clearly visible black MagSafe ring and reinforced edges."],
+    ["La transparence laisse le téléphone visible, tandis que l’anneau MagSafe noir crée un contraste net au dos. Les bords renforcés complètent ce modèle au dessin minimal.", "The clear finish keeps the phone visible, while the black MagSafe ring creates a crisp contrast on the back. Reinforced edges complete this minimal design."],
     [["Transparente, bords renforcés", "Anneau MagSafe noir visible", "Coloris : transparent"], ["Clear, reinforced edges", "Black MagSafe ring visible", "Colour: clear"]]),
   caseProduct("tech-coque-17air-transparente-anneau-bleu", "17 Air", ["/coque-17air-transparente-anneau-bleu.jpg"],
     ["Coque transparente, anneau MagSafe bleu – iPhone 17 Air", "Clear case with blue MagSafe ring – iPhone 17 Air"],
-    ["Transparente, avec un anneau MagSafe bleu vif et une large ouverture pour la caméra. Elle protège sans cacher le design du téléphone.", "Clear, with a bright blue MagSafe ring and a wide camera opening. It protects without hiding the phone’s design."],
+    ["Le dos transparent laisse apparaître le téléphone et met en valeur l’anneau MagSafe bleu vif. La large ouverture de caméra conserve un dessin dégagé autour du module photo.", "The clear back lets the phone show through and highlights the bright blue MagSafe ring. A wide camera opening keeps the area around the camera module clear."],
     [["Transparente, bords renforcés", "Anneau MagSafe bleu visible", "Coloris : transparent / bleu"], ["Clear, reinforced edges", "Blue MagSafe ring visible", "Colour: clear / blue"]]),
   ...splitColours(caseProduct("tech-coque-xr-magsafe-duo", "XR", ["/coque-xr-lilas.jpg", "/coque-xr-fuchsia.jpg", "/coque-xr-rose.jpg"],
     ["Coque duo de couleurs, motif MagSafe – iPhone XR", "Two-tone case with MagSafe design – iPhone XR"],
-    ["Colorée, avec une plaque d’une autre teinte et un motif en anneau MagSafe au dos.", "Colourful, with a plate in a different shade and a MagSafe-style ring pattern on the back."],
+    ["La plaque arrière d’une autre teinte et le motif en anneau inspiré de MagSafe donnent à cette coque un effet bicolore. Un détail graphique simple qui change d’une coque unie.", "A back panel in a contrasting shade and a MagSafe-inspired ring pattern give this case a two-tone look. A simple graphic detail that sets it apart from a plain case."],
     [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : lilas, rose fuchsia, rose clair"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: lilac, fuchsia pink, light pink"]]), [
     {"fr": "Lilas", "en": "Lilac", "slug": "lilas", "images": ["/coque-xr-lilas.jpg"]},
     {"fr": "Rose fuchsia", "en": "Fuchsia pink", "slug": "fuchsia", "images": ["/coque-xr-fuchsia.jpg"]},
@@ -1016,14 +1016,14 @@ const catalogue: Product[] = [
   ]),
   ...splitColours(caseProduct("tech-coque-11-anneau-support", "11", ["/coque-11-bois-anneau.jpg", "/coque-11-noire-brossee-anneau.jpg"],
     ["Coque anneau MagSafe à support – iPhone 11", "MagSafe ring case with stand – iPhone 11"],
-    ["Grand anneau MagSafe avec languette-support, et une grille ronde décorative au dos.", "Large MagSafe ring with a stand tab, and a decorative round grille on the back."],
+    ["Le grand anneau au dos reprend le motif MagSafe et s’accompagne d’une languette qui sert de support. Une grille ronde décorative complète le dessin et donne à cette coque un aspect original.", "The large ring on the back follows a MagSafe-style design and comes with a stand tab. A decorative round grille completes the look and gives this case a distinctive finish."],
     [["Anneau MagSafe avec languette-support visible", "Grille ronde décorative", "Coloris : marron effet bois, noir brossé"], ["MagSafe ring with visible stand tab", "Decorative round grille", "Colours: brown wood effect, brushed black"]]), [
     {"fr": "Marron effet bois", "en": "Brown wood effect", "slug": "bois", "images": ["/coque-11-bois-anneau.jpg"]},
     {"fr": "Noir brossé", "en": "Brushed black", "slug": "noir", "images": ["/coque-11-noire-brossee-anneau.jpg"]},
   ]),
   ...splitColours(caseProduct("tech-coque-11promax-magsafe-duo", "11 Pro Max", ["/coque-11promax-bleu.jpg", "/coque-11promax-blanc-gris.jpg", "/coque-11promax-lilas.jpg"],
     ["Coque duo de couleurs, motif MagSafe – iPhone 11 Pro Max", "Two-tone case with MagSafe design – iPhone 11 Pro Max"],
-    ["Lisse, aux couleurs douces, avec une plaque d’une autre teinte et un motif en anneau MagSafe au dos.", "Smooth, in soft colours, with a plate in a different shade and a MagSafe-style ring pattern on the back."],
+    ["Les couleurs douces et la plaque arrière contrastante donnent à cette coque un effet bicolore. Le motif en anneau inspiré de MagSafe apporte un détail graphique au dos, sans charger l’ensemble.", "Soft colours and a contrasting back panel give this case a two-tone look. The MagSafe-inspired ring adds a graphic detail without making the design feel busy."],
     [["Plaque de ton contrasté au dos", "Motif anneau MagSafe visible", "Coloris : bleu, blanc et gris clair, lilas"], ["Contrasting panel on the back", "MagSafe ring design visible", "Colours: blue, white and light grey, lilac"]]), [
     {"fr": "Bleu", "en": "Blue", "slug": "bleu", "images": ["/coque-11promax-bleu.jpg"]},
     {"fr": "Blanc et gris clair", "en": "White and light grey", "slug": "blanc", "images": ["/coque-11promax-blanc-gris.jpg"]},
@@ -1031,7 +1031,7 @@ const catalogue: Product[] = [
   ]),
   caseProduct("tech-coque-17pro-rose-degrade", "17 Pro", ["/coque-17pro-rose-degrade.jpg"],
     ["Coque rose dégradé, anneau MagSafe en relief – iPhone 17 Pro", "Gradient pink case with embossed MagSafe ring – iPhone 17 Pro"],
-    ["Rose dégradé, avec un anneau MagSafe en relief au dos et un grand cadre blanc autour de la caméra.", "Gradient pink, with a raised MagSafe ring on the back and a large white frame around the camera."],
+    ["Le rose dégradé apporte une variation de teinte sur le dos, soulignée par un anneau MagSafe en relief. Le grand cadre blanc autour de la caméra crée un contraste supplémentaire.", "The gradient pink finish shifts in tone across the back, highlighted by a raised MagSafe ring. A large white camera frame adds another point of contrast."],
     [["Dégradé rose, cadre caméra blanc", "Anneau MagSafe en relief", "Coloris : rose"], ["Pink gradient, white camera frame", "Embossed MagSafe ring", "Colour: pink"]]),
   newProduct("watch-femme-rado-argent", "watches", {
     name: { fr: "Montre femme acier – Cadran argenté, bracelet maille", en: "Women’s steel watch – Silver dial, link bracelet" },
@@ -1042,8 +1042,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-rado-argent.jpg"],
     description: {
-      fr: "Boîtier coussin en acier poli, cadran argenté aux index façon diamant, date à 3 heures et bracelet à maillons arrondis. Inscription Rado sur le cadran. Claire et sobre, elle se porte facilement tous les jours.",
-      en: "Polished steel cushion case, a silver dial with diamond-style markers, a date at 3 o’clock and a bracelet of rounded links. Rado inscription on the dial. Light and understated, easy to wear every day.",
+      fr: "Le boîtier coussin en acier poli et le cadran argenté composent une silhouette lumineuse. Les index façon diamant, la date à 3 heures et le bracelet à maillons arrondis apportent les détails. Une montre sobre qui se porte facilement au quotidien.",
+      en: "A polished steel cushion case and silver dial create a bright, clean look. Diamond-style markers, a date at 3 o’clock and rounded bracelet links complete the details. An understated watch that is easy to wear every day.",
     },
     features: {
       fr: ["Inscription Rado sur le cadran", "Boîtier coussin et bracelet maille en acier poli", "Cadran argenté, index façon diamant", "Date à 3 heures", "Style : classique, pour femme"],
@@ -1059,8 +1059,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-michael-kors-rose.jpg"],
     description: {
-      fr: "Doré, lunette facettée, cadran rose pastel avec trois sous-cadrans : une montre douce, mais pas discrète. Inscription Michael Kors sur le cadran. Elle fait un joli cadeau d’anniversaire, ou un petit plaisir à s’offrir.",
-      en: "Gold-tone, faceted bezel, a pastel pink dial with three sub-dials: a soft watch, but not a discreet one. Michael Kors inscription on the dial. A nice birthday gift, or a small treat for yourself.",
+      fr: "Le cadran rose pastel adoucit le boîtier et le bracelet dorés. La lunette facettée et les trois sous-cadrans donnent du relief à l’ensemble. Une montre qui apporte une touche de couleur à une tenue simple, ou qui se glisse facilement dans une idée cadeau.",
+      en: "The pastel pink dial softens the gold-tone case and bracelet. A faceted bezel and three sub-dials add detail to the design. It brings a touch of colour to a simple outfit and also makes a considered gift idea.",
     },
     features: {
       fr: ["Inscription Michael Kors sur le cadran", "Boîtier et bracelet dorés, lunette facettée", "Cadran rose, trois sous-cadrans", "Style : classique, pour femme"],
@@ -1076,8 +1076,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-rado-jubile.jpg"],
     description: {
-      fr: "Petit boîtier rond et fin, cadran champagne avec quatre index façon diamant, bracelet maille bicolore acier et or. Inscription Rado et jubilé sur le cadran. Une montre fine, qui reste discrète au poignet.",
-      en: "Small, slim round case, a champagne dial with four diamond-style markers, a two-tone steel and gold mesh bracelet. Rado and jubilé inscriptions on the dial. A slim watch that stays discreet on the wrist.",
+      fr: "Fine et discrète au poignet, cette montre associe un petit boîtier rond à un bracelet maille bicolore acier et doré. Le cadran champagne est ponctué de quatre index façon diamant. Une pièce délicate qui se porte seule ou avec un bracelet fin.",
+      en: "Slim and understated on the wrist, this watch pairs a small round case with a two-tone steel and gold-tone mesh bracelet. Four diamond-style markers punctuate the champagne dial. Wear it on its own or alongside a fine bracelet.",
     },
     features: {
       fr: ["Inscription Rado et jubilé sur le cadran", "Boîtier rond fin, bracelet maille bicolore acier et or", "Cadran champagne, quatre index façon diamant", "Style : classique, pour femme"],
@@ -1093,8 +1093,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-chanel-champagne.jpg"],
     description: {
-      fr: "Boîtier doré, cadran champagne avec chiffres arabes dorés et grand double C noir au centre, bracelet maille bicolore. Inscription Chanel sur le cadran. Le doré et le champagne vont aussi bien avec les tenues claires qu’avec le noir.",
-      en: "Gold-tone case, a champagne dial with gold Arabic numerals and a large black double-C in the centre, a two-tone mesh bracelet. Chanel inscription on the dial. The gold and champagne work as well with light outfits as with black.",
+      fr: "Le cadran champagne, les chiffres dorés et le double C noir créent un contraste graphique. Le boîtier doré et le bracelet maille bicolore prolongent cette association de tons. Une montre qui accompagne aussi bien les couleurs claires qu’une tenue noire.",
+      en: "The champagne dial, gold-tone numerals and black double-C create a graphic contrast. A gold-tone case and two-tone mesh bracelet carry the palette through. It works with light colours as easily as with a black outfit.",
     },
     features: {
       fr: ["Inscription Chanel sur le cadran", "Boîtier doré, bracelet maille bicolore acier et or", "Cadran champagne, chiffres arabes dorés, double C noir", "Style : classique, pour femme"],
@@ -1110,8 +1110,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-doree-carree-double-c.jpg"],
     description: {
-      fr: "Boîtier doré aux lignes carrées, cadran champagne, chiffres arabes et grand double C noir au centre. Assez discrète pour se porter seule, elle va bien aussi avec des bracelets empilés.",
-      en: "Gold-tone case with square lines, a champagne dial, Arabic numerals and a large black double-C in the centre. Discreet enough to wear alone, and it also sits well with stacked bracelets.",
+      fr: "Son boîtier carré doré encadre un cadran champagne marqué par des chiffres arabes et un double C noir. Le dessin reste équilibré : assez présent pour se remarquer, sans multiplier les détails. Elle se porte seule ou avec quelques bracelets fins.",
+      en: "Its square gold-tone case frames a champagne dial with Arabic numerals and a black double-C detail. The design feels balanced: noticeable without being overloaded. Wear it on its own or with a few fine bracelets.",
     },
     features: {
       fr: ["Boîtier doré aux lignes carrées, bracelet maille dorée", "Cadran champagne, chiffres arabes, double C noir au centre", "Petits index façon diamant", "Style : classique, pour femme"],
@@ -1127,8 +1127,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-doree-strass-octogonale.jpg"],
     description: {
-      fr: "La lunette octogonale est entièrement sertie de strass, autour d’un cadran blanc à trois sous-cadrans et d’un bracelet doré. Elle brille à la lumière, donc plutôt pour les sorties et les occasions. Elle peut aussi faire un cadeau original.",
-      en: "The octagonal bezel is fully set with crystals, around a white dial with three sub-dials and a gold-tone bracelet. It sparkles in the light, so it suits going out and special occasions. It could also make an original gift.",
+      fr: "La lunette octogonale sertie de strass encadre un cadran blanc à trois sous-cadrans. Le bracelet doré prolonge l’éclat du boîtier. Une montre lumineuse, particulièrement adaptée aux sorties et aux occasions où l’on veut une pièce qui se remarque.",
+      en: "A rhinestone-set octagonal bezel frames a white dial with three sub-dials. The gold-tone bracelet carries the shine through. A bright watch, especially suited to outings and occasions when you want a piece that stands out.",
     },
     features: {
       fr: ["Lunette octogonale sertie de strass", "Cadran blanc, trois sous-cadrans, date", "Boîtier et bracelet dorés", "Style : classique, pour femme"],
@@ -1144,8 +1144,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-acier-chiffres-romains.jpg"],
     description: {
-      fr: "Boîtier galbé en acier poli, cadran blanc avec chiffres romains et aiguilles bleues, bracelet à maillons arrondis. Inscription Cartier sur le cadran. Un style classique, avec le détail bleu des aiguilles pour la distinguer.",
-      en: "Curved polished steel case, a white dial with Roman numerals and blue hands, a bracelet of rounded links. Cartier inscription on the dial. A classic style, with the blue hands as the detail that sets it apart.",
+      fr: "Le cadran blanc et ses chiffres romains donnent une lecture classique, relevée par des aiguilles bleues. Le boîtier galbé et le bracelet à maillons arrondis apportent une ligne douce en acier poli. Un modèle facile à porter, avec un détail bleu qui fait la différence.",
+      en: "The white dial and Roman numerals give this watch a classic feel, picked out by blue hands. Its curved case and rounded-link bracelet create a soft silhouette in polished steel. An easy-to-wear design with a distinctive blue detail.",
     },
     features: {
       fr: ["Inscription Cartier sur le cadran", "Boîtier galbé et bracelet maille en acier poli", "Cadran blanc, chiffres romains, aiguilles bleues", "Style : classique, pour femme"],
@@ -1161,8 +1161,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-acier-rectangulaire-date.jpg"],
     description: {
-      fr: "Boîtier rectangulaire en acier poli, cadran blanc finement texturé, fenêtre de date et bracelet maille brillant. Une montre nette et moderne, qui suit sans problème la journée du matin au soir.",
-      en: "Rectangular polished steel case, a finely textured white dial, a date window and a shiny mesh bracelet. A clean, modern watch that carries you through the day from morning to evening.",
+      fr: "Le boîtier rectangulaire en acier poli donne une ligne nette, prolongée par le bracelet maille brillant. Le cadran blanc texturé et la fenêtre de date ajoutent juste les détails nécessaires. Une montre sobre qui accompagne la journée sans effort.",
+      en: "The polished steel rectangular case creates a clean silhouette, continued by the shiny mesh bracelet. A textured white dial and date window add the essential details. An understated watch that fits easily into the day.",
     },
     features: {
       fr: ["Boîtier rectangulaire et bracelet maille en acier poli", "Cadran blanc texturé, date", "Style : classique, pour femme"],
@@ -1178,8 +1178,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-doree-bleu-marine.jpg"],
     description: {
-      fr: "Le cadran bleu marine profond a des reflets satinés et de petits index dorés, dans un boîtier rectangulaire doré. Inscription Dior sur le cadran. Fine et féminine, elle s’accorde bien avec des tenues simples.",
-      en: "The deep navy dial has satin reflections and small gold markers, in a gold-tone rectangular case. Dior inscription on the dial. Slim and feminine, it goes well with simple outfits.",
+      fr: "Le cadran bleu marine satiné contraste avec le boîtier rectangulaire doré et ses petits index dorés. La silhouette reste fine, avec une couleur profonde qui apporte du relief à une tenue simple. Une belle option pour celles qui aiment les montres discrètes, mais pas ordinaires.",
+      en: "The satin-finish navy dial contrasts with the gold-tone rectangular case and small gold markers. Its slim silhouette and deep colour add interest to a simple outfit. A good choice for anyone who likes understated watches with a little distinction.",
     },
     features: {
       fr: ["Inscription Dior sur le cadran", "Boîtier rectangulaire et bracelet dorés", "Cadran bleu marine, index dorés", "Style : classique, pour femme"],
@@ -1195,8 +1195,8 @@ const catalogue: Product[] = [
     availability: "available",
     images: ["/montre-femme-datejust-doree.jpg"],
     description: {
-      fr: "Lunette cannelée dorée, cadran champagne lumineux, date à 3 heures et bracelet maille dorée. Inscription Rolex sur le cadran, modèle Datejust. Une montre dorée qui garde un côté classique.",
-      en: "Gold-tone fluted bezel, a bright champagne dial, a date at 3 o’clock and a gold-tone link bracelet. Rolex inscription on the dial, Datejust model. A gold watch that keeps a classic feel.",
+      fr: "Le cadran champagne lumineux s’accorde à la lunette cannelée et au bracelet maille dorés. Les index bâtons et la date à 3 heures gardent une lecture claire. Une montre dans un registre classique, facile à associer à une tenue habillée comme à un look plus simple.",
+      en: "The bright champagne dial pairs with a gold-tone fluted bezel and mesh bracelet. Bar markers and a date at 3 o’clock keep the display clear. A classic-style watch that works with both dressier outfits and simpler looks.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet maille dorés", "Cadran champagne, index en bâtons, date à 3 heures", "Style : classique, pour femme"],
@@ -1211,8 +1211,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-aic-rouge.jpg"],
     description: {
-      fr: "Boîtier carré à pans coupés en acier brossé, cadran dégradé rouge et noir avec trois sous-cadrans et trotteuse rouge. Le bracelet silicone noir texturé renforce le côté sportif. Une montre qui ne passe pas inaperçue.",
-      en: "Square cut-corner brushed steel case, a red and black gradient dial with three sub-dials and a red seconds hand. The textured black silicone strap adds to the sporty feel. A watch that doesn’t go unnoticed.",
+      fr: "Le cadran rouge et noir dégradé attire immédiatement l’œil, avec trois sous-cadrans et une trotteuse rouge. Le boîtier carré en acier brossé et le bracelet silicone noir texturé renforcent son allure sportive. Un modèle pour donner du caractère à une tenue sobre.",
+      en: "The red-to-black gradient dial catches the eye, with three sub-dials and a red seconds hand. A brushed-steel square case and textured black silicone strap add to its sporty look. A way to bring character to a simple outfit.",
     },
     features: {
       fr: ["Logo AIC sur le cadran", "Boîtier carré à pans coupés, acier brossé", "Cadran dégradé rouge et noir, trois sous-cadrans, trotteuse rouge", "Bracelet silicone noir texturé", "Style : sportive, pour homme"],
@@ -1227,8 +1227,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-amiebr-arabe.jpg"],
     description: {
-      fr: "Cadran gris dégradé aux chiffres arabes orientaux, boîtier carré à lunette texturée, date à 3 heures. Le bracelet est en cuir noir surpiqué. Un choix original si tu veux une montre qu’on ne voit pas partout.",
-      en: "Gradient grey dial with Eastern Arabic numerals, a square case with a textured bezel, a date at 3 o’clock. The strap is stitched black leather. An original pick if you want a watch you don’t see everywhere.",
+      fr: "Les chiffres arabes orientaux se détachent sur le cadran gris dégradé. Le boîtier carré à lunette texturée et le bracelet en cuir noir surpiqué donnent à la montre une allure classique, avec une touche moins habituelle. La date apparaît à 3 heures.",
+      en: "Eastern Arabic numerals stand out against the gradient grey dial. A square case with a textured bezel and a stitched black leather strap give the watch a classic look with a less usual detail. The date appears at 3 o’clock.",
     },
     features: {
       fr: ["Inscription AMIEBR TiMM sur le cadran, mention Quartz", "Boîtier carré, lunette texturée", "Cadran gris dégradé, chiffres arabes orientaux, date à 3 heures", "Bracelet cuir noir surpiqué", "Style : classique, pour homme"],
@@ -1243,8 +1243,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-cristaux-argent.jpg"],
     description: {
-      fr: "Lunette sertie de strass taillés en baguettes, cadran pavé de cristaux avec quelques touches de rouge, bracelet maille argenté. Elle brille beaucoup, pour ceux qui aiment les montres voyantes.",
-      en: "Bezel set with baguette-cut crystals, a dial paved with crystals with a few red touches, a silver mesh bracelet. It sparkles a lot, for those who like eye-catching watches.",
+      fr: "La lunette sertie de strass taillés en baguettes encadre un cadran scintillant, ponctué de touches rouges. Le boîtier et le bracelet maille argentés prolongent cet effet lumineux. Une montre expressive, pour ceux qui aiment les accessoires qui attirent le regard.",
+      en: "A bezel set with baguette-cut rhinestones frames a sparkling dial accented with touches of red. The silver-tone case and mesh bracelet continue the bright finish. An expressive watch for anyone who likes accessories that draw attention.",
     },
     features: {
       fr: ["Lunette sertie de strass taillés en baguettes", "Cadran pavé de cristaux, repères rouges", "Boîtier et bracelet maille argentés", "Style : classique, pour homme"],
@@ -1259,8 +1259,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-bulova-chrono.jpg"],
     description: {
-      fr: "Boîtier rond en acier poli, cadran dégradé noir et blanc avec deux compteurs, bracelet cuir noir surpiqué. Un style simple, qui passe du cours à une soirée sans changer de tenue.",
-      en: "Round polished steel case, a black and white gradient dial with two sub-dials, a stitched black leather strap. A simple style that goes from class to an evening out without a change of outfit.",
+      fr: "Le cadran dégradé noir et blanc est animé par deux compteurs, tandis que le boîtier rond en acier poli garde une ligne classique. Le bracelet en cuir noir surpiqué complète l’ensemble. Une montre facile à associer, du quotidien aux occasions plus habillées.",
+      en: "The black-and-white gradient dial is detailed with two sub-dials, while the round polished-steel case keeps the design classic. A stitched black leather strap completes the look. An easy match for everyday wear and dressier occasions.",
     },
     features: {
       fr: ["Inscription Bulova sur le cadran, mention Quartz", "Boîtier rond en acier poli", "Cadran dégradé noir et blanc, deux compteurs", "Bracelet cuir noir surpiqué", "Style : classique, pour homme"],
@@ -1275,8 +1275,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-kelex-marron.jpg"],
     description: {
-      fr: "Lunette cannelée or rose, cadran marron texturé avec index sertis façon diamant, bracelet silicone marron. Ces tons chauds la changent des montres noires ou argentées qu’on croise le plus souvent.",
-      en: "Rose gold fluted bezel, a textured brown dial with diamond-style set markers, a brown silicone strap. The warm tones make a change from the black or silver watches you see most often.",
+      fr: "Le cadran marron texturé et le bracelet assorti donnent une tonalité chaleureuse à cette montre. La lunette cannelée et le boîtier or rose ajoutent du contraste, avec des index façon diamant pour le détail. Une alternative aux associations classiques noir et argent.",
+      en: "The textured brown dial and matching strap give this watch a warm tone. A rose-gold-tone fluted bezel and case add contrast, with diamond-style markers for detail. A different take on the usual black-and-silver combinations.",
     },
     features: {
       fr: ["Inscription Kelex sur le cadran, mention Quartz", "Lunette cannelée et boîtier or rose", "Cadran marron texturé, index sertis façon diamant", "Bracelet silicone marron", "Style : classique, pour homme"],
@@ -1291,8 +1291,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-bk-bicolore.jpg"],
     description: {
-      fr: "Boîtier carré à vis apparentes, cadran champagne avec grands chiffres romains, date à 6 heures et bracelet bicolore or et acier. Une montre franche, assez habillée.",
-      en: "Square case with visible screws, a champagne dial with large Roman numerals, a date at 6 o’clock and a two-tone gold and steel bracelet. A bold watch, fairly dressy.",
+      fr: "Le boîtier carré à vis apparentes affirme la silhouette, tandis que le cadran champagne et ses grands chiffres romains apportent une touche classique. Le bracelet bicolore associe acier et doré ; la date se trouve à 6 heures. Une montre au style habillé et bien marqué.",
+      en: "The square case with visible screws gives the watch a distinctive silhouette, while the champagne dial and large Roman numerals add a classic touch. The two-tone bracelet combines steel and gold tones, with the date at 6 o’clock. A clearly defined dress-style watch.",
     },
     features: {
       fr: ["Logo BK sur le cadran, mention Quartz", "Boîtier carré à vis apparentes, bracelet bicolore or et acier", "Cadran champagne, chiffres romains, date à 6 heures", "Style : classique, pour homme"],
@@ -1307,8 +1307,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-bk-noire.jpg"],
     description: {
-      fr: "Boîtier carré à vis apparentes, cadran noir aux grands chiffres romains blancs, bracelet acier assorti. Le contraste noir et blanc la rend facile à lire d’un coup d’œil.",
-      en: "Square case with visible screws, a black dial with large white Roman numerals, a matching steel bracelet. The black-and-white contrast makes it easy to read at a glance.",
+      fr: "Le cadran noir est rythmé par de grands chiffres romains blancs, faciles à repérer. Le boîtier carré à vis apparentes et le bracelet en acier assorti donnent une ligne structurée. Un modèle sobre, avec un contraste qui fait tout son intérêt.",
+      en: "Large white Roman numerals stand out against the black dial. The square case with visible screws and matching steel bracelet create a structured look. An understated model whose contrast does the work.",
     },
     features: {
       fr: ["Logo BK sur le cadran", "Boîtier carré à vis apparentes, bracelet acier", "Cadran noir, grands chiffres romains blancs", "Style : classique, pour homme"],
@@ -1323,8 +1323,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-homme-boutique-gris.jpg"],
     description: {
-      fr: "Dans l’esprit des montres d’aviateur : boîtier rond en acier poli, cadran gris dégradé à trois compteurs et aiguilles orange, date à 4 heures. Le bracelet gris a un effet daim. Décontractée, avec une pointe de couleur.",
-      en: "In the spirit of pilot watches: round polished steel case, a gradient grey dial with three sub-dials and orange hands, a date at 4 o’clock. The grey strap has a suede effect. Relaxed, with a hint of colour.",
+      fr: "Le cadran gris dégradé réunit trois compteurs, des aiguilles orange et une date à 4 heures. Le boîtier rond en acier poli contraste avec le bracelet gris à effet daim. Une montre décontractée, relevée par quelques touches de couleur.",
+      en: "The gradient grey dial features three sub-dials, orange hands and a date at 4 o’clock. The round polished-steel case contrasts with the grey suede-effect strap. A relaxed watch with a few well-placed touches of colour.",
     },
     features: {
       fr: ["Inscription Boutique sur le cadran, mention Quartz", "Boîtier rond en acier poli", "Cadran gris dégradé, trois compteurs, date", "Bracelet gris effet daim", "Style : sportive, pour homme"],
@@ -1339,8 +1339,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-land-dweller-doree-verte.jpg"],
     description: {
-      fr: "Cadran vert à motif alvéolé, lunette cannelée dorée et bracelet doré aux maillons polis. La date est à 3 heures. Inscription Rolex sur le cadran, modèle Land-Dweller. Le vert la distingue des cadrans dorés habituels.",
-      en: "Green honeycomb-pattern dial, a gold-tone fluted bezel and a gold-tone bracelet with polished links. The date is at 3 o’clock. Rolex inscription on the dial, Land-Dweller model. The green sets it apart from the usual gold dials.",
+      fr: "Le cadran vert alvéolé apporte une note originale à l’ensemble doré. La lunette cannelée et le bracelet aux maillons polis encadrent le cadran, avec une date à 3 heures. Une combinaison de couleurs qui change des montres entièrement dorées.",
+      en: "The green honeycomb dial gives this gold-tone design a distinctive touch. A fluted bezel and polished-link bracelet frame the dial, with a date at 3 o’clock. A colour combination that offers a change from all-gold watches.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet dorés", "Cadran vert à motif alvéolé, date à 3 heures", "Style : classique"],
@@ -1355,8 +1355,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-datejust-doree-champagne.jpg"],
     description: {
-      fr: "Cadran champagne finement alvéolé avec anneau blanc, lunette cannelée dorée et bracelet doré aux maillons brillants. Date à 3 heures. Inscription Rolex sur le cadran, modèle Datejust. Une montre dorée dans un style classique.",
-      en: "Finely honeycombed champagne dial with a white ring, a gold-tone fluted bezel and a gold-tone bracelet with shiny links. Date at 3 o’clock. Rolex inscription on the dial, Datejust model. A gold watch in a classic style.",
+      fr: "Le cadran champagne alvéolé, souligné d’un anneau blanc, s’accorde à la lunette cannelée et au bracelet dorés. La date apparaît à 3 heures. Une montre aux tons chauds, dans un style classique qui se porte facilement.",
+      en: "The honeycomb champagne dial, framed by a white ring, pairs with the gold-tone fluted bezel and bracelet. The date appears at 3 o’clock. A warm-toned watch in a classic style that is easy to wear.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet dorés", "Cadran champagne alvéolé, anneau blanc, date à 3 heures", "Style : classique"],
@@ -1371,8 +1371,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-datejust-acier-blanc.jpg"],
     description: {
-      fr: "Cadran blanc à motif texturé, lunette cannelée, date à 3 heures, bracelet acier à maillons polis. Inscription Rolex sur le cadran, modèle Datejust. Claire, elle va avec presque tout, des cours aux occasions plus habillées.",
-      en: "White dial with a textured pattern, a fluted bezel, a date at 3 o’clock, a steel bracelet with polished links. Rolex inscription on the dial, Datejust model. Light in colour, it goes with almost everything, from class to dressier occasions.",
+      fr: "Le cadran blanc texturé apporte de la lumière au boîtier et au bracelet en acier. La lunette cannelée et la date à 3 heures complètent cette silhouette classique. Une montre facile à assortir, aussi bien avec des couleurs neutres qu’avec une tenue plus habillée.",
+      en: "The textured white dial brings brightness to the steel case and bracelet. A fluted bezel and date at 3 o’clock complete the classic silhouette. An easy match for neutral colours or a more dressed-up outfit.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet en acier", "Cadran blanc texturé, date à 3 heures", "Style : classique"],
@@ -1387,8 +1387,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-land-dweller-acier-noire.jpg"],
     description: {
-      fr: "Cadran noir à motif alvéolé, lunette cannelée en acier, bracelet acier brillant, date à 3 heures. Inscription Rolex sur le cadran, modèle Land-Dweller. La version sobre, tout en acier et en noir.",
-      en: "Black honeycomb-pattern dial, a steel fluted bezel, a shiny steel bracelet, a date at 3 o’clock. Rolex inscription on the dial, Land-Dweller model. The understated version, all steel and black.",
+      fr: "Le cadran noir alvéolé contraste avec la finition brillante du bracelet en acier. La lunette cannelée et la date à 3 heures complètent le dessin. Une version sobre, construite autour du duo noir et acier.",
+      en: "The black honeycomb dial contrasts with the polished finish of the steel bracelet. A fluted bezel and date at 3 o’clock complete the design. An understated version built around black and steel.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet en acier", "Cadran noir à motif alvéolé, date à 3 heures", "Style : classique"],
@@ -1403,8 +1403,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-land-dweller-acier-champagne-bleu.jpg"],
     description: {
-      fr: "Un anneau bleu clair entoure le cadran champagne alvéolé : c’est ce détail qui la distingue. Lunette cannelée en acier, bracelet acier brillant, date à 3 heures. Inscription Rolex sur le cadran, modèle Land-Dweller.",
-      en: "A light blue ring surrounds the honeycomb champagne dial: that’s the detail that sets it apart. Steel fluted bezel, shiny steel bracelet, date at 3 o’clock. Rolex inscription on the dial, Land-Dweller model.",
+      fr: "Un anneau bleu clair entoure le cadran champagne alvéolé et attire le regard sans surcharger le dessin. La lunette cannelée, le bracelet brillant en acier et la date à 3 heures complètent le modèle. Un détail de couleur qui fait toute la différence.",
+      en: "A light-blue ring surrounds the honeycomb champagne dial, adding interest without overcomplicating the design. A fluted bezel, polished steel bracelet and date at 3 o’clock complete the model. One colour detail makes the difference.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet en acier", "Cadran champagne alvéolé, anneau bleu clair, date à 3 heures", "Style : classique"],
@@ -1419,8 +1419,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-acier-motif-logo-president.jpg"],
     description: {
-      fr: "Le fond champagne est couvert d’un motif graphique, avec des index sertis façon diamant et une date à 3 heures. Lunette cannelée, bracelet President en acier poli. Couronne Rolex sur le cadran. Un cadran à regarder de près.",
-      en: "The champagne background is covered in a graphic pattern, with diamond-style set markers and a date at 3 o’clock. Fluted bezel, polished steel President bracelet. Rolex crown on the dial. A dial worth a closer look.",
+      fr: "Le cadran champagne associe un motif graphique à des index façon diamant et une date à 3 heures. La lunette cannelée et le bracelet President en acier poli donnent une finition classique. Un modèle dont le cadran mérite qu’on s’y attarde.",
+      en: "The champagne dial combines a graphic pattern with diamond-style markers and a date at 3 o’clock. A fluted bezel and polished-steel President bracelet give it a classic finish. A model whose dial rewards a closer look.",
     },
     features: {
       fr: ["Couronne Rolex sur le cadran", "Lunette cannelée, boîtier et bracelet President en acier poli", "Cadran champagne à motif graphique, index façon diamant, date à 3 heures", "Style : classique"],
@@ -1435,8 +1435,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-brosse-cosmia-demelante-creme.jpg"],
     description: {
-      fr: "Brosse ovale à picots arrondis, pour démêler en douceur. Elle convient à tous les types de cheveux. Poignée crème, picots noirs.",
-      en: "Oval brush with rounded pins, for gentle detangling. Suitable for all hair types. Cream handle, black pins.",
+      fr: "Avec sa forme ovale et ses picots arrondis, cette brosse Cosmia accompagne le démêlage en douceur. Son format convient à tous les types de cheveux. La poignée crème et les picots noirs lui donnent une finition sobre.",
+      en: "With its oval shape and rounded pins, this Cosmia brush makes everyday detangling gentler. Its design is suitable for all hair types. The cream handle and black pins keep the look simple.",
     },
     features: {
       fr: ["Marque : Cosmia", "Brosse à cheveux démêlante, démêlage facile et doux", "Convient à tous types de cheveux", "Coloris : crème et noir"],
@@ -1451,8 +1451,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-brosse-cosmia-corail-cheveux-longs.jpg"],
     description: {
-      fr: "Grande brosse (taille L) pour les cheveux longs ou épais, annoncée pour un démêlage en profondeur. Poignée corail, picots noirs à bouts rouges.",
-      en: "Large brush (size L) for long or thick hair, stated for deep detangling. Coral handle, black pins with red tips.",
+      fr: "En taille L, cette brosse Cosmia est pensée pour les cheveux longs ou épais et aide à démêler sur une plus grande surface. Sa poignée corail et ses picots noirs à bouts rouges lui donnent un coloris facile à repérer dans la salle de bain.",
+      en: "This size L Cosmia brush is designed for long or thick hair and helps detangle a wider section at a time. Its coral handle and black pins with red tips make it easy to spot in your bathroom.",
     },
     features: {
       fr: ["Marque : Cosmia", "Brosse à cheveux, démêlage en profondeur", "Pour cheveux longs ou épais (taille L)", "Coloris : corail"],
@@ -1467,8 +1467,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-brosse-cosmia-demele-lisse-rose.jpg"],
     description: {
-      fr: "Brosse taille L qui démêle et lisse, pour tous types de cheveux. Finition rose poudré, picots noirs à bouts roses.",
-      en: "Size L brush that detangles and smooths, for all hair types. Powder-pink finish, black pins with pink tips.",
+      fr: "Cette brosse Cosmia taille L réunit deux gestes du quotidien : démêler et lisser. Elle convient à tous les types de cheveux. Sa finition rose poudré, associée aux picots noirs à bouts roses, apporte une note douce à la routine de coiffage.",
+      en: "This size L Cosmia brush brings together two everyday steps: detangling and smoothing. It is suitable for all hair types. Its powder-pink finish and black pins with pink tips add a soft touch to your hair routine.",
     },
     features: {
       fr: ["Marque : Cosmia", "Brosse à cheveux qui démêle et lisse (taille L)", "Convient à tous types de cheveux", "Coloris : rose poudré"],
@@ -1483,8 +1483,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-mennen-baume-apaisant-apres-rasage.jpg"],
     description: {
-      fr: "Un baume pour après le rasage qui sert aussi de soin visage. Avec de la provitamine B5, pour les peaux sensibles, sans alcool, sans paraben et sans colorant.",
-      en: "An aftershave balm that doubles as a face care. With provitamin B5, for sensitive skin, alcohol-free, paraben-free and colourant-free.",
+      fr: "Après le rasage, ce baume Mennen s’utilise aussi comme soin visage. Sa formule à la provitamine B5 est destinée aux peaux sensibles ; elle est indiquée sans alcool, sans parabène et sans colorant. Un seul produit pour réunir ces deux gestes.",
+      en: "After shaving, this Mennen balm can also be used as a face-care product. Its provitamin B5 formula is intended for sensitive skin and is labelled alcohol-free, paraben-free and colourant-free. One product for both steps.",
     },
     features: {
       fr: ["Marque : Mennen", "Baume apaisant après-rasage + soin visage 2 en 1", "Provitamine B5, pour peaux sensibles", "Sans alcool, sans paraben, sans colorant"],
@@ -1499,8 +1499,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-ideal-men-gel-douche-energisant-3en1.jpg"],
     description: {
-      fr: "Un seul flacon pour le corps, le visage et les cheveux. Le parfum frais est annoncé pour 24 h.",
-      en: "One bottle for body, face and hair. The fresh fragrance is stated to last 24 hours.",
+      fr: "Un seul flacon pour la douche : ce gel 3-en-1 Ideal Men s’utilise sur le corps, le visage et les cheveux. Son parfum frais est annoncé pour une sensation de fraîcheur pouvant durer jusqu’à 24 heures. Pratique pour simplifier la routine quotidienne.",
+      en: "One bottle for the shower: this Ideal Men 3-in-1 gel is made for the body, face and hair. Its fresh fragrance is stated to provide freshness for up to 24 hours. A practical way to keep the daily routine simple.",
     },
     features: {
       fr: ["Marque : Ideal Men", "Gel douche énergisant 3 en 1 : corps, visage, cheveux", "Parfum fraîcheur 24 h", "Pour homme"],
@@ -1515,8 +1515,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-felce-azzurra-uomo-fresh-ice.jpg"],
     description: {
-      fr: "Gel douche et shampoing en un, à la senteur Fresh Ice, rafraîchissante. En format maxi, il dure plus longtemps.",
-      en: "Shower gel and shampoo in one, with a refreshing Fresh Ice scent. In maxi size, so it lasts longer.",
+      fr: "Corps et cheveux : ce soin douche Fresh Ice de la gamme Felce Azzurra Uomo réunit les deux dans un même flacon. Sa senteur fraîche accompagne la douche, et son format maxi permet de l’utiliser plus longtemps avant de le remplacer.",
+      en: "For body and hair, this Fresh Ice shower product from Felce Azzurra Uomo brings both steps together in one bottle. Its fresh scent is made for shower time, and the maxi size lasts longer before needing a replacement.",
     },
     features: {
       fr: ["Marque : Felce Azzurra, gamme Uomo", "Gel douche et shampoing, senteur Fresh Ice rafraîchissante", "Maxi format", "Pour homme"],
@@ -1531,8 +1531,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-men-lotion-apres-rasage-actif.jpg"],
     description: {
-      fr: "À appliquer après le rasage : cette lotion rafraîchit et apaise la peau. Pour tous types de peaux.",
-      en: "To apply after shaving: this lotion refreshes and soothes the skin. For all skin types.",
+      fr: "À appliquer après le rasage, la lotion Cosmia Men Actif apporte une sensation de fraîcheur et aide à apaiser la peau. Elle est indiquée pour tous les types de peau. Un geste simple à ajouter à la routine après-rasage.",
+      en: "Applied after shaving, Cosmia Men Actif lotion leaves a fresh feeling and helps soothe the skin. It is indicated for all skin types. A simple step to add to an aftershave routine.",
     },
     features: {
       fr: ["Marque : Cosmia Men", "Lotion après-rasage Actif, rafraîchit et apaise", "Tous types de peaux", "Pour homme"],
@@ -1547,8 +1547,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-men-deodorant-seduction.jpg"],
     description: {
-      fr: "Spray déodorant avec une efficacité annoncée de 24 h. La formule anti-traces est pensée pour éviter les marques sur les vêtements. Fabriqué en France.",
-      en: "Deodorant spray with 24-hour effectiveness stated. The no-marks formula is designed to avoid marks on clothes. Made in France.",
+      fr: "Le spray Cosmia Men Seduction annonce une efficacité de 24 heures et une formule anti-traces conçue pour limiter les marques sur les vêtements. Fabriqué en France, il accompagne facilement la routine du matin.",
+      en: "Cosmia Men Seduction spray states 24-hour effectiveness and features a no-marks formula designed to help limit marks on clothing. Made in France, it fits easily into a morning routine.",
     },
     features: {
       fr: ["Marque : Cosmia Men", "Déodorant spray Seduction, efficacité 24 h", "Anti-traces", "Fabriqué en France", "Pour homme"],
@@ -1563,8 +1563,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-men-baume-apres-rasage-sensible.jpg"],
     description: {
-      fr: "Un baume après-rasage pour les peaux sensibles, qui hydrate et apaise. Flacon noir mat.",
-      en: "An aftershave balm for sensitive skin that moisturises and soothes. Matte black bottle.",
+      fr: "Conçu pour les peaux sensibles, le baume Cosmia Men Sensible s’applique après le rasage pour hydrater et apaiser la peau. Son flacon noir mat complète une présentation sobre. Un soin à garder à portée de main après chaque rasage.",
+      en: "Designed for sensitive skin, Cosmia Men Sensible balm is applied after shaving to moisturise and soothe. Its matte black bottle keeps the presentation understated. An aftershave-care step to keep close at hand.",
     },
     features: {
       fr: ["Marque : Cosmia Men", "Baume après-rasage Sensible, hydrate et apaise", "Pour peaux sensibles", "Pour homme"],
@@ -1579,8 +1579,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-clesto-nightfall.jpg"],
     description: {
-      fr: "Parfum en flacon vaporisateur transparent, bouchon argenté et feuillage bleu nuit dessiné sur le verre. Les notes et la contenance restent à confirmer.",
-      en: "Fragrance in a clear spray bottle with a silver cap and midnight-blue foliage drawn on the glass. Notes and size are still to be confirmed.",
+      fr: "Le flacon transparent de Clesto Nightfall se distingue par son bouchon argenté et son décor de feuillage bleu nuit. Les notes olfactives et la contenance restent à confirmer.",
+      en: "Clesto Nightfall comes in a clear bottle with a silver cap and a midnight-blue foliage design. The fragrance notes and bottle size are still to be confirmed.",
     },
     features: {
       fr: ["Marque : Clesto, modèle Nightfall", "Flacon vaporisateur, bouchon argenté", "Contenance et notes à confirmer"],
@@ -1595,8 +1595,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-men-sport-eau-de-toilette.jpg"],
     description: {
-      fr: "Une eau de toilette au parfum boisé, dans un flacon vert avec bouchon argenté et vaporisateur.",
-      en: "A woody eau de toilette in a green bottle with a silver cap and spray.",
+      fr: "Cosmia Men Sport est une eau de toilette aux notes boisées, présentée dans un flacon vert avec vaporisateur et bouchon argenté. Une fragrance à intégrer à la routine du matin ou à garder pour les sorties.",
+      en: "Cosmia Men Sport is a woody eau de toilette presented in a green bottle with a spray and silver cap. A fragrance to add to a morning routine or keep for going out.",
     },
     features: {
       fr: ["Marque : Cosmia Men", "Eau de toilette Sport, parfum boisé", "Flacon vaporisateur", "Pour homme"],
@@ -1611,8 +1611,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-apres-shampooing-force-arginine.jpg"],
     description: {
-      fr: "Un soin démêlant à l’arginine, pensé pour les cheveux fragiles et cassants. Il facilite le démêlage après le shampooing.",
-      en: "A detangling conditioner with arginine, made for fragile, brittle hair. It makes detangling easier after shampooing.",
+      fr: "Avec de l’arginine, cet après-shampooing Cosmia Force + Technique est destiné aux cheveux fragiles et cassants. Il aide à démêler les cheveux après le shampooing et complète la routine de soin sans étape compliquée.",
+      en: "With arginine, this Cosmia Force + Technique conditioner is intended for fragile, brittle hair. It helps detangle after shampooing and completes a hair-care routine without adding a complicated step.",
     },
     features: {
       fr: ["Marque : Cosmia, gamme Force + Technique", "Soin démêlant à l’arginine", "Pour cheveux fragiles et cassants"],
@@ -1627,8 +1627,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-apres-shampooing-argan.jpg"],
     description: {
-      fr: "Après-shampooing à l’huile d’argan pour cheveux secs et abîmés. La formule est enrichie en huile d’argan et annoncée pour nourrir et réparer.",
-      en: "Argan oil conditioner for dry and damaged hair. The formula is enriched with argan oil and stated to nourish and repair.",
+      fr: "Enrichi en huile d’argan, cet après-shampooing Cosmia est destiné aux cheveux secs et abîmés. Sa formule est annoncée pour nourrir et réparer ; il s’utilise après le shampooing pour faciliter le soin des longueurs.",
+      en: "Enriched with argan oil, this Cosmia conditioner is intended for dry and damaged hair. Its formula is stated to nourish and repair; use it after shampooing as part of your lengths-care routine.",
     },
     features: {
       fr: ["Marque : Cosmia", "Après-shampooing à l’huile d’argan, nourrit et répare", "Pour cheveux secs et abîmés", "Formule enrichie en huile d’argan"],
@@ -1643,8 +1643,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-apres-shampooing-color-uv.jpg"],
     description: {
-      fr: "Pour cheveux colorés : un soin démêlant avec filtre UV, annoncé pour protéger et raviver la couleur.",
-      en: "For coloured hair: a detangling conditioner with UV filter, stated to protect and brighten the colour.",
+      fr: "Pensé pour les cheveux colorés, cet après-shampooing Cosmia Color + Technique associe un soin démêlant à un filtre UV. La formule est annoncée pour aider à protéger et raviver la couleur. À utiliser après le shampooing dans la routine des cheveux colorés.",
+      en: "Made for coloured hair, this Cosmia Color + Technique conditioner combines detangling care with a UV filter. The formula is stated to help protect and refresh colour. Use it after shampooing as part of a colour-care routine.",
     },
     features: {
       fr: ["Marque : Cosmia, gamme Color + Technique", "Soin démêlant au filtre UV", "Protège et ravive la couleur", "Pour cheveux colorés"],
@@ -1659,8 +1659,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-shampooing-anti-pelliculaire-500ml.jpg"],
     description: {
-      fr: "Shampooing anti-pelliculaire à usage fréquent, pour cheveux normaux. Le flacon de 500 ml dure longtemps.",
-      en: "Anti-dandruff shampoo for frequent use, for normal hair. The 500 ml bottle lasts a long time.",
+      fr: "Ce shampooing Cosmia anti-pelliculaire est prévu pour un usage fréquent sur cheveux normaux. Son flacon de 500 ml offre un format généreux pour la routine de lavage régulière.",
+      en: "This Cosmia anti-dandruff shampoo is intended for frequent use on normal hair. Its 500 ml bottle offers a generous size for a regular washing routine.",
     },
     features: {
       fr: ["Marque : Cosmia", "Shampooing anti-pelliculaire, usage fréquent", "Pour cheveux normaux", "Contenance : 500 ml"],
@@ -1675,8 +1675,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-apres-shampooing-repair-keratine.jpg"],
     description: {
-      fr: "Soin démêlant à la kératine, pour cheveux secs et abîmés.",
-      en: "Detangling conditioner with keratin, for dry and damaged hair.",
+      fr: "À la kératine, cet après-shampooing Cosmia Repair + Technique est destiné aux cheveux secs et abîmés. Il s’intègre après le shampooing pour faciliter le démêlage et compléter la routine de soin.",
+      en: "With keratin, this Cosmia Repair + Technique conditioner is intended for dry and damaged hair. Use it after shampooing to make detangling easier and complete your hair-care routine.",
     },
     features: {
       fr: ["Marque : Cosmia, gamme Repair + Technique", "Soin démêlant à la kératine", "Pour cheveux secs et abîmés"],
@@ -1691,8 +1691,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-shampooing-amandes-500ml.jpg"],
     description: {
-      fr: "Un shampooing aux amandes pour cheveux normaux, à usage fréquent. Le grand flacon de 500 ml convient à la famille.",
-      en: "An almond shampoo for normal hair, for frequent use. The large 500 ml bottle suits the whole household.",
+      fr: "Ce shampooing Cosmia aux amandes est destiné aux cheveux normaux et convient à un usage fréquent. Son format 500 ml est pratique pour une utilisation régulière à la maison.",
+      en: "This Cosmia almond shampoo is intended for normal hair and suitable for frequent use. The 500 ml size is practical for regular use at home.",
     },
     features: {
       fr: ["Marque : Cosmia", "Shampooing aux amandes, usage fréquent", "Pour cheveux normaux", "Contenance : 500 ml"],
@@ -1707,8 +1707,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-shampooing-extra-doux-argan-jasmin.jpg"],
     description: {
-      fr: "Shampooing extra-doux à l’huile d’argan et au parfum de jasmin. Annoncé pour nourrir et protéger les cheveux secs ou abîmés.",
-      en: "Extra-gentle shampoo with argan oil and a jasmine fragrance. Stated to nourish and protect dry or damaged hair.",
+      fr: "L’huile d’argan et le parfum de jasmin caractérisent ce shampooing extra-doux Cosmia. Il est annoncé pour nourrir et protéger les cheveux secs ou abîmés. Une option à intégrer à une routine de lavage tout en douceur.",
+      en: "Argan oil and jasmine fragrance define this Cosmia extra-gentle shampoo. It is stated to nourish and protect dry or damaged hair. An option for a gentler hair-washing routine.",
     },
     features: {
       fr: ["Marque : Cosmia", "Shampooing extra-doux à l’huile d’argan", "Parfum jasmin, nourrit et protège", "Pour cheveux secs ou abîmés"],
@@ -1723,8 +1723,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-shampooing-color-protection-500ml.jpg"],
     description: {
-      fr: "Shampooing protecteur de couleur, pour cheveux colorés et méchés. Grand flacon de 500 ml.",
-      en: "Colour-protecting shampoo for coloured and highlighted hair. Large 500 ml bottle.",
+      fr: "Destiné aux cheveux colorés ou méchés, ce shampooing Cosmia Color + Technique est formulé pour accompagner l’entretien de la couleur. Son flacon de 500 ml offre un format pratique pour les lavages réguliers.",
+      en: "Made for coloured or highlighted hair, this Cosmia Color + Technique shampoo is designed to support colour care. Its 500 ml bottle is a practical size for regular washing.",
     },
     features: {
       fr: ["Marque : Cosmia, gamme Color + Technique", "Shampooing protecteur couleur", "Pour cheveux colorés et méchés", "Contenance : 500 ml"],
@@ -1739,8 +1739,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/cosmetique-cosmia-shampooing-camomille-miel.jpg"],
     description: {
-      fr: "Shampooing extra doux, parfum camomille et miel. Il hydrate et adoucit, et s’adresse aux cheveux blonds à châtain clair.",
-      en: "Extra gentle shampoo with a chamomile and honey fragrance. It moisturises and softens, and is meant for blond to light chestnut hair.",
+      fr: "Avec son parfum de camomille et de miel, ce shampooing extra-doux Cosmia est destiné aux cheveux blonds à châtain clair. Il est annoncé pour hydrater et adoucir les cheveux, dans une routine de lavage quotidienne.",
+      en: "With a chamomile and honey fragrance, this Cosmia extra-gentle shampoo is intended for blonde to light-brown hair. It is stated to moisturise and soften, making it suited to a regular washing routine.",
     },
     features: {
       fr: ["Marque : Cosmia", "Shampooing extra doux, parfum camomille et miel", "Hydrate et adoucit", "Pour cheveux blonds à châtain clair"],
@@ -1755,8 +1755,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-rose-triangle-dore.jpg"],
     description: {
-      fr: "Petit sac à rabat, avec une plaque triangulaire dorée sur le devant et une finition légèrement texturée. La bandoulière fine se fixe par deux attaches dorées. Un rose doux qui va avec les tenues claires comme avec le jean.",
-      en: "Small flap bag with a gold triangle plate on the front and a lightly textured finish. The thin strap attaches with two gold clips. A soft pink that works with light outfits as well as denim.",
+      fr: "Un petit sac à rabat dans un rose doux, relevé par une plaque triangulaire dorée sur le devant. Sa finition légèrement texturée et sa bandoulière fine lui donnent une allure délicate. Il accompagne facilement un jean comme une tenue plus habillée.",
+      en: "A small flap bag in soft pink, finished with a gold-tone triangle plate on the front. Its lightly textured finish and slim strap give it a delicate look. Easy to pair with denim or a dressier outfit.",
     },
     features: {
       fr: ["Coloris : rose", "Fermeture à rabat, plaque triangulaire dorée", "Bandoulière fine avec attaches dorées", "Format compact"],
@@ -1771,8 +1771,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-blanc-triangle-argente.jpg"],
     description: {
-      fr: "Rabat lisse et plaque triangulaire argentée gravée en noir. Le blanc cassé du sac se marie au gris de la bandoulière, et les attaches sont argentées. Un format compact qui se porte facilement en bandoulière.",
-      en: "Smooth flap and a silver triangle plate engraved in black. The off-white of the bag pairs with the grey strap, and the hardware is silver. A compact format that is easy to wear crossbody.",
+      fr: "Le blanc cassé du sac contraste doucement avec la bandoulière grise et les attaches argentées. Sur le rabat lisse, une plaque triangulaire gravée apporte le détail qui attire le regard. Son format compact se porte simplement à l’épaule ou en bandoulière.",
+      en: "The off-white bag pairs softly with its grey strap and silver-tone hardware. A triangular engraved plate adds a detail to the smooth flap. Its compact shape is easy to wear on the shoulder or crossbody.",
     },
     features: {
       fr: ["Coloris : blanc cassé, bandoulière grise", "Fermeture à rabat, plaque triangulaire argentée", "Attaches argentées", "Format compact"],
@@ -1787,8 +1787,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-mini-cabas-caramel-grand-monogramme.jpg"],
     description: {
-      fr: "Deux anses rondes, une forme trapèze et un grand motif de fleurs et de losanges blanc sur fond caramel, avec les initiales au centre. Les fermoirs sont dorés et une étiquette assortie pend à l’une des anses.",
-      en: "Two round handles, a trapezoid shape and a large white flower-and-diamond pattern on a caramel background, with initials in the centre. The hardware is gold-tone and a matching tag hangs from one handle.",
+      fr: "Ce mini cabas joue sur le contraste du fond caramel et du grand motif blanc de fleurs et de losanges, avec les initiales au centre. Sa forme trapèze, ses deux anses rondes et ses fermoirs dorés composent une silhouette facile à repérer. Une étiquette assortie complète le modèle.",
+      en: "This mini tote plays with the contrast between its caramel background and large white flower-and-diamond pattern, with initials at the centre. Its trapezoid shape, two round handles and gold-tone hardware create a distinctive profile. A matching tag completes the design.",
     },
     features: {
       fr: ["Coloris : caramel et blanc", "Deux anses rondes", "Fermoirs dorés, étiquette assortie", "Petit format"],
@@ -1803,8 +1803,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-bandouliere-bleu-ciel-triangle.jpg"],
     description: {
-      fr: "Bleu ciel uni, avec un fermoir triangulaire doré sur le rabat. La longue bandoulière permet de le porter à l’épaule ou en travers du corps. Le coloris tranche avec les sacs noirs ou marron qu’on voit partout.",
-      en: "Plain sky blue, with a gold triangle clasp on the flap. The long strap lets you wear it on the shoulder or across the body. The colour stands out from the black or brown bags you see everywhere.",
+      fr: "Le bleu ciel donne le ton à ce sac bandoulière, simplement ponctué d’un fermoir triangulaire doré sur le rabat. Sa longue bandoulière permet de le porter à l’épaule ou en travers du corps. Une touche de couleur pour changer des tons neutres.",
+      en: "Sky blue sets the tone for this shoulder bag, accented by a gold-tone triangle clasp on the flap. Its long strap can be worn over the shoulder or crossbody. A touch of colour when you want a break from neutral shades.",
     },
     features: {
       fr: ["Coloris : bleu ciel", "Rabat, fermoir triangulaire doré", "Longue bandoulière", "Attaches dorées"],
@@ -1819,8 +1819,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-mini-cabas-beige-grand-monogramme.jpg"],
     description: {
-      fr: "Fond beige sable, grand motif de fleurs et de losanges blanc et initiales au centre, avec deux anses rondes. Une version plus douce que le caramel, qui va facilement avec des tenues claires. Fermoirs dorés et étiquette assortie.",
-      en: "Sandy beige background, a large white flower-and-diamond pattern and initials in the centre, with two round handles. A softer version than caramel that pairs easily with light outfits. Gold-tone hardware and matching tag.",
+      fr: "Dans un beige sable, ce mini cabas reprend le motif blanc de fleurs et de losanges avec les initiales au centre. Les deux anses rondes, les fermoirs dorés et l’étiquette assortie complètent le modèle. Une version lumineuse qui s’accorde facilement aux tons clairs.",
+      en: "In sandy beige, this mini tote features a white flower-and-diamond pattern with initials at the centre. Two round handles, gold-tone hardware and a matching tag complete the design. A light-toned option that pairs easily with neutral outfits.",
     },
     features: {
       fr: ["Coloris : beige et blanc", "Deux anses rondes", "Fermoirs dorés, étiquette assortie", "Petit format"],
@@ -1835,8 +1835,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-cognac-losanges-blasons.jpg"],
     description: {
-      fr: "Un sac à rabat couleur cognac couvert de losanges noirs et de petits blasons. Fermoir doré à clé au centre, deux boucles sur le devant et une anse rigide sur le dessus. Le motif est très présent : on le choisit pour se faire remarquer.",
-      en: "A cognac flap bag covered in black diamonds and small crests. Gold-tone key-style clasp in the centre, two buckles on the front and a rigid top handle. The pattern is bold: you pick it to be noticed.",
+      fr: "Le motif de losanges noirs et de petits blasons habille entièrement ce sac à rabat cognac. Le fermoir doré à clé, les deux boucles sur le devant et l’anse rigide renforcent son allure structurée. Un modèle au motif marqué, pour donner du relief à une tenue sobre.",
+      en: "Black diamonds and small crests cover this cognac flap bag. A gold-tone key-style clasp, two front buckles and a rigid top handle give it a structured look. Its distinctive pattern adds interest to a simple outfit.",
     },
     features: {
       fr: ["Coloris : cognac et noir", "Fermoir doré central, deux boucles", "Anse rigide sur le dessus", "Anneaux dorés sur les côtés"],
@@ -1851,8 +1851,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-monogramme-marron-fermoir-dore.jpg"],
     description: {
-      fr: "Le rabat est marron foncé à monogramme, la façade caramel porte le même motif à l’envers. Fermoir doré carré, deux boucles en bas, anse rigide sur le dessus et anneaux dorés sur les côtés. Un classique aux tons chauds.",
-      en: "The flap is dark brown with a monogram, while the caramel front carries the same pattern reversed. Square gold-tone clasp, two buckles at the bottom, a rigid top handle and gold-tone rings on the sides. A classic in warm tones.",
+      fr: "Les tons marron foncé et caramel se répondent sur ce sac à monogramme, avec un motif inversé entre le rabat et la façade. Le fermoir carré doré, les boucles du bas et l’anse rigide soulignent sa forme structurée. Une association de couleurs chaudes facile à porter.",
+      en: "Dark brown and caramel tones meet on this monogram bag, with the pattern reversed between the flap and front. A square gold-tone clasp, lower buckles and a rigid top handle emphasise its structured shape. A warm colour combination that is easy to wear.",
     },
     features: {
       fr: ["Coloris : marron foncé et caramel", "Fermoir doré carré, deux boucles", "Anse rigide sur le dessus", "Anneaux dorés sur les côtés"],
@@ -1867,8 +1867,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-vert-emeraude.jpg"],
     description: {
-      fr: "La photo présente deux sacs matelassés vert émeraude : un cabas à deux anses chaînes entrelacées et un sac à rabat avec chaîne dorée. Le fermoir doré est formé de deux lettres entrelacées. Le vert profond change du noir qu’on choisit d’habitude.",
-      en: "The photo shows two emerald green quilted bags: a tote with two woven chain handles and a flap bag with a gold-tone chain. The gold-tone clasp is made of two interlaced letters. The deep green is a change from the usual black.",
+      fr: "Ce duo réunit deux sacs matelassés vert émeraude : un cabas à anses chaînes entrelacées et un sac à rabat avec chaîne dorée. Le fermoir à lettres entrelacées apporte un détail commun aux deux pièces. Le vert profond offre une alternative aux coloris plus classiques.",
+      en: "This set brings together two emerald-green quilted bags: a tote with interwoven chain handles and a flap bag with a gold-tone chain. The interlaced-letter clasp gives both pieces a shared detail. Deep green offers an alternative to more classic colours.",
     },
     features: {
       fr: ["Coloris : vert émeraude", "Matelassage en losanges", "Anses et bandoulière en chaîne dorée", "Deux modèles sur la photo : cabas et sac à rabat"],
@@ -1883,8 +1883,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-jaune.jpg"],
     description: {
-      fr: "Un cabas à anses chaînes et un sac à rabat avec chaîne, tous deux matelassés en jaune vif. Les finitions dorées et le fermoir à lettres entrelacées apportent le contraste. Un sac pour qui veut de la couleur.",
-      en: "A chain-handle tote and a chain-strap flap bag, both quilted in bright yellow. The gold-tone finishes and the interlaced-letter clasp add contrast. A bag for anyone who wants colour.",
+      fr: "Deux formats, une même couleur : ce duo comprend un cabas à anses chaînes et un sac à rabat avec bandoulière chaîne, tous deux matelassés en jaune vif. Les finitions dorées et le fermoir à lettres entrelacées complètent l’ensemble. Pour apporter une note lumineuse à une tenue.",
+      en: "Two shapes, one colour: this set includes a chain-handle tote and a chain-strap flap bag, both quilted in bright yellow. Gold-tone finishes and an interlaced-letter clasp complete the look. A bright accent for an outfit.",
     },
     features: {
       fr: ["Coloris : jaune vif", "Matelassage en losanges", "Anses et bandoulière en chaîne dorée", "Deux modèles sur la photo : cabas et sac à rabat"],
@@ -1899,8 +1899,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-verni-monogramme.jpg"],
     description: {
-      fr: "Le vernis orange brillant est gaufré d’un monogramme de fleurs et de losanges. Forme dôme fermée par un zip, deux anses rondes, attaches argentées et petit cadenas-étiquette. Très brillant, il se remarque de loin.",
-      en: "The glossy orange patent finish is embossed with a flower-and-diamond monogram. Dome shape closed with a zip, two round handles, silver-tone hardware and a small tag. Very shiny, it stands out from afar.",
+      fr: "Le vernis orange brillant et le monogramme en relief donnent à ce sac dôme une présence marquée. Sa fermeture zippée, ses deux anses rondes et ses attaches argentées dessinent une forme classique, réveillée par la couleur. Un petit cadenas-étiquette complète les détails.",
+      en: "Glossy orange patent finish and an embossed monogram give this dome bag a strong presence. Its zip closure, two round handles and silver-tone hardware create a classic shape, brought to life by the colour. A small padlock-style tag completes the details.",
     },
     features: {
       fr: ["Coloris : orange verni", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées"],
@@ -1915,8 +1915,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-gris-bleu-bande-fuchsia.jpg"],
     description: {
-      fr: "Le corps en toile à motif de fleurs, gris clair et bleu nuit, contraste avec les anses et le bandeau fuchsia. Forme dôme à zip, finitions dorées et petit cadenas accroché à la fermeture. Un sac qui mélange le sobre et le très coloré.",
-      en: "The canvas body has a light grey and navy flower pattern that contrasts with the fuchsia handles and base band. Dome shape with a zip, gold-tone details and a small padlock on the closure. A bag that mixes understated and very colourful.",
+      fr: "Le motif floral gris clair et bleu nuit du corps contraste avec les anses et le bandeau fuchsia. La forme dôme est fermée par un zip, accompagné de finitions dorées et d’un petit cadenas. Un mélange de tons doux et d’une touche vive.",
+      en: "The light grey and navy floral body contrasts with the fuchsia handles and base band. The dome shape closes with a zip, finished with gold-tone details and a small padlock. A mix of muted tones and a bright accent.",
     },
     features: {
       fr: ["Coloris : gris-bleu et fuchsia", "Forme dôme, fermeture zippée", "Deux anses rondes", "Finitions dorées, petit cadenas"],
@@ -1931,8 +1931,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-grain-horizontal.jpg"],
     description: {
-      fr: "Doré clair, avec un grain en fines lignes horizontales et un bandeau lisse en bas. Forme dôme à zip, deux anses rondes, attaches argentées, logo en relief et étiquette gravée. Un doré doux, pas trop brillant.",
-      en: "Light gold with a fine horizontal grain and a smooth band at the bottom. Dome shape with a zip, two round handles, silver-tone hardware, an embossed logo and an engraved tag. A soft gold, not too shiny.",
+      fr: "Un doré clair, un grain en fines lignes horizontales et un bandeau lisse à la base : ce sac dôme mise sur des détails discrets. Les deux anses rondes, la fermeture zippée et les attaches argentées structurent la silhouette. Le logo en relief et l’étiquette gravée terminent la présentation.",
+      en: "Light gold, fine horizontal texture and a smooth band at the base give this dome bag its understated details. Two round handles, a zip closure and silver-tone hardware shape the silhouette. An embossed logo and engraved tag complete the design.",
     },
     features: {
       fr: ["Coloris : doré clair", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées, étiquette gravée"],
@@ -1947,8 +1947,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-grain-cadenas.jpg"],
     description: {
-      fr: "Orange vif à fines lignes horizontales, bandeau lisse assorti et deux anses rondes. Un petit cadenas pend à une chaîne argentée sur le côté de la fermeture zippée.",
-      en: "Bright orange with fine horizontal lines, a matching smooth band and two round handles. A small padlock hangs from a silver-tone chain at the side of the zip closure.",
+      fr: "La teinte orange vive et les fines lignes horizontales donnent du relief à ce sac dôme. Il présente deux anses rondes, une fermeture zippée et un petit cadenas suspendu à une chaîne argentée. Une pièce colorée qui suffit à réveiller une tenue simple.",
+      en: "Bright orange and fine horizontal lines add texture to this dome bag. It features two round handles, a zip closure and a small padlock hanging from a silver-tone chain. A colourful piece that can lift a simple outfit.",
     },
     features: {
       fr: ["Coloris : orange vif", "Forme dôme, fermeture zippée", "Deux anses rondes", "Cadenas sur chaîne argentée"],
@@ -1963,8 +1963,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-miroir-monogramme.jpg"],
     description: {
-      fr: "Finition dorée effet miroir, très brillante, avec un monogramme en relief sur tout le sac. Forme dôme à zip, deux anses rondes, attaches argentées et étiquette assortie. Pour les soirées plus que pour tous les jours.",
-      en: "Mirror-effect gold finish, very shiny, with an embossed monogram all over. Dome shape with a zip, two round handles, silver-tone hardware and a matching tag. Better for evenings than for every day.",
+      fr: "Avec sa finition dorée effet miroir et son monogramme en relief, ce sac dôme attire immédiatement le regard. Les deux anses rondes, la fermeture zippée et les attaches argentées équilibrent sa forme. Son éclat convient particulièrement aux sorties et aux occasions où l’on veut une pièce qui se remarque.",
+      en: "With its mirror-effect gold finish and embossed monogram, this dome bag catches the eye. Two round handles, a zip closure and silver-tone hardware balance its shape. Its shine makes it especially suited to outings and occasions when you want a standout piece.",
     },
     features: {
       fr: ["Coloris : doré miroir", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées"],
@@ -1979,8 +1979,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-noir-blanc-porte-monnaie.jpg"],
     description: {
-      fr: "La façade blanche est cernée de noir, avec deux boucles dorées sur les côtés et deux anses. Un petit porte-monnaie zippé noir est présenté devant le sac sur la photo. Le contraste noir et blanc reste facile à assortir.",
-      en: "The white front is edged in black, with two gold-tone buckles on the sides and two handles. A small black zipped coin purse is shown in front of the bag in the photo. The black-and-white contrast is easy to match.",
+      fr: "Le contraste du blanc et du noir donne à ce cabas une allure graphique, soulignée par deux boucles dorées sur les côtés. Il possède deux anses ; un petit porte-monnaie zippé noir apparaît également sur la photo, sa présence dans le lot restant à confirmer. Un duo de couleurs facile à associer.",
+      en: "The black-and-white contrast gives this tote a graphic look, highlighted by two gold-tone side buckles. It has two handles; a small black zipped coin purse is also shown in the photo, though its inclusion in the set still needs confirmation. An easy-to-match colour combination.",
     },
     features: {
       fr: ["Coloris : blanc et noir", "Deux anses, boucles dorées sur les côtés", "Porte-monnaie zippé noir présenté avec le sac (à confirmer)", "Format cabas"],
@@ -1995,8 +1995,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-noir-poche-rabat.jpg"],
     description: {
-      fr: "Noir uni, deux anses, une poche à rabat sur le devant et des sangles sur les côtés. Un sac sobre qui accompagne toutes les tenues, des cours aux sorties.",
-      en: "Plain black, two handles, a flap pocket on the front and straps on the sides. An understated bag that goes with every outfit, from class to going out.",
+      fr: "Tout en noir, ce cabas mise sur une ligne sobre avec deux anses, une poche à rabat sur le devant et des sangles latérales. Il se glisse facilement dans une tenue de tous les jours et accompagne aussi bien un look décontracté qu’une silhouette plus habillée.",
+      en: "In all black, this tote keeps to a simple design with two handles, a front flap pocket and side straps. It fits easily into everyday outfits, from casual looks to something more dressed up.",
     },
     features: {
       fr: ["Coloris : noir", "Deux anses", "Poche à rabat sur le devant", "Sangles sur les côtés"],
@@ -2011,8 +2011,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-denim-bords-caramel-portefeuille.jpg"],
     description: {
-      fr: "La façade bleu denim est bordée de caramel, avec deux boucles dorées sur les côtés et deux anses. Un portefeuille zippé caramel est présenté avec le sac sur la photo. Le bleu et le caramel se marient bien avec le jean.",
-      en: "The denim-blue front is trimmed in caramel, with two gold-tone buckles on the sides and two handles. A caramel zipped wallet is shown with the bag in the photo. Blue and caramel work well with jeans.",
+      fr: "Le bleu denim de la façade rencontre des bords caramel et des boucles dorées pour un contraste facile à porter. Ce cabas possède deux anses ; un portefeuille zippé caramel est également présenté sur la photo, mais son inclusion avec le sac reste à confirmer. Une association qui fonctionne naturellement avec le denim.",
+      en: "The denim-blue front meets caramel trim and gold-tone buckles for an easy-to-wear contrast. This tote has two handles; a caramel zipped wallet is also shown in the photo, but its inclusion with the bag still needs confirmation. A combination that works naturally with denim.",
     },
     features: {
       fr: ["Coloris : bleu denim et caramel", "Deux anses, boucles dorées sur les côtés", "Portefeuille zippé caramel présenté avec le sac (à confirmer)", "Format cabas"],
@@ -2027,12 +2027,284 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-seau-noir-anse-lettres-dorees.jpg"],
     description: {
-      fr: "Un sac seau noir à la forme souple, fermé par un cordon. L’anse est ornée de grandes lettres dorées en relief, et deux petits boutons ferment le côté. Le détail doré lui donne du caractère malgré le noir uni.",
-      en: "A black bucket bag with a soft shape, closed with a drawstring. The handle is decorated with large raised gold-tone letters, and two small buttons fasten the side. The gold detail gives character to the plain black.",
+      fr: "La forme seau souple et le noir uni donnent à ce sac une base facile à associer. Son anse ornée de grandes lettres dorées en relief apporte le détail qui change tout, tandis que le cordon ferme le haut et que deux boutons retiennent le côté.",
+      en: "The soft bucket shape and plain black finish make this bag easy to pair with different outfits. Large raised gold-tone letters on the handle provide its defining detail, while a drawstring closes the top and two buttons fasten the side.",
     },
     features: {
       fr: ["Coloris : noir", "Forme seau, fermeture par cordon", "Anse ornée de lettres dorées", "Deux boutons sur le côté"],
       en: ["Colour: black", "Bucket shape, drawstring closure", "Handle decorated with gold-tone letters", "Two buttons on the side"],
+    },
+  }),
+  newProduct("sac-pochette-matelassee-beige", "bags", {
+    name: { fr: "Pochette matelassée beige, lettres dorées", en: "Beige quilted clutch, gold letters" },
+    subcategory: "other-bags",
+    audience: "women",
+    price: 6500,
+    priceOnRequest: false,
+    images: ["/sac-pochette-matelassee-beige.jpg"],
+    description: {
+      fr: "Le matelassage en chevrons dessine un grand V sur le rabat, avec des lettres dorées entrelacées au centre. Le beige reste chaud sans être clair, et les surpiqûres assorties gardent le dessin net. Aucune bandoulière n’apparaît sur la photo. Une pochette qui s’accorde facilement aux tenues neutres.",
+      en: "The chevron quilting draws a large V on the flap, with interlaced gold letters in the centre. The beige is warm without being pale, and the matching stitching keeps the design crisp. No strap appears in the photo. A clutch that pairs easily with neutral outfits.",
+    },
+    features: {
+      fr: ["Coloris : beige", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
+      en: ["Colour: beige", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
+    },
+  }),
+  newProduct("sac-pochette-matelassee-gris", "bags", {
+    name: { fr: "Pochette matelassée gris anthracite, lettres dorées", en: "Charcoal grey quilted clutch, gold letters" },
+    subcategory: "other-bags",
+    audience: "women",
+    price: 6500,
+    priceOnRequest: false,
+    images: ["/sac-pochette-matelassee-gris.jpg"],
+    description: {
+      fr: "Un gris anthracite pour cette pochette matelassée en chevrons, dont le rabat en V porte des lettres dorées entrelacées. Le doré ressort bien sur le fond sombre. Aucune bandoulière n’est visible sur la photo. Un choix plus discret que les coloris chauds.",
+      en: "A charcoal grey for this chevron-quilted clutch, whose V-shaped flap carries interlaced gold letters. The gold stands out against the dark background. No strap is visible in the photo. A more discreet choice than the warm colours.",
+    },
+    features: {
+      fr: ["Coloris : gris anthracite", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
+      en: ["Colour: charcoal grey", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
+    },
+  }),
+  newProduct("sac-pochette-matelassee-cognac", "bags", {
+    name: { fr: "Pochette matelassée cognac, lettres dorées", en: "Cognac quilted clutch, gold letters" },
+    subcategory: "other-bags",
+    audience: "women",
+    price: 6500,
+    priceOnRequest: false,
+    images: ["/sac-pochette-matelassee-cognac.jpg"],
+    description: {
+      fr: "Le cognac lumineux de cette pochette met en valeur le rabat en V matelassé en chevrons. Les lettres dorées entrelacées se détachent bien sur la couleur chaude, et les surpiqûres sont de la même teinte. Aucune bandoulière n’apparaît sur la photo.",
+      en: "The bright cognac of this clutch shows off the chevron-quilted V flap. The interlaced gold letters stand out against the warm colour, and the stitching is the same shade. No strap appears in the photo.",
+    },
+    features: {
+      fr: ["Coloris : cognac", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
+      en: ["Colour: cognac", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
+    },
+  }),
+  newProduct("sac-rabat-asymetrique-blanc-cadenas", "bags", {
+    name: { fr: "Sac à rabat asymétrique blanc, cadenas doré", en: "White asymmetric flap bag, gold padlock" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8700,
+    priceOnRequest: false,
+    images: ["/sac-rabat-asymetrique-blanc-cadenas.jpg"],
+    description: {
+      fr: "Une anse rigide nouée de chaque côté, un rabat asymétrique à surpiqûres apparentes et un cadenas doré au centre : le blanc met ces détails en valeur. Des anneaux dorés sont visibles sur les côtés. Un sac clair qui se remarque facilement.",
+      en: "A rigid handle knotted at each end, an asymmetric flap with visible stitching and a gold padlock in the centre: the white sets these details off. Gold rings are visible on the sides. A light-coloured bag that stands out easily.",
+    },
+    features: {
+      fr: ["Coloris : blanc", "Anse rigide nouée", "Rabat asymétrique, cadenas doré", "Anneaux dorés sur les côtés"],
+      en: ["Colour: white", "Knotted rigid handle", "Asymmetric flap, gold padlock", "Gold rings on the sides"],
+    },
+  }),
+  newProduct("sac-rabat-asymetrique-bordeaux", "bags", {
+    name: { fr: "Sac à rabat asymétrique bordeaux, avec bandoulière", en: "Burgundy asymmetric flap bag, with shoulder strap" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8700,
+    priceOnRequest: false,
+    images: ["/sac-rabat-asymetrique-bordeaux.jpg"],
+    description: {
+      fr: "Le bordeaux profond et le rabat asymétrique, souligné d’une double surpiqûre en courbe, donnent à ce sac une silhouette nette. L’anse rigide est accompagnée d’une bandoulière fixée par des mousquetons dorés. Une couleur de saison, facile à porter avec des tenues sombres comme avec des tons clairs.",
+      en: "The deep burgundy and the asymmetric flap, underlined by a curved double stitch, give this bag a clean silhouette. The rigid handle comes with a shoulder strap attached by gold clips. A seasonal colour that works with dark outfits as well as light tones.",
+    },
+    features: {
+      fr: ["Coloris : bordeaux", "Anse rigide et bandoulière à mousquetons dorés", "Rabat asymétrique à double surpiqûre", "Attaches dorées"],
+      en: ["Colour: burgundy", "Rigid handle and shoulder strap with gold clips", "Asymmetric flap with double stitching", "Gold-tone hardware"],
+    },
+  }),
+  newProduct("sac-rabat-asymetrique-violet-cadenas", "bags", {
+    name: { fr: "Sac à rabat asymétrique violet, cadenas doré", en: "Purple asymmetric flap bag, gold padlock" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8700,
+    priceOnRequest: false,
+    images: ["/sac-rabat-asymetrique-violet-cadenas.jpg"],
+    description: {
+      fr: "Le violet intense met en valeur le cadenas doré posé sur le rabat. L’anse fine, nouée et munie d’une boucle dorée, complète l’ensemble, tandis que le rabat asymétrique ajoute une ligne en biais. Un sac coloré pour changer du noir et du marron.",
+      en: "The intense purple shows off the gold padlock on the flap. The slim knotted handle with a gold buckle completes the look, while the asymmetric flap adds a diagonal line. A colourful bag for a change from black and brown.",
+    },
+    features: {
+      fr: ["Coloris : violet", "Anse fine nouée avec boucle dorée", "Rabat asymétrique, cadenas doré", "Attaches dorées"],
+      en: ["Colour: purple", "Slim knotted handle with gold buckle", "Asymmetric flap, gold padlock", "Gold-tone hardware"],
+    },
+  }),
+  newProduct("sac-rabat-terracotta-cadenas-pochette", "bags", {
+    name: { fr: "Sac à rabat terracotta, cadenas et petite pochette", en: "Terracotta flap bag, padlock and small pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-rabat-terracotta-cadenas-pochette.jpg"],
+    description: {
+      fr: "Ce sac à anse rigide et rabat asymétrique, orné d’un cadenas aux reflets argentés et violet pâle, est présenté avec une petite pochette à rabat fermée par un bouton doré. La couleur terracotta est chaude et uniforme. La présence de la pochette dans le lot reste à confirmer.",
+      en: "This rigid-handle bag with an asymmetric flap, decorated with a padlock in silver and pale purple tones, is shown with a small flap pouch closed by a gold button. The terracotta colour is warm and even. Whether the pouch is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : terracotta", "Anse rigide, rabat asymétrique, cadenas", "Petite pochette à bouton doré présentée sur la photo (à confirmer)", "Attaches dorées"],
+      en: ["Colour: terracotta", "Rigid handle, asymmetric flap, padlock", "Small pouch with gold button shown in the photo (to be confirmed)", "Gold-tone hardware"],
+    },
+  }),
+  newProduct("sac-rabat-marron-cadenas-pochette", "bags", {
+    name: { fr: "Sac à rabat marron foncé, cadenas et petite pochette", en: "Dark brown flap bag, padlock and small pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-rabat-marron-cadenas-pochette.jpg"],
+    description: {
+      fr: "Le marron foncé à grain fin habille ce sac à rabat asymétrique, dont l’anse est formée de plusieurs lanières nouées. Un cadenas doré orne le devant et une bandoulière est visible sur le côté. Une petite pochette à bouton doré est présentée à côté ; son inclusion avec le sac reste à confirmer.",
+      en: "The dark brown, fine-grained finish covers this asymmetric flap bag, whose handle is made of several knotted straps. A gold padlock decorates the front and a shoulder strap is visible on the side. A small pouch with a gold button is shown beside it; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : marron foncé", "Anse en lanières nouées, bandoulière visible", "Rabat asymétrique, cadenas doré", "Petite pochette présentée sur la photo (à confirmer)"],
+      en: ["Colour: dark brown", "Knotted-strap handle, shoulder strap visible", "Asymmetric flap, gold padlock", "Small pouch shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-rouge-bande-tressee-portefeuille", "bags", {
+    name: { fr: "Sac rouge à bande tressée, avec portefeuille", en: "Red tote with woven band, with wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9500,
+    priceOnRequest: false,
+    images: ["/sac-sac-rouge-bande-tressee-portefeuille.jpg"],
+    description: {
+      fr: "Le rouge vif est rythmé par une bande tressée au bas de la façade et par deux pattes dorées gravées d’un motif de feuille, qui fixent les anses. Les côtés sont nervurés et des anneaux dorés sont visibles de part et d’autre. Un portefeuille zippé assorti apparaît sur la photo ; son inclusion avec le sac reste à confirmer.",
+      en: "The bright red is broken up by a woven band at the bottom of the front and two gold tabs engraved with a leaf motif, which hold the handles. The sides are ribbed and gold rings are visible on each side. A matching zipped wallet appears in the photo; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : rouge", "Deux anses, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
+      en: ["Colour: red", "Two handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-beige-anses-marron-portefeuille", "bags", {
+    name: { fr: "Sac beige à anses marron et bande tressée, avec portefeuille", en: "Beige tote with brown handles and woven band, with wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9500,
+    priceOnRequest: false,
+    images: ["/sac-sac-beige-anses-marron-portefeuille.jpg"],
+    description: {
+      fr: "Un beige clair relevé d’anses marron foncé et d’une bande tressée de la même teinte au bas de la façade. Les pattes dorées gravées d’une feuille fixent les anses, et des anneaux dorés sont visibles sur les côtés. Un portefeuille zippé beige est présenté à côté ; son inclusion avec le sac reste à confirmer.",
+      en: "A light beige set off by dark brown handles and a woven band in the same shade at the bottom of the front. Gold tabs engraved with a leaf hold the handles, and gold rings are visible on the sides. A beige zipped wallet is shown beside it; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : beige et marron foncé", "Deux anses marron, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
+      en: ["Colour: beige and dark brown", "Two brown handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-jaune-bande-tressee-portefeuille", "bags", {
+    name: { fr: "Sac jaune moutarde à bande tressée, avec portefeuille", en: "Mustard yellow tote with woven band, with wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9500,
+    priceOnRequest: false,
+    images: ["/sac-sac-jaune-bande-tressee-portefeuille.jpg"],
+    description: {
+      fr: "Le jaune moutarde donne de l’énergie à ce sac à deux anses, dont le bas de la façade est orné d’une bande tressée. Les pattes dorées gravées d’une feuille fixent les anses. Un portefeuille zippé jaune assorti est présenté à côté ; son inclusion avec le sac reste à confirmer.",
+      en: "The mustard yellow gives this two-handle bag some energy, with a woven band along the bottom of the front. Gold tabs engraved with a leaf hold the handles. A matching yellow zipped wallet is shown beside it; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : jaune moutarde", "Deux anses, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
+      en: ["Colour: mustard yellow", "Two handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-rouge-surpiqures-geometriques-portefeuille", "bags", {
+    name: { fr: "Sac rouge à surpiqûres géométriques, breloque feuille et portefeuille", en: "Red bag with geometric stitching, leaf charm and wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8900,
+    priceOnRequest: false,
+    images: ["/sac-sac-rouge-surpiqures-geometriques-portefeuille.jpg"],
+    description: {
+      fr: "Des surpiqûres en lignes croisées dessinent un motif géométrique sur la façade rouge, et une breloque en forme de feuille pend à l’anse, avec deux perles dorées. Un lettrage doré discret figure sur le devant. Un long portefeuille zippé rouge est présenté au-dessus du sac ; son inclusion reste à confirmer.",
+      en: "Crossing lines of stitching draw a geometric pattern on the red front, and a leaf-shaped charm hangs from the handle with two gold beads. A discreet gold lettering sits on the front. A long red zipped wallet is shown above the bag; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : rouge", "Anse ronde, breloque en forme de feuille", "Surpiqûres géométriques sur la façade", "Long portefeuille zippé présenté sur la photo (à confirmer)"],
+      en: ["Colour: red", "Round handle, leaf-shaped charm", "Geometric stitching on the front", "Long zipped wallet shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-bleu-surpiqures-geometriques-portefeuille", "bags", {
+    name: { fr: "Sac bleu à surpiqûres géométriques, breloque fleur et portefeuille", en: "Blue bag with geometric stitching, flower charm and wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8900,
+    priceOnRequest: false,
+    images: ["/sac-sac-bleu-surpiqures-geometriques-portefeuille.jpg"],
+    description: {
+      fr: "Le bleu moyen, tout en un ton, est animé par des surpiqûres croisées sur la façade et par une breloque en forme de fleur accrochée à l’anse. Deux perles dorées et un petit lettrage doré apportent le contraste. Un long portefeuille zippé bleu est présenté au-dessus du sac ; son inclusion reste à confirmer.",
+      en: "The mid-blue, all in one tone, is enlivened by crossing stitches on the front and a flower-shaped charm hanging from the handle. Two gold beads and a small gold lettering add contrast. A long blue zipped wallet is shown above the bag; whether it is included remains to be confirmed.",
+    },
+    features: {
+      fr: ["Coloris : bleu", "Anse ronde, breloque en forme de fleur", "Surpiqûres géométriques sur la façade", "Long portefeuille zippé présenté sur la photo (à confirmer)"],
+      en: ["Colour: blue", "Round handle, flower-shaped charm", "Geometric stitching on the front", "Long zipped wallet shown in the photo (to be confirmed)"],
+    },
+  }),
+  newProduct("sac-sac-jaune-surpiqures-geometriques", "bags", {
+    name: { fr: "Sac jaune à surpiqûres géométriques, breloque dorée", en: "Yellow bag with geometric stitching, gold charm" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8900,
+    priceOnRequest: false,
+    images: ["/sac-sac-jaune-surpiqures-geometriques.jpg"],
+    description: {
+      fr: "Cette version jaune vif est présentée sans portefeuille. Les surpiqûres croisées structurent la façade, tandis que les anses à surface texturée et la breloque dorée métallisée ajoutent du relief. Un petit lettrage doré est discrètement placé sur le devant.",
+      en: "This bright yellow version is shown without a wallet. Crossing stitches structure the front, while the textured handles and the metallic gold charm add relief. A small gold lettering sits discreetly on the front.",
+    },
+    features: {
+      fr: ["Coloris : jaune vif", "Anses à surface texturée, breloque dorée", "Surpiqûres géométriques sur la façade", "Présenté sans portefeuille"],
+      en: ["Colour: bright yellow", "Textured handles, gold charm", "Geometric stitching on the front", "Shown without a wallet"],
+    },
+  }),
+  newProduct("sac-sac-a-dos-gris-gaufre", "bags", {
+    name: { fr: "Sac à dos gris clair, motif gaufré", en: "Light grey backpack, embossed pattern" },
+    subcategory: "mens-bags",
+    audience: "men",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-sac-a-dos-gris-gaufre.jpg"],
+    description: {
+      fr: "Le motif gaufré de fleurs et de lettres couvre tout le sac à dos gris clair. Une poche à rabat sur le devant porte un petit logo noir, et le zip principal est muni de deux curseurs argentés. La photo montre aussi le dos, avec de larges bretelles noires et une anse de portage.",
+      en: "The embossed flower and letter pattern covers the whole light grey backpack. A flap pocket on the front carries a small black logo, and the main zip has two silver-tone sliders. The photo also shows the back, with wide black straps and a carry handle.",
+    },
+    features: {
+      fr: ["Coloris : gris clair", "Motif gaufré sur toute la surface", "Poche à rabat sur le devant", "Larges bretelles noires, anse de portage"],
+      en: ["Colour: light grey", "Embossed pattern all over", "Flap pocket on the front", "Wide black straps, carry handle"],
+    },
+  }),
+  newProduct("sac-sac-a-dos-vert-gaufre", "bags", {
+    name: { fr: "Sac à dos vert, motif gaufré", en: "Green backpack, embossed pattern" },
+    subcategory: "mens-bags",
+    audience: "men",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-sac-a-dos-vert-gaufre.jpg"],
+    description: {
+      fr: "Le vert franc et le motif gaufré sur toute la surface donnent à ce sac à dos une allure marquée. La poche à rabat sur le devant porte un petit logo noir, et le zip principal dessine un arc avec deux curseurs argentés. Un coloris qui sort des noirs et des gris habituels.",
+      en: "The bold green and the all-over embossed pattern give this backpack a strong look. The flap pocket on the front carries a small black logo, and the main zip arcs around with two silver-tone sliders. A colour that stands out from the usual blacks and greys.",
+    },
+    features: {
+      fr: ["Coloris : vert", "Motif gaufré sur toute la surface", "Poche à rabat sur le devant", "Zip principal avec deux curseurs argentés"],
+      en: ["Colour: green", "Embossed pattern all over", "Flap pocket on the front", "Main zip with two silver-tone sliders"],
+    },
+  }),
+  newProduct("sac-sac-a-dos-jaune-gaufre", "bags", {
+    name: { fr: "Sac à dos jaune, motif gaufré", en: "Yellow backpack, embossed pattern" },
+    subcategory: "mens-bags",
+    audience: "men",
+    price: 8000,
+    priceOnRequest: false,
+    images: ["/sac-sac-a-dos-jaune-gaufre.jpg"],
+    description: {
+      fr: "Jaune vif de la tête aux pieds, avec un motif gaufré sur toute la surface. La poche zippée du devant est ornée d’une plaque gravée, et une anse de portage surmonte le sac. Le zip principal suit la courbe du dessus, avec des curseurs argentés.",
+      en: "Bright yellow from top to bottom, with an embossed pattern all over. The zipped front pocket is decorated with an engraved plate, and a carry handle tops the bag. The main zip follows the curve of the top, with silver-tone sliders.",
+    },
+    features: {
+      fr: ["Coloris : jaune vif", "Motif gaufré sur toute la surface", "Poche zippée sur le devant, plaque gravée", "Anse de portage"],
+      en: ["Colour: bright yellow", "Embossed pattern all over", "Zipped front pocket, engraved plate", "Carry handle"],
     },
   }),
 ];
