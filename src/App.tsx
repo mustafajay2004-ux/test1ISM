@@ -2583,6 +2583,8 @@ const catalogue: Product[] = [
     name: { fr: "iS, eau de parfum 100 ml", en: "iS, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 4500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-01-is.jpg"],
     description: {
       fr: "Une touche de caractère, jusque dans les moindres détails.\n\nIl y a des parfums qu’on choisit simplement pour leur odeur. Et puis il y a ceux qui attirent aussi par leur présentation.\n\nAvec son flacon transparent aux reflets ambrés, son bouchon noir brillant et son coffret aux tons champagne, iS Eau de Parfum affiche une esthétique sobre et raffinée qui ne passe pas inaperçue.\n\nEn provenance directe du Maroc, cette eau de parfum de 100 ml est une belle découverte pour ceux qui apprécient les fragrances présentées avec élégance.\n\nÀ porter pour se faire plaisir ou à offrir à quelqu’un qui apprécie les belles attentions.\n\nLe détail qui fait la différence : un flacon qui trouve naturellement sa place dans votre collection.\n\nDisponible chez Le Coin ISM.",
@@ -2597,6 +2599,8 @@ const catalogue: Product[] = [
     name: { fr: "CIIQ pour homme, eau de parfum 100 ml", en: "CIIQ for men, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "men",
+    price: 4000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-02-ciiq-pour-homme.jpg"],
     description: {
       fr: "Laissez votre parfum parler pour vous.\n\nEt si votre parfum devenait l’un des détails qu’on remarque avant même que vous preniez la parole ?\n\nDécouvrez CIIQ, une collection de fragrances en provenance directe du Maroc, sélectionnée pour celles et ceux qui aiment prendre soin de leur image et apporter une touche de caractère à leur présence.\n\nQue vous soyez attiré par les senteurs élégantes, les notes séduisantes ou les fragrances qui affirment votre personnalité, CIIQ vous invite à trouver le parfum qui vous ressemble.\n\nPour vos journées à l’université, vos sorties ou vos occasions spéciales, trouvez une fragrance qui accompagne chaque moment avec style.\n\nPourquoi choisir CIIQ ?\n\n🇲🇦 Des fragrances provenant directement du Maroc.\n✨ Une collection pour affirmer votre personnalité.\n👔 Des parfums pour accompagner votre quotidien comme vos occasions spéciales.\n🎁 Une belle idée pour se faire plaisir ou offrir.\n\nVotre style mérite une signature. Et si c’était CIIQ ?\n\nDisponible chez Le Coin ISM. Découvrez la collection et passez votre commande !",
@@ -2611,6 +2615,8 @@ const catalogue: Product[] = [
     name: { fr: "Voyager Deep Blue, eau de parfum 100 ml", en: "Voyager Deep Blue, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "men",
+    price: 5000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-03-voyager-deep-blue.jpg"],
     description: {
       fr: "L’esprit libre. Le goût de l’aventure.\n\nInspiré par l’immensité de l’océan, VOYAGER DEEP BLUE évoque une sensation d’évasion et de liberté. Son flacon bleu lumineux, accompagné de son bouchon argenté et de son emblème voilier, annonce une fragrance au caractère affirmé.\n\nAvec son format généreux de 100 ml et son coffret aux nuances profondes de bleu, il apporte une touche de fraîcheur et de distinction à votre collection.\n\nEn provenance directe du Maroc, VOYAGER DEEP BLUE est une invitation à découvrir une nouvelle fragrance et à donner une autre dimension à votre routine.\n\nPour ceux qui aiment sortir du cadre et laisser leur propre empreinte.",
@@ -2625,6 +2631,8 @@ const catalogue: Product[] = [
     name: { fr: "Amazing Gold, eau de parfum 100 ml", en: "Amazing Gold, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 4500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-04-amazing-gold.jpg"],
     description: {
       fr: "L’éclat d’une présence qui ne passe pas inaperçue.\n\nCertaines fragrances ont ce petit quelque chose qui attire l’attention. AMAZING GOLD s’inscrit dans cet univers où le charme et l’élégance occupent le premier plan.\n\nAvec son nom évocateur, il invite à découvrir une fragrance qui accompagne les moments où l’on souhaite se sentir particulièrement bien dans sa peau. Un choix qui apporte une touche de raffinement à votre collection et qui se prête aussi parfaitement à une belle attention.\n\nSélectionné et acheminé directement depuis le Maroc, AMAZING GOLD rejoint notre collection de fragrances disponibles chez Le Coin ISM.\n\nParce que les belles attentions commencent parfois par un parfum.\n\nDécouvrez AMAZING GOLD chez Le Coin ISM et laissez-vous tenter.",
@@ -2639,6 +2647,8 @@ const catalogue: Product[] = [
     name: { fr: "Stunner pour femme, eau de parfum", en: "Stunner for women, eau de parfum" },
     subcategory: "perfume",
     audience: "women",
+    price: 5500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-05-stunner-pour-femme.jpg"],
     description: {
       fr: "Une douceur qui attire. Un charme qui reste.\n\nUne première impression délicate, un charme naturellement affirmé… STUNNER POUR FEMME célèbre une féminité à la fois douce et expressive.\n\nSa composition s’ouvre sur des notes fruitées de fraise, accompagnées de la délicatesse du lys et de la tubéreuse. En cœur, le jasmin et la mandarine apportent une touche florale et lumineuse. Enfin, la vanille et le musc viennent envelopper l’ensemble d’une douceur chaleureuse.\n\nUne fragrance pour celles qui aiment les parfums féminins aux accents floraux et fruités, avec une finition douce et enveloppante.\n\nSélectionné et acheminé directement depuis le Maroc, STUNNER POUR FEMME rejoint la collection de fragrances de Le Coin ISM.",
@@ -2653,6 +2663,8 @@ const catalogue: Product[] = [
     name: { fr: "Black Addiction, eau de parfum 80 ml", en: "Black Addiction, eau de parfum 80 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 4500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-06-black-addiction.jpg"],
     description: {
       fr: "Le genre de parfum qui ne passe pas inaperçu.\n\nIl y a des fragrances qui attirent l’attention, et d’autres qui éveillent la curiosité. BLACK ADDICTION joue sur cette frontière entre mystère et séduction.\n\nAvec son identité sombre et son nom évocateur, il s’adresse à celles et ceux qui aiment les parfums au caractère affirmé et qui souhaitent ajouter une touche d’audace à leur style.\n\nSon format de 80 ml en fait un compagnon idéal pour intégrer une nouvelle fragrance à votre collection ou faire plaisir à quelqu’un qui apprécie les belles découvertes.\n\nEn provenance directe du Maroc.\n\nBLACK ADDICTION : laissez le mystère faire le reste.",
@@ -2667,6 +2679,8 @@ const catalogue: Product[] = [
     name: { fr: "Sexy Sexy, eau de parfum", en: "Sexy Sexy, eau de parfum" },
     subcategory: "perfume",
     audience: "women",
+    price: 5500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-07-sexy-sexy.jpg"],
     description: {
       fr: "Et si le premier pas était un parfum ?\n\nUn dîner qui s’éternise, un sourire échangé, une proximité qui ne laisse personne indifférent… SEXY SEXY trouve sa place dans ces instants où la séduction se joue dans les petits détails.\n\nPensé pour accompagner les moments de flirt et les soirées où l’on soigne particulièrement son allure, ce parfum apporte une dimension supplémentaire à votre préparation.\n\nSon nom ne laisse pas beaucoup de place au doute : ici, on célèbre le charme, l’audace et le plaisir de séduire.\n\nTout droit venu du Maroc.\n\nSEXY SEXY – Parce que certaines histoires commencent par une attirance.\n\nDisponible chez Le Coin ISM.",
@@ -2681,6 +2695,8 @@ const catalogue: Product[] = [
     name: { fr: "Royal Sweety In Love, Y.M.LOVE, eau de parfum 100 ml", en: "Royal Sweety In Love, Y.M.LOVE, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 5700,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-08-royal-sweety-in-love.jpg"],
     description: {
       fr: "Le petit plaisir qui fait toujours son effet.\n\nEnvie de découvrir une nouvelle fragrance ou de faire plaisir à quelqu’un ? ROYAL SWEETY IN LOVE est une belle option à ajouter à votre collection.\n\nAvec son format généreux de 100 ml, ce parfum signé Y.M.LOVE est proposé dans un univers qui célèbre la douceur et le romantisme. Son nom et sa présentation en font également une idée cadeau intéressante pour une personne qui compte.\n\nImporté directement du Maroc et disponible chez Le Coin ISM.",
@@ -2695,6 +2711,8 @@ const catalogue: Product[] = [
     name: { fr: "Stronger With You, eau de toilette 100 ml", en: "Stronger With You, eau de toilette 100 ml" },
     subcategory: "edt",
     audience: "men",
+    price: 6000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-09-stronger-with-you.jpg"],
     description: {
       fr: "Une signature masculine au charme addictif.\n\nImaginez une alliance entre la chaleur des épices, la douceur d’une vanille enveloppante et le caractère gourmand de la châtaigne. C’est tout l’univers de STRONGER WITH YOU.\n\nCette fragrance joue sur les contrastes : une ouverture épicée, un cœur aromatique de lavande et de sauge, puis un fond chaleureux et vanillé qui lui donne toute sa personnalité.\n\nC’est le genre de parfum qui trouve naturellement sa place lors d’un dîner, d’un rendez-vous ou d’une soirée où l’on veut soigner chaque détail de son apparence.\n\nSon profil olfactif :\n\n• Tête : cardamome, poivre rose et feuilles de violette.\n• Cœur : lavande et sauge.\n• Fond : vanille et accord de châtaigne.\n\nImporté directement du Maroc.\nSTRONGER WITH YOU : la chaleur d’un parfum, le caractère d’un homme.\n\nDisponible chez Le Coin ISM.\n\nFaites-vous plaisir ou offrez une belle attention.",
@@ -2709,6 +2727,8 @@ const catalogue: Product[] = [
     name: { fr: "Diamant Ambré, eau de parfum", en: "Amber Diamond, eau de parfum" },
     subcategory: "perfume",
     audience: "women",
+    price: 4000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-10-diamant-ambre.jpg"],
     description: {
       fr: "Un parfum pour les soirées où l’on a envie de laisser une trace. Diamant Ambré est pensé pour celles qui aiment avoir de la présence, se sentir sûres d’elles et être remarquées. À s’offrir pour une occasion qui compte, ou à offrir à quelqu’un qui aime les belles choses. Importé directement du Maroc.",
@@ -2723,6 +2743,8 @@ const catalogue: Product[] = [
     name: { fr: "Shining Rock, eau de parfum", en: "Shining Rock, eau de parfum" },
     subcategory: "perfume",
     audience: "unisex",
+    price: 4500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-11-shining-rock.jpg"],
     description: {
       fr: "Two styles. One fragrance. Endless possibilities.\n\nEt si votre prochain parfum n’avait pas besoin d’être classé ?\n\nSHINING ROCK casse les codes traditionnels de la parfumerie avec son positionnement unisexe. Pensé pour les amateurs de fragrances qui aiment choisir selon leurs préférences plutôt que selon une étiquette, il s’adresse aussi bien aux hommes qu’aux femmes.\n\nSon véritable atout ? La liberté de se l’approprier. Portez-le comme votre parfum personnel ou partagez-le avec quelqu’un qui apprécie le même univers olfactif.\n\nUne proposition originale pour ceux qui recherchent autre chose que les fragrances conventionnelles.\n\nImporté directement du Maroc, SHINING ROCK rejoint la sélection exclusive de Le Coin ISM.\n\nSHINING ROCK — Not his. Not hers. Just yours.\n\nCommandez dès maintenant chez Le Coin ISM.",
@@ -2737,6 +2759,8 @@ const catalogue: Product[] = [
     name: { fr: "Halle Women, eau de parfum 100 ml", en: "Halle Women, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 4000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-12-halle-women.jpg"],
     description: {
       fr: "Not just a fragrance. A statement of femininity.\n\nCertaines fragrances séduisent par leur douceur. D’autres captivent par la richesse de leur composition. HALLE WOMEN réunit ces deux univers dans une création florale aux accents orientaux.\n\nSon ouverture délicate laisse place à un bouquet floral généreux où le magnolia, la tubéreuse et le muguet composent un accord élégant. En profondeur, le santal, la vanille, l’encens et la myrrhe apportent une dimension chaleureuse et enveloppante.\n\nCe qui distingue HALLE WOMEN, c’est justement ce contraste : la délicatesse des fleurs rencontre la profondeur des matières orientales.\n\nAvec son format de 100 ml, c’est une belle pièce à intégrer à une collection de parfums ou à choisir pour celles qui apprécient les compositions florales avec davantage de caractère.\n\nPROFIL OLFACTIF\n\n• Famille : floral oriental.\n• Notes de tête : violette, accords marins et feuille de bananier.\n• Notes de cœur : magnolia, tubéreuse, muguet et poivre.\n• Notes de fond : santal, vanille, encens et myrrhe.\n\nImporté directement du Maroc.\n\nHALLE WOMEN — Floral in expression. Oriental in character.",
@@ -2751,6 +2775,8 @@ const catalogue: Product[] = [
     name: { fr: "Spark, eau de parfum 100 ml", en: "Spark, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 5000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-13-spark.jpg"],
     description: {
       fr: "Your next favourite fragrance is waiting.\n\nNe vous contentez pas d’un parfum de plus dans votre collection. Faites place à une nouvelle découverte.\n\nSPARK est une invitation à renouveler votre univers olfactif et à choisir une fragrance qui mérite sa place dans votre quotidien. Que ce soit pour compléter votre collection ou trouver votre prochain coup de cœur, c’est l’occasion de découvrir quelque chose de nouveau.\n\nDirectement importé du Maroc, SPARK rejoint la sélection de parfums proposée par Le Coin ISM.\n\nLes belles découvertes n’attendent pas. Ajoutez SPARK à votre collection dès maintenant.\n\nSPARK — Make your choice. Make it count.\n\nDisponible chez Le Coin ISM. Commandez le vôtre.",
@@ -2765,6 +2791,8 @@ const catalogue: Product[] = [
     name: { fr: "Légende Éternelle, eau de toilette 100 ml", en: "Eternal Legend, eau de toilette 100 ml" },
     subcategory: "edt",
     audience: "men",
+    price: 4500,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-14-legende-eternelle.jpg"],
     description: {
       fr: "Le caractère d’une fragrance, la subtilité en plus.\n\nLégende Iternelle développe une signature olfactive autour d’un contraste particulièrement intéressant : la fraîcheur des agrumes rencontre la douceur des nuances florales, avant de laisser place à une dimension plus profonde, aux accents terreux.\n\nCet équilibre donne à la fragrance une personnalité à la fois fraîche, délicate et affirmée. Elle s’adresse à ceux qui apprécient les compositions nuancées, capables d’apporter une touche parfumée aussi bien au quotidien que lors d’une occasion particulière.\n\nSon flacon noir, aux lignes sobres, prolonge visuellement cette identité. Une présentation élégante qui trouve naturellement sa place dans une collection de parfums.\n\nLes détails du produit\n\n• Signature olfactive : florale, fraîche et légèrement terreuse.\n• Accord dominant : douceur florale relevée par des nuances d’agrumes.\n• Format : vaporisateur naturel de 90 ml.\n• Concentration : Eau de Toilette.\n• Provenance commerciale : sélectionné au Maroc.\n\nLégende Iternelle : une composition qui joue sur l’équilibre plutôt que sur l’excès.",
@@ -2779,6 +2807,8 @@ const catalogue: Product[] = [
     name: { fr: "Catch SS, Lovali, eau de parfum 100 ml", en: "Catch SS, Lovali, eau de parfum 100 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 4000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-15-catch-ss.jpg"],
     description: {
       fr: "Un parfum féminin, doux et fruité, avec cette petite touche florale qui fait toute la différence.\n\nCatch SS de Lovali est une fragrance pensée pour celles qui aiment sentir bon et garder leur parfum avec elles tout au long de la journée. Son mélange fruité et floral apporte une senteur agréable, avec une douceur qui se remarque sans être excessive.\n\nMais son véritable atout, c’est aussi sa tenue : sa fragrance peut rester perceptible pendant plus de 24 heures, selon la peau et les conditions d’utilisation. Quelques vaporisations suffisent pour profiter de son parfum et retrouver son odeur au fil des heures.\n\nPrésenté dans un joli flacon rose de 100 ml, Catch SS est une belle option pour se faire plaisir ou offrir un parfum féminin à quelqu’un.\n\nLes informations essentielles\n\n• Marque : Lovali\n• Type : Eau de Parfum\n• Contenance : 100 ml\n• Univers olfactif : floral, fruité et sucré\n• Provenance : sélectionné et importé du Maroc\n\nCatch SS – Lovali. Un parfum qu’on aime porter, et qu’on prend plaisir à retrouver.",
@@ -2793,6 +2823,8 @@ const catalogue: Product[] = [
     name: { fr: "Black Addiction Glitter, Lovali, eau de parfum 80 ml", en: "Black Addiction Glitter, Lovali, eau de parfum 80 ml" },
     subcategory: "perfume",
     audience: "women",
+    price: 5000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-16-black-addiction-glitter.jpg"],
     description: {
       fr: "Envie d’un parfum qui ne passe pas inaperçu ? Black Addiction Glitter de Lovali associe des notes fruitées et florales à une composition gourmande où le café, la guimauve et la vanille apportent douceur et profondeur.\n\nC’est une fragrance qui se distingue par son côté chaleureux et sensuel. Elle convient particulièrement aux femmes qui aiment les parfums gourmands, avec une présence affirmée, aussi agréables à porter lors d’une sortie que pour une occasion spéciale.\n\nEt pour celles qui accordent beaucoup d’importance à la tenue, Black Addiction Glitter annonce une persistance pouvant dépasser les 24 heures, selon la peau et les conditions d’utilisation.\n\nLes détails du parfum :\n\n• Une signature olfactive gourmande, fruitée et chaleureuse.\n• Des accords de café, de guimauve et de vanille.\n• Une tenue annoncée de plus de 24 heures.\n• Eau de Parfum – 80 ml.\n• Produit approvisionné depuis le Maroc.\n\nBlack Addiction Glitter : une fragrance gourmande qui mérite sa place dans votre collection.",
@@ -2807,6 +2839,8 @@ const catalogue: Product[] = [
     name: { fr: "V.V.LOVE, coffret eau de parfum et crème corps", en: "V.V.LOVE, eau de parfum and body cream set" },
     subcategory: "perfume",
     audience: "women",
+    price: 6000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-17-v-v-love.jpg"],
     description: {
       fr: "Deux gestes, une même signature parfumée.\n\nPourquoi se contenter de se parfumer quand on peut prolonger ce plaisir avec un soin pour le corps assorti ?\n\nCe coffret V.V.LOVE réunit une Eau de Parfum et une Body Cream dans un ensemble pensé pour celles qui aiment prendre soin d’elles tout en portant une fragrance qui leur ressemble.\n\nLa crème parfumée s’applique sur la peau pour lui apporter douceur et hydratation, tandis que l’Eau de Parfum vient compléter la routine avec une touche parfumée supplémentaire.\n\nUtilisés ensemble, les deux produits permettent de superposer les gestes parfumés et de profiter pleinement de leur univers olfactif.\n\nSélectionné et approvisionné depuis le Maroc, ce coffret est aussi une belle idée cadeau pour faire plaisir sans avoir à chercher deux produits séparément.\n\nLe coffret contient :\n\n• 1 Eau de Parfum V.V.LOVE.\n• 1 Body Cream parfumée.\n\nV.V.LOVE : votre parfum, votre rituel, votre signature.",
@@ -2821,6 +2855,8 @@ const catalogue: Product[] = [
     name: { fr: "Ser Al Lail, coffret brume parfumée et gel douche", en: "Ser Al Lail, fragrance mist and shower gel set" },
     subcategory: "perfume",
     audience: "unisex",
+    price: 6000,
+    priceOnRequest: false,
     images: ["/cosmetique-parfum-18-ser-al-lail.jpg"],
     description: {
       fr: "Un rituel du soir, de la douche au parfum. Ser Al Lail réunit une brume parfumée de 100 ml et un gel douche de 175 ml pour une même signature de bout en bout, avec une touche d’orient. On se parfume après la douche, on garde son odeur toute la soirée. Une idée de cadeau complète, pour lui comme pour elle. Importé directement du Maroc.",
