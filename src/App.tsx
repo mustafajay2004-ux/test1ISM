@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Lang = "fr" | "en";
 type Page = "home" | "shop" | "category" | "product" | "about" | "faq" | "system";
@@ -3160,6 +3160,7 @@ export default function App() {
   const t = copy[lang];
 
   const navigate = (next: Page) => {
+    if (next !== "product") { try { window.history.replaceState(null, "", window.location.pathname); } catch { /* ignore */ } }
     setPage(next);
     setMenuOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -3179,8 +3180,25 @@ export default function App() {
     setVariant("");
     setQuantity(1);
     setImageIndex(0);
+    try { window.history.pushState(null, "", `?p=${encodeURIComponent(product.id)}`); } catch { /* ignore */ }
     navigate("product");
   };
+
+  // Lien direct vers une fiche : ?p=<id> ouvre le produit (liens WhatsApp, partage, retour arrière)
+  useEffect(() => {
+    const syncFromUrl = () => {
+      const id = new URLSearchParams(window.location.search).get("p");
+      const found = id ? products.find((item) => item.id === id) : undefined;
+      if (found) {
+        setSelectedProduct(found); setSelectedCategory(found.category); setVariant(""); setQuantity(1); setImageIndex(0); setPage("product");
+      } else if (!id) {
+        setPage((current) => (current === "product" ? "home" : current));
+      }
+    };
+    syncFromUrl();
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, []);
 
   const openShowcase = (showcase: Showcase) => {
     openCategory(showcase.category);
@@ -3222,10 +3240,11 @@ export default function App() {
     return filtered;
   }, [page, categoryProducts, activeCategory, query, subcategory, audience, sort, lang]);
 
+  const productLink = `${window.location.origin}${window.location.pathname}?p=${encodeURIComponent(selectedProduct.id)}`;
   const whatsappMessage = canOrder
     ? lang === "fr"
-      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity}, prix affiché : ${priceLabel(selectedProduct, "fr")}. Voici le produit : ${window.location.href}`
-      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity}, displayed price: ${priceLabel(selectedProduct, "en")}. Product link: ${window.location.href}`
+      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity}, prix affiché : ${priceLabel(selectedProduct, "fr")}. Voici le produit : ${productLink}`
+      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity}, displayed price: ${priceLabel(selectedProduct, "en")}. Product link: ${productLink}`
     : "";
 
   return (
