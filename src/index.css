@@ -219,7 +219,7 @@ h3 { margin: 0; color: var(--navy); }
 .detail-price { margin-top: 20px; font-size: 20px; font-weight: 700; }
 .pending-price { width: fit-content; padding: 9px 12px; background: var(--cream); color: var(--muted); font-size: 11px; font-weight: 600; }
 .detail-price span { font-size: 10px; font-weight: 500; }
-.detail-description { padding-block: 25px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; }
+.detail-description { padding-block: 25px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; white-space: pre-line; }
 .selection-block { padding: 20px 0; }
 .selection-block label { display: block; margin-bottom: 13px; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .selection-label { display: flex; justify-content: space-between; }
