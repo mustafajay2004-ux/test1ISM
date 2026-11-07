@@ -44,7 +44,7 @@ type Product = {
 
 // Numéro WhatsApp Business au format international, sans "+" ni espaces (ex. "221770000000").
 // Tant qu'il est vide, le bouton de commande reste désactivé.
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "221706887356";
 
 const categories: Category[] = [
   {
@@ -235,7 +235,7 @@ const realProducts: Record<string, Partial<Product>> = {
 // quand le prix est connu, et passer `availability` à "available" ou "preorder" pour activer la commande WhatsApp.
 const newProduct = (id: string, category: CategoryId, data: Partial<Product>): Product => ({
   id, category, slot: 0, name: null, price: null, description: null, images: [], variants: [],
-  availability: "pending", subcategory: null, features: null, addedAt: null, featured: false,
+  availability: "available", subcategory: null, features: null, addedAt: null, featured: false,
   audience: null, priceOnRequest: true, imageFit: "contain", ...data,
 });
 
@@ -2925,7 +2925,7 @@ const casePrices: Record<string, number> = {
   "watch-auliter-carbone-rouge": 11000,
 };
 const withPrice = (item: Product): Product => (casePrices[item.id] ? { ...item, price: casePrices[item.id], priceOnRequest: false } : item);
-const products: Product[] = [...placeholders.map((product) => ({ ...product, ...realProducts[product.id] })), ...catalogue.map(withPrice)];
+const products: Product[] = [...placeholders.map((product) => ({ ...product, ...(realProducts[product.id] ? { availability: "available" as const } : {}), ...realProducts[product.id] })), ...catalogue.map(withPrice)];
 
 const featuredProducts = products.filter((product) => product.featured);
 
