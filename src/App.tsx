@@ -2959,8 +2959,8 @@ const copy = {
     how: "Comment commander",
     categories: "Six univers à découvrir",
     categoriesText: "Une organisation claire pour trouver rapidement le bon accessoire.",
-    catalogReady: "Catalogue structuré",
-    catalogPending: "Produits en cours d’ajout",
+    catalogReady: "Produits en boutique",
+    catalogPending: "Montres, sacs, parfums, tech",
     seeAll: "Voir toute la boutique",
     philosophy: "Des informations réelles, ou rien.",
     philosophyText:
@@ -3037,8 +3037,8 @@ const copy = {
     how: "How to order",
     categories: "Six worlds to explore",
     categoriesText: "A clear structure to help you quickly find the right accessory.",
-    catalogReady: "Catalogue structure ready",
-    catalogPending: "Products being added",
+    catalogReady: "Products in store",
+    catalogPending: "Watches, bags, perfumes, tech",
     seeAll: "View the full shop",
     philosophy: "Real information, or nothing.",
     philosophyText:
@@ -3271,7 +3271,7 @@ export default function App() {
 
       <main>
         {page === "home" && <>
-          <section className="hero"><div className="shell hero-grid"><div className="hero-copy"><span className="eyebrow">{t.heroEyebrow}</span><h1>{t.heroTitle}</h1><p>{t.heroText}</p><div className="button-row"><button className="button primary" onClick={() => document.getElementById("categories")?.scrollIntoView({ behavior: "smooth" })}>{t.discover}<Icon name="arrow" /></button><button className="button tertiary" onClick={() => document.getElementById("how")?.scrollIntoView({ behavior: "smooth" })}>{t.how}</button></div><div className="trust-note"><Icon name="check" /><span>{t.verifiedOnly}</span></div></div><div className="hero-visual"><div className="hero-image-wrap"><img src="https://images.unsplash.com/photo-1776435303185-95be02310cff?auto=format&fit=crop&w=1200&q=85" alt={lang === "fr" ? "Visuel éditorial provisoire, non lié au stock" : "Temporary editorial visual, unrelated to stock"} /><span className="photo-credit">Visuel éditorial provisoire · Unsplash</span></div><div className="floating-card"><span>06</span><strong>{t.catalogReady}</strong><small>{t.catalogPending}</small></div></div></div></section>
+          <section className="hero"><div className="shell hero-grid"><div className="hero-copy"><span className="eyebrow">{t.heroEyebrow}</span><h1>{t.heroTitle}</h1><p>{t.heroText}</p><div className="button-row"><button className="button primary" onClick={() => document.getElementById("categories")?.scrollIntoView({ behavior: "smooth" })}>{t.discover}<Icon name="arrow" /></button><button className="button tertiary" onClick={() => document.getElementById("how")?.scrollIntoView({ behavior: "smooth" })}>{t.how}</button></div><div className="trust-note"><Icon name="check" /><span>{t.verifiedOnly}</span></div></div><div className="hero-visual"><div className="hero-image-wrap"><img src="/hero-accueil.jpg" alt={lang === "fr" ? "Gourde perlée et accessoires Le Coin ISM" : "Beaded tumbler and Le Coin ISM accessories"} /></div><div className="floating-card"><span>200+</span><strong>{t.catalogReady}</strong><small>{t.catalogPending}</small></div></div></div></section>
 
           <section className="section shell" id="categories"><div className="section-heading"><div><span className="eyebrow">01 — {t.categories}</span><h2>{t.categories}</h2></div><p>{t.categoriesText}</p></div><div className="category-grid six-categories">{categories.map((category, index) => <button className={`category-card cat-${(index % 3) + 1}`} key={category.id} onClick={() => openCategory(category.id)}><span>0{index + 1}</span><div><strong>{category.name[lang]}</strong><small>{category.subcategories.filter((item) => !item.parent).slice(0, 3).map((item) => item.name[lang]).join(" · ")}</small></div><i><Icon name="arrow" /></i></button>)}</div></section>
 
@@ -3361,7 +3361,7 @@ function FaqPreview({ lang, onAll }: { lang: Lang; onAll: () => void }) {
 
 function AboutPage({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <><section className="inner-hero"><div className="shell"><span className="eyebrow">{lang === "fr" ? "Notre histoire" : "Our story"}</span><h1>{t.aboutTitle}</h1><p>{t.aboutText}</p></div></section><section className="section shell about-grid"><div className="about-image"><img src="https://images.unsplash.com/photo-1612365245546-d424d47bfdb5?auto=format&fit=crop&w=1200&q=85" alt={lang === "fr" ? "Visuel éditorial provisoire" : "Temporary editorial visual"} /><span>Visuel éditorial provisoire · Unsplash</span></div><div className="about-copy"><span className="eyebrow">01 — {lang === "fr" ? "Notre méthode" : "Our method"}</span><h2>{lang === "fr" ? "Vérifier avant de publier." : "Verify before publishing."}</h2><p>{lang === "fr" ? "Le catalogue est organisé autour de six univers réels. Chaque fiche reste en préparation tant que ses photos, son prix et sa disponibilité ne sont pas confirmés." : "The catalogue is organised around six real collections. Each page remains in preparation until its photos, price and availability are confirmed."}</p><div className="values">{(lang === "fr" ? [["Authenticité", "Pas de marque ou photo trompeuse."], ["Clarté", "Les données manquantes sont visibles."], ["Souplesse", "Le catalogue s’enrichit sans refonte."]] : [["Authenticity", "No misleading brand or photo."], ["Clarity", "Missing data stays visible."], ["Flexibility", "The catalogue grows without redesign."]]).map(([title, text], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{text}</p></div>)}</div></div></section><section className="section shell independence"><span>i</span><div><h2>{lang === "fr" ? "Une identité indépendante" : "An independent identity"}</h2><p>{t.independent}</p></div></section></>;
+  return <><section className="inner-hero"><div className="shell"><span className="eyebrow">{lang === "fr" ? "Notre histoire" : "Our story"}</span><h1>{t.aboutTitle}</h1><p>{t.aboutText}</p></div></section><section className="section shell about-grid"><div className="about-image"><img src="/a-propos.jpg" alt={lang === "fr" ? "Costume, parfum et montre : l’univers Le Coin ISM" : "Suit, fragrance and watch: the Le Coin ISM world"} /></div><div className="about-copy"><span className="eyebrow">01 — {lang === "fr" ? "Notre méthode" : "Our method"}</span><h2>{lang === "fr" ? "Vérifier avant de publier." : "Verify before publishing."}</h2><p>{lang === "fr" ? "Le catalogue est organisé autour de six univers réels. Chaque fiche reste en préparation tant que ses photos, son prix et sa disponibilité ne sont pas confirmés." : "The catalogue is organised around six real collections. Each page remains in preparation until its photos, price and availability are confirmed."}</p><div className="values">{(lang === "fr" ? [["Authenticité", "Pas de marque ou photo trompeuse."], ["Clarté", "Les données manquantes sont visibles."], ["Souplesse", "Le catalogue s’enrichit sans refonte."]] : [["Authenticity", "No misleading brand or photo."], ["Clarity", "Missing data stays visible."], ["Flexibility", "The catalogue grows without redesign."]]).map(([title, text], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{text}</p></div>)}</div></div></section><section className="section shell independence"><span>i</span><div><h2>{lang === "fr" ? "Une identité indépendante" : "An independent identity"}</h2><p>{t.independent}</p></div></section></>;
 }
 
 function FaqPage({ lang }: { lang: Lang }) {
