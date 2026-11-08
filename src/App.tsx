@@ -125,6 +125,11 @@ const categories: Category[] = [
       sub("stands", "Supports de téléphone", "Phone stands"),
       sub("mics", "Mini-micros pour smartphone", "Smartphone mini microphones"),
       sub("computer", "Ordinateur", "Computer"),
+      sub("computer-mac", "MacBook", "MacBook", "computer"),
+      sub("computer-gaming", "PC gamer et pro", "Gaming & pro laptops", "computer"),
+      sub("computer-office", "PC bureautique", "Everyday laptops", "computer"),
+      sub("tablets", "Tablettes", "Tablets"),
+      sub("drives", "Disques durs", "Hard drives"),
       sub("earbuds", "Écouteurs sans fil", "Wireless earbuds"),
       sub("earbuds-entry", "Entrée de gamme", "Entry level", "earbuds"),
       sub("earbuds-mid", "Milieu de gamme", "Mid-range", "earbuds"),
@@ -2865,6 +2870,201 @@ const catalogue: Product[] = [
     features: {
       fr: ["Coffret : brume parfumée 100 ml + gel douche 175 ml", "Une signature de la douche au parfum", "Pour lui comme pour elle", "Importé directement du Maroc"],
       en: ["Set: 100 ml fragrance mist + 175 ml shower gel", "One signature from shower to fragrance", "For him or for her", "Imported directly from Morocco"],
+    },
+  }),
+  newProduct("tech-ordi-hp-elitebook-840", "tech", {
+    name: { fr: "HP EliteBook 840 G6 – Core i5, 8 Go, SSD 256 Go", en: "HP EliteBook 840 G6 – Core i5, 8 GB, 256 GB SSD" },
+    subcategory: "computer-office",
+    price: 165000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-hp-elitebook-840.jpg"],
+    description: {
+      fr: "Le PC sérieux pour les cours, les exposés et le travail de tous les jours. Un Core i5 de 8e génération, 8 Go de RAM et un SSD de 256 Go : il démarre vite, ouvre ses fichiers sans traîner et gère sans problème le Word, l’Excel, le navigateur et les visios. Un bon point de départ pour un budget raisonnable. Livré avec son chargeur et 6 mois de garantie.",
+      en: "The no-nonsense laptop for classes, presentations and everyday work. An 8th-generation Core i5, 8 GB of RAM and a 256 GB SSD: it starts fast, opens files without lagging and handles Word, Excel, the browser and video calls without trouble. A good starting point on a reasonable budget. Comes with its charger and a 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core i5, 8e génération", "RAM 8 Go · SSD 256 Go", "Carte graphique Intel UHD 620", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core i5, 8th generation", "8 GB RAM · 256 GB SSD", "Intel UHD 620 graphics", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-lenovo-thinkpad-p16", "tech", {
+    name: { fr: "Lenovo ThinkPad P16 – Core i9, 32 Go, SSD 1 To, avec casque et souris gamer", en: "Lenovo ThinkPad P16 – Core i9, 32 GB, 1 TB SSD, with gaming headset and mouse" },
+    subcategory: "computer-gaming",
+    price: 660000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-lenovo-thinkpad-p16.jpg"],
+    description: {
+      fr: "La station de travail pour ceux qui ne veulent aucun compromis. Un Core i9 de 13e génération, 32 Go de RAM, 1 To de SSD et une carte graphique Nvidia RTX : montage vidéo, 3D, programmation lourde ou gaming, elle suit le rythme. Elle arrive avec un casque gamer et une souris gamer, donc tu peux t’y mettre dès le premier jour. Chargeur inclus, 6 mois de garantie.",
+      en: "The workstation for those who want no compromise. A 13th-generation Core i9, 32 GB of RAM, a 1 TB SSD and an Nvidia RTX graphics card: video editing, 3D, heavy programming or gaming, it keeps up. It comes with a gaming headset and a gaming mouse, so you can get started on day one. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core i9, 13e génération", "RAM 32 Go · SSD 1 To", "Carte graphique Nvidia RTX", "Casque gamer et souris gamer inclus", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core i9, 13th generation", "32 GB RAM · 1 TB SSD", "Nvidia RTX graphics card", "Gaming headset and mouse included", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-razer-blade-i7-2070", "tech", {
+    name: { fr: "Razer Blade – Core i7, 32 Go, SSD 512 Go, Nvidia 2070", en: "Razer Blade – Core i7, 32 GB, 512 GB SSD, Nvidia 2070" },
+    subcategory: "computer-gaming",
+    price: 365000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-razer-blade-i7-2070.jpg"],
+    description: {
+      fr: "Un PC pensé pour jouer le soir et travailler la journée. Avec son Core i7 de 9e génération, ses 32 Go de RAM et sa carte Nvidia 2070 de 8 Go, il fait tourner les jeux récents comme les logiciels de création. Le SSD de 512 Go garde tes projets à portée de main. Chargeur inclus, 6 mois de garantie.",
+      en: "A laptop made for gaming in the evening and working during the day. With its 9th-generation Core i7, 32 GB of RAM and 8 GB Nvidia 2070 card, it runs recent games and creative software alike. The 512 GB SSD keeps your projects close at hand. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core i7, 9e génération", "RAM 32 Go · SSD 512 Go", "Nvidia 2070, 8 Go", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core i7, 9th generation", "32 GB RAM · 512 GB SSD", "Nvidia 2070, 8 GB", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-msi-gs66-pack-gamer", "tech", {
+    name: { fr: "MSI GS66 – Core i7, 16 Go, SSD 512 Go, RTX 3070 Ti, pack gamer", en: "MSI GS66 – Core i7, 16 GB, 512 GB SSD, RTX 3070 Ti, gamer pack" },
+    subcategory: "computer-gaming",
+    price: 600000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-msi-gs66-pack-gamer.jpg"],
+    description: {
+      fr: "La machine gamer livrée avec tout ce qu’il faut pour jouer. Core i7-12700H, 16 Go de RAM, SSD de 512 Go et une RTX 3070 Ti de 8 Go : les jeux tournent fort, le montage aussi. Dans le pack : un sac, un refroidisseur, un casque gamer et une souris gamer. Chargeur inclus, 6 mois de garantie.",
+      en: "The gaming machine delivered with everything you need to play. Core i7-12700H, 16 GB of RAM, a 512 GB SSD and an 8 GB RTX 3070 Ti: games run hard, and so does video editing. In the pack: a bag, a cooling pad, a gaming headset and a gaming mouse. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core i7-12700H", "RAM 16 Go · SSD 512 Go", "Nvidia RTX 3070 Ti, 8 Go", "Sac, refroidisseur, casque et souris gamer inclus", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core i7-12700H", "16 GB RAM · 512 GB SSD", "Nvidia RTX 3070 Ti, 8 GB", "Bag, cooling pad, gaming headset and mouse included", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-macbook-pro-m4-pro", "tech", {
+    name: { fr: "MacBook Pro M4 Pro – 24 Go, SSD 512 Go", en: "MacBook Pro M4 Pro – 24 GB, 512 GB SSD" },
+    subcategory: "computer-mac",
+    price: 1100000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-macbook-pro-m4-pro.jpg"],
+    description: {
+      fr: "Pour ceux qui travaillent sur de gros projets : montage, design, code, plusieurs applications ouvertes en même temps. La puce Apple M4 Pro et ses 24 Go de mémoire gardent tout fluide, et le SSD de 512 Go range tes fichiers sans compromis. Livré avec son chargeur et 6 mois de garantie.",
+      en: "For people working on big projects: editing, design, code, several apps open at once. The Apple M4 Pro chip and its 24 GB of memory keep everything smooth, and the 512 GB SSD stores your files without compromise. Comes with its charger and a 6-month warranty.",
+    },
+    features: {
+      fr: ["Puce Apple M4 Pro", "RAM 24 Go · SSD 512 Go", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Apple M4 Pro chip", "24 GB RAM · 512 GB SSD", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-macbook-pro-m5-pro", "tech", {
+    name: { fr: "MacBook Pro M5 Pro – 24 Go, SSD 1 To", en: "MacBook Pro M5 Pro – 24 GB, 1 TB SSD" },
+    subcategory: "computer-mac",
+    price: 1600000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-macbook-pro-m5-pro.jpg"],
+    description: {
+      fr: "Le plus puissant de notre sélection. La puce Apple M5 Pro, 24 Go de mémoire et 1 To de stockage : de quoi enchaîner les gros fichiers, le montage et les tâches lourdes sans ralentir, et garder tous tes projets sur la machine. Un investissement pour les années à venir. Livré avec son chargeur et 6 mois de garantie.",
+      en: "The most powerful in our selection. The Apple M5 Pro chip, 24 GB of memory and 1 TB of storage: enough to handle large files, editing and heavy tasks without slowing down, and to keep all your projects on the machine. An investment for the years ahead. Comes with its charger and a 6-month warranty.",
+    },
+    features: {
+      fr: ["Puce Apple M5 Pro", "RAM 24 Go · SSD 1 To", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Apple M5 Pro chip", "24 GB RAM · 1 TB SSD", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-disque-dur-externe-1to", "tech", {
+    name: { fr: "Disque dur externe 1 To – USB-C", en: "External hard drive 1 TB – USB-C" },
+    subcategory: "drives",
+    price: 27500,
+    priceOnRequest: false,
+    images: ["/tech-disque-dur-externe-1to.jpg"],
+    description: {
+      fr: "Tes cours, tes photos, tes projets : tout sauvegardé au même endroit. 1 To d’espace pour libérer ton ordinateur ou protéger tes fichiers importants, avec un câble USB-C fourni. Un petit achat qui évite de grosses galères.",
+      en: "Your courses, photos and projects: everything saved in one place. 1 TB of space to free up your computer or protect your important files, with a USB-C cable included. A small purchase that saves you from big headaches.",
+    },
+    features: {
+      fr: ["Capacité 1 To", "Connexion USB-C", "Câble fourni"],
+      en: ["1 TB capacity", "USB-C connection", "Cable included"],
+    },
+  }),
+  newProduct("tech-ipad-pro-m5-256", "tech", {
+    name: { fr: "iPad Pro M5 – 256 Go, Wi-Fi + cellulaire", en: "iPad Pro M5 – 256 GB, Wi-Fi + Cellular" },
+    subcategory: "tablets",
+    price: 900000,
+    priceOnRequest: false,
+    images: ["/tech-ipad-pro-m5-256.jpg"],
+    description: {
+      fr: "La tablette qui peut remplacer l’ordinateur pour beaucoup de choses : prise de notes, dessin, lecture, séries, travail en déplacement. Avec la puce M5, 256 Go de stockage et le Wi-Fi + cellulaire, tu restes connecté même sans réseau Wi-Fi.",
+      en: "The tablet that can replace the computer for a lot of things: note-taking, drawing, reading, shows, working on the move. With the M5 chip, 256 GB of storage and Wi-Fi + Cellular, you stay connected even without a Wi-Fi network.",
+    },
+    features: {
+      fr: ["Puce Apple M5", "Stockage 256 Go", "Wi-Fi + cellulaire"],
+      en: ["Apple M5 chip", "256 GB storage", "Wi-Fi + Cellular"],
+    },
+  }),
+  newProduct("tech-ordi-macbook-air-m1-2020", "tech", {
+    name: { fr: "MacBook Air M1 2020 – SSD 256 Go", en: "MacBook Air M1 2020 – 256 GB SSD" },
+    subcategory: "computer-mac",
+    price: 295000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-macbook-air-m1-2020.jpg"],
+    description: {
+      fr: "Le MacBook pour commencer. Léger, silencieux, avec une bonne autonomie, il suffit largement pour les cours, la recherche, la rédaction et le streaming. La puce Apple M1 le garde rapide au quotidien, et le SSD de 256 Go stocke l’essentiel. Livré avec son chargeur et 6 mois de garantie.",
+      en: "The MacBook to start with. Light, quiet, with good battery life, it is more than enough for classes, research, writing and streaming. The Apple M1 chip keeps it fast day to day, and the 256 GB SSD holds the essentials. Comes with its charger and a 6-month warranty.",
+    },
+    features: {
+      fr: ["Puce Apple M1 (2020)", "SSD 256 Go", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Apple M1 chip (2020)", "256 GB SSD", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-razer-blade-tactile", "tech", {
+    name: { fr: "Razer Blade – Core 11e génération, SSD 256 Go, écran tactile", en: "Razer Blade – 11th-generation Core, 256 GB SSD, touchscreen" },
+    subcategory: "computer-gaming",
+    price: 340000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-razer-blade-tactile.jpg"],
+    description: {
+      fr: "Un Razer Blade avec écran tactile, pour ceux qui veulent un PC polyvalent et un peu différent. Processeur Intel Core de 11e génération, SSD de 256 Go : on l’utilise pour le travail, les études, le divertissement, et l’écran tactile ajoute un vrai confort au quotidien. Chargeur inclus, 6 mois de garantie.",
+      en: "A Razer Blade with a touchscreen, for those who want a versatile and slightly different laptop. 11th-generation Intel Core processor, 256 GB SSD: use it for work, studies and entertainment, and the touchscreen adds real everyday comfort. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core, 11e génération", "RAM 6 Go · SSD 256 Go", "Écran tactile", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core, 11th generation", "6 GB RAM · 256 GB SSD", "Touchscreen", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-msi-katana-15", "tech", {
+    name: { fr: "MSI Katana 15 – Core i7, 16 Go, SSD 1 To, RTX 4050", en: "MSI Katana 15 – Core i7, 16 GB, 1 TB SSD, RTX 4050" },
+    subcategory: "computer-gaming",
+    price: 610000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-msi-katana-15.jpg"],
+    description: {
+      fr: "Une machine gamer très puissante, avec le clavier rétroéclairé qui met l’ambiance. Core i7 de 13e génération, 16 Go de RAM, 1 To de SSD et une RTX 4050 : les jeux récents passent, et les logiciels de montage et de création aussi. Chargeur inclus, 6 mois de garantie.",
+      en: "A very powerful gaming machine, with the backlit keyboard that sets the mood. 13th-generation Core i7, 16 GB of RAM, a 1 TB SSD and an RTX 4050: recent games run, and so do editing and creative software. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Intel Core i7, 13e génération", "RAM 16 Go · SSD 1 To", "Nvidia RTX 4050", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Intel Core i7, 13th generation", "16 GB RAM · 1 TB SSD", "Nvidia RTX 4050", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-samsung-galaxy-book2-pro", "tech", {
+    name: { fr: "Samsung Galaxy Book2 Pro – Core i5, OLED, 8 Go, 256 Go", en: "Samsung Galaxy Book2 Pro – Core i5, OLED, 8 GB, 256 GB" },
+    subcategory: "computer-office",
+    price: 300000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-samsung-galaxy-book2-pro.jpg"],
+    description: {
+      fr: "Ultra fin, ultra léger, avec un écran OLED qui rend les couleurs vraiment vivantes. Core i5 de 12e génération, 8 Go de RAM et 256 Go de stockage : parfait pour aller en cours avec, travailler au café ou regarder un film le soir. Chargeur inclus, 6 mois de garantie.",
+      en: "Ultra slim, ultra light, with an OLED screen that makes colours truly vivid. 12th-generation Core i5, 8 GB of RAM and 256 GB of storage: perfect to take to class, work at a café or watch a movie in the evening. Charger included, 6-month warranty.",
+    },
+    features: {
+      fr: ["Écran OLED, ultra fin", "Intel Core i5, 12e génération", "RAM 8 Go · 256 Go", "Chargeur inclus · Garantie 6 mois"],
+      en: ["OLED screen, ultra slim", "Intel Core i5, 12th generation", "8 GB RAM · 256 GB", "Charger included · 6-month warranty"],
+    },
+  }),
+  newProduct("tech-ordi-macbook-m3-pro", "tech", {
+    name: { fr: "MacBook M3 Pro – 8 Go, SSD 1 To", en: "MacBook M3 Pro – 8 GB, 1 TB SSD" },
+    subcategory: "computer-mac",
+    price: 700000,
+    priceOnRequest: false,
+    images: ["/tech-ordi-macbook-m3-pro.jpg"],
+    description: {
+      fr: "Un MacBook avec beaucoup de place pour tout garder : 1 To de SSD pour tes projets, tes photos et tes logiciels. La puce Apple M3 Pro le rend rapide pour le travail comme pour les loisirs. Livré avec son chargeur et 6 mois de garantie.",
+      en: "A MacBook with plenty of room for everything: a 1 TB SSD for your projects, photos and software. The Apple M3 Pro chip makes it fast for work and leisure alike. Comes with its charger and a 6-month warranty.",
+    },
+    features: {
+      fr: ["Puce Apple M3 Pro", "RAM 8 Go · SSD 1 To", "Chargeur inclus · Garantie 6 mois"],
+      en: ["Apple M3 Pro chip", "8 GB RAM · 1 TB SSD", "Charger included · 6-month warranty"],
     },
   }),
 ];
