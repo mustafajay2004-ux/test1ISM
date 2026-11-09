@@ -435,3 +435,5 @@ h3 { margin: 0; color: var(--navy); }
 .subcategory-chips.child-chips button.active { background: var(--navy); }
 
 .old-price { margin-right: 8px; color: var(--muted); font-size: .8em; font-weight: 500; text-decoration: line-through; }
+
+.faq-list details p { white-space: pre-line; }
