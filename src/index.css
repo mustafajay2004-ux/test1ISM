@@ -276,6 +276,10 @@ h3 { margin: 0; color: var(--navy); }
 .contact-card { display: flex; gap: 22px; align-items: center; margin-top: 45px; padding: 35px; background: var(--navy); color: var(--white); }
 .contact-card h3 { color: var(--white); font-family: "DM Serif Display"; font-size: 24px; font-weight: 400; }
 .contact-card p { margin-bottom: 0; color: #aeb7c5; font-size: 11px; }
+.contact-card { text-decoration: none; transition: background .2s ease; }
+.contact-card:hover { background: #1a2c47; }
+.contact-card-cta { margin-left: auto; flex-shrink: 0; padding: 13px 22px; background: #25d366; color: #0b2417; font-size: 11px; font-weight: 700; letter-spacing: .04em; }
+@media (max-width: 700px) { .contact-card { flex-wrap: wrap; padding: 24px; } .contact-card-cta { margin-left: 0; width: 100%; text-align: center; } }
 .system-page { padding-bottom: 110px; }
 .system-section { display: grid; grid-template-columns: 210px 1fr; padding: 50px 0; border-top: 1px solid var(--line); }
 .system-title { display: flex; gap: 18px; }
