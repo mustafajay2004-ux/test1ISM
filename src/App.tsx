@@ -1042,7 +1042,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre femme acier – Cadran argenté, bracelet maille", en: "Women’s steel watch – Silver dial, link bracelet" },
     subcategory: "classic",
     audience: "women",
-    price: 4000,
+    price: 5500,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-rado-argent.jpg"],
@@ -1059,7 +1059,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre femme dorée – Cadran rose, trois sous-cadrans", en: "Women’s gold-tone watch – Pink dial, three sub-dials" },
     subcategory: "classic",
     audience: "women",
-    price: 3700,
+    price: 4700,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-michael-kors-rose.jpg"],
@@ -1076,7 +1076,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre femme bicolore – Cadran champagne, bracelet maille fine", en: "Women’s two-tone watch – Champagne dial, fine mesh bracelet" },
     subcategory: "classic",
     audience: "women",
-    price: 2500,
+    price: 4500,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-rado-jubile.jpg"],
@@ -1093,7 +1093,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre femme bicolore – Cadran champagne, chiffres dorés", en: "Women’s two-tone watch – Champagne dial, gold numerals" },
     subcategory: "classic",
     audience: "women",
-    price: 2500,
+    price: 4000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-chanel-champagne.jpg"],
@@ -1110,7 +1110,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre dorée carrée – Cadran champagne, double C noir", en: "Gold-tone square watch – Champagne dial, black double-C" },
     subcategory: "classic",
     audience: "women",
-    price: 2500,
+    price: 3500,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-doree-carree-double-c.jpg"],
@@ -1127,7 +1127,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre dorée à strass – Cadran blanc, trois sous-cadrans", en: "Gold-tone watch with crystals – White dial, three sub-dials" },
     subcategory: "classic",
     audience: "women",
-    price: 3500,
+    price: 4000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-doree-strass-octogonale.jpg"],
@@ -1144,7 +1144,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre acier chiffres romains – Cadran blanc, bracelet maille galbée", en: "Steel watch with Roman numerals – White dial, curved link bracelet" },
     subcategory: "classic",
     audience: "women",
-    price: 4000,
+    price: 6000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-acier-chiffres-romains.jpg"],
@@ -1161,7 +1161,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre acier rectangulaire – Cadran blanc, date", en: "Rectangular steel watch – White dial, date" },
     subcategory: "classic",
     audience: "women",
-    price: 3500,
+    price: 5000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-acier-rectangulaire-date.jpg"],
@@ -1178,7 +1178,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre dorée rectangulaire – Cadran bleu marine", en: "Gold-tone rectangular watch – Navy blue dial" },
     subcategory: "classic",
     audience: "women",
-    price: 2500,
+    price: 6000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-doree-bleu-marine.jpg"],
@@ -1195,7 +1195,7 @@ const catalogue: Product[] = [
     name: { fr: "Montre Datejust dorée – Cadran champagne, lunette cannelée", en: "Gold-tone Datejust watch – Champagne dial, fluted bezel" },
     subcategory: "classic",
     audience: "women",
-    price: 4500,
+    price: 5000,
     priceOnRequest: false,
     availability: "available",
     images: ["/montre-femme-datejust-doree.jpg"],
@@ -3328,6 +3328,8 @@ const getCategory = (id: CategoryId) => categories.find((category) => category.i
 // Un produit est dans la sélection choisie s'il porte cet identifiant, ou s'il est un sous-type de ce parent.
 const inSubcategory = (productSub: string | null, selected: string, category: Category) =>
   productSub === selected || category.subcategories.find((item) => item.id === productSub)?.parent === selected;
+// Montres proposées avec l'option boîte (+1 000 FCFA)
+const BOX_WATCH_IDS = new Set(["watch-femme-rado-argent", "watch-femme-michael-kors-rose", "watch-femme-rado-jubile-bicolore", "watch-femme-chanel-champagne", "watch-femme-doree-carree-double-c", "watch-femme-doree-strass-octogonale", "watch-femme-acier-chiffres-romains", "watch-femme-acier-rectangulaire-date", "watch-femme-doree-bleu-marine", "watch-femme-datejust-doree"]);
 const priceLabel = (product: Product, lang: Lang) =>
   product.price !== null ? `${product.price.toLocaleString("fr-FR")} FCFA` : product.priceOnRequest ? copy[lang].priceOnRequest : copy[lang].pricePending;
 // Photos de catalogue (produit + emballage) : on les montre en entier, sur fond blanc, au lieu de les recadrer.
@@ -3356,6 +3358,7 @@ export default function App() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [variant, setVariant] = useState("");
   const [quantity, setQuantity] = useState(1);
+  const [withBox, setWithBox] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const t = copy[lang];
 
@@ -3379,6 +3382,7 @@ export default function App() {
     setSelectedCategory(product.category);
     setVariant("");
     setQuantity(1);
+    setWithBox(false);
     setImageIndex(0);
     try { window.history.pushState(null, "", `?p=${encodeURIComponent(product.id)}`); } catch { /* ignore */ }
     navigate("product");
@@ -3390,7 +3394,7 @@ export default function App() {
       const id = new URLSearchParams(window.location.search).get("p");
       const found = id ? products.find((item) => item.id === id) : undefined;
       if (found) {
-        setSelectedProduct(found); setSelectedCategory(found.category); setVariant(""); setQuantity(1); setImageIndex(0); setPage("product");
+        setSelectedProduct(found); setSelectedCategory(found.category); setVariant(""); setQuantity(1); setWithBox(false); setImageIndex(0); setPage("product");
       } else if (!id) {
         setPage((current) => (current === "product" ? "home" : current));
       }
@@ -3440,11 +3444,14 @@ export default function App() {
     return filtered;
   }, [page, categoryProducts, activeCategory, query, subcategory, audience, sort, lang]);
 
+  const isWatch = BOX_WATCH_IDS.has(selectedProduct.id);
+  const boxApplied = isWatch && withBox && selectedProduct.price !== null;
+  const shownProduct: Product = boxApplied ? { ...selectedProduct, price: (selectedProduct.price as number) + 1000 } : selectedProduct;
   const productLink = `${window.location.origin}${window.location.pathname}?p=${encodeURIComponent(selectedProduct.id)}`;
   const whatsappMessage = canOrder
     ? lang === "fr"
-      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity}, prix affiché : ${priceLabel(selectedProduct, "fr")}. Voici le produit : ${productLink}`
-      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity}, displayed price: ${priceLabel(selectedProduct, "en")}. Product link: ${productLink}`
+      ? `Bonjour Le Coin ISM, je souhaite commander : ${selectedProduct.name?.fr}, variante : ${variant || "sans variante"}, quantité : ${quantity},${isWatch ? ` boîte : ${boxApplied ? "avec boîte (+1 000 FCFA)" : "sans boîte"},` : ""} prix affiché : ${priceLabel(shownProduct, "fr")}. Voici le produit : ${productLink}`
+      : `Hello Le Coin ISM, I would like to order: ${selectedProduct.name?.en}, variant: ${variant || "no variant"}, quantity: ${quantity},${isWatch ? ` box: ${boxApplied ? "with box (+1,000 FCFA)" : "without box"},` : ""} displayed price: ${priceLabel(shownProduct, "en")}. Product link: ${productLink}`
     : "";
 
   return (
@@ -3489,10 +3496,11 @@ export default function App() {
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
           <div className="product-detail">
             <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} style={fitStyle(selectedProduct)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" style={fitStyle(selectedProduct)} /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
-            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(selectedProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
+            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(shownProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
               {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
               {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
               <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : <div className="unconfigured-field">{lang === "fr" ? "Couleurs, tailles ou modèles à renseigner" : "Colours, sizes or models to complete"}</div>}</div>
+              {isWatch && selectedProduct.price !== null && <div className="selection-block"><div className="selection-label"><label>{lang === "fr" ? "Boîte" : "Box"}</label></div><div className="variants"><button className={!withBox ? "active" : ""} onClick={() => setWithBox(false)}>{lang === "fr" ? "Sans boîte" : "Without box"}</button><button className={withBox ? "active" : ""} onClick={() => setWithBox(true)}>{lang === "fr" ? "Avec boîte (+1 000 FCFA)" : "With box (+1,000 FCFA)"}</button></div></div>}
               <div className="selection-block"><label>{t.quantity}</label><div className="quantity"><button aria-label="Decrease" onClick={() => setQuantity(Math.max(1, quantity - 1))}><Icon name="minus" /></button><span>{quantity}</span><button aria-label="Increase" onClick={() => setQuantity(quantity + 1)}><Icon name="plus" /></button></div></div>
               <a className={`button whatsapp ${canOrder ? "" : "disabled"}`} href={canOrder ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}` : undefined} target={canOrder ? "_blank" : undefined} rel="noreferrer" aria-disabled={!canOrder} onClick={(event) => { if (!canOrder) event.preventDefault(); }}><Icon name="message" />{t.order}<Icon name="arrow" /></a><p className="order-help"><Icon name={canOrder ? "check" : "close"} />{canOrder ? t.practicalText : t.orderUnavailable}</p><details className="practical" open><summary>{t.practical}<span>−</span></summary><p>{t.practicalText}</p></details>
             </div>
