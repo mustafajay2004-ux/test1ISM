@@ -2584,6 +2584,70 @@ const catalogue: Product[] = [
       en: ["Colour: navy and light blue", "Woven bands on both bags", "Oval gold clasp on the large bag", "Two bags in the photo (to be confirmed)"],
     },
   }),
+  newProduct("sac-polochon-damier-noir-gris", "bags", {
+    name: { fr: "Sac polochon à damier noir et gris", en: "Black and grey checkerboard duffel bag" },
+    subcategory: "mens-bags",
+    audience: "unisex",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-polochon-damier-noir-gris.jpg"],
+    description: {
+      fr: "Un sac polochon au damier noir et gris, sobre et facile à porter avec tout. Il se ferme par une fermeture éclair sur le dessus et se porte à la main grâce à ses deux anses noires. Pratique pour la salle de sport, un week-end ou le quotidien.",
+      en: "A duffel bag in a black and grey checkerboard print, understated and easy to wear with anything. It closes with a zip along the top and is carried by two black handles. Handy for the gym, a weekend away or everyday use.",
+    },
+    features: {
+      fr: ["Motif damier noir et gris", "Deux anses noires", "Fermeture éclair sur le dessus", "Finitions argentées"],
+      en: ["Black and grey checkerboard print", "Two black handles", "Zip closure on top", "Silver-tone hardware"],
+    },
+  }),
+  newProduct("sac-rabat-rouge-fermoir-dore", "bags", {
+    name: { fr: "Sac à main rouge à rabat, fermoir doré", en: "Red flap handbag with gold clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 13500,
+    priceOnRequest: false,
+    images: ["/sac-rabat-rouge-fermoir-dore.jpg"],
+    description: {
+      fr: "Un rouge franc pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
+      en: "A bold red for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+    },
+    features: {
+      fr: ["Coloris : rouge", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
+      en: ["Colour: red", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
+    },
+  }),
+  newProduct("sac-rabat-beige-fermoir-dore", "bags", {
+    name: { fr: "Sac à main beige à rabat, fermoir doré", en: "Beige flap handbag with gold clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 13500,
+    priceOnRequest: false,
+    images: ["/sac-rabat-beige-fermoir-dore.jpg"],
+    description: {
+      fr: "Un beige chaud pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
+      en: "A warm beige for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+    },
+    features: {
+      fr: ["Coloris : beige", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
+      en: ["Colour: beige", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
+    },
+  }),
+  newProduct("sac-rabat-vert-fermoir-dore", "bags", {
+    name: { fr: "Sac à main vert émeraude à rabat, fermoir doré", en: "Emerald green flap handbag with gold clasp" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 13500,
+    priceOnRequest: false,
+    images: ["/sac-rabat-vert-fermoir-dore.jpg"],
+    description: {
+      fr: "Un vert vif pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
+      en: "A vivid green for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+    },
+    features: {
+      fr: ["Coloris : vert émeraude", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
+      en: ["Colour: emerald green", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
+    },
+  }),
   newProduct("cosmetique-parfum-01-is", "cosmetics", {
     name: { fr: "iS, eau de parfum 100 ml", en: "iS, eau de parfum 100 ml" },
     subcategory: "perfume",
