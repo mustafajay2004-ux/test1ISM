@@ -882,7 +882,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-noire", "watches", {
-    name: { fr: "Datejust Black Edition – Cadran argenté", en: "Datejust Black Edition – Silver dial" },
+    name: { fr: "Rolex Datejust Black Edition – Cadran argenté", en: "Rolex Datejust Black Edition – Silver dial" },
     subcategory: "classic",
     audience: "unisex",
     images: ["/montre-datejust-noire.jpg"],
