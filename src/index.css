@@ -437,3 +437,11 @@ h3 { margin: 0; color: var(--navy); }
 .old-price { margin-right: 8px; color: var(--muted); font-size: .8em; font-weight: 500; text-decoration: line-through; }
 
 .faq-list details p { white-space: pre-line; }
+
+.detail-description > p { margin: 0; white-space: pre-line; }
+.detail-more { margin-top: 18px; border: 1px solid var(--line); background: var(--cream); }
+.detail-more summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; color: var(--navy, #0f1b33); font-weight: 700; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+.detail-more summary::-webkit-details-marker { display: none; }
+.detail-more summary i { font-style: normal; font-size: 18px; transition: transform .2s; }
+.detail-more[open] summary i { transform: rotate(45deg); }
+.detail-more > p { margin: 0; padding: 0 16px 16px; white-space: pre-line; }
