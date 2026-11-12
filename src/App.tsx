@@ -1,3 +1,72 @@
+
+
+Texte collé(3).txt
+Document
+c ca
+Parfait ! J'ai bien reçu ton code. ✅
+
+J'ai commencé à l'examiner. Il s'agit d'un projet React / TypeScript pour une boutique e-commerce, avec notamment :
+
+Un catalogue de produits.
+Des catégories et sous-catégories.
+Des fiches produits avec prix, descriptions et images.
+Un système bilingue français / anglais.
+La gestion des disponibilités.
+Les commandes via WhatsApp.
+Des produits répartis entre montres, bijoux, sacs, accessoires, technologie et cosmétiques.
+Je suis prêt ! Pose-moi tes questions. Je vais me baser sur ton code pour te répondre précisément, sans inventer de fonctionnalités. 💻
+
+je veux que tu changes le prix des sac seulement
+
+A réfléchi quelques secondes
+Bien sûr ! Je vais modifier uniquement les prix des sacs dans ton code, sans toucher aux montres, bijoux, parfums, accessoires ou autres produits.
+
+Quel prix souhaites-tu appliquer aux sacs ?
+
+Un prix unique pour tous les sacs ?
+Des prix différents selon chaque modèle ?
+prix differents entres 8000,8500,9000,9500
+
+Réfléchi pendant 19s
+
+
+
+C’est fait ! J’ai modifié les prix des 56 sacs uniquement.
+
+J’ai réparti les prix selon les anciens tarifs, en utilisant exclusivement ces quatre montants :
+
+8 000 FCFA
+8 500 FCFA
+9 000 FCFA
+9 500 FCFA
+Aucune autre catégorie ni information n’a été modifiée.
+
+📁 
+Télécharger le code avec les nouveaux prix
+ 
+
+
+catalogue_prix_sacs_modifies.txt
+Document
+si le code est accompagné de index.css est ce que on devrait lui aussi le modifier ??
+Non, pas forcément. 😊
+
+Dans ton cas, puisque tu as uniquement changé les prix des sacs dans le fichier principal (.tsx ou .ts), tu n'as normalement pas besoin de modifier index.css.
+
+Pourquoi ?
+Le fichier principal (TSX/TS) contient les informations des produits : noms, prix, descriptions, images, etc.
+index.css gère l'apparence du site : couleurs, polices, espacements, disposition, tailles, responsive design, etc.
+Dans ton cas
+Tu modifies uniquement les prix :
+
+8 000 FCFA
+8 500 FCFA
+9 000 FCFA
+9 500 FCFA
+Donc index.css reste inchangé.
+
+Tu n'auras besoin de le modifier que si tu souhaites changer l'affichage des prix, par exemple leur couleur, leur taille ou leur position sur les fiches produits.
+
 import { useEffect, useMemo, useState } from "react";
 
 type Lang = "fr" | "en";
@@ -1756,7 +1825,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à rabat rose, plaque triangulaire dorée", en: "Pink flap bag, gold triangle plate" },
     subcategory: "crossbody",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-rabat-rose-triangle-dore.jpg"],
     description: {
@@ -1769,7 +1838,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à rabat blanc, plaque triangulaire argentée", en: "White flap bag, silver triangle plate" },
     subcategory: "crossbody",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-rabat-blanc-triangle-argente.jpg"],
     description: {
@@ -1782,7 +1851,7 @@ const catalogue: Product[] = [
     name: { fr: "Mini cabas caramel, grand monogramme blanc", en: "Caramel mini tote, large white monogram" },
     subcategory: "handbags",
     audience: "women",
-    price: 8890,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-mini-cabas-caramel-grand-monogramme.jpg"],
     description: {
@@ -1795,7 +1864,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac bandoulière bleu ciel, fermoir triangulaire doré", en: "Sky-blue shoulder bag, gold triangle clasp" },
     subcategory: "crossbody",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-bandouliere-bleu-ciel-triangle.jpg"],
     description: {
@@ -1808,7 +1877,7 @@ const catalogue: Product[] = [
     name: { fr: "Mini cabas beige, grand monogramme blanc", en: "Beige mini tote, large white monogram" },
     subcategory: "handbags",
     audience: "women",
-    price: 8890,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-mini-cabas-beige-grand-monogramme.jpg"],
     description: {
@@ -1821,7 +1890,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main cognac, motif losanges et blasons", en: "Cognac handbag, diamond and crest pattern" },
     subcategory: "handbags",
     audience: "women",
-    price: 7600,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-cognac-losanges-blasons.jpg"],
     description: {
@@ -1834,7 +1903,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main monogramme marron, fermoir doré", en: "Brown monogram handbag, gold clasp" },
     subcategory: "handbags",
     audience: "women",
-    price: 7600,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-monogramme-marron-fermoir-dore.jpg"],
     description: {
@@ -1847,7 +1916,7 @@ const catalogue: Product[] = [
     name: { fr: "Duo de sacs matelassés vert émeraude", en: "Emerald green quilted bag duo" },
     subcategory: "handbags",
     audience: "women",
-    price: 8700,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-vert-emeraude.jpg"],
     description: {
@@ -1860,7 +1929,7 @@ const catalogue: Product[] = [
     name: { fr: "Duo de sacs matelassés jaune vif", en: "Bright yellow quilted bag duo" },
     subcategory: "handbags",
     audience: "women",
-    price: 8700,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-jaune.jpg"],
     description: {
@@ -1873,7 +1942,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac dôme orange verni, monogramme en relief", en: "Orange patent dome bag, embossed monogram" },
     subcategory: "handbags",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-verni-monogramme.jpg"],
     description: {
@@ -1886,7 +1955,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac Dôme Gris-Bleu & Détails Fuchsia – Motif Floral", en: "Grey-Blue Dome Bag & Fuchsia Details – Floral Print" },
     subcategory: "handbags",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-dome-gris-bleu-bande-fuchsia.jpg"],
     description: {
@@ -1898,7 +1967,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac dôme doré, grain horizontal", en: "Gold dome bag, horizontal grain" },
     subcategory: "handbags",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-grain-horizontal.jpg"],
     description: {
@@ -1911,7 +1980,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac dôme orange texturé, cadenas argenté", en: "Textured orange dome bag, silver padlock" },
     subcategory: "handbags",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-grain-cadenas.jpg"],
     description: {
@@ -1924,7 +1993,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac dôme doré miroir, monogramme en relief", en: "Mirror-gold dome bag, embossed monogram" },
     subcategory: "handbags",
     audience: "women",
-    price: 7500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-miroir-monogramme.jpg"],
     description: {
@@ -1937,7 +2006,7 @@ const catalogue: Product[] = [
     name: { fr: "Cabas noir et blanc avec porte-monnaie", en: "Black and white tote with coin purse" },
     subcategory: "handbags",
     audience: "women",
-    price: 8890,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-cabas-noir-blanc-porte-monnaie.jpg"],
     description: {
@@ -1950,7 +2019,7 @@ const catalogue: Product[] = [
     name: { fr: "Cabas noir uni, poche à rabat", en: "Plain black tote, flap pocket" },
     subcategory: "handbags",
     audience: "women",
-    price: 8890,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-cabas-noir-poche-rabat.jpg"],
     description: {
@@ -1963,7 +2032,7 @@ const catalogue: Product[] = [
     name: { fr: "Cabas bleu denim et bords caramel, avec portefeuille", en: "Blue denim-look tote with caramel trim, with wallet" },
     subcategory: "handbags",
     audience: "women",
-    price: 8890,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-cabas-denim-bords-caramel-portefeuille.jpg"],
     description: {
@@ -1989,7 +2058,7 @@ const catalogue: Product[] = [
     name: { fr: "Pochette matelassée beige, lettres dorées", en: "Beige quilted clutch, gold letters" },
     subcategory: "other-bags",
     audience: "women",
-    price: 6500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-beige.jpg"],
     description: {
@@ -2002,7 +2071,7 @@ const catalogue: Product[] = [
     name: { fr: "Pochette matelassée gris anthracite, lettres dorées", en: "Charcoal grey quilted clutch, gold letters" },
     subcategory: "other-bags",
     audience: "women",
-    price: 6500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-gris.jpg"],
     description: {
@@ -2015,7 +2084,7 @@ const catalogue: Product[] = [
     name: { fr: "Pochette matelassée cognac, lettres dorées", en: "Cognac quilted clutch, gold letters" },
     subcategory: "other-bags",
     audience: "women",
-    price: 6500,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-cognac.jpg"],
     description: {
@@ -2028,7 +2097,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à rabat asymétrique blanc, cadenas doré", en: "White asymmetric flap bag, gold padlock" },
     subcategory: "handbags",
     audience: "women",
-    price: 8700,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-blanc-cadenas.jpg"],
     description: {
@@ -2041,7 +2110,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à rabat asymétrique bordeaux, avec bandoulière", en: "Burgundy asymmetric flap bag, with shoulder strap" },
     subcategory: "handbags",
     audience: "women",
-    price: 8700,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-bordeaux.jpg"],
     description: {
@@ -2054,7 +2123,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à rabat asymétrique violet, cadenas doré", en: "Purple asymmetric flap bag, gold padlock" },
     subcategory: "handbags",
     audience: "women",
-    price: 8700,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-violet-cadenas.jpg"],
     description: {
@@ -2132,7 +2201,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac rouge à surpiqûres géométriques, breloque feuille et portefeuille", en: "Red bag with geometric stitching, leaf charm and wallet" },
     subcategory: "handbags",
     audience: "women",
-    price: 8900,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-sac-rouge-surpiqures-geometriques-portefeuille.jpg"],
     description: {
@@ -2145,7 +2214,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac bleu à surpiqûres géométriques, breloque fleur et portefeuille", en: "Blue bag with geometric stitching, flower charm and wallet" },
     subcategory: "handbags",
     audience: "women",
-    price: 8900,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-sac-bleu-surpiqures-geometriques-portefeuille.jpg"],
     description: {
@@ -2158,7 +2227,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac jaune à surpiqûres géométriques, breloque dorée", en: "Yellow bag with geometric stitching, gold charm" },
     subcategory: "handbags",
     audience: "women",
-    price: 8900,
+    price: 9000,
     priceOnRequest: false,
     images: ["/sac-sac-jaune-surpiqures-geometriques.jpg"],
     description: {
@@ -2236,7 +2305,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main rouge à surpiqûres en losanges, charm doré", en: "Red handbag with diamond stitching, gold charm" },
     subcategory: "handbags",
     audience: "women",
-    price: 7800,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-quilted-red.jpg"],
     description: {
@@ -2353,7 +2422,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac rond marron à cordon, lettres dorées sur sangle", en: "Round brown drawstring bag, gold letters on strap" },
     subcategory: "handbags",
     audience: "women",
-    price: 7800,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-rond-cordon-marron.jpg"],
     description: {
@@ -2379,7 +2448,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main beige, côtés tissés et ferrures argentées", en: "Beige handbag, woven sides and silver-tone fittings" },
     subcategory: "handbags",
     audience: "women",
-    price: 8600,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-structure-beige.jpg"],
     description: {
@@ -2392,7 +2461,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main bleu ciel texturé, anses rigides", en: "Sky-blue textured handbag, rigid handles" },
     subcategory: "handbags",
     audience: "women",
-    price: 8600,
+    price: 8500,
     priceOnRequest: false,
     images: ["/sac-texture-bleu-ciel.jpg"],
     description: {
@@ -2405,7 +2474,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac rond jaune à cordon, lettres dorées sur sangle", en: "Round yellow drawstring bag, gold letters on strap" },
     subcategory: "handbags",
     audience: "women",
-    price: 7800,
+    price: 8000,
     priceOnRequest: false,
     images: ["/sac-rond-cordon-jaune.jpg"],
     description: {
@@ -2444,7 +2513,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main rouge à rabat, fermoir doré", en: "Red flap handbag with gold clasp" },
     subcategory: "handbags",
     audience: "women",
-    price: 13500,
+    price: 9500,
     priceOnRequest: false,
     images: ["/sac-rabat-rouge-fermoir-dore.jpg"],
     description: {
@@ -2457,7 +2526,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main beige à rabat, fermoir doré", en: "Beige flap handbag with gold clasp" },
     subcategory: "handbags",
     audience: "women",
-    price: 13500,
+    price: 9500,
     priceOnRequest: false,
     images: ["/sac-rabat-beige-fermoir-dore.jpg"],
     description: {
@@ -2470,7 +2539,7 @@ const catalogue: Product[] = [
     name: { fr: "Sac à main vert émeraude à rabat, fermoir doré", en: "Emerald green flap handbag with gold clasp" },
     subcategory: "handbags",
     audience: "women",
-    price: 13500,
+    price: 9500,
     priceOnRequest: false,
     images: ["/sac-rabat-vert-fermoir-dore.jpg"],
     description: {
@@ -3543,3 +3612,7 @@ function DesignSystemPage({ lang }: { lang: Lang }) {
   const t = copy[lang];
   return <section className="system-page shell"><div className="page-intro"><span className="eyebrow">Le Coin ISM / v1.1</span><h1>{t.dsTitle}</h1><p>{t.dsText}</p></div><div className="system-section"><div className="system-title"><span>01</span><h2>{lang === "fr" ? "Couleurs" : "Colours"}</h2></div><div className="swatches">{[["Nuit","navy"],["Ivoire","cream"],["Or doux","gold"],["Sauge","sage"],["Blanc","white"]].map(([name, token]) => <div key={name}><i className={`swatch-${token}`} /><strong>{name}</strong><span>--{token}</span></div>)}</div></div><div className="system-section"><div className="system-title"><span>02</span><h2>{lang === "fr" ? "Composants catalogue" : "Catalogue components"}</h2></div><div className="component-shelf"><button className="button primary">{lang === "fr" ? "Bouton primaire" : "Primary button"}<Icon name="arrow" /></button><button className="button secondary">{lang === "fr" ? "Secondaire" : "Secondary"}</button><Status lang={lang} /><label className="search-field"><Icon name="search" /><input placeholder={t.search} /></label></div></div></section>;
 }
+
+
+
+
