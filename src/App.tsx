@@ -1760,13 +1760,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-rose-triangle-dore.jpg"],
     description: {
-      fr: "Un petit sac à rabat dans un rose doux, relevé par une plaque triangulaire dorée sur le devant. Sa finition légèrement texturée et sa bandoulière fine lui donnent une allure délicate. Il accompagne facilement un jean comme une tenue plus habillée.",
-      en: "A small flap bag in soft pink, finished with a gold-tone triangle plate on the front. Its lightly textured finish and slim strap give it a delicate look. Easy to pair with denim or a dressier outfit.",
+      fr: "Un rose tout doux et un éclat doré, pour un petit sac qui a du charme !\nEnvie d’un sac discret mais pas banal ? Ce modèle à rabat joue la délicatesse avec son rose tendre, sa finition légèrement texturée et sa plaque triangulaire dorée sur le devant. Compact et fin, il s’intègre à votre quotidien sans encombrer.\n---\nPourquoi vous allez l’adorer\n• Rose tendre : Un coloris doux à la finition légèrement texturée, qui donne du relief sans en faire trop.\n• Détail doré : Une plaque triangulaire dorée sur le devant, le petit plus qui attire le regard.\n• Fermeture à rabat : Un rabat qui referme le sac simplement, pour un rendu net et soigné.\n• Format compact : Une bandoulière fine aux attaches dorées, pour un sac facile à porter en travers du corps.\n\nConseil de style : Avec un jean et un t-shirt blanc, il apporte la touche féminine qu’il faut. Le soir, posez-le sur une robe noire et laissez le doré faire le reste.",
+      en: "A soft pink and a golden glint for a little bag with plenty of charm!\nLooking for a bag that is discreet but not ordinary? This flap bag plays the delicate card with its tender pink, its lightly textured finish and a golden triangular plate on the front. Compact and slim, it fits into your daily routine without getting in the way.\n---\nWhy you will love it\n• Tender pink: A soft shade with a lightly textured finish that adds depth without overdoing it.\n• Golden detail: A golden triangular plate on the front, the little extra that catches the eye.\n• Flap closure: A flap that closes the bag simply, for a neat and polished look.\n• Compact size: A thin strap with golden fittings, easy to wear across the body.\n\nStyle tip: With jeans and a white tee, it adds just the right feminine touch. In the evening, pair it with a little black dress and let the gold do the rest.",
     },
-    features: {
-      fr: ["Coloris : rose", "Fermeture à rabat, plaque triangulaire dorée", "Bandoulière fine avec attaches dorées", "Format compact"],
-      en: ["Colour: pink", "Flap closure, gold triangle plate", "Thin strap with gold clips", "Compact size"],
-    },
+
   }),
   newProduct("sac-rabat-blanc-triangle-argente", "bags", {
     name: { fr: "Sac à rabat blanc, plaque triangulaire argentée", en: "White flap bag, silver triangle plate" },
@@ -1776,13 +1773,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-blanc-triangle-argente.jpg"],
     description: {
-      fr: "Le blanc cassé du sac contraste doucement avec la bandoulière grise et les attaches argentées. Sur le rabat lisse, une plaque triangulaire gravée apporte le détail qui attire le regard. Son format compact se porte simplement à l’épaule ou en bandoulière.",
-      en: "The off-white bag pairs softly with its grey strap and silver-tone hardware. A triangular engraved plate adds a detail to the smooth flap. Its compact shape is easy to wear on the shoulder or crossbody.",
+      fr: "Un blanc cassé tout en retenue, avec le détail qui fait la différence !\nCe sac à rabat mise sur la douceur : le blanc cassé du corps du sac répond à une bandoulière grise et à des attaches argentées. Au centre du rabat, une plaque triangulaire gravée attire l’œil sans rien alourdir.\n---\nPourquoi vous allez l’adorer\n• Duo blanc cassé et gris : Un contraste tout en finesse entre le sac et sa bandoulière grise.\n• Plaque triangulaire gravée : Un détail argenté posé sur le rabat lisse, sobre et reconnaissable.\n• Attaches argentées : Elles reprennent la teinte de la plaque pour un ensemble cohérent.\n• Format compact : Se porte simplement à l’épaule ou en bandoulière, selon votre humeur.\n\nConseil de style : Il s’accorde très bien avec un look total denim ou une tenue claire. Pour un contraste net, essayez-le avec un haut noir ou bordeaux.",
+      en: "A restrained off-white with the one detail that makes the difference!\nThis flap bag is all about softness: the off-white of the bag meets a grey strap and silver fittings. In the middle of the flap, an engraved triangular plate draws the eye without weighing anything down.\n---\nWhy you will love it\n• Off-white and grey duo: A subtle contrast between the bag and its grey strap.\n• Engraved triangular plate: A silver detail set on the smooth flap, understated and recognisable.\n• Silver fittings: They echo the colour of the plate for a coherent whole.\n• Compact size: Simply worn on the shoulder or across the body, depending on your mood.\n\nStyle tip: It goes beautifully with an all-denim look or a light outfit. For a sharper contrast, try it with a black or burgundy top.",
     },
-    features: {
-      fr: ["Coloris : blanc cassé, bandoulière grise", "Fermeture à rabat, plaque triangulaire argentée", "Attaches argentées", "Format compact"],
-      en: ["Colour: off-white, grey strap", "Flap closure, silver triangle plate", "Silver hardware", "Compact size"],
-    },
+
   }),
   newProduct("sac-mini-cabas-caramel-grand-monogramme", "bags", {
     name: { fr: "Mini cabas caramel, grand monogramme blanc", en: "Caramel mini tote, large white monogram" },
@@ -1792,13 +1786,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-mini-cabas-caramel-grand-monogramme.jpg"],
     description: {
-      fr: "Ce mini cabas joue sur le contraste du fond caramel et du grand motif blanc de fleurs et de losanges, avec les initiales au centre. Sa forme trapèze, ses deux anses rondes et ses fermoirs dorés composent une silhouette facile à repérer. Une étiquette assortie complète le modèle.",
-      en: "This mini tote plays with the contrast between its caramel background and large white flower-and-diamond pattern, with initials at the centre. Its trapezoid shape, two round handles and gold-tone hardware create a distinctive profile. A matching tag completes the design.",
+      fr: "Petit format, grand motif : le mini cabas qui se remarque tout de suite !\nSur un fond caramel chaleureux, un grand motif blanc de fleurs et de losanges s’étale avec les initiales au centre. Sa forme trapèze et ses deux anses rondes lui donnent une silhouette bien à lui.\n---\nPourquoi vous allez l’adorer\n• Caramel et blanc : Un contraste franc entre le fond caramel et le grand motif blanc.\n• Motif fleurs et losanges : Les initiales trônent au centre, pour une pièce facile à reconnaître.\n• Forme trapèze, petit format : Deux anses rondes et un gabarit mini pour un sac qui reste léger à l’œil.\n• Fermoirs dorés : Ils sont accompagnés d’une étiquette assortie qui complète le modèle.\n\nConseil de style : Le caramel adore le blanc, le beige et le denim bleu. Portez-le à la main sur une tenue simple, c’est lui qui racontera le reste.",
+      en: "Small size, big pattern: the mini tote that gets noticed right away!\nOn a warm caramel background, a large white pattern of flowers and diamonds spreads out with the initials in the centre. Its trapezoid shape and two round handles give it a silhouette of its own.\n---\nWhy you will love it\n• Caramel and white: A bold contrast between the caramel background and the large white pattern.\n• Flowers and diamonds: The initials sit in the centre, making it an easy piece to recognise.\n• Trapezoid shape, small size: Two round handles and a mini format for a bag that looks neat and light.\n• Golden clasps: Paired with a matching tag that completes the design.\n\nStyle tip: Caramel loves white, beige and blue denim. Carry it by hand with a simple outfit and let the bag do the talking.",
     },
-    features: {
-      fr: ["Coloris : caramel et blanc", "Deux anses rondes", "Fermoirs dorés, étiquette assortie", "Petit format"],
-      en: ["Colour: caramel and white", "Two round handles", "Gold-tone hardware, matching tag", "Small size"],
-    },
+
   }),
   newProduct("sac-sac-bandouliere-bleu-ciel-triangle", "bags", {
     name: { fr: "Sac bandoulière bleu ciel, fermoir triangulaire doré", en: "Sky-blue shoulder bag, gold triangle clasp" },
@@ -1808,13 +1799,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-bandouliere-bleu-ciel-triangle.jpg"],
     description: {
-      fr: "Le bleu ciel donne le ton à ce sac bandoulière, simplement ponctué d’un fermoir triangulaire doré sur le rabat. Sa longue bandoulière permet de le porter à l’épaule ou en travers du corps. Une touche de couleur pour changer des tons neutres.",
-      en: "Sky blue sets the tone for this shoulder bag, accented by a gold-tone triangle clasp on the flap. Its long strap can be worn over the shoulder or crossbody. A touch of colour when you want a break from neutral shades.",
+      fr: "Un coup de bleu ciel pour sortir des tons neutres !\nCe sac bandoulière a du caractère grâce à sa couleur douce mais bien présente. Son rabat se ferme par un fermoir triangulaire doré, seul détail qu’il lui faut pour briller.\n---\nPourquoi vous allez l’adorer\n• Bleu ciel : Un coloris frais et lumineux qui change des noirs et des beiges habituels.\n• Rabat et fermoir triangulaire doré : Un geste graphique simple, placé juste où il faut.\n• Longue bandoulière : Elle se porte à l’épaule ou en travers du corps, à votre convenance.\n• Attaches dorées : Elles font écho au fermoir et soulignent la couleur.\n\nConseil de style : Pour un look frais, mariez-le à du blanc et du jean clair. Pour oser davantage, associez-le à du beige ou à un ensemble gris perle.",
+      en: "A splash of sky blue to step away from neutral tones!\nThis crossbody bag has character thanks to its colour, soft yet clearly present. Its flap closes with a golden triangular clasp, the only detail it needs to shine.\n---\nWhy you will love it\n• Sky blue: A fresh, bright shade that makes a change from the usual blacks and beiges.\n• Flap and golden triangular clasp: A simple graphic touch, placed exactly where it should be.\n• Long strap: Wear it on the shoulder or across the body, as you prefer.\n• Golden fittings: They echo the clasp and highlight the colour.\n\nStyle tip: For a fresh look, team it with white and light denim. To go bolder, pair it with beige or a pearl grey outfit.",
     },
-    features: {
-      fr: ["Coloris : bleu ciel", "Rabat, fermoir triangulaire doré", "Longue bandoulière", "Attaches dorées"],
-      en: ["Colour: sky blue", "Flap, gold triangle clasp", "Long strap", "Gold-tone hardware"],
-    },
+
   }),
   newProduct("sac-mini-cabas-beige-grand-monogramme", "bags", {
     name: { fr: "Mini cabas beige, grand monogramme blanc", en: "Beige mini tote, large white monogram" },
@@ -1824,13 +1812,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-mini-cabas-beige-grand-monogramme.jpg"],
     description: {
-      fr: "Dans un beige sable, ce mini cabas reprend le motif blanc de fleurs et de losanges avec les initiales au centre. Les deux anses rondes, les fermoirs dorés et l’étiquette assortie complètent le modèle. Une version lumineuse qui s’accorde facilement aux tons clairs.",
-      en: "In sandy beige, this mini tote features a white flower-and-diamond pattern with initials at the centre. Two round handles, gold-tone hardware and a matching tag complete the design. A light-toned option that pairs easily with neutral outfits.",
+      fr: "Le mini cabas version lumière, pour les tenues claires !\nDans un beige sable, il reprend le grand motif blanc de fleurs et de losanges avec les initiales au centre. Deux anses rondes, une forme trapèze et un petit format : tout est là pour une allure soignée.\n---\nPourquoi vous allez l’adorer\n• Beige et blanc : Un camaïeu clair et doux, très facile à porter au quotidien.\n• Grand motif central : Fleurs, losanges et initiales dessinent un décor bien visible.\n• Deux anses rondes : Elles donnent une belle prise en main à ce petit format.\n• Fermoirs dorés : Complétés par une étiquette assortie, ils apportent la touche finale.\n\nConseil de style : Il se marie à merveille avec le blanc, le kaki et les tons terre. Une robe d’été ou un ensemble lin, et le tour est joué.",
+      en: "The mini tote in a lighter version, made for bright outfits!\nIn a sandy beige, it features the large white pattern of flowers and diamonds with the initials in the centre. Two round handles, a trapezoid shape and a small size: everything is there for a polished look.\n---\nWhy you will love it\n• Beige and white: A light, soft shade combination that is very easy to wear every day.\n• Large central pattern: Flowers, diamonds and initials make for a clearly visible design.\n• Two round handles: They give this small bag a comfortable grip.\n• Golden clasps: Along with a matching tag, they add the finishing touch.\n\nStyle tip: It pairs wonderfully with white, khaki and earthy tones. A summer dress or a linen set, and you are done.",
     },
-    features: {
-      fr: ["Coloris : beige et blanc", "Deux anses rondes", "Fermoirs dorés, étiquette assortie", "Petit format"],
-      en: ["Colour: beige and white", "Two round handles", "Gold-tone hardware, matching tag", "Small size"],
-    },
+
   }),
   newProduct("sac-sac-cognac-losanges-blasons", "bags", {
     name: { fr: "Sac à main cognac, motif losanges et blasons", en: "Cognac handbag, diamond and crest pattern" },
@@ -1840,13 +1825,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-cognac-losanges-blasons.jpg"],
     description: {
-      fr: "Le motif de losanges noirs et de petits blasons habille entièrement ce sac à rabat cognac. Le fermoir doré à clé, les deux boucles sur le devant et l’anse rigide renforcent son allure structurée. Un modèle au motif marqué, pour donner du relief à une tenue sobre.",
-      en: "Black diamonds and small crests cover this cognac flap bag. A gold-tone key-style clasp, two front buckles and a rigid top handle give it a structured look. Its distinctive pattern adds interest to a simple outfit.",
+      fr: "Un sac qui a de l’allure et un motif qui ne passe pas inaperçu !\nDes losanges noirs et de petits blasons habillent tout ce sac à rabat cognac. Fermoir doré à clé, deux boucles sur le devant et anse rigide sur le dessus : sa silhouette est nette et bien construite.\n---\nPourquoi vous allez l’adorer\n• Cognac et noir : Un duo chaud et profond, avec un motif de losanges et de petits blasons sur toute la surface.\n• Fermoir central et deux boucles : Un fermoir doré à clé entouré de deux boucles pour un devant très travaillé.\n• Anse rigide : Posée sur le dessus, elle donne la prise en main et renforce la tenue du sac.\n• Anneaux dorés sur les côtés : Un détail qui prolonge la touche dorée du devant.\n\nConseil de style : Le motif étant déjà très présent, restez sobre sur le reste : un pull noir, un pantalon beige ou un jean brut suffisent.",
+      en: "A bag with presence and a pattern that does not go unnoticed!\nBlack diamonds and tiny crests cover this whole cognac flap bag. Golden key-style clasp, two buckles on the front and a rigid top handle: its silhouette is sharp and well built.\n---\nWhy you will love it\n• Cognac and black: A warm, deep pairing, with a pattern of diamonds and tiny crests across the whole surface.\n• Central clasp and two buckles: A golden key-style clasp flanked by two buckles for a richly detailed front.\n• Rigid handle: Set on top, it gives a good grip and reinforces the bag’s structure.\n• Golden rings on the sides: A detail that carries the golden touch of the front further.\n\nStyle tip: Since the pattern is already bold, keep the rest simple: a black sweater, beige trousers or raw denim is enough.",
     },
-    features: {
-      fr: ["Coloris : cognac et noir", "Fermoir doré central, deux boucles", "Anse rigide sur le dessus", "Anneaux dorés sur les côtés"],
-      en: ["Colour: cognac and black", "Gold-tone central clasp, two buckles", "Rigid top handle", "Gold-tone rings on the sides"],
-    },
+
   }),
   newProduct("sac-sac-monogramme-marron-fermoir-dore", "bags", {
     name: { fr: "Sac à main monogramme marron, fermoir doré", en: "Brown monogram handbag, gold clasp" },
@@ -1856,13 +1838,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-monogramme-marron-fermoir-dore.jpg"],
     description: {
-      fr: "Les tons marron foncé et caramel se répondent sur ce sac à monogramme, avec un motif inversé entre le rabat et la façade. Le fermoir carré doré, les boucles du bas et l’anse rigide soulignent sa forme structurée. Une association de couleurs chaudes facile à porter.",
-      en: "Dark brown and caramel tones meet on this monogram bag, with the pattern reversed between the flap and front. A square gold-tone clasp, lower buckles and a rigid top handle emphasise its structured shape. A warm colour combination that is easy to wear.",
+      fr: "Deux tons chauds qui se répondent, pour un sac tout en profondeur !\nMarron foncé et caramel jouent ensemble sur ce sac à monogramme, avec un motif inversé entre le rabat et la façade. Son fermoir carré doré et son anse rigide lui donnent une forme bien structurée.\n---\nPourquoi vous allez l’adorer\n• Marron foncé et caramel : Deux couleurs chaudes qui s’inversent entre le rabat et le devant du sac.\n• Fermoir carré doré : Il accompagne deux boucles dans le bas pour un devant bien dessiné.\n• Anse rigide : Placée sur le dessus, elle maintient la forme et se prend facilement en main.\n• Anneaux dorés sur les côtés : Ils prolongent l’esprit doré du fermoir.\n\nConseil de style : Un manteau camel, un col roulé crème ou une robe chocolat : misez sur les teintes chaudes pour une allure très harmonieuse.",
+      en: "Two warm tones in conversation, for a bag full of depth!\nDark brown and caramel play together on this monogram bag, with an inverted pattern between the flap and the front. Its square golden clasp and rigid handle give it a well-structured shape.\n---\nWhy you will love it\n• Dark brown and caramel: Two warm colours that swap places between the flap and the front of the bag.\n• Square golden clasp: Joined by two buckles at the bottom for a nicely drawn front.\n• Rigid handle: Placed on top, it keeps the shape and is easy to hold.\n• Golden rings on the sides: They carry on the golden spirit of the clasp.\n\nStyle tip: A camel coat, a cream turtleneck or a chocolate dress: stick to warm shades for a very harmonious look.",
     },
-    features: {
-      fr: ["Coloris : marron foncé et caramel", "Fermoir doré carré, deux boucles", "Anse rigide sur le dessus", "Anneaux dorés sur les côtés"],
-      en: ["Colour: dark brown and caramel", "Square gold-tone clasp, two buckles", "Rigid top handle", "Gold-tone rings on the sides"],
-    },
+
   }),
   newProduct("sac-duo-matelasse-vert-emeraude", "bags", {
     name: { fr: "Duo de sacs matelassés vert émeraude", en: "Emerald green quilted bag duo" },
@@ -1872,13 +1851,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-vert-emeraude.jpg"],
     description: {
-      fr: "Ce duo réunit deux sacs matelassés vert émeraude : un cabas à anses chaînes entrelacées et un sac à rabat avec chaîne dorée. Le fermoir à lettres entrelacées apporte un détail commun aux deux pièces. Le vert profond offre une alternative aux coloris plus classiques.",
-      en: "This set brings together two emerald-green quilted bags: a tote with interwoven chain handles and a flap bag with a gold-tone chain. The interlaced-letter clasp gives both pieces a shared detail. Deep green offers an alternative to more classic colours.",
+      fr: "Un vert émeraude profond pour sortir de l’ordinaire !\nCe duo réunit deux sacs matelassés : un cabas aux anses en chaînes entrelacées et un sac à rabat avec sa chaîne dorée. Le même fermoir à lettres entrelacées relie les deux pièces.\n---\nPourquoi vous allez l’adorer\n• Vert émeraude : Un coloris riche et profond, loin des classiques noir ou beige.\n• Matelassage en losanges : Il donne du volume et un joli jeu de lignes aux deux modèles.\n• Chaînes dorées : Anses entrelacées pour le cabas, bandoulière en chaîne pour le sac à rabat.\n• Deux modèles sur la photo : Un cabas et un sac à rabat, avec le même fermoir à lettres entrelacées.\n\nConseil de style : Le vert émeraude se marie très bien avec le noir, le blanc et les accents dorés. Une robe noire et quelques bijoux dorés, et l’effet est immédiat.",
+      en: "A deep emerald green to step out of the ordinary!\nThis duo brings together two quilted bags: a tote with interlaced chain handles and a flap bag with its golden chain. The same interlaced-letter clasp links the two pieces.\n---\nWhy you will love it\n• Emerald green: A rich, deep shade, far from the usual black or beige.\n• Diamond quilting: It adds volume and a lovely play of lines to both models.\n• Golden chains: Interlaced handles for the tote, a chain strap for the flap bag.\n• Two models in the photo: A tote and a flap bag, sharing the same interlaced-letter clasp.\n\nStyle tip: Emerald green pairs very well with black, white and golden accents. A black dress and a few golden pieces of jewellery, and the effect is instant.",
     },
-    features: {
-      fr: ["Coloris : vert émeraude", "Matelassage en losanges", "Anses et bandoulière en chaîne dorée", "Deux modèles sur la photo : cabas et sac à rabat"],
-      en: ["Colour: emerald green", "Diamond quilting", "Gold-tone chain handles and strap", "Two models shown: tote and flap bag"],
-    },
+
   }),
   newProduct("sac-duo-matelasse-jaune", "bags", {
     name: { fr: "Duo de sacs matelassés jaune vif", en: "Bright yellow quilted bag duo" },
@@ -1888,13 +1864,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-duo-matelasse-jaune.jpg"],
     description: {
-      fr: "Deux formats, une même couleur : ce duo comprend un cabas à anses chaînes et un sac à rabat avec bandoulière chaîne, tous deux matelassés en jaune vif. Les finitions dorées et le fermoir à lettres entrelacées complètent l’ensemble. Pour apporter une note lumineuse à une tenue.",
-      en: "Two shapes, one colour: this set includes a chain-handle tote and a chain-strap flap bag, both quilted in bright yellow. Gold-tone finishes and an interlaced-letter clasp complete the look. A bright accent for an outfit.",
+      fr: "Une bouffée de soleil à porter à la main ou à l’épaule !\nDeux formats, une même couleur : cabas à anses chaînes et sac à rabat avec bandoulière chaîne, tous deux matelassés en jaune vif. Les finitions dorées et le fermoir à lettres entrelacées complètent l’ensemble.\n---\nPourquoi vous allez l’adorer\n• Jaune vif : Un coloris franc qui se voit de loin et met de bonne humeur.\n• Matelassage en losanges : Un travail de lignes qui structure l’ensemble des deux pièces.\n• Chaînes dorées : Elles forment les anses du cabas et la bandoulière du sac à rabat.\n• Deux modèles sur la photo : Un cabas et un sac à rabat, le fermoir à lettres entrelacées en commun.\n\nConseil de style : Laissez le jaune tout éclairer : une tenue blanche, un jean ou une robe noire suffisent. Parfait pour égayer une journée de campus ou une sortie entre amies.",
+      en: "A burst of sunshine to carry by hand or on the shoulder!\nTwo sizes, one colour: a tote with chain handles and a flap bag with a chain strap, both quilted in bright yellow. The golden finishes and the interlaced-letter clasp complete the set.\n---\nWhy you will love it\n• Bright yellow: A bold shade you can spot from afar that lifts the mood.\n• Diamond quilting: A line pattern that gives structure to both pieces.\n• Golden chains: They form the tote’s handles and the flap bag’s strap.\n• Two models in the photo: A tote and a flap bag, sharing the interlaced-letter clasp.\n\nStyle tip: Let the yellow light up everything: a white outfit, jeans or a black dress is enough. Perfect to brighten up a day on campus or an outing with friends.",
     },
-    features: {
-      fr: ["Coloris : jaune vif", "Matelassage en losanges", "Anses et bandoulière en chaîne dorée", "Deux modèles sur la photo : cabas et sac à rabat"],
-      en: ["Colour: bright yellow", "Diamond quilting", "Gold-tone chain handles and strap", "Two models shown: tote and flap bag"],
-    },
+
   }),
   newProduct("sac-sac-dome-orange-verni-monogramme", "bags", {
     name: { fr: "Sac dôme orange verni, monogramme en relief", en: "Orange patent dome bag, embossed monogram" },
@@ -1904,28 +1877,21 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-verni-monogramme.jpg"],
     description: {
-      fr: "Le vernis orange brillant et le monogramme en relief donnent à ce sac dôme une présence marquée. Sa fermeture zippée, ses deux anses rondes et ses attaches argentées dessinent une forme classique, réveillée par la couleur. Un petit cadenas-étiquette complète les détails.",
-      en: "Glossy orange patent finish and an embossed monogram give this dome bag a strong presence. Its zip closure, two round handles and silver-tone hardware create a classic shape, brought to life by the colour. A small padlock-style tag completes the details.",
+      fr: "Orange brillant, monogramme en relief : le sac dôme qui ne passe jamais inaperçu !\nSon vernis orange et son motif en relief lui donnent une vraie présence. Zip, deux anses rondes et attaches argentées dessinent une forme classique, réveillée par la couleur.\n---\nPourquoi vous allez l’adorer\n• Orange verni : Un coloris éclatant à l’aspect brillant, qui capte la lumière.\n• Monogramme en relief : Un motif marqué qui ajoute du volume à la façade.\n• Forme dôme et zip : Une fermeture zippée sur une silhouette arrondie et facile à reconnaître.\n• Anses rondes et attaches argentées : Un petit cadenas-étiquette vient compléter les détails.\n\nConseil de style : Face à une couleur aussi vive, gardez des vêtements simples : blanc, noir ou denim. Il peut aussi illuminer une tenue neutre d’un seul coup.",
+      en: "Glossy orange, raised monogram: the dome bag that never goes unnoticed!\nIts orange varnish and raised pattern give it real presence. Zip, two round handles and silver fittings draw a classic shape, brought to life by colour.\n---\nWhy you will love it\n• Glossy orange: A vivid shade with a shiny look that catches the light.\n• Raised monogram: A bold pattern that adds volume to the front.\n• Dome shape and zip: A zip closure on a rounded, easily recognisable silhouette.\n• Round handles and silver fittings: A small padlock-style tag completes the details.\n\nStyle tip: With a colour this bright, keep clothes simple: white, black or denim. It can also light up a neutral outfit in an instant.",
     },
-    features: {
-      fr: ["Coloris : orange verni", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées"],
-      en: ["Colour: glossy orange", "Dome shape, zip closure", "Two round handles", "Silver-tone hardware"],
-    },
+
   }),
   newProduct("sac-sac-dome-gris-bleu-bande-fuchsia", "bags", {
-    name: { fr: "Sac dôme gris-bleu, anses et bandeau fuchsia", en: "Grey-blue dome bag, fuchsia handles and band" },
+    name: { fr: "Sac Dôme Gris-Bleu & Détails Fuchsia – Motif Floral", en: "Grey-Blue Dome Bag & Fuchsia Details – Floral Print" },
     subcategory: "handbags",
     audience: "women",
     price: 7500,
     priceOnRequest: false,
     images: ["/sac-sac-dome-gris-bleu-bande-fuchsia.jpg"],
     description: {
-      fr: "Le motif floral gris clair et bleu nuit du corps contraste avec les anses et le bandeau fuchsia. La forme dôme est fermée par un zip, accompagné de finitions dorées et d’un petit cadenas. Un mélange de tons doux et d’une touche vive.",
-      en: "The light grey and navy floral body contrasts with the fuchsia handles and base band. The dome shape closes with a zip, finished with gold-tone details and a small padlock. A mix of muted tones and a bright accent.",
-    },
-    features: {
-      fr: ["Coloris : gris-bleu et fuchsia", "Forme dôme, fermeture zippée", "Deux anses rondes", "Finitions dorées, petit cadenas"],
-      en: ["Colour: grey-blue and fuchsia", "Dome shape, zip closure", "Two round handles", "Gold-tone details, small padlock"],
+      fr: "L’alliance parfaite entre élégance florale et pop de couleur pour afficher un style unique !\nVous cherchez un sac qui se démarque vraiment de ce que l’on voit partout ? Ce sac dôme associe la douceur d’un motif floral gris clair et bleu nuit à la vivacité de touches fuchsia intenses. Structuré, original et chic, c’est l’accessoire idéal pour apporter du peps et du caractère à vos tenues de cours ou de sorties.\n---\nPourquoi vous allez l’adorer\n• Imprimé floral contrasté : Un motif délicat et tendance en tons gris et bleu nuit, magnifiquement réveillé par des anses et un bandeau fuchsia ultra-gourmand.\n• Silhouette dôme iconique : Une forme classique très élégante qui offre une belle contenance tout en restant compacte et bien tenue.\n• Finitions raffinées & sécurisées : Fermeture zippée fluide agrémentée d’accessoires dorés et d’un petit cadenas décoratif chic pour protéger vos affaires.\n• Porté polyvalent : À porter à la main ou au coude par ses deux anses rigides, ou à l’épaule grâce à sa bandoulière pratique.\n\nConseil de style : Laissez le sac être la pièce maîtresse de votre tenue ! Associez-le avec des vêtements aux tons neutres (un jean, un pull blanc ou un manteau gris) pour faire ressortir son contraste fuchsia.",
+      en: "The perfect blend of floral elegance and a pop of colour for a style all your own!\nLooking for a bag that truly stands out from what you see everywhere? This dome bag pairs the softness of a light grey and midnight blue floral print with the punch of vivid fuchsia touches. Structured, original and chic, it is the ideal accessory to add energy and character to your outfits for class or nights out.\n---\nWhy you will love it\n• Contrasting floral print: A delicate, trendy pattern in grey and midnight blue tones, brought to life by fuchsia handles and a bold fuchsia band.\n• Iconic dome shape: A classic, very elegant silhouette with generous room that stays compact and well held.\n• Refined, secure finishing: A smooth zip closure with gold-tone hardware and a small decorative padlock to protect your belongings.\n• Versatile to carry: Carry it by hand or in the crook of your arm by its two rigid handles, or over the shoulder with the practical strap.\n\nStyle tip: Let the bag be the centrepiece of your outfit! Pair it with neutral tones (jeans, a white sweater or a grey coat) to make the fuchsia contrast stand out.",
     },
   }),
   newProduct("sac-sac-dome-dore-grain-horizontal", "bags", {
@@ -1936,13 +1902,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-grain-horizontal.jpg"],
     description: {
-      fr: "Un doré clair, un grain en fines lignes horizontales et un bandeau lisse à la base : ce sac dôme mise sur des détails discrets. Les deux anses rondes, la fermeture zippée et les attaches argentées structurent la silhouette. Le logo en relief et l’étiquette gravée terminent la présentation.",
-      en: "Light gold, fine horizontal texture and a smooth band at the base give this dome bag its understated details. Two round handles, a zip closure and silver-tone hardware shape the silhouette. An embossed logo and engraved tag complete the design.",
+      fr: "Le doré tout en nuances, pour celles qui aiment les détails discrets !\nCe sac dôme joue la subtilité avec son doré clair, ses fines lignes horizontales et son bandeau lisse à la base. Il s’habille de deux anses rondes, d’une fermeture zippée et d’attaches argentées.\n---\nPourquoi vous allez l’adorer\n• Doré clair : Une teinte lumineuse mais douce, loin du clinquant.\n• Grain en lignes horizontales : De fines lignes qui donnent du relief, avec un bandeau lisse à la base.\n• Forme dôme et zip : Une silhouette bien dessinée par ses deux anses rondes et sa fermeture zippée.\n• Logo en relief et étiquette gravée : Des finitions discrètes, avec des attaches argentées.\n\nConseil de style : Il fait merveille avec du beige, du blanc ou du bleu marine. Pour une sortie, une robe unie et des chaussures sobres suffisent.",
+      en: "Gold in subtle shades, for those who love discreet details!\nThis dome bag goes for subtlety with its light gold tone, its fine horizontal lines and its smooth band at the base. It comes with two round handles, a zip closure and silver fittings.\n---\nWhy you will love it\n• Light gold: A bright but gentle tone, far from flashy.\n• Horizontal line texture: Fine lines add depth, with a smooth band at the base.\n• Dome shape and zip: A well-drawn silhouette thanks to its two round handles and zip closure.\n• Raised logo and engraved tag: Discreet finishes, with silver fittings.\n\nStyle tip: It works wonders with beige, white or navy. For an outing, a plain dress and simple shoes are all you need.",
     },
-    features: {
-      fr: ["Coloris : doré clair", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées, étiquette gravée"],
-      en: ["Colour: light gold", "Dome shape, zip closure", "Two round handles", "Silver-tone hardware, engraved tag"],
-    },
+
   }),
   newProduct("sac-sac-dome-orange-grain-cadenas", "bags", {
     name: { fr: "Sac dôme orange texturé, cadenas argenté", en: "Textured orange dome bag, silver padlock" },
@@ -1952,13 +1915,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-orange-grain-cadenas.jpg"],
     description: {
-      fr: "La teinte orange vive et les fines lignes horizontales donnent du relief à ce sac dôme. Il présente deux anses rondes, une fermeture zippée et un petit cadenas suspendu à une chaîne argentée. Une pièce colorée qui suffit à réveiller une tenue simple.",
-      en: "Bright orange and fine horizontal lines add texture to this dome bag. It features two round handles, a zip closure and a small padlock hanging from a silver-tone chain. A colourful piece that can lift a simple outfit.",
+      fr: "Un orange vif qui donne de l’énergie à toutes les tenues !\nLes fines lignes horizontales ajoutent du relief à la couleur de ce sac dôme. Deux anses rondes, une fermeture zippée et un petit cadenas qui pend à sa chaîne argentée complètent le tableau.\n---\nPourquoi vous allez l’adorer\n• Orange vif : Une couleur franche et gaie qui réveille un look en un instant.\n• Fines lignes horizontales : Une texture qui donne du relief à la façade.\n• Deux anses rondes : Elles se prennent bien en main sur cette forme dôme.\n• Zip et cadenas argenté : Une fermeture zippée, et un petit cadenas suspendu à une chaîne argentée.\n\nConseil de style : Un total look jean ou une tenue blanche lui laisse toute la place. Pour plus de contraste, osez-le avec du bleu marine.",
+      en: "A vivid orange that energises any outfit!\nFine horizontal lines add depth to the colour of this dome bag. Two round handles, a zip closure and a small padlock hanging from its silver chain complete the picture.\n---\nWhy you will love it\n• Vivid orange: A bold, cheerful colour that wakes up a look in an instant.\n• Fine horizontal lines: A texture that adds depth to the front.\n• Two round handles: They are comfortable to hold on this dome shape.\n• Zip and silver padlock: A zip closure, plus a small padlock hanging from a silver chain.\n\nStyle tip: An all-denim look or a white outfit gives it all the space. For more contrast, dare to wear it with navy.",
     },
-    features: {
-      fr: ["Coloris : orange vif", "Forme dôme, fermeture zippée", "Deux anses rondes", "Cadenas sur chaîne argentée"],
-      en: ["Colour: bright orange", "Dome shape, zip closure", "Two round handles", "Padlock on a silver-tone chain"],
-    },
+
   }),
   newProduct("sac-sac-dome-dore-miroir-monogramme", "bags", {
     name: { fr: "Sac dôme doré miroir, monogramme en relief", en: "Mirror-gold dome bag, embossed monogram" },
@@ -1968,13 +1928,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-dome-dore-miroir-monogramme.jpg"],
     description: {
-      fr: "Avec sa finition dorée effet miroir et son monogramme en relief, ce sac dôme attire immédiatement le regard. Les deux anses rondes, la fermeture zippée et les attaches argentées équilibrent sa forme. Son éclat convient particulièrement aux sorties et aux occasions où l’on veut une pièce qui se remarque.",
-      en: "With its mirror-effect gold finish and embossed monogram, this dome bag catches the eye. Two round handles, a zip closure and silver-tone hardware balance its shape. Its shine makes it especially suited to outings and occasions when you want a standout piece.",
+      fr: "Un éclat doré effet miroir pour briller de jour comme de nuit !\nCe sac dôme a la lumière pour lui : sa finition dorée reflète tout autour et son monogramme en relief ajoute du caractère. Ses deux anses rondes, sa fermeture zippée et ses attaches argentées équilibrent l’ensemble.\n---\nPourquoi vous allez l’adorer\n• Doré miroir : Une finition brillante qui attire immédiatement le regard.\n• Monogramme en relief : Un motif marqué qui se détache sur la surface dorée.\n• Forme dôme et zip : Une silhouette arrondie fermée par un zip.\n• Anses rondes et attaches argentées : Le contraste des deux métaux équilibre la forme.\n\nConseil de style : Pensé pour les soirées et les grandes occasions : une robe noire ou un ensemble uni, et il devient la pièce maîtresse de votre look.",
+      en: "A mirror-effect golden shine to sparkle day and night!\nThis dome bag has light on its side: its golden finish reflects everything around and its raised monogram adds character. Its two round handles, zip closure and silver fittings balance the whole.\n---\nWhy you will love it\n• Mirror gold: A shiny finish that immediately catches the eye.\n• Raised monogram: A bold pattern that stands out on the golden surface.\n• Dome shape and zip: A rounded silhouette closed by a zip.\n• Round handles and silver fittings: The contrast of the two metals balances the shape.\n\nStyle tip: Made for evenings and big occasions: a black dress or a plain set, and it becomes the centrepiece of your look.",
     },
-    features: {
-      fr: ["Coloris : doré miroir", "Forme dôme, fermeture zippée", "Deux anses rondes", "Attaches argentées"],
-      en: ["Colour: mirror gold", "Dome shape, zip closure", "Two round handles", "Silver-tone hardware"],
-    },
+
   }),
   newProduct("sac-cabas-noir-blanc-porte-monnaie", "bags", {
     name: { fr: "Cabas noir et blanc avec porte-monnaie", en: "Black and white tote with coin purse" },
@@ -1984,13 +1941,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-noir-blanc-porte-monnaie.jpg"],
     description: {
-      fr: "Le contraste du blanc et du noir donne à ce cabas une allure graphique, soulignée par deux boucles dorées sur les côtés. Il possède deux anses ; un petit porte-monnaie zippé noir apparaît également sur la photo, sa présence dans le lot restant à confirmer. Un duo de couleurs facile à associer.",
-      en: "The black-and-white contrast gives this tote a graphic look, highlighted by two gold-tone side buckles. It has two handles; a small black zipped coin purse is also shown in the photo, though its inclusion in the set still needs confirmation. An easy-to-match colour combination.",
+      fr: "Noir et blanc, un duo graphique qui va avec tout !\nCe cabas mise sur un contraste net, souligné par deux boucles dorées sur les côtés. Il a deux anses. Un petit porte-monnaie zippé noir figure aussi sur la photo, sa présence dans le lot restant à confirmer.\n---\nPourquoi vous allez l’adorer\n• Blanc et noir : Un contraste graphique et franc qui structure le look du sac.\n• Format cabas : Une forme généreuse à deux anses, pensée pour le quotidien.\n• Boucles dorées : Sur les côtés, elles apportent une touche de chaleur au noir et blanc.\n• Porte-monnaie zippé noir : Visible sur la photo, mais sa présence dans le lot est à confirmer.\n\nConseil de style : Le noir et blanc va avec tout : jean, robe d’été ou ensemble sobre. Une paire de baskets blanches et vous êtes prête.",
+      en: "Black and white, a graphic duo that goes with everything!\nThis tote bets on a sharp contrast, highlighted by two golden buckles on the sides. It has two handles. A small black zipped coin purse also appears in the photo, though whether it comes with the bag remains to be confirmed.\n---\nWhy you will love it\n• White and black: A graphic, bold contrast that shapes the look of the bag.\n• Tote format: A generous shape with two handles, made for everyday use.\n• Golden buckles: On the sides, they bring a touch of warmth to the black and white.\n• Black zipped coin purse: Visible in the photo, but its inclusion is still to be confirmed.\n\nStyle tip: Black and white goes with everything: jeans, a summer dress or a simple set. Add white sneakers and you are ready.",
     },
-    features: {
-      fr: ["Coloris : blanc et noir", "Deux anses, boucles dorées sur les côtés", "Porte-monnaie zippé noir présenté avec le sac (à confirmer)", "Format cabas"],
-      en: ["Colour: white and black", "Two handles, gold-tone buckles on the sides", "Black zipped coin purse shown with the bag (to be confirmed)", "Tote format"],
-    },
+
   }),
   newProduct("sac-cabas-noir-poche-rabat", "bags", {
     name: { fr: "Cabas noir uni, poche à rabat", en: "Plain black tote, flap pocket" },
@@ -2000,13 +1954,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-noir-poche-rabat.jpg"],
     description: {
-      fr: "Tout en noir, ce cabas mise sur une ligne sobre avec deux anses, une poche à rabat sur le devant et des sangles latérales. Il se glisse facilement dans une tenue de tous les jours et accompagne aussi bien un look décontracté qu’une silhouette plus habillée.",
-      en: "In all black, this tote keeps to a simple design with two handles, a front flap pocket and side straps. It fits easily into everyday outfits, from casual looks to something more dressed up.",
+      fr: "Tout en noir, tout en simplicité : le cabas sur lequel on peut compter !\nUne ligne sobre, deux anses, une poche à rabat sur le devant et des sangles sur les côtés : ce cabas va droit au but. Sa couleur unie le rend facile à associer avec tout ce que vous portez.\n---\nPourquoi vous allez l’adorer\n• Noir uni : Un coloris sobre et intemporel qui ne se démode jamais.\n• Format cabas : Deux anses pour un port facile, à la main ou à l’épaule.\n• Poche à rabat : Placée sur le devant, elle ajoute un détail pratique et visuel.\n• Sangles latérales : Elles dessinent les côtés du sac et lui donnent du caractère.\n\nConseil de style : Il passe du jean-baskets du quotidien à une chemise blanche et un pantalon droit. Pour un petit effet, ajoutez un foulard coloré à l’anse.",
+      en: "All black, all simple: the tote you can count on!\nA clean line, two handles, a flap pocket on the front and straps on the sides: this tote gets straight to the point. Its plain colour makes it easy to match with anything you wear.\n---\nWhy you will love it\n• Plain black: A sober, timeless colour that never goes out of style.\n• Tote format: Two handles for easy carrying, by hand or on the shoulder.\n• Flap pocket: Placed on the front, it adds a practical and visual detail.\n• Side straps: They shape the sides of the bag and give it character.\n\nStyle tip: It goes from everyday jeans and sneakers to a white shirt and straight trousers. For a little flair, tie a colourful scarf to the handle.",
     },
-    features: {
-      fr: ["Coloris : noir", "Deux anses", "Poche à rabat sur le devant", "Sangles sur les côtés"],
-      en: ["Colour: black", "Two handles", "Flap pocket on the front", "Side straps"],
-    },
+
   }),
   newProduct("sac-cabas-denim-bords-caramel-portefeuille", "bags", {
     name: { fr: "Cabas bleu denim et bords caramel, avec portefeuille", en: "Blue denim-look tote with caramel trim, with wallet" },
@@ -2016,13 +1967,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-denim-bords-caramel-portefeuille.jpg"],
     description: {
-      fr: "Le bleu denim de la façade rencontre des bords caramel et des boucles dorées pour un contraste facile à porter. Ce cabas possède deux anses ; un portefeuille zippé caramel est également présenté sur la photo, mais son inclusion avec le sac reste à confirmer. Une association qui fonctionne naturellement avec le denim.",
-      en: "The denim-blue front meets caramel trim and gold-tone buckles for an easy-to-wear contrast. This tote has two handles; a caramel zipped wallet is also shown in the photo, but its inclusion with the bag still needs confirmation. A combination that works naturally with denim.",
+      fr: "Le denim version cabas, avec une touche caramel qui change tout !\nVous voulez un sac qui suit le rythme de vos journées sans faire fade ? Ce cabas bleu denim est bordé de caramel et relevé de boucles dorées sur les côtés. Un contraste simple, chaleureux et facile à assortir.\n---\nPourquoi vous allez l’adorer\n• Duo denim et caramel : Le bleu de la façade rencontre des bords caramel pour un contraste doux qui se marie avec beaucoup de couleurs.\n• Format cabas : Une forme de cabas pratique pour les journées bien remplies.\n• Détails dorés : Des boucles dorées de chaque côté apportent une petite touche de brillance sans en faire trop.\n• Deux anses, portefeuille à confirmer : Deux anses pour un port simple. Un portefeuille zippé caramel apparaît sur la photo ; demandez-nous s’il est inclus avant de commander.\n\nConseil de style : Jouez la carte du total look bleu : une chemise claire, un pantalon écru et ce cabas suffisent pour une allure détendue du matin au soir.",
+      en: "Denim tote, with a caramel twist that changes everything!\nLooking for a bag that keeps up with your busy days without looking dull? This blue denim tote is edged in caramel and finished with gold buckles on the sides. A simple, warm contrast that is easy to match.\n---\nWhy you will love it\n• Denim and caramel duo: The blue front meets caramel edges for a soft contrast that pairs with plenty of colours.\n• Tote shape: A practical tote format for full days.\n• Gold details: Gold buckles on each side add a little shine without overdoing it.\n• Two handles, wallet to be confirmed: Two handles for easy carrying. A caramel zipped wallet appears in the photo; please ask us whether it is included before ordering.\n\nStyle tip: Go for a shades-of-blue look: a light shirt, ecru trousers and this tote are all you need for a relaxed outfit from morning to evening.",
     },
-    features: {
-      fr: ["Coloris : bleu denim et caramel", "Deux anses, boucles dorées sur les côtés", "Portefeuille zippé caramel présenté avec le sac (à confirmer)", "Format cabas"],
-      en: ["Colour: denim blue and caramel", "Two handles, gold-tone buckles on the sides", "Caramel zipped wallet shown with the bag (to be confirmed)", "Tote format"],
-    },
+
   }),
   newProduct("sac-sac-seau-noir-anse-lettres-dorees", "bags", {
     name: { fr: "Sac seau noir, anse à lettres dorées", en: "Black bucket bag, gold lettered handle" },
@@ -2032,13 +1980,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-seau-noir-anse-lettres-dorees.jpg"],
     description: {
-      fr: "La forme seau souple et le noir uni donnent à ce sac une base facile à associer. Son anse ornée de grandes lettres dorées en relief apporte le détail qui change tout, tandis que le cordon ferme le haut et que deux boutons retiennent le côté.",
-      en: "The soft bucket shape and plain black finish make this bag easy to pair with different outfits. Large raised gold-tone letters on the handle provide its defining detail, while a drawstring closes the top and two buttons fasten the side.",
+      fr: "Noir, simple, et un détail doré qui fait parler !\nSi vous aimez les sacs faciles à sortir tous les jours mais pas banals, celui-ci va vous plaire. Sa forme seau souple et son noir uni vont avec tout, et les grandes lettres dorées sur l’anse donnent le petit plus qu’on remarque.\n---\nPourquoi vous allez l’adorer\n• Noir uni : Une base neutre qui s’accorde avec toutes vos couleurs, du pantalon clair à la robe sombre.\n• Forme seau souple : Une silhouette arrondie et décontractée, facile à porter.\n• Fermeture par cordon : Un cordon ferme le haut du sac, simple et rapide, et deux boutons retiennent le côté.\n• Anse signature : Une anse ornée de grandes lettres dorées en relief, qui devient le bijou du sac.\n\nConseil de style : Sur un t-shirt blanc et un jean droit, l’anse dorée fait tout le travail. Pour une soirée, une robe noire et des sandales dorées répondent joliment aux lettres.",
+      en: "Black, simple, and a gold detail that does the talking!\nIf you like bags that are easy to take out every day but never boring, this one is for you. The soft bucket shape and plain black go with everything, and the big gold letters on the handle add that little something people notice.\n---\nWhy you will love it\n• Plain black: A neutral base that matches all your colours, from light trousers to a dark dress.\n• Soft bucket shape: A rounded, relaxed silhouette that is easy to carry.\n• Drawstring closure: A cord closes the top quickly and simply, and two buttons hold the side.\n• Statement handle: A handle decorated with large raised gold letters, which becomes the bag’s jewel.\n\nStyle tip: On a white tee and straight jeans, the gold handle does all the work. For an evening out, a black dress and gold sandals echo the letters nicely.",
     },
-    features: {
-      fr: ["Coloris : noir", "Forme seau, fermeture par cordon", "Anse ornée de lettres dorées", "Deux boutons sur le côté"],
-      en: ["Colour: black", "Bucket shape, drawstring closure", "Handle decorated with gold-tone letters", "Two buttons on the side"],
-    },
+
   }),
   newProduct("sac-pochette-matelassee-beige", "bags", {
     name: { fr: "Pochette matelassée beige, lettres dorées", en: "Beige quilted clutch, gold letters" },
@@ -2048,13 +1993,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-beige.jpg"],
     description: {
-      fr: "Le matelassage en chevrons dessine un grand V sur le rabat, avec des lettres dorées entrelacées au centre. Le beige reste chaud sans être clair, et les surpiqûres assorties gardent le dessin net. Aucune bandoulière n’apparaît sur la photo. Une pochette qui s’accorde facilement aux tenues neutres.",
-      en: "The chevron quilting draws a large V on the flap, with interlaced gold letters in the centre. The beige is warm without being pale, and the matching stitching keeps the design crisp. No strap appears in the photo. A clutch that pairs easily with neutral outfits.",
+      fr: "Un beige chaud, des chevrons bien nets et un V qui attire l’œil.\nCette pochette a le charme des pièces simples et bien dessinées. Le matelassage trace un grand V sur le rabat, avec des lettres dorées entrelacées au centre, le tout dans un beige chaleureux mais pas trop clair.\n---\nPourquoi vous allez l’adorer\n• Beige chaleureux : Une teinte douce, ni trop claire ni trop sombre, qui va avec les tenues neutres.\n• Matelassage en chevrons : Les chevrons forment un V sur le rabat et donnent du relief à la façade.\n• Lettres dorées : Des lettres entrelacées au centre du rabat, avec des surpiqûres assorties qui gardent le dessin net.\n• Format pochette : Aucune bandoulière n’est visible sur la photo, c’est une pochette à garder en main.\n\nConseil de style : Sortez-la avec une robe fluide couleur crème ou un pantalon large marron pour un ensemble tout en douceur, avec juste ce qu’il faut de doré.",
+      en: "Warm beige, crisp chevrons and a V that catches the eye.\nThis clutch has the charm of simple, well-drawn pieces. The quilting traces a big V across the flap, with interlaced gold letters in the centre, all in a warm beige that is not too pale.\n---\nWhy you will love it\n• Warm beige: A soft shade, neither too light nor too dark, that works with neutral outfits.\n• Chevron quilting: The chevrons form a V on the flap and give the front some texture.\n• Gold letters: Interlaced letters in the centre of the flap, with matching stitching that keeps the pattern sharp.\n• Clutch format: No strap is visible in the photo, so this is a clutch to carry in your hand.\n\nStyle tip: Take it out with a flowing cream dress or wide brown trousers for a soft look with just the right amount of gold.",
     },
-    features: {
-      fr: ["Coloris : beige", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
-      en: ["Colour: beige", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
-    },
+
   }),
   newProduct("sac-pochette-matelassee-gris", "bags", {
     name: { fr: "Pochette matelassée gris anthracite, lettres dorées", en: "Charcoal grey quilted clutch, gold letters" },
@@ -2064,13 +2006,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-gris.jpg"],
     description: {
-      fr: "Un gris anthracite pour cette pochette matelassée en chevrons, dont le rabat en V porte des lettres dorées entrelacées. Le doré ressort bien sur le fond sombre. Aucune bandoulière n’est visible sur la photo. Un choix plus discret que les coloris chauds.",
-      en: "A charcoal grey for this chevron-quilted clutch, whose V-shaped flap carries interlaced gold letters. The gold stands out against the dark background. No strap is visible in the photo. A more discreet choice than the warm colours.",
+      fr: "Du gris anthracite pour une pochette discrète qui a quand même du style.\nLe rabat en V, matelassé en chevrons, porte des lettres dorées entrelacées qui ressortent très bien sur le fond sombre. C’est le coloris le plus sobre de la série, pour celles qui préfèrent l’élégance tranquille.\n---\nPourquoi vous allez l’adorer\n• Gris anthracite : Un gris foncé sobre, plus discret que les coloris chauds et facile à porter toute l’année.\n• Matelassage en chevrons : Un rabat en V qui structure la façade et lui donne du relief.\n• Doré sur sombre : Les lettres entrelacées au centre du rabat se détachent nettement sur le gris.\n• Pochette à main : Aucune bandoulière n’est visible sur la photo, on la tient à la main.\n\nConseil de style : Elle fait merveille avec du noir et du blanc, par exemple une chemise blanche et un pantalon noir, pour une tenue nette qui garde un éclat doré.",
+      en: "Anthracite grey for a discreet clutch that still has style.\nThe V-shaped flap, quilted in chevrons, carries interlaced gold letters that stand out beautifully against the dark background. It is the most understated colour in the series, for those who prefer quiet elegance.\n---\nWhy you will love it\n• Anthracite grey: A sober dark grey, more discreet than the warm shades and easy to wear all year.\n• Chevron quilting: A V-shaped flap that structures the front and adds texture.\n• Gold on dark: The interlaced letters in the centre of the flap stand out clearly against the grey.\n• Hand clutch: No strap is visible in the photo, so you carry it in your hand.\n\nStyle tip: It works wonders with black and white, such as a white shirt and black trousers, for a clean outfit with a golden spark.",
     },
-    features: {
-      fr: ["Coloris : gris anthracite", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
-      en: ["Colour: charcoal grey", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
-    },
+
   }),
   newProduct("sac-pochette-matelassee-cognac", "bags", {
     name: { fr: "Pochette matelassée cognac, lettres dorées", en: "Cognac quilted clutch, gold letters" },
@@ -2080,13 +2019,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-pochette-matelassee-cognac.jpg"],
     description: {
-      fr: "Le cognac lumineux de cette pochette met en valeur le rabat en V matelassé en chevrons. Les lettres dorées entrelacées se détachent bien sur la couleur chaude, et les surpiqûres sont de la même teinte. Aucune bandoulière n’apparaît sur la photo.",
-      en: "The bright cognac of this clutch shows off the chevron-quilted V flap. The interlaced gold letters stand out against the warm colour, and the stitching is the same shade. No strap appears in the photo.",
+      fr: "Un cognac lumineux qui réchauffe toute la tenue !\nCette pochette mise sur la couleur : un cognac vif qui met en valeur le rabat en V matelassé en chevrons. Les lettres dorées entrelacées ressortent bien sur ce fond chaud, et les surpiqûres de même teinte donnent une finition soignée.\n---\nPourquoi vous allez l’adorer\n• Cognac lumineux : Une couleur chaude et vivante qui apporte de la lumière à une tenue simple.\n• Rabat en V matelassé : Les chevrons dessinent un V net sur toute la façade.\n• Lettres dorées : Entrelacées au centre du rabat, elles se détachent bien sur la couleur chaude, avec des surpiqûres de la même teinte.\n• Sans bandoulière visible : Aucune bandoulière n’apparaît sur la photo, c’est une pochette à tenir en main.\n\nConseil de style : Parfaite sur une tenue bleu marine ou kaki, où le cognac devient le point chaud. Pour un soir, essayez-la avec du noir pour un contraste très net.",
+      en: "A glowing cognac that warms up the whole outfit!\nThis clutch is all about colour: a bright cognac that sets off the V-shaped flap quilted in chevrons. The interlaced gold letters show up well on the warm background, and the same-colour stitching gives a neat finish.\n---\nWhy you will love it\n• Glowing cognac: A warm, lively colour that brings light to a simple outfit.\n• Quilted V flap: The chevrons draw a sharp V across the whole front.\n• Gold letters: Interlaced in the centre of the flap, they stand out well on the warm colour, with stitching in the same shade.\n• No visible strap: No strap appears in the photo, so this is a clutch to hold in your hand.\n\nStyle tip: Perfect with a navy or khaki outfit, where the cognac becomes the warm focal point. For the evening, try it with black for a very crisp contrast.",
     },
-    features: {
-      fr: ["Coloris : cognac", "Matelassage en chevrons, rabat en V", "Lettres dorées entrelacées sur le rabat", "Pas de bandoulière visible sur la photo"],
-      en: ["Colour: cognac", "Chevron quilting, V-shaped flap", "Interlaced gold letters on the flap", "No strap visible in the photo"],
-    },
+
   }),
   newProduct("sac-rabat-asymetrique-blanc-cadenas", "bags", {
     name: { fr: "Sac à rabat asymétrique blanc, cadenas doré", en: "White asymmetric flap bag, gold padlock" },
@@ -2096,13 +2032,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-blanc-cadenas.jpg"],
     description: {
-      fr: "Une anse rigide nouée de chaque côté, un rabat asymétrique à surpiqûres apparentes et un cadenas doré au centre : le blanc met ces détails en valeur. Des anneaux dorés sont visibles sur les côtés. Un sac clair qui se remarque facilement.",
-      en: "A rigid handle knotted at each end, an asymmetric flap with visible stitching and a gold padlock in the centre: the white sets these details off. Gold rings are visible on the sides. A light-coloured bag that stands out easily.",
+      fr: "Blanc franc, lignes nettes : le genre de sac qu’on remarque tout de suite.\nSon rabat asymétrique à surpiqûres apparentes et son cadenas doré au centre se détachent joliment sur le blanc. Une anse rigide nouée de chaque côté complète l’ensemble pour un look propre et affirmé.\n---\nPourquoi vous allez l’adorer\n• Blanc éclatant : Un coloris clair qui met chaque détail en valeur et illumine la tenue.\n• Rabat asymétrique : Une ligne en biais soulignée de surpiqûres apparentes, pour une forme qui sort de l’ordinaire.\n• Cadenas et anneaux dorés : Un cadenas doré au centre et des anneaux dorés visibles sur les côtés.\n• Anse rigide nouée : Une anse rigide nouée de chaque côté, pour un port à la main bien tenu.\n\nConseil de style : Le blanc adore les tons profonds : essayez-le avec un ensemble marine, bordeaux ou noir pour un contraste net. Avec une tenue entièrement claire, il donne un look très frais.",
+      en: "Crisp white, clean lines: the kind of bag you notice right away.\nThe asymmetric flap with visible stitching and the gold padlock in the centre stand out beautifully against the white. A rigid handle knotted on each side completes the look, which is clean and confident.\n---\nWhy you will love it\n• Bright white: A light colour that shows off every detail and lifts your outfit.\n• Asymmetric flap: A slanted line outlined with visible stitching, for a shape that stands out.\n• Gold padlock and rings: A gold padlock in the centre and gold rings visible on the sides.\n• Knotted rigid handle: A rigid handle knotted on each side, for a well-held carry in the hand.\n\nStyle tip: White loves deep tones: try it with navy, burgundy or black for a sharp contrast. With an all-light outfit, it gives a very fresh look.",
     },
-    features: {
-      fr: ["Coloris : blanc", "Anse rigide nouée", "Rabat asymétrique, cadenas doré", "Anneaux dorés sur les côtés"],
-      en: ["Colour: white", "Knotted rigid handle", "Asymmetric flap, gold padlock", "Gold rings on the sides"],
-    },
+
   }),
   newProduct("sac-rabat-asymetrique-bordeaux", "bags", {
     name: { fr: "Sac à rabat asymétrique bordeaux, avec bandoulière", en: "Burgundy asymmetric flap bag, with shoulder strap" },
@@ -2112,13 +2045,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-bordeaux.jpg"],
     description: {
-      fr: "Le bordeaux profond et le rabat asymétrique, souligné d’une double surpiqûre en courbe, donnent à ce sac une silhouette nette. L’anse rigide est accompagnée d’une bandoulière fixée par des mousquetons dorés. Une couleur de saison, facile à porter avec des tenues sombres comme avec des tons clairs.",
-      en: "The deep burgundy and the asymmetric flap, underlined by a curved double stitch, give this bag a clean silhouette. The rigid handle comes with a shoulder strap attached by gold clips. A seasonal colour that works with dark outfits as well as light tones.",
+      fr: "Un bordeaux profond pour une silhouette qui ne passe pas inaperçue.\nLe rabat asymétrique, souligné d’une double surpiqûre en courbe, donne à ce sac une allure nette et soignée. Avec son anse rigide et sa bandoulière à mousquetons dorés, il passe facilement de la main à l’épaule.\n---\nPourquoi vous allez l’adorer\n• Bordeaux profond : Une couleur de saison, élégante, qui va aussi bien avec le sombre qu’avec les tons clairs.\n• Rabat asymétrique : Une double surpiqûre en courbe souligne le rabat et dessine la forme.\n• Attaches dorées : Des mousquetons et attaches dorées qui contrastent avec le bordeaux.\n• Deux façons de le porter : Une anse rigide pour la main, et une bandoulière fixée par mousquetons pour libérer les mains.\n\nConseil de style : Le bordeaux se marie très bien avec le beige, le camel ou le gris. Un manteau clair et un col roulé, et le sac devient la touche qui donne du caractère.",
+      en: "A deep burgundy for a silhouette that does not go unnoticed.\nThe asymmetric flap, outlined with a curved double stitch, gives this bag a sharp, polished look. With its rigid handle and strap on gold clasps, it moves easily from hand to shoulder.\n---\nWhy you will love it\n• Deep burgundy: A colour of the season, elegant, which suits dark and light tones alike.\n• Asymmetric flap: A curved double stitch outlines the flap and draws the shape.\n• Gold fittings: Gold clasps and fastenings that contrast with the burgundy.\n• Two ways to carry it: A rigid handle for the hand, and a strap attached by clasps to keep your hands free.\n\nStyle tip: Burgundy pairs really well with beige, camel or grey. Add a light coat and a turtleneck and the bag becomes the touch that gives the look character.",
     },
-    features: {
-      fr: ["Coloris : bordeaux", "Anse rigide et bandoulière à mousquetons dorés", "Rabat asymétrique à double surpiqûre", "Attaches dorées"],
-      en: ["Colour: burgundy", "Rigid handle and shoulder strap with gold clips", "Asymmetric flap with double stitching", "Gold-tone hardware"],
-    },
+
   }),
   newProduct("sac-rabat-asymetrique-violet-cadenas", "bags", {
     name: { fr: "Sac à rabat asymétrique violet, cadenas doré", en: "Purple asymmetric flap bag, gold padlock" },
@@ -2128,13 +2058,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-asymetrique-violet-cadenas.jpg"],
     description: {
-      fr: "Le violet intense met en valeur le cadenas doré posé sur le rabat. L’anse fine, nouée et munie d’une boucle dorée, complète l’ensemble, tandis que le rabat asymétrique ajoute une ligne en biais. Un sac coloré pour changer du noir et du marron.",
-      en: "The intense purple shows off the gold padlock on the flap. The slim knotted handle with a gold buckle completes the look, while the asymmetric flap adds a diagonal line. A colourful bag for a change from black and brown.",
+      fr: "Du violet intense pour sortir du noir et du marron !\nLe cadenas doré posé sur le rabat se détache franchement sur cette couleur vive. L’anse fine, nouée et munie d’une boucle dorée, complète le tout, et le rabat asymétrique ajoute une ligne en biais pleine de caractère.\n---\nPourquoi vous allez l’adorer\n• Violet intense : Un coloris profond et sûr de lui, pour celles qui osent la couleur.\n• Cadenas doré : Posé sur le rabat, il attire l’œil et fait ressortir le violet.\n• Rabat asymétrique : Une ligne en biais qui casse la forme classique et donne du mouvement.\n• Anse fine nouée : Une anse fine, nouée et fermée par une boucle dorée, avec d’autres attaches dorées.\n\nConseil de style : Osez le violet avec du gris perle, du blanc ou du noir pour une tenue calme qui laisse le sac chanter. Pour un style plus audacieux, osez le total look en tons sombres avec ce seul éclat de couleur.",
+      en: "Intense purple to break away from black and brown!\nThe gold padlock on the flap stands out boldly against this vivid colour. The thin knotted handle with its gold buckle completes the look, and the asymmetric flap adds a slanted line full of character.\n---\nWhy you will love it\n• Intense purple: A deep, confident colour for those who dare to wear colour.\n• Gold padlock: Set on the flap, it draws the eye and makes the purple pop.\n• Asymmetric flap: A slanted line that breaks the classic shape and adds movement.\n• Thin knotted handle: A thin knotted handle closed with a gold buckle, plus other gold fittings.\n\nStyle tip: Wear the purple with pearl grey, white or black for a calm outfit that lets the bag sing. For a bolder style, go all in on dark tones with this one burst of colour.",
     },
-    features: {
-      fr: ["Coloris : violet", "Anse fine nouée avec boucle dorée", "Rabat asymétrique, cadenas doré", "Attaches dorées"],
-      en: ["Colour: purple", "Slim knotted handle with gold buckle", "Asymmetric flap, gold padlock", "Gold-tone hardware"],
-    },
+
   }),
   newProduct("sac-rabat-terracotta-cadenas-pochette", "bags", {
     name: { fr: "Sac à rabat terracotta, cadenas et petite pochette", en: "Terracotta flap bag, padlock and small pouch" },
@@ -2144,13 +2071,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-terracotta-cadenas-pochette.jpg"],
     description: {
-      fr: "Ce sac à anse rigide et rabat asymétrique, orné d’un cadenas aux reflets argentés et violet pâle, est présenté avec une petite pochette à rabat fermée par un bouton doré. La couleur terracotta est chaude et uniforme. La présence de la pochette dans le lot reste à confirmer.",
-      en: "This rigid-handle bag with an asymmetric flap, decorated with a padlock in silver and pale purple tones, is shown with a small flap pouch closed by a gold button. The terracotta colour is warm and even. Whether the pouch is included remains to be confirmed.",
+      fr: "Terracotta chaud, anse rigide : un sac qui sent le soleil.\nSon rabat asymétrique est orné d’un cadenas aux reflets argentés et violet pâle, pour un détail inattendu. La couleur terracotta est chaude et uniforme, et le sac est présenté avec une petite pochette assortie.\n---\nPourquoi vous allez l’adorer\n• Terracotta uniforme : Une couleur chaude et régulière, entre brique et orange doux, facile à porter.\n• Rabat asymétrique : Une forme avec une ligne en biais, et un cadenas aux reflets argentés et violet pâle.\n• Anse rigide, attaches dorées : Une anse rigide pour un port à la main, avec des attaches dorées.\n• Petite pochette, à confirmer : Une petite pochette à rabat fermée par un bouton doré est présentée sur la photo. Demandez-nous si elle est incluse avant de commander.\n\nConseil de style : Le terracotta s’accorde très bien avec le beige, le blanc cassé ou le denim bleu foncé. Une chemise claire et un pantalon droit suffisent pour une tenue chaleureuse.",
+      en: "Warm terracotta, rigid handle: a bag that feels like sunshine.\nIts asymmetric flap is decorated with a padlock with silvery and pale purple reflections, a surprising detail. The terracotta colour is warm and even, and the bag is shown with a small pouch.\n---\nWhy you will love it\n• Even terracotta: A warm, consistent colour somewhere between brick and soft orange, easy to wear.\n• Asymmetric flap: A shape with a slanted line, and a padlock with silvery and pale purple reflections.\n• Rigid handle, gold fittings: A rigid handle for carrying in the hand, with gold fittings.\n• Small pouch, to be confirmed: A small flap pouch closed with a gold button is shown in the photo. Please ask us whether it is included before ordering.\n\nStyle tip: Terracotta goes very well with beige, off-white or dark blue denim. A light shirt and straight trousers are enough for a warm, relaxed outfit.",
     },
-    features: {
-      fr: ["Coloris : terracotta", "Anse rigide, rabat asymétrique, cadenas", "Petite pochette à bouton doré présentée sur la photo (à confirmer)", "Attaches dorées"],
-      en: ["Colour: terracotta", "Rigid handle, asymmetric flap, padlock", "Small pouch with gold button shown in the photo (to be confirmed)", "Gold-tone hardware"],
-    },
+
   }),
   newProduct("sac-rabat-marron-cadenas-pochette", "bags", {
     name: { fr: "Sac à rabat marron foncé, cadenas et petite pochette", en: "Dark brown flap bag, padlock and small pouch" },
@@ -2160,13 +2084,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-marron-cadenas-pochette.jpg"],
     description: {
-      fr: "Le marron foncé à grain fin habille ce sac à rabat asymétrique, dont l’anse est formée de plusieurs lanières nouées. Un cadenas doré orne le devant et une bandoulière est visible sur le côté. Une petite pochette à bouton doré est présentée à côté ; son inclusion avec le sac reste à confirmer.",
-      en: "The dark brown, fine-grained finish covers this asymmetric flap bag, whose handle is made of several knotted straps. A gold padlock decorates the front and a shoulder strap is visible on the side. A small pouch with a gold button is shown beside it; whether it is included remains to be confirmed.",
+      fr: "Un marron foncé élégant avec une anse qui a du style.\nLa surface à grain fin habille ce sac à rabat asymétrique, dont l’anse est formée de plusieurs lanières nouées. Un cadenas doré orne le devant et une bandoulière est visible sur le côté.\n---\nPourquoi vous allez l’adorer\n• Marron foncé à grain fin : Une couleur profonde et sobre, avec une surface qui donne de la matière à la façade.\n• Anse en lanières nouées : Plusieurs lanières nouées forment l’anse, un détail qui la distingue des anses classiques.\n• Cadenas doré et rabat asymétrique : Un rabat en biais et un cadenas doré sur le devant, pour un style soigné.\n• Bandoulière visible, pochette à confirmer : Une bandoulière apparaît sur le côté. Une petite pochette à bouton doré est présentée sur la photo ; demandez-nous si elle est incluse.\n\nConseil de style : Le marron foncé ressort sur le beige, le blanc et le vert olive. Une chemise crème, un pantalon droit et ce sac, et votre tenue prend un air de rentrée.",
+      en: "An elegant dark brown with a handle that has style.\nThe fine-grain surface dresses this asymmetric flap bag, whose handle is made of several knotted straps. A gold padlock decorates the front and a strap is visible on the side.\n---\nWhy you will love it\n• Fine-grain dark brown: A deep, sober colour with a surface that gives the front some texture.\n• Knotted strap handle: Several knotted straps form the handle, a detail that sets it apart from classic handles.\n• Gold padlock and asymmetric flap: A slanted flap and a gold padlock on the front, for a polished style.\n• Visible strap, pouch to be confirmed: A strap appears on the side. A small pouch with a gold button is shown in the photo; please ask us whether it is included.\n\nStyle tip: Dark brown stands out against beige, white and olive green. A cream shirt, straight trousers and this bag give your outfit a back-to-school feel.",
     },
-    features: {
-      fr: ["Coloris : marron foncé", "Anse en lanières nouées, bandoulière visible", "Rabat asymétrique, cadenas doré", "Petite pochette présentée sur la photo (à confirmer)"],
-      en: ["Colour: dark brown", "Knotted-strap handle, shoulder strap visible", "Asymmetric flap, gold padlock", "Small pouch shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-rouge-bande-tressee-portefeuille", "bags", {
     name: { fr: "Sac rouge à bande tressée, avec portefeuille", en: "Red tote with woven band, with wallet" },
@@ -2176,13 +2097,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-rouge-bande-tressee-portefeuille.jpg"],
     description: {
-      fr: "Le rouge vif est rythmé par une bande tressée au bas de la façade et par deux pattes dorées gravées d’un motif de feuille, qui fixent les anses. Les côtés sont nervurés et des anneaux dorés sont visibles de part et d’autre. Un portefeuille zippé assorti apparaît sur la photo ; son inclusion avec le sac reste à confirmer.",
-      en: "The bright red is broken up by a woven band at the bottom of the front and two gold tabs engraved with a leaf motif, which hold the handles. The sides are ribbed and gold rings are visible on each side. A matching zipped wallet appears in the photo; whether it is included remains to be confirmed.",
+      fr: "Rouge vif, tressage et dorures : ce sac ne cherche pas à passer inaperçu.\nUne bande tressée court au bas de la façade, et deux pattes dorées gravées d’un motif de feuille fixent les anses. Le rouge fait le reste, avec beaucoup d’énergie.\n---\nPourquoi vous allez l’adorer\n• Rouge vif : Un coloris franc et lumineux qui donne de l’énergie à la tenue.\n• Bande tressée : Un tressage au bas de la façade qui ajoute du relief.\n• Pattes dorées et anneaux : Des pattes dorées à motif de feuille fixent les anses, et des anneaux dorés sont visibles de part et d’autre.\n• Deux anses, portefeuille à confirmer : Les côtés sont nervurés. Un portefeuille zippé assorti est présenté sur la photo ; demandez-nous s’il est inclus avant de commander.\n\nConseil de style : Le rouge a besoin de calme autour de lui : un jean, un haut blanc ou noir, et le sac fait l’événement. Une bonne idée pour une sortie du soir où l’on veut une touche de couleur.",
+      en: "Bright red, braiding and gold: this bag is not trying to go unnoticed.\nA braided band runs along the bottom of the front, and two gold tabs engraved with a leaf motif attach the handles. The red does the rest, with plenty of energy.\n---\nWhy you will love it\n• Bright red: A bold, luminous colour that gives your outfit energy.\n• Braided band: A braid along the bottom of the front that adds texture.\n• Gold tabs and rings: Gold leaf-motif tabs attach the handles, and gold rings are visible on both sides.\n• Two handles, wallet to be confirmed: The sides are ribbed. A matching zipped wallet is shown in the photo; please ask us whether it is included before ordering.\n\nStyle tip: Red needs calm around it: jeans, a white or black top, and the bag makes the statement. A good idea for an evening out when you want a pop of colour.",
     },
-    features: {
-      fr: ["Coloris : rouge", "Deux anses, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
-      en: ["Colour: red", "Two handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-beige-anses-marron-portefeuille", "bags", {
     name: { fr: "Sac beige à anses marron et bande tressée, avec portefeuille", en: "Beige tote with brown handles and woven band, with wallet" },
@@ -2192,13 +2110,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-beige-anses-marron-portefeuille.jpg"],
     description: {
-      fr: "Un beige clair relevé d’anses marron foncé et d’une bande tressée de la même teinte au bas de la façade. Les pattes dorées gravées d’une feuille fixent les anses, et des anneaux dorés sont visibles sur les côtés. Un portefeuille zippé beige est présenté à côté ; son inclusion avec le sac reste à confirmer.",
-      en: "A light beige set off by dark brown handles and a woven band in the same shade at the bottom of the front. Gold tabs engraved with a leaf hold the handles, and gold rings are visible on the sides. A beige zipped wallet is shown beside it; whether it is included remains to be confirmed.",
+      fr: "Beige clair, anses marron : l’élégance tranquille version quotidien.\nCe sac joue la douceur avec un beige clair, relevé d’anses marron foncé et d’une bande tressée de la même teinte au bas de la façade. Les détails dorés finissent le tout avec discrétion.\n---\nPourquoi vous allez l’adorer\n• Beige et marron foncé : Un duo doux et classique qui va avec presque toutes les tenues.\n• Bande tressée : Un tressage marron au bas de la façade, assorti aux anses.\n• Pattes dorées et anneaux : Des pattes dorées gravées d’une feuille fixent les anses, avec des anneaux dorés visibles sur les côtés.\n• Deux anses, portefeuille à confirmer : Deux anses marron pour le porter. Un portefeuille zippé beige est présenté sur la photo ; demandez-nous s’il est inclus.\n\nConseil de style : Très à l’aise avec le blanc, le kaki et le camel : un pantalon large kaki et un haut blanc, et le sac donne l’allure d’une tenue pensée jusqu’au bout.",
+      en: "Light beige, brown handles: quiet elegance for every day.\nThis bag plays it soft with a light beige, set off by dark brown handles and a braided band in the same shade along the bottom of the front. The gold details finish the look discreetly.\n---\nWhy you will love it\n• Beige and dark brown: A soft, classic duo that goes with almost any outfit.\n• Braided band: A brown braid along the bottom of the front, matching the handles.\n• Gold tabs and rings: Gold tabs engraved with a leaf attach the handles, with gold rings visible on the sides.\n• Two handles, wallet to be confirmed: Two brown handles for carrying. A beige zipped wallet is shown in the photo; please ask us whether it is included.\n\nStyle tip: Very comfortable with white, khaki and camel: wide khaki trousers and a white top, and the bag makes the outfit look thought through to the last detail.",
     },
-    features: {
-      fr: ["Coloris : beige et marron foncé", "Deux anses marron, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
-      en: ["Colour: beige and dark brown", "Two brown handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-jaune-bande-tressee-portefeuille", "bags", {
     name: { fr: "Sac jaune moutarde à bande tressée, avec portefeuille", en: "Mustard yellow tote with woven band, with wallet" },
@@ -2208,13 +2123,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-jaune-bande-tressee-portefeuille.jpg"],
     description: {
-      fr: "Le jaune moutarde donne de l’énergie à ce sac à deux anses, dont le bas de la façade est orné d’une bande tressée. Les pattes dorées gravées d’une feuille fixent les anses. Un portefeuille zippé jaune assorti est présenté à côté ; son inclusion avec le sac reste à confirmer.",
-      en: "The mustard yellow gives this two-handle bag some energy, with a woven band along the bottom of the front. Gold tabs engraved with a leaf hold the handles. A matching yellow zipped wallet is shown beside it; whether it is included remains to be confirmed.",
+      fr: "Jaune moutarde pour mettre du soleil dans la journée !\nCe sac à deux anses a une bande tressée au bas de la façade et des pattes dorées gravées d’une feuille qui fixent les anses. Le jaune moutarde, chaleureux et franc, fait tout de suite la différence.\n---\nPourquoi vous allez l’adorer\n• Jaune moutarde : Une couleur chaude et franche, qui donne de la bonne humeur à une tenue.\n• Bande tressée : Un tressage au bas de la façade pour casser la couleur unie.\n• Pattes dorées : Des pattes dorées gravées d’une feuille fixent les anses.\n• Deux anses, portefeuille à confirmer : Deux anses pour le port. Un portefeuille zippé jaune assorti est présenté sur la photo ; demandez-nous s’il est inclus avant de commander.\n\nConseil de style : Le jaune moutarde s’adore avec le denim, le blanc ou le marron. Un jean brut, un t-shirt blanc et ce sac, et le tour est joué.",
+      en: "Mustard yellow to bring sunshine into your day!\nThis two-handled bag has a braided band along the bottom of the front and gold tabs engraved with a leaf that attach the handles. The warm, bold mustard yellow makes a difference right away.\n---\nWhy you will love it\n• Mustard yellow: A warm, bold colour that adds good cheer to an outfit.\n• Braided band: A braid along the bottom of the front to break up the plain colour.\n• Gold tabs: Gold tabs engraved with a leaf attach the handles.\n• Two handles, wallet to be confirmed: Two handles for carrying. A matching yellow zipped wallet is shown in the photo; please ask us whether it is included before ordering.\n\nStyle tip: Mustard yellow loves denim, white or brown. Raw jeans, a white tee and this bag, and you are done.",
     },
-    features: {
-      fr: ["Coloris : jaune moutarde", "Deux anses, pattes dorées à motif de feuille", "Bande tressée au bas de la façade", "Portefeuille zippé présenté sur la photo (à confirmer)"],
-      en: ["Colour: mustard yellow", "Two handles, gold tabs with a leaf motif", "Woven band at the bottom of the front", "Zipped wallet shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-rouge-surpiqures-geometriques-portefeuille", "bags", {
     name: { fr: "Sac rouge à surpiqûres géométriques, breloque feuille et portefeuille", en: "Red bag with geometric stitching, leaf charm and wallet" },
@@ -2224,13 +2136,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-rouge-surpiqures-geometriques-portefeuille.jpg"],
     description: {
-      fr: "Des surpiqûres en lignes croisées dessinent un motif géométrique sur la façade rouge, et une breloque en forme de feuille pend à l’anse, avec deux perles dorées. Un lettrage doré discret figure sur le devant. Un long portefeuille zippé rouge est présenté au-dessus du sac ; son inclusion reste à confirmer.",
-      en: "Crossing lines of stitching draw a geometric pattern on the red front, and a leaf-shaped charm hangs from the handle with two gold beads. A discreet gold lettering sits on the front. A long red zipped wallet is shown above the bag; whether it is included remains to be confirmed.",
+      fr: "Un rouge qui ne passe pas inaperçu, et des lignes qui font tout le travail !\nSi vous aimez les sacs qui ont du caractère sans en faire trop, celui-ci va vous plaire. Le rouge uni est rythmé par des surpiqûres croisées qui dessinent un motif géométrique, et une petite breloque en forme de feuille se balance à l’anse. Un sac qui attire l’œil dès qu’on le croise.\n---\nPourquoi vous allez l’adorer\n• Rouge et géométrie : Un rouge intense, animé par des surpiqûres en lignes croisées sur toute la façade.\n• Anse ronde : Une anse arrondie, pratique à tenir à la main pour vos sorties en ville.\n• Détails dorés : Une breloque feuille et deux perles dorées pendent à l’anse, avec un discret lettrage doré sur le devant.\n• Côté portefeuille : Un long portefeuille zippé rouge apparaît sur la photo ; sa présence dans la commande reste à confirmer.\n\nConseil de style : Posez-le sur une tenue sobre, noir ou jean, et laissez le rouge parler. Pour une soirée entre amies, une robe noire et des sandales dorées répondent bien aux perles de l’anse.",
+      en: "A red that never goes unnoticed, with lines that do all the talking!\nIf you like bags with character but not too much fuss, this one is for you. The solid red is livened up by crisscross stitching that forms a geometric pattern, and a little leaf-shaped charm swings from the handle. A bag that catches the eye as soon as you walk by.\n---\nWhy you will love it\n• Red and geometry: A bold red, brought to life by crisscross stitching across the whole front.\n• Round handle: A rounded handle, easy to carry in your hand for outings around town.\n• Golden details: A leaf charm and two gold beads hang from the handle, with discreet gold lettering on the front.\n• About the wallet: A long red zip wallet appears in the photo; whether it is included in the order is still to be confirmed.\n\nStyle tip: Pair it with a simple outfit, black or denim, and let the red do the talking. For an evening out with friends, a black dress and gold sandals echo the beads on the handle.",
     },
-    features: {
-      fr: ["Coloris : rouge", "Anse ronde, breloque en forme de feuille", "Surpiqûres géométriques sur la façade", "Long portefeuille zippé présenté sur la photo (à confirmer)"],
-      en: ["Colour: red", "Round handle, leaf-shaped charm", "Geometric stitching on the front", "Long zipped wallet shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-bleu-surpiqures-geometriques-portefeuille", "bags", {
     name: { fr: "Sac bleu à surpiqûres géométriques, breloque fleur et portefeuille", en: "Blue bag with geometric stitching, flower charm and wallet" },
@@ -2240,13 +2149,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-bleu-surpiqures-geometriques-portefeuille.jpg"],
     description: {
-      fr: "Le bleu moyen, tout en un ton, est animé par des surpiqûres croisées sur la façade et par une breloque en forme de fleur accrochée à l’anse. Deux perles dorées et un petit lettrage doré apportent le contraste. Un long portefeuille zippé bleu est présenté au-dessus du sac ; son inclusion reste à confirmer.",
-      en: "The mid-blue, all in one tone, is enlivened by crossing stitches on the front and a flower-shaped charm hanging from the handle. Two gold beads and a small gold lettering add contrast. A long blue zipped wallet is shown above the bag; whether it is included remains to be confirmed.",
+      fr: "Un bleu tout en douceur qui change des couleurs habituelles !\nCe sac mise sur un seul ton, un bleu moyen, et laisse les détails faire le style. Les surpiqûres croisées animent la façade et une breloque en forme de fleur donne un petit air frais à l’ensemble. Facile à vivre, mais pas banal.\n---\nPourquoi vous allez l’adorer\n• Bleu en un seul ton : Un bleu moyen uni, sur lequel les surpiqûres croisées dessinent un motif géométrique.\n• Anse ronde et fleur : Une anse arrondie à laquelle est accrochée une breloque en forme de fleur.\n• Touches dorées : Deux perles dorées et un petit lettrage doré sur le devant apportent le contraste.\n• Côté portefeuille : Un long portefeuille zippé bleu est présenté sur la photo ; son inclusion est à confirmer.\n\nConseil de style : Le bleu va très bien avec un jean clair et une chemise blanche pour une journée en ville. Pour un look plus habillé, tentez une tenue beige ou crème, le contraste est joli.",
+      en: "A soft blue that stands out from the usual colors!\nThis bag sticks to a single shade, a medium blue, and lets the details create the style. Crisscross stitching livens up the front and a flower-shaped charm adds a fresh touch. Easy to wear, yet far from ordinary.\n---\nWhy you will love it\n• One-tone blue: A solid medium blue, on which the crisscross stitching draws a geometric pattern.\n• Round handle and flower: A rounded handle with a flower-shaped charm attached.\n• Golden touches: Two gold beads and a small gold lettering on the front add contrast.\n• About the wallet: A long blue zip wallet is shown in the photo; its inclusion is to be confirmed.\n\nStyle tip: Blue works beautifully with light jeans and a white shirt for a day in town. For a dressier look, try a beige or cream outfit; the contrast is lovely.",
     },
-    features: {
-      fr: ["Coloris : bleu", "Anse ronde, breloque en forme de fleur", "Surpiqûres géométriques sur la façade", "Long portefeuille zippé présenté sur la photo (à confirmer)"],
-      en: ["Colour: blue", "Round handle, flower-shaped charm", "Geometric stitching on the front", "Long zipped wallet shown in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-sac-jaune-surpiqures-geometriques", "bags", {
     name: { fr: "Sac jaune à surpiqûres géométriques, breloque dorée", en: "Yellow bag with geometric stitching, gold charm" },
@@ -2256,13 +2162,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-jaune-surpiqures-geometriques.jpg"],
     description: {
-      fr: "Cette version jaune vif est présentée sans portefeuille. Les surpiqûres croisées structurent la façade, tandis que les anses à surface texturée et la breloque dorée métallisée ajoutent du relief. Un petit lettrage doré est discrètement placé sur le devant.",
-      en: "This bright yellow version is shown without a wallet. Crossing stitches structure the front, while the textured handles and the metallic gold charm add relief. A small gold lettering sits discreetly on the front.",
+      fr: "Du jaune vif pour mettre du soleil dans la journée, même quand le ciel est gris !\nVoici la version présentée sans portefeuille, entièrement centrée sur le sac. Les surpiqûres croisées structurent la façade, pendant que les anses texturées et la breloque dorée ajoutent du relief. Pour celles qui assument les couleurs.\n---\nPourquoi vous allez l’adorer\n• Jaune vif : Un coloris franc et lumineux, qui se remarque de loin.\n• Surpiqûres géométriques : Des lignes croisées qui structurent toute la façade.\n• Anses texturées : Des anses à surface texturée, accompagnées d’une breloque dorée métallisée.\n• Version seule : Présenté sans portefeuille, avec un petit lettrage doré discrètement placé sur le devant.\n\nConseil de style : Jaune et denim foncé, c’est un duo qui marche toujours. Sur une tenue toute noire, il devient la touche qui change tout.",
+      en: "Bright yellow to bring some sunshine to your day, even when the sky is gray!\nThis is the version shown without a wallet, fully focused on the bag itself. Crisscross stitching structures the front, while the textured handles and the golden charm add some relief. For those who dare to wear color.\n---\nWhy you will love it\n• Bright yellow: A bold, luminous color you can spot from afar.\n• Geometric stitching: Crisscross lines that structure the entire front.\n• Textured handles: Handles with a textured surface, along with a metallic golden charm.\n• Bag only: Shown without a wallet, with a small gold lettering discreetly placed on the front.\n\nStyle tip: Yellow with dark denim is a duo that always works. On an all-black outfit, it becomes the touch that changes everything.",
     },
-    features: {
-      fr: ["Coloris : jaune vif", "Anses à surface texturée, breloque dorée", "Surpiqûres géométriques sur la façade", "Présenté sans portefeuille"],
-      en: ["Colour: bright yellow", "Textured handles, gold charm", "Geometric stitching on the front", "Shown without a wallet"],
-    },
+
   }),
   newProduct("sac-sac-a-dos-gris-gaufre", "bags", {
     name: { fr: "Sac à dos gris clair, motif gaufré", en: "Light grey backpack, embossed pattern" },
@@ -2272,13 +2175,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-a-dos-gris-gaufre.jpg"],
     description: {
-      fr: "Le motif gaufré de fleurs et de lettres couvre tout le sac à dos gris clair. Une poche à rabat sur le devant porte un petit logo noir, et le zip principal est muni de deux curseurs argentés. La photo montre aussi le dos, avec de larges bretelles noires et une anse de portage.",
-      en: "The embossed flower and letter pattern covers the whole light grey backpack. A flap pocket on the front carries a small black logo, and the main zip has two silver-tone sliders. The photo also shows the back, with wide black straps and a carry handle.",
+      fr: "Un sac à dos gris clair qui a du relief, au sens propre !\nFini le sac à dos tout plat et sans histoire : ici, le motif gaufré de fleurs et de lettres couvre toute la surface. C’est sobre de loin, travaillé de près. Il suit son homme du campus aux trajets du quotidien.\n---\nPourquoi vous allez l’adorer\n• Gris clair gaufré : Un motif en relief de fleurs et de lettres sur toute la surface, dans un gris clair discret.\n• Poche à rabat : Une poche à rabat sur le devant, ornée d’un petit logo noir.\n• Zip principal : Une fermeture zippée avec deux curseurs argentés.\n• Porté au dos ou à la main : Larges bretelles noires pour le dos, et une anse de portage pour le prendre à la main.\n\nConseil de style : Le gris clair s’accorde avec tout : jean brut, sweat noir, baskets blanches pour la fac ou le travail. Sur une chemise et un pantalon bien coupé, il donne un air plus décontracté au look.",
+      en: "A light gray backpack with real texture, quite literally!\nNo more flat, plain backpacks: here, an embossed pattern of flowers and letters covers the whole surface. Understated from afar, detailed up close. It goes with you from campus to everyday commutes.\n---\nWhy you will love it\n• Embossed light gray: A raised pattern of flowers and letters over the entire surface, in a discreet light gray.\n• Flap pocket: A flap pocket on the front, topped with a small black logo.\n• Main zip: A zip closure with two silver sliders.\n• Back or hand carry: Wide black straps for your back, and a carry handle to hold it by hand.\n\nStyle tip: Light gray goes with everything: raw denim, a black sweatshirt, white sneakers for campus or work. Over a shirt and well-cut trousers, it gives the look a more relaxed feel.",
     },
-    features: {
-      fr: ["Coloris : gris clair", "Motif gaufré sur toute la surface", "Poche à rabat sur le devant", "Larges bretelles noires, anse de portage"],
-      en: ["Colour: light grey", "Embossed pattern all over", "Flap pocket on the front", "Wide black straps, carry handle"],
-    },
+
   }),
   newProduct("sac-sac-a-dos-vert-gaufre", "bags", {
     name: { fr: "Sac à dos vert, motif gaufré", en: "Green backpack, embossed pattern" },
@@ -2288,13 +2188,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-a-dos-vert-gaufre.jpg"],
     description: {
-      fr: "Le vert franc et le motif gaufré sur toute la surface donnent à ce sac à dos une allure marquée. La poche à rabat sur le devant porte un petit logo noir, et le zip principal dessine un arc avec deux curseurs argentés. Un coloris qui sort des noirs et des gris habituels.",
-      en: "The bold green and the all-over embossed pattern give this backpack a strong look. The flap pocket on the front carries a small black logo, and the main zip arcs around with two silver-tone sliders. A colour that stands out from the usual blacks and greys.",
+      fr: "Du vert franc pour sortir des sacs noirs et gris qu’on voit partout !\nCe sac à dos ose la couleur, et le motif gaufré sur toute la surface lui donne une vraie allure. Quand on le porte, on ne le confond avec aucun autre. Parfait pour ceux qui aiment avoir un détail à eux.\n---\nPourquoi vous allez l’adorer\n• Vert franc : Un coloris marqué, qui sort des teintes habituelles.\n• Motif gaufré : Un relief qui couvre toute la surface du sac.\n• Poche à rabat : Sur le devant, avec un petit logo noir.\n• Zip en arc : Le zip principal dessine un arc, avec deux curseurs argentés.\n\nConseil de style : Gardez le reste de la tenue simple : t-shirt noir ou blanc, jean ou pantalon sombre, et le vert fait tout. Pour le travail ou les déplacements, il apporte juste ce qu’il faut de personnalité.",
+      en: "A bold green to break away from the black and gray bags you see everywhere!\nThis backpack dares to use color, and the embossed pattern across the whole surface gives it real presence. Once you wear it, nobody will mix it up with another. Perfect for those who like having something that is theirs.\n---\nWhy you will love it\n• Bold green: A strong color that steps away from the usual shades.\n• Embossed pattern: A raised texture covering the entire surface of the bag.\n• Flap pocket: On the front, with a small black logo.\n• Arched zip: The main zip follows an arc, with two silver sliders.\n\nStyle tip: Keep the rest of the outfit simple: black or white tee, jeans or dark trousers, and the green does the job. For work or getting around, it adds just the right amount of personality.",
     },
-    features: {
-      fr: ["Coloris : vert", "Motif gaufré sur toute la surface", "Poche à rabat sur le devant", "Zip principal avec deux curseurs argentés"],
-      en: ["Colour: green", "Embossed pattern all over", "Flap pocket on the front", "Main zip with two silver-tone sliders"],
-    },
+
   }),
   newProduct("sac-sac-a-dos-jaune-gaufre", "bags", {
     name: { fr: "Sac à dos jaune, motif gaufré", en: "Yellow backpack, embossed pattern" },
@@ -2304,13 +2201,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-sac-a-dos-jaune-gaufre.jpg"],
     description: {
-      fr: "Jaune vif de la tête aux pieds, avec un motif gaufré sur toute la surface. La poche zippée du devant est ornée d’une plaque gravée, et une anse de portage surmonte le sac. Le zip principal suit la courbe du dessus, avec des curseurs argentés.",
-      en: "Bright yellow from top to bottom, with an embossed pattern all over. The zipped front pocket is decorated with an engraved plate, and a carry handle tops the bag. The main zip follows the curve of the top, with silver-tone sliders.",
+      fr: "Jaune vif de la tête aux pieds, un sac à dos qui assume !\nLe motif gaufré couvre toute la surface et attrape la lumière, ce qui rend le jaune encore plus vivant. Un sac à dos pour celui qui n’a pas peur qu’on le remarque, entre deux cours ou sur le chemin du boulot.\n---\nPourquoi vous allez l’adorer\n• Jaune vif : Un coloris éclatant, uniforme sur tout le sac.\n• Surface gaufrée : Un motif en relief sur toute la surface.\n• Poche zippée : Sur le devant, ornée d’une plaque gravée.\n• Zip courbe et anse : Le zip principal suit la courbe du dessus avec des curseurs argentés, et une anse de portage surmonte le sac.\n\nConseil de style : Mettez-le avec du noir, du gris ou du denim foncé : le jaune devient la pièce forte du look. Un hoodie sombre et des baskets blanches suffisent pour un style de campus sans effort.",
+      en: "Bright yellow from top to bottom, a backpack that owns it!\nThe embossed pattern covers the whole surface and catches the light, making the yellow even more vivid. A backpack for the guy who does not mind being noticed, between classes or on the way to work.\n---\nWhy you will love it\n• Bright yellow: A vivid color, consistent across the whole bag.\n• Embossed surface: A raised pattern over the entire surface.\n• Zip pocket: On the front, decorated with an engraved plate.\n• Curved zip and handle: The main zip follows the curve of the top with silver sliders, and a carry handle sits on top of the bag.\n\nStyle tip: Wear it with black, gray or dark denim: the yellow becomes the star of the look. A dark hoodie and white sneakers are enough for an effortless campus style.",
     },
-    features: {
-      fr: ["Coloris : jaune vif", "Motif gaufré sur toute la surface", "Poche zippée sur le devant, plaque gravée", "Anse de portage"],
-      en: ["Colour: bright yellow", "Embossed pattern all over", "Zipped front pocket, engraved plate", "Carry handle"],
-    },
+
   }),
   newProduct("sac-quilted-camel-wallet", "bags", {
     name: { fr: "Sac matelassé camel, charm et portefeuille", en: "Camel quilted bag, charm and wallet" },
@@ -2320,13 +2214,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-quilted-camel-wallet.jpg"],
     description: {
-      fr: "Des surpiqûres claires tracent un réseau de losanges sur toute la façade, avec une anse arrondie et un charm noir et doré noué à un cordon. La photo montre aussi un portefeuille zippé assorti (à confirmer s’il est inclus). Le camel passe avec presque toutes les tenues.",
-      en: "Light stitching draws a network of diamonds across the front, with a rounded handle and a black and gold charm tied to a cord. The photo also shows a matching zipped wallet (to be confirmed whether it is included). The camel goes with almost any outfit.",
+      fr: "Le camel, la couleur qui s’entend avec toute la garde-robe !\nSur ce sac, des surpiqûres claires tracent un réseau de losanges sur toute la façade, et une anse arrondie donne une allure douce et soignée. Un petit charm noir et doré noué à un cordon apporte la touche finale.\n---\nPourquoi vous allez l’adorer\n• Camel facile à porter : Une teinte chaude et neutre qui passe avec presque toutes les tenues.\n• Losanges en surpiqûres : Des coutures claires qui forment un motif en losanges sur toute la façade.\n• Anse arrondie et charm : Une anse arrondie, avec un charm noir et doré noué à un cordon.\n• Côté portefeuille : Un portefeuille zippé assorti figure sur la photo ; à confirmer s’il est inclus.\n\nConseil de style : Camel et blanc cassé, avec un jean droit, donnent un look propre pour un après-midi en ville. Le soir, passez au noir total et laissez le charm doré briller.",
+      en: "Camel, the color that gets along with the whole wardrobe!\nOn this bag, light stitching traces a network of diamonds across the front, and a rounded handle gives it a soft, polished look. A little black and gold charm tied to a cord adds the finishing touch.\n---\nWhy you will love it\n• Easy-to-wear camel: A warm, neutral shade that goes with almost any outfit.\n• Diamond stitching: Light seams forming a diamond pattern across the whole front.\n• Rounded handle and charm: A rounded handle, with a black and gold charm tied to a cord.\n• About the wallet: A matching zip wallet appears in the photo; to be confirmed whether it is included.\n\nStyle tip: Camel with off-white and straight-leg jeans makes a clean look for an afternoon in town. In the evening, go all black and let the golden charm shine.",
     },
-    features: {
-      fr: ["Coloris : camel", "Surpiqûres en losanges sur la façade", "Charm noir et doré sur cordon", "Portefeuille zippé sur la photo (à confirmer)"],
-      en: ["Colour: camel", "Diamond stitching on the front", "Black and gold charm on a cord", "Zipped wallet in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-quilted-cream-wallet", "bags", {
     name: { fr: "Sac matelassé crème, charm et portefeuille", en: "Cream quilted bag, charm and wallet" },
@@ -2336,13 +2227,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-quilted-cream-wallet.jpg"],
     description: {
-      fr: "Le crème est rehaussé par l’intérieur de l’anse, bordé de noir, et par un charm en forme de fleur noire sur cordon. Les surpiqûres dessinent des losanges sur la façade. Un portefeuille zippé assorti figure sur la photo (à confirmer s’il est inclus).",
-      en: "The cream is set off by the black-edged handle and a black flower charm on a cord. Stitching draws diamonds across the front. A matching zipped wallet appears in the photo (to be confirmed whether it is included).",
+      fr: "Un crème lumineux, tout en finesse, pour les journées où l’on veut paraître soignée sans effort !\nCe sac joue sur le contraste entre le crème de la façade et le noir qui borde l’intérieur de l’anse. Les surpiqûres dessinent des losanges et un charm en fleur noire donne le petit détail qui plaît.\n---\nPourquoi vous allez l’adorer\n• Crème lumineux : Un coloris clair et doux qui éclaire toute la tenue.\n• Anse bordée de noir : L’intérieur de l’anse est bordé de noir, pour un contraste net.\n• Charm fleur noire : Une fleur noire accrochée à un cordon, comme un petit bijou pour le sac.\n• Côté portefeuille : Un portefeuille zippé assorti figure sur la photo ; à confirmer s’il est inclus.\n\nConseil de style : Essayez-le avec une tenue en noir et blanc, ou une robe de couleur vive pour qu’il ressorte. Pour un brunch ou une sortie du week-end, ce crème fait toute la différence.",
+      en: "A luminous cream, all in subtlety, for days when you want to look put together without effort!\nThis bag plays on the contrast between the cream front and the black edging inside the handle. The stitching draws diamonds, and a black flower charm gives that little detail everyone loves.\n---\nWhy you will love it\n• Luminous cream: A light, soft color that brightens the entire outfit.\n• Black-edged handle: The inside of the handle is edged in black for a sharp contrast.\n• Black flower charm: A black flower attached to a cord, like a little jewel for the bag.\n• About the wallet: A matching zip wallet appears in the photo; to be confirmed whether it is included.\n\nStyle tip: Try it with a black and white outfit, or a bright-colored dress to make it stand out. For brunch or a weekend outing, this cream makes all the difference.",
     },
-    features: {
-      fr: ["Coloris : crème", "Anse bordée de noir", "Charm fleur noire sur cordon", "Portefeuille zippé sur la photo (à confirmer)"],
-      en: ["Colour: cream", "Handle edged in black", "Black flower charm on a cord", "Zipped wallet in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-quilted-red", "bags", {
     name: { fr: "Sac à main rouge à surpiqûres en losanges, charm doré", en: "Red handbag with diamond stitching, gold charm" },
@@ -2352,13 +2240,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-quilted-red.jpg"],
     description: {
-      fr: "Un rouge franc, avec des surpiqûres assorties qui forment des losanges sur la façade. Deux perles dorées et un charm métallique sont accrochés au cordon noué sur l’anse. Une plaque dorée est posée en bas, au centre.",
-      en: "A strong red, with matching stitching forming diamonds across the front. Two gold beads and a metal charm hang from the cord knotted on the handle. A gold plate sits at the bottom centre.",
+      fr: "Un rouge franc, sans détour, pour celles qui aiment qu’on les remarque !\nCe sac à main aligne des surpiqûres assorties qui forment des losanges sur la façade. Au cordon noué sur l’anse, des perles et un charm dorés font briller l’ensemble, et une plaque dorée posée en bas complète le décor.\n---\nPourquoi vous allez l’adorer\n• Rouge franc : Un coloris vif et assumé, avec des surpiqûres assorties au ton du sac.\n• Losanges sur la façade : Un motif de losanges tracé par les coutures.\n• Cordon doré : Deux perles dorées et un charm métallique accrochés au cordon noué sur l’anse.\n• Plaque dorée : Une plaque dorée posée en bas, au centre de la façade.\n\nConseil de style : Avec une robe noire ou un ensemble beige, ce rouge fait toute l’élégance de la tenue. Pour un anniversaire ou un dîner, il remplace très bien un bijou.",
+      en: "A straightforward red for those who like to be noticed!\nThis handbag lines up matching stitching that forms diamonds across the front. On the cord tied to the handle, gold beads and a charm make the whole thing sparkle, and a gold plate sits at the bottom to complete the look.\n---\nWhy you will love it\n• Bold red: A vivid, confident color, with stitching that matches the shade of the bag.\n• Diamonds on the front: A diamond pattern traced by the seams.\n• Golden cord: Two gold beads and a metallic charm attached to the cord tied on the handle.\n• Gold plate: A gold plate placed at the bottom, in the center of the front.\n\nStyle tip: With a black dress or a beige set, this red carries the whole outfit. For a birthday or a dinner, it works very well in place of a piece of jewelry.",
     },
-    features: {
-      fr: ["Coloris : rouge", "Surpiqûres en losanges", "Charm et perles dorées sur cordon", "Plaque dorée en bas de la façade"],
-      en: ["Colour: red", "Diamond stitching", "Gold charm and beads on a cord", "Gold plate at the bottom of the front"],
-    },
+
   }),
   newProduct("sac-vernis-bordeaux", "bags", {
     name: { fr: "Sac à rabat vernis bordeaux, anse unique", en: "Burgundy patent flap bag, single handle" },
@@ -2368,13 +2253,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-vernis-bordeaux.jpg"],
     description: {
-      fr: "Le vernis très brillant renvoie la lumière sur tout le rabat, bordé d’une fine surpiqûre en picots. L’anse est fixée par des anneaux dorés, et des anneaux sont aussi visibles sur les côtés pour une bandoulière. Quatre petits pieds dorés protègent le dessous du sac.",
-      en: "The very glossy patent catches the light across the whole flap, edged with fine scalloped stitching. The handle is fixed with gold rings, and rings are also visible on the sides for a strap. Four small gold feet protect the base.",
+      fr: "Un bordeaux profond avec un éclat de miroir : le genre de sac qui se remarque dans la lumière !\nLe vernis très brillant couvre tout le rabat, bordé d’une fine surpiqûre en picots. Une anse unique, des anneaux dorés et quatre petits pieds dorés sous le sac complètent un style élégant et affirmé.\n---\nPourquoi vous allez l’adorer\n• Bordeaux verni : Une finition vernie très brillante qui renvoie la lumière sur tout le rabat.\n• Rabat à picots : Un rabat bordé d’une fine surpiqûre en picots, pour un joli détail de finition.\n• Anse et anneaux dorés : Une anse unique fixée par des anneaux dorés, avec des anneaux aussi visibles sur les côtés pour une bandoulière.\n• Pieds dorés : Quatre petits pieds dorés protègent le dessous du sac.\n\nConseil de style : Le bordeaux se marie avec le noir, le camel et le vert foncé. Pour une cérémonie ou un dîner, une tenue unie et ce sac brillant suffisent largement.",
+      en: "A deep burgundy with a mirror shine: the kind of bag you notice in the light!\nThe very glossy patent finish covers the whole flap, edged with a fine picot stitch. A single handle, gold rings and four small gold feet under the bag complete a polished, confident style.\n---\nWhy you will love it\n• Patent burgundy: A very glossy patent finish that reflects the light across the whole flap.\n• Picot-stitched flap: A flap edged with a fine picot stitch, a nice finishing detail.\n• Handle and gold rings: A single handle attached with gold rings, with rings also visible on the sides for a shoulder strap.\n• Gold feet: Four small gold feet protect the bottom of the bag.\n\nStyle tip: Burgundy pairs well with black, camel and dark green. For a ceremony or a dinner, a plain outfit and this shiny bag are more than enough.",
     },
-    features: {
-      fr: ["Coloris : bordeaux", "Finition vernie brillante", "Anse unique, anneaux dorés sur les côtés", "Pieds dorés sous le sac"],
-      en: ["Colour: burgundy", "Glossy patent finish", "Single handle, gold rings on the sides", "Gold feet on the base"],
-    },
+
   }),
   newProduct("sac-vernis-terracotta", "bags", {
     name: { fr: "Sac à rabat vernis terracotta, anse unique", en: "Terracotta patent flap bag, single handle" },
@@ -2384,13 +2266,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-vernis-terracotta.jpg"],
     description: {
-      fr: "Une teinte terracotta brillante, avec un rabat large et une couture verticale au centre. L’anse arrondie est fine et le sac reste compact, avec une forme basse et allongée. Aucun fermoir n’apparaît sur la photo.",
-      en: "A glossy terracotta shade, with a wide flap and a vertical seam down the centre. The rounded handle is slim and the bag stays compact, low and elongated. No clasp is visible in the photo.",
+      fr: "Un terracotta chaud et brillant, à la couleur de la terre au coucher du soleil !\nLe rabat large, traversé d’une couture verticale au centre, donne à ce sac une silhouette nette et sans fioriture. L’anse arrondie est fine et la forme reste basse, allongée et compacte.\n---\nPourquoi vous allez l’adorer\n• Terracotta brillant : Une teinte chaude à la finition vernie brillante.\n• Rabat large : Un grand rabat avec une couture verticale au centre.\n• Anse fine : Une anse unique arrondie et fine, pour un port à la main.\n• Forme compacte : Une silhouette basse et allongée ; aucun fermoir n’apparaît sur la photo.\n\nConseil de style : Le terracotta s’accorde avec le blanc, l’écru et le denim bleu. Pour un déjeuner ou une balade de week-end, une robe légère et des sandales suffisent.",
+      en: "A warm, glossy terracotta, the color of earth at sunset!\nThe wide flap, crossed by a vertical seam down the center, gives this bag a clean silhouette with no frills. The rounded handle is slim and the shape stays low, elongated and compact.\n---\nWhy you will love it\n• Glossy terracotta: A warm shade with a shiny patent finish.\n• Wide flap: A large flap with a vertical seam in the center.\n• Slim handle: A single rounded, slim handle for carrying by hand.\n• Compact shape: A low, elongated silhouette; no clasp appears in the photo.\n\nStyle tip: Terracotta goes with white, ecru and blue denim. For lunch or a weekend stroll, a light dress and sandals are all you need.",
     },
-    features: {
-      fr: ["Coloris : terracotta", "Finition vernie brillante", "Rabat large, couture centrale", "Anse unique"],
-      en: ["Colour: terracotta", "Glossy patent finish", "Wide flap, central seam", "Single handle"],
-    },
+
   }),
   newProduct("sac-cabas-monogramme-rose", "bags", {
     name: { fr: "Cabas à motifs de fleurs, touches roses, avec pochette", en: "Floral-pattern tote, pink accents, with pouch" },
@@ -2400,13 +2279,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-monogramme-rose.jpg"],
     description: {
-      fr: "Le fond marron est couvert de fleurs et de losanges, avec des touches de rose vif et de grandes initiales blanches. Les anses en cuir clair se resserrent sur les côtés grâce à des liens ajustables, et le bord est surpiqué de jaune. Une pochette zippée au même motif est posée devant (à confirmer si elle est incluse).",
-      en: "The brown background is covered with flowers and diamonds, with bright pink touches and large white initials. The light leather handles can be tightened at the sides with adjustable ties, and the edge is stitched in yellow. A zipped pouch in the same pattern sits in front (to be confirmed whether it is included).",
+      fr: "Un cabas qui raconte une histoire, avec ses fleurs, ses losanges et ses touches de rose !\nLe fond marron est entièrement couvert de motifs, rehaussé de rose vif et de grandes initiales blanches. Les anses claires se resserrent sur les côtés grâce à des liens ajustables, et le bord surpiqué de jaune ajoute une pointe de gaieté.\n---\nPourquoi vous allez l’adorer\n• Marron fleuri : Un fond marron couvert de fleurs et de losanges, avec des touches de rose vif.\n• Initiales blanches : De grandes initiales blanches qui signent le motif.\n• Côtés ajustables : Des liens sur les côtés qui permettent de resserrer le cabas à votre goût.\n• Anses claires et pochette : Des anses claires, un bord surpiqué de jaune, et une pochette zippée au même motif sur la photo (à confirmer si elle est incluse).\n\nConseil de style : Gardez la tenue simple : jean blanc, t-shirt uni et sandales, et le sac fait le style. Il est idéal pour les journées chargées, du campus au marché.",
+      en: "A tote that tells a story, with its flowers, diamonds and touches of pink!\nThe brown background is entirely covered in patterns, highlighted with bright pink and large white initials. The light-colored handles gather in at the sides thanks to adjustable ties, and the yellow-stitched edge adds a hint of cheer.\n---\nWhy you will love it\n• Floral brown: A brown background covered in flowers and diamonds, with touches of bright pink.\n• White initials: Large white initials that sign the pattern.\n• Adjustable sides: Ties on the sides let you cinch the tote in to your liking.\n• Light handles and pouch: Light-colored handles, a yellow-stitched edge, and a zip pouch in the same pattern shown in the photo (to be confirmed whether it is included).\n\nStyle tip: Keep the outfit simple: white jeans, a plain tee and sandals, and let the bag make the style. It is ideal for busy days, from campus to the market.",
     },
-    features: {
-      fr: ["Coloris : marron, touches roses", "Motif de fleurs et losanges, initiales blanches", "Côtés ajustables par liens", "Pochette zippée sur la photo (à confirmer)"],
-      en: ["Colour: brown, pink accents", "Flower and diamond pattern, white initials", "Side ties to adjust the shape", "Zipped pouch in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-cabas-gaufre-cognac", "bags", {
     name: { fr: "Cabas cognac à motifs gaufrés, avec pochette", en: "Cognac tote with embossed pattern, with pouch" },
@@ -2416,13 +2292,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-cabas-gaufre-cognac.jpg"],
     description: {
-      fr: "Le motif en relief, fleurs et initiales, est gaufré directement dans le cuir cognac, sans changement de couleur. Les anses plus foncées, les liens latéraux et la petite étiquette fixée à l’anse reprennent un brun plus profond. Une pochette zippée à mousqueton est présentée devant (à confirmer si elle est incluse).",
-      en: "The raised pattern of flowers and initials is embossed directly into the cognac material, with no change of colour. The darker handles, the side ties and the small tag on the handle pick up a deeper brown. A zipped pouch with a clip is shown in front (to be confirmed whether it is included).",
+      fr: "Un cabas cognac tout en nuances, où le motif se lit au toucher autant qu’à l’œil !\nLes fleurs et les initiales sont gaufrées en relief, sans changement de couleur, pour un effet discret et élégant. Les anses plus foncées, les liens latéraux et la petite étiquette reprennent un brun plus profond.\n---\nPourquoi vous allez l’adorer\n• Cognac en relief : Un motif de fleurs et d’initiales gaufré en relief, dans un cognac uni.\n• Anses plus foncées : Des anses d’un brun plus profond, qui contrastent avec le corps du cabas.\n• Liens et étiquette : Des liens latéraux et une petite étiquette fixée à l’anse.\n• Pochette à confirmer : Une pochette zippée à mousqueton est présentée devant ; son inclusion est à confirmer.\n\nConseil de style : Avec une chemise blanche et un pantalon crème, il donne un look chic mais détendu. Pour un week-end, un jean clair et des mocassins s’accordent très bien à ces bruns.",
+      en: "A cognac tote full of nuance, where the pattern can be felt as much as seen!\nThe flowers and initials are embossed in relief, with no change of color, for a discreet and elegant effect. The darker handles, side ties and small tag pick up a deeper brown.\n---\nWhy you will love it\n• Embossed cognac: A pattern of flowers and initials embossed in relief, in a solid cognac.\n• Darker handles: Handles in a deeper brown, contrasting with the body of the tote.\n• Ties and tag: Side ties and a small tag attached to the handle.\n• Pouch to be confirmed: A zip pouch with a carabiner clip is shown in front; its inclusion is to be confirmed.\n\nStyle tip: With a white shirt and cream trousers, it makes a look that is chic yet relaxed. For the weekend, light jeans and loafers suit these browns very well.",
     },
-    features: {
-      fr: ["Coloris : cognac", "Motif gaufré en relief", "Liens latéraux, étiquette sur l’anse", "Pochette zippée à mousqueton (à confirmer)"],
-      en: ["Colour: cognac", "Embossed raised pattern", "Side ties, tag on the handle", "Zipped pouch with clip (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-vernis-noir", "bags", {
     name: { fr: "Sac à rabat vernis noir, anse unique", en: "Black patent flap bag, single handle" },
@@ -2432,13 +2305,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-vernis-noir.jpg"],
     description: {
-      fr: "Le noir verni est très brillant, avec un rabat replié et une couture verticale au centre. L’anse est fixée par des attaches dorées, seul détail de couleur. La forme est large et se plisse légèrement sur les côtés.",
-      en: "The black patent is very glossy, with a folded-over flap and a vertical seam down the centre. The handle is fixed with gold attachments, the only touch of colour. The shape is wide and gathers slightly at the sides.",
+      fr: "Du noir qui brille, et tout le monde se retourne !\nCe sac à rabat mise tout sur l’éclat de sa finition vernie, sans fioriture. Une seule anse, un rabat replié et une couture au centre : la ligne est simple, mais l’effet est sûr. Vous cherchez une pièce noire qui ne passe pas inaperçue, la voilà.\n---\nPourquoi vous allez l’adorer\n• Noir verni éclatant : Une finition brillante qui capte la lumière et donne tout de suite du relief à votre tenue.\n• Forme large et souple : Le sac est large et se plisse légèrement sur les côtés, ce qui lui donne un côté décontracté et facile à vivre.\n• Détails soignés : Le rabat est replié avec une couture verticale au centre, et l’anse est fixée par des attaches dorées, seule touche de couleur.\n• Porté simple : Une anse unique, pour l’attraper vite et partir sans se poser de question.\n\nConseil de style : Misez sur le contraste avec une robe fluide ou un jean clair et laissez le vernis faire le travail. Une paire de boucles d’oreilles dorées reprendra les attaches de l’anse.",
+      en: "Black that shines, and everyone turns to look!\nThis flap bag bets everything on its glossy patent finish, with no fuss. A single handle, a folded-over flap and a seam down the middle: the shape is simple, but the effect is guaranteed. If you want a black piece that doesn’t go unnoticed, this is it.\n---\nWhy you will love it\n• Shiny patent black: A glossy finish that catches the light and instantly adds depth to your outfit.\n• Wide, relaxed shape: The bag is wide and gently creases at the sides, giving it an easygoing, effortless feel.\n• Neat details: The flap is folded over with a vertical seam in the centre, and the handle is attached with gold-tone fittings, the only touch of colour.\n• Easy to carry: One single handle, so you can grab it quickly and go.\n\nStyle tip: Play on contrast with a flowing dress or light jeans and let the patent finish do the talking. A pair of gold earrings will echo the fittings on the handle.",
     },
-    features: {
-      fr: ["Coloris : noir", "Finition vernie brillante", "Attaches dorées sur l’anse", "Rabat replié, couture centrale"],
-      en: ["Colour: black", "Glossy patent finish", "Gold attachments on the handle", "Folded flap, central seam"],
-    },
+
   }),
   newProduct("sac-tisse-noir", "bags", {
     name: { fr: "Sac à main noir, panneau tissé et fermoir à fleur dorée", en: "Black handbag, woven panel and gold flower clasp" },
@@ -2448,13 +2318,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-tisse-noir.jpg"],
     description: {
-      fr: "Le panneau de devant a un aspect tissé, encadré de cuir lisse sur les côtés. Un rabat se ferme avec un fermoir doré en forme de fleur à quatre pétales, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière. Une étiquette est encore attachée sur la photo.",
-      en: "The front panel has a woven look, framed by smooth side panels. A flap closes with a gold four-petal flower clasp, and two plates with gold studs hold the handles. Gold rings on the sides allow a strap to be added. A tag is still attached in the photo.",
+      fr: "Un noir classique avec un petit supplément de caractère !\nSur ce sac à main, le panneau de devant tissé apporte de la matière, encadré par des côtés lisses. Le fermoir doré en forme de fleur à quatre pétales est le détail qui fait la différence. C’est le genre de sac noir que l’on sort sans hésiter, mais qui a sa personnalité.\n---\nPourquoi vous allez l’adorer\n• Noir et matière : Un panneau avant tissé, encadré de côtés lisses, pour un noir qui n’est pas plat.\n• Fermoir fleur dorée : Le rabat se ferme avec un fermoir doré à quatre pétales, joli détail bijou.\n• Anses bien fixées : Deux plaques à clous dorés tiennent les anses, pour un look structuré.\n• Bandoulière possible : Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière si vous voulez les mains libres.\n\nConseil de style : Parfait avec un blazer et un pantalon bien coupé pour une journée chargée, ou avec une petite robe pour un dîner. Les ferrures dorées s’accordent très bien avec un bracelet ou une montre de la même teinte.",
+      en: "A classic black with a little extra character!\nOn this handbag, the woven front panel adds texture, framed by smooth sides. The gold flower-shaped clasp with four petals is the detail that makes the difference. It’s the kind of black bag you grab without thinking twice, yet it has its own personality.\n---\nWhy you will love it\n• Black with texture: A woven front panel framed by smooth sides, so your black bag isn’t flat.\n• Gold flower clasp: The flap closes with a four-petal gold-tone clasp, a lovely jewellery-like detail.\n• Well-secured handles: Two gold-tone studded plates hold the handles for a structured look.\n• Strap option: Gold-tone rings on the sides let you add a shoulder strap when you want your hands free.\n\nStyle tip: Perfect with a blazer and tailored trousers for a busy day, or with a little dress for dinner. The gold hardware pairs nicely with a bracelet or watch in the same tone.",
     },
-    features: {
-      fr: ["Coloris : noir", "Panneau avant tissé, côtés lisses", "Fermoir doré en forme de fleur", "Anneaux dorés sur les côtés"],
-      en: ["Colour: black", "Woven front panel, smooth sides", "Gold flower-shaped clasp", "Gold rings on the sides"],
-    },
+
   }),
   newProduct("sac-tisse-violet", "bags", {
     name: { fr: "Sac à main violet, panneau tissé et fermoir doré et noir", en: "Purple handbag, woven panel and gold and black clasp" },
@@ -2464,13 +2331,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-tisse-violet.jpg"],
     description: {
-      fr: "Un violet doux pour les côtés lisses et les anses, avec un panneau de devant tissé dans une teinte plus grisée. Le fermoir associe or et noir, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés peuvent accueillir une bandoulière.",
-      en: "A soft purple for the smooth sides and handles, with a woven front panel in a greyer shade. The clasp combines gold and black, and two plates with gold studs hold the handles. Gold rings on the sides can take a strap.",
+      fr: "Osez le violet, tout en douceur !\nCe sac à main joue sur deux nuances : un violet tendre pour les côtés et les anses, et un panneau de devant tissé dans une teinte plus grisée. Le résultat est subtil, élégant et vraiment différent des sacs que l’on croise tous les jours.\n---\nPourquoi vous allez l’adorer\n• Violet tout doux : Côtés lisses et anses d’un violet délicat, avec un panneau avant tissé plus grisé.\n• Fermoir bicolore : Un fermoir mêlant or et noir qui ferme le rabat avec élégance.\n• Anses solides : Deux plaques à clous dorés tiennent les anses de chaque côté.\n• Bandoulière en option : Des anneaux dorés sur les flancs peuvent accueillir une bandoulière.\n\nConseil de style : Essayez-le avec une tenue blanche ou crème pour le laisser respirer, ou avec du gris et du noir pour un look plus sage. Il se marie aussi très bien à un foulard ou à un bijou doré.",
+      en: "Dare to go purple, in the gentlest way!\nThis handbag plays on two shades: a soft purple for the sides and handles, and a woven front panel in a greyer tone. The result is subtle, elegant and truly different from the bags you see every day.\n---\nWhy you will love it\n• Soft purple: Smooth sides and handles in a delicate purple, with a greyer woven front panel.\n• Two-tone clasp: A clasp combining gold and black closes the flap with elegance.\n• Sturdy handles: Two gold-tone studded plates hold the handles on each side.\n• Optional strap: Gold-tone rings on the sides can take a shoulder strap.\n\nStyle tip: Try it with an all-white or cream outfit to let it stand out, or with grey and black for a calmer look. It also pairs well with a scarf or gold-tone jewellery.",
     },
-    features: {
-      fr: ["Coloris : violet", "Panneau avant tissé, côtés lisses", "Fermoir doré et noir", "Anneaux dorés sur les côtés"],
-      en: ["Colour: purple", "Woven front panel, smooth sides", "Gold and black clasp", "Gold rings on the sides"],
-    },
+
   }),
   newProduct("sac-tisse-cognac", "bags", {
     name: { fr: "Sac à main cognac, panneau tissé et fermoir doré et noir", en: "Cognac handbag, woven panel and gold and black clasp" },
@@ -2480,13 +2344,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-tisse-cognac.jpg"],
     description: {
-      fr: "Ici, le tissage prend un ton paille chaud, bien visible sur le panneau de devant, alors que les côtés et les anses sont en brun roux lisse. Le rabat se ferme avec un fermoir doré à centre noir, et deux plaques à clous dorés tiennent les anses. Le contraste entre matières donne tout son relief au sac.",
-      en: "Here the weave takes on a warm straw tone, clearly visible on the front panel, while the sides and handles are in smooth russet brown. The flap closes with a gold clasp with a black centre, and two plates with gold studs hold the handles. The contrast between materials gives the bag its character.",
+      fr: "Des tons chauds qui donnent envie de sortir !\nSur ce modèle, le tissage prend une teinte paille bien visible sur le devant, alors que les côtés et les anses sont d’un brun roux lisse. Le jeu entre les deux matières donne au sac beaucoup de relief et un charme un peu rétro.\n---\nPourquoi vous allez l’adorer\n• Cognac et brun roux : Un panneau tissé de ton paille chaud, entouré de côtés et d’anses brun roux.\n• Contraste de matières : Le tissé face au lisse crée du relief et donne du caractère au sac.\n• Fermoir soigné : Un fermoir doré à centre noir ferme le rabat, avec deux plaques à clous dorés pour les anses.\n• Anneaux latéraux : Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière.\n\nConseil de style : Très joli avec du denim, une chemise blanche et des sandales pour un look simple mais travaillé. En saison fraîche, il ira bien avec du camel ou du vert olive.",
+      en: "Warm tones that make you want to head out!\nOn this version, the weave takes on a visible straw shade at the front, while the sides and handles are in a smooth russet brown. The play between the two textures gives the bag plenty of depth and a slightly retro charm.\n---\nWhy you will love it\n• Cognac and russet brown: A woven panel in a warm straw tone, surrounded by russet brown sides and handles.\n• Contrasting textures: Woven against smooth creates depth and gives the bag character.\n• Neat clasp: A gold-tone clasp with a black centre closes the flap, with two gold-tone studded plates for the handles.\n• Side rings: Gold-tone rings on the sides let you add a shoulder strap.\n\nStyle tip: Lovely with denim, a white shirt and sandals for a look that is simple but put together. When it’s cooler, it goes nicely with camel or olive green.",
     },
-    features: {
-      fr: ["Coloris : cognac et brun roux", "Panneau avant tissé, côtés lisses", "Fermoir doré à centre noir", "Anneaux dorés sur les côtés"],
-      en: ["Colour: cognac and russet brown", "Woven front panel, smooth sides", "Gold clasp with black centre", "Gold rings on the sides"],
-    },
+
   }),
   newProduct("sac-rond-cordon-marron", "bags", {
     name: { fr: "Sac rond marron à cordon, lettres dorées sur sangle", en: "Round brown drawstring bag, gold letters on strap" },
@@ -2496,13 +2357,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rond-cordon-marron.jpg"],
     description: {
-      fr: "La forme est arrondie, avec deux lobes lisses séparés par une sangle ornée de lettres métalliques dorées. Le haut se resserre par un cordon, entre deux anses principales et une petite anse centrale. Le marron est profond et uni.",
-      en: "The shape is rounded, with two smooth lobes separated by a strap decorated with gold-tone metal letters. The top gathers with a drawstring, between two main handles and a small central handle. The brown is deep and plain.",
+      fr: "Tout en rondeur, et ça lui va à ravir !\nCe sac rond marron change des formes habituelles avec ses deux lobes lisses réunis par une sangle ornée de lettres dorées. Le haut se resserre avec un cordon, et les trois anses vous laissent choisir comment le porter. Un marron profond et uni, qui va avec presque tout.\n---\nPourquoi vous allez l’adorer\n• Marron profond : Un coloris uni et riche, facile à associer au quotidien.\n• Forme ronde originale : Deux lobes arrondis et lisses séparés par une sangle centrale.\n• Lettres dorées : La sangle porte des lettres métalliques dorées, seul éclat de la façade.\n• Cordon et trois anses : Le haut se resserre par un cordon, entre deux anses principales et une petite anse au centre.\n\nConseil de style : Craquez pour un ensemble beige ou une robe ocre : on reste dans les tons de terre et le sac fait le reste. Avec un jean et un t-shirt blanc, il apporte juste ce qu’il faut de style.",
+      en: "All curves, and it suits it perfectly!\nThis round brown bag breaks from the usual shapes, with two smooth lobes joined by a strap decorated with gold lettering. The top gathers with a drawstring, and the three handles let you choose how to carry it. A deep, solid brown that goes with almost everything.\n---\nWhy you will love it\n• Deep brown: A rich, solid colour that’s easy to match every day.\n• Original round shape: Two smooth, rounded lobes separated by a central strap.\n• Gold lettering: The strap carries gold-tone metal letters, the only sparkle on the front.\n• Drawstring and three handles: The top gathers with a drawstring, between two main handles and a small one in the centre.\n\nStyle tip: Go for a beige set or an ochre dress: you stay in earthy tones and the bag does the rest. With jeans and a white tee, it adds just the right amount of style.",
     },
-    features: {
-      fr: ["Coloris : marron", "Forme ronde, fermeture par cordon", "Sangle à lettres métalliques dorées", "Trois anses"],
-      en: ["Colour: brown", "Round shape, drawstring closure", "Strap with gold-tone metal letters", "Three handles"],
-    },
+
   }),
   newProduct("sac-structure-gris", "bags", {
     name: { fr: "Sac à main gris, panneau tissé et fermoir doré et noir", en: "Grey handbag, woven panel and gold and black clasp" },
@@ -2512,13 +2370,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-structure-gris.jpg"],
     description: {
-      fr: "Un gris taupe pour les côtés lisses et les anses, avec un panneau de devant tissé dans un gris plus clair. Le fermoir reprend l’or et le noir, et deux plaques à clous dorés tiennent les anses. Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière.",
-      en: "A taupe grey for the smooth sides and handles, with a woven front panel in a lighter grey. The clasp again combines gold and black, and two plates with gold studs hold the handles. Gold rings on the sides allow a strap to be added.",
+      fr: "Un gris taupe tout en nuances, discret mais raffiné !\nCe sac à main associe des côtés lisses et des anses en gris taupe à un panneau de devant tissé dans un gris plus clair. Pas de couleur criarde, juste une élégance posée qui se remarque par les détails.\n---\nPourquoi vous allez l’adorer\n• Gris taupe et gris clair : Côtés et anses lisses en taupe, panneau avant tissé plus clair.\n• Fermoir or et noir : Le rabat se ferme avec un fermoir doré et noir qui réchauffe l’ensemble.\n• Anses tenues par des plaques : Deux plaques à clous dorés fixent les anses solidement.\n• Bandoulière possible : Des anneaux dorés sur les côtés permettent d’ajouter une bandoulière.\n\nConseil de style : Un tailleur, une chemise bleu ciel ou une tenue monochrome grise : ce sac s’y fond avec classe. Pour un soir, ajoutez une touche de rouge à lèvres et laissez-le faire le reste.",
+      en: "A taupe grey full of nuance, discreet but refined!\nThis handbag pairs smooth taupe-grey sides and handles with a woven front panel in a lighter grey. No loud colours, just a calm elegance that shows in the details.\n---\nWhy you will love it\n• Taupe and light grey: Smooth taupe sides and handles, with a lighter woven front panel.\n• Gold and black clasp: The flap closes with a gold-and-black clasp that warms up the whole look.\n• Plate-secured handles: Two gold-tone studded plates fix the handles firmly in place.\n• Strap option: Gold-tone rings on the sides let you add a shoulder strap.\n\nStyle tip: A suit, a sky-blue shirt or an all-grey outfit: this bag blends in with class. For an evening out, add a touch of red lipstick and let it do the rest.",
     },
-    features: {
-      fr: ["Coloris : gris taupe", "Panneau avant tissé, côtés lisses", "Fermoir doré et noir", "Anneaux dorés sur les côtés"],
-      en: ["Colour: taupe grey", "Woven front panel, smooth sides", "Gold and black clasp", "Gold rings on the sides"],
-    },
+
   }),
   newProduct("sac-structure-beige", "bags", {
     name: { fr: "Sac à main beige, côtés tissés et ferrures argentées", en: "Beige handbag, woven sides and silver-tone fittings" },
@@ -2528,13 +2383,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-structure-beige.jpg"],
     description: {
-      fr: "Le cuir lisse beige occupe le centre et le dessus, alors que les deux côtés sont en matière tissée, claire et légèrement nacrée. Les attaches des anses sont en métal argenté gravé d’épis, et le nom du modèle est posé en lettres dorées sur le devant. La forme est droite et structurée.",
-      en: "Smooth beige material covers the centre and top, while the two sides are in a light, slightly pearly woven material. The handle attachments are silver-tone metal engraved with ears of wheat, and the model name is set in gold letters on the front. The shape is straight and structured.",
+      fr: "Clair, droit, élégant : le beige qui a de la tenue !\nCe sac à main a une silhouette structurée, avec une partie centrale lisse et deux côtés tissés, clairs et légèrement nacrés. Le lettrage doré posé sur le devant et les attaches argentées gravées d’épis lui donnent un côté soigné.\n---\nPourquoi vous allez l’adorer\n• Beige lumineux : Un centre et un dessus lisses, entourés de côtés tissés clairs et légèrement nacrés.\n• Forme droite et structurée : Une silhouette nette qui garde bien sa tenue.\n• Ferrures argentées gravées : Les attaches des anses sont en métal argenté gravé d’épis.\n• Lettrage doré : Le nom du modèle est posé en lettres dorées sur le devant.\n\nConseil de style : Superbe avec un ensemble en lin, une jupe midi ou un pantalon blanc pour un look d’été très frais. Un beige comme celui-ci aime les couleurs douces comme le rose poudré ou le vert d’eau.",
+      en: "Light, upright, elegant: a beige with presence!\nThis handbag has a structured silhouette, with a smooth central section and two woven sides, light and slightly pearly. The gold lettering on the front and the silver-tone fittings engraved with ears of wheat give it a polished touch.\n---\nWhy you will love it\n• Bright beige: A smooth centre and top, framed by light, slightly pearly woven sides.\n• Straight, structured shape: A clean silhouette that holds its form well.\n• Engraved silver-tone fittings: The handle attachments are in silver-tone metal engraved with ears of wheat.\n• Gold lettering: The model name sits in gold letters on the front.\n\nStyle tip: Gorgeous with a linen set, a midi skirt or white trousers for a very fresh summer look. A beige like this loves soft colours such as powder pink or sea green.",
     },
-    features: {
-      fr: ["Coloris : beige", "Côtés en matière tissée", "Attaches argentées gravées", "Lettres dorées sur le devant"],
-      en: ["Colour: beige", "Woven side panels", "Engraved silver-tone attachments", "Gold letters on the front"],
-    },
+
   }),
   newProduct("sac-texture-bleu-ciel", "bags", {
     name: { fr: "Sac à main bleu ciel texturé, anses rigides", en: "Sky-blue textured handbag, rigid handles" },
@@ -2544,13 +2396,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-texture-bleu-ciel.jpg"],
     description: {
-      fr: "Un bleu ciel franc avec une surface texturée, à petits motifs en relief. Les anses rigides, bordées de métal argenté, sont fixées de chaque côté, et deux anneaux argentés sont visibles sur les flancs. Une plaque argentée est posée au centre.",
-      en: "A bright sky blue with a textured surface and small raised patterns. The rigid handles, capped with silver-tone metal, are attached on each side, and two silver rings are visible on the flanks. A silver plate sits in the centre.",
+      fr: "Un bleu ciel franc pour mettre de la lumière dans votre journée !\nCe sac à main attire l’œil par sa surface texturée aux petits motifs en relief, que l’on a envie de toucher. Ses anses rigides et ses détails argentés lui donnent une allure nette et fraîche.\n---\nPourquoi vous allez l’adorer\n• Bleu ciel franc : Une couleur lumineuse et vive qui égaye toute la tenue.\n• Surface texturée : De petits motifs en relief sur toute la surface pour un effet original.\n• Anses rigides : Bordées de métal argenté, elles sont fixées de chaque côté.\n• Détails argentés : Deux anneaux argentés sur les flancs et une plaque argentée au centre.\n\nConseil de style : Il est génial avec du blanc, du denim ou un ensemble tout en bleu de différentes nuances. Pour une sortie entre amies, accordez-le à des bijoux argentés.",
+      en: "A bright sky blue to bring some light into your day!\nThis handbag catches the eye with its textured surface of small raised patterns you’ll want to touch. Its rigid handles and silver-tone details give it a crisp, fresh look.\n---\nWhy you will love it\n• Bright sky blue: A vivid, luminous colour that lifts the whole outfit.\n• Textured surface: Small raised patterns all over for an original effect.\n• Rigid handles: Edged with silver-tone metal and attached on each side.\n• Silver-tone details: Two silver-tone rings on the sides and a silver-tone plate in the centre.\n\nStyle tip: It’s great with white, denim or an all-blue outfit in different shades. For a night out with friends, match it with silver-tone jewellery.",
     },
-    features: {
-      fr: ["Coloris : bleu ciel", "Surface texturée en relief", "Anses rigides, embouts argentés", "Anneaux argentés sur les côtés"],
-      en: ["Colour: sky blue", "Raised textured surface", "Rigid handles, silver-tone caps", "Silver rings on the sides"],
-    },
+
   }),
   newProduct("sac-rond-cordon-jaune", "bags", {
     name: { fr: "Sac rond jaune à cordon, lettres dorées sur sangle", en: "Round yellow drawstring bag, gold letters on strap" },
@@ -2560,13 +2409,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rond-cordon-jaune.jpg"],
     description: {
-      fr: "Jaune vif et uni, avec la même forme arrondie à deux lobes que son équivalent marron. La sangle centrale porte de grandes lettres métalliques dorées, et le haut se resserre par un cordon, entre deux anses principales et une petite anse centrale.",
-      en: "Bright, plain yellow, with the same rounded two-lobed shape as the brown version. The central strap carries large gold-tone metal letters, and the top gathers with a drawstring, between two main handles and a small central handle.",
+      fr: "Un jaune qui fait sourire, même un jour de pluie !\nCe sac rond tout en jaune vif a deux lobes arrondis et une sangle centrale aux grandes lettres dorées. Le haut se resserre par un cordon, avec trois anses pour varier les façons de le porter. Une pièce joyeuse qui n’a pas peur de se montrer.\n---\nPourquoi vous allez l’adorer\n• Jaune vif uni : Un coloris éclatant qui donne instantanément de l’énergie à la tenue.\n• Forme à deux lobes : Une silhouette ronde et ludique, différente des sacs classiques.\n• Grandes lettres dorées : La sangle centrale porte de grandes lettres métalliques dorées.\n• Cordon et trois anses : Fermeture par cordon en haut, deux anses principales et une petite anse centrale.\n\nConseil de style : Osez-le avec un look tout simple, un t-shirt blanc et un jean, pour que le jaune soit la seule star. Il va aussi très bien avec du bleu marine ou du denim foncé.",
+      en: "A yellow that makes you smile, even on a rainy day!\nThis round bag in bright yellow has two rounded lobes and a central strap with large gold lettering. The top gathers with a drawstring, with three handles to vary how you carry it. A cheerful piece that isn’t afraid to be seen.\n---\nWhy you will love it\n• Solid bright yellow: A vibrant colour that instantly adds energy to the outfit.\n• Two-lobe shape: A round, playful silhouette, different from classic bags.\n• Large gold lettering: The central strap carries large gold-tone metal letters.\n• Drawstring and three handles: Drawstring closure at the top, two main handles and a small central one.\n\nStyle tip: Dare to wear it with a very simple look, a white tee and jeans, so the yellow is the only star. It also goes very well with navy or dark denim.",
     },
-    features: {
-      fr: ["Coloris : jaune vif", "Forme ronde, fermeture par cordon", "Sangle à lettres métalliques dorées", "Trois anses"],
-      en: ["Colour: bright yellow", "Round shape, drawstring closure", "Strap with gold-tone metal letters", "Three handles"],
-    },
+
   }),
   newProduct("sac-ensemble-bleu", "bags", {
     name: { fr: "Ensemble sac à main et petit sac, bleu marine et bleu clair", en: "Handbag and small bag set, navy and light blue" },
@@ -2576,13 +2422,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-ensemble-bleu.jpg"],
     description: {
-      fr: "Deux sacs assortis sont présentés ensemble : un sac à main à anses rondes, et un petit sac à rabat. Les deux jouent sur le bleu marine, avec des côtés bleu clair et des bandes tissées. Le grand sac se ferme avec un fermoir doré ovale, le petit avec une sangle et une plaque dorée (à confirmer que les deux sont inclus).",
-      en: "Two matching bags are shown together: a handbag with rounded handles and a small flap bag. Both play on navy blue, with light blue sides and woven bands. The large bag closes with an oval gold clasp, the small one with a strap and gold plate (to be confirmed that both are included).",
+      fr: "Du bleu en duo, pour celles qui aiment quand tout s’accorde !\nSur la photo, deux sacs assortis sont présentés ensemble : un sac à main à anses rondes et un petit sac à rabat. Ils jouent tous les deux sur le bleu marine, avec des côtés bleu clair et des bandes tissées qui apportent du relief.\n---\nPourquoi vous allez l’adorer\n• Duo bleu marine et bleu clair : Des côtés bleu clair qui adoucissent le bleu marine des deux sacs.\n• Bandes tissées : Des bandes tissées visibles sur les deux sacs, pour un effet travaillé.\n• Grand sac à anses rondes : Il se ferme avec un fermoir doré de forme ovale.\n• Petit sac à rabat : Il se ferme avec une sangle et une plaque dorée. Le contenu exact de l’ensemble est à confirmer, merci de nous contacter avant de commander.\n\nConseil de style : Le bleu marine se porte très bien avec du blanc, du beige ou du rose pâle. Pour une sortie chic, une robe claire et des chaussures dorées feront ressortir le fermoir.",
+      en: "Blue in a pair, for those who love it when everything matches!\nIn the photo, two matching bags are shown together: a handbag with rounded handles and a small flap bag. Both play on navy blue, with light blue sides and woven bands that add texture.\n---\nWhy you will love it\n• Navy and light blue duo: Light blue sides soften the navy blue of both bags.\n• Woven bands: Woven bands visible on both bags for a crafted effect.\n• Large bag with rounded handles: It closes with an oval gold-tone clasp.\n• Small flap bag: It closes with a strap and a gold-tone plate. What exactly is included in the set is to be confirmed, so please contact us before ordering.\n\nStyle tip: Navy blue looks great with white, beige or pale pink. For a smart evening out, a light dress and gold-tone shoes will bring out the clasp.",
     },
-    features: {
-      fr: ["Coloris : bleu marine et bleu clair", "Bandes tissées sur les deux sacs", "Fermoir doré ovale sur le grand sac", "Deux sacs sur la photo (à confirmer)"],
-      en: ["Colour: navy and light blue", "Woven bands on both bags", "Oval gold clasp on the large bag", "Two bags in the photo (to be confirmed)"],
-    },
+
   }),
   newProduct("sac-polochon-damier-noir-gris", "bags", {
     name: { fr: "Sac polochon à damier noir et gris", en: "Black and grey checkerboard duffel bag" },
@@ -2592,13 +2435,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-polochon-damier-noir-gris.jpg"],
     description: {
-      fr: "Un sac polochon au damier noir et gris, sobre et facile à porter avec tout. Il se ferme par une fermeture éclair sur le dessus et se porte à la main grâce à ses deux anses noires. Pratique pour la salle de sport, un week-end ou le quotidien.",
-      en: "A duffel bag in a black and grey checkerboard print, understated and easy to wear with anything. It closes with a zip along the top and is carried by two black handles. Handy for the gym, a weekend away or everyday use.",
+      fr: "Un polochon qui suit votre rythme, du matin au soir !\nAvec son damier noir et gris, ce sac reste sobre et se marie facilement avec toutes les tenues. Il se ferme par une fermeture éclair sur le dessus et se porte à la main grâce à ses deux anses noires. Les finitions argentées lui donnent juste ce qu’il faut de caractère.\n---\nPourquoi vous allez l’adorer\n• Damier noir et gris : Un motif sobre et masculin, facile à porter avec tout.\n• Forme polochon : Une silhouette allongée, pratique pour embarquer ses affaires.\n• Fermeture éclair sur le dessus : Pour fermer le sac simplement et garder vos affaires bien rangées.\n• Deux anses noires : Pour le porter à la main, avec des finitions argentées.\n\nConseil de style : Idéal pour la salle de sport, un week-end chez un ami ou les déplacements de la semaine. Avec un survêtement ou un jean et des baskets, il fait tout de suite l’affaire.",
+      en: "A duffel bag that keeps up with your pace, from morning to night!\nWith its black and grey check pattern, this bag stays understated and goes easily with any outfit. It closes with a zip along the top and is carried by hand with its two black handles. The silver-tone finishes add just the right amount of character.\n---\nWhy you will love it\n• Black and grey check: A sober, easy-to-wear pattern that goes with everything.\n• Duffel shape: An elongated silhouette, handy for carrying your things.\n• Zip on top: A simple closure that keeps your things neatly in place.\n• Two black handles: For carrying by hand, with silver-tone finishes.\n\nStyle tip: Ideal for the gym, a weekend at a friend’s place or the week’s commutes. With a tracksuit, or jeans and sneakers, it does the job right away.",
     },
-    features: {
-      fr: ["Motif damier noir et gris", "Deux anses noires", "Fermeture éclair sur le dessus", "Finitions argentées"],
-      en: ["Black and grey checkerboard print", "Two black handles", "Zip closure on top", "Silver-tone hardware"],
-    },
+
   }),
   newProduct("sac-rabat-rouge-fermoir-dore", "bags", {
     name: { fr: "Sac à main rouge à rabat, fermoir doré", en: "Red flap handbag with gold clasp" },
@@ -2608,13 +2448,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-rouge-fermoir-dore.jpg"],
     description: {
-      fr: "Un rouge franc pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
-      en: "A bold red for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+      fr: "Un rouge qui a de la voix, pour celles qui assument !\nCe sac à main structuré s’impose tout de suite, avec ses deux anses rondes et son rabat fermé par une sangle et un fermoir doré. Les surpiqûres apparentes soulignent chaque contour et donnent un aspect très soigné.\n---\nPourquoi vous allez l’adorer\n• Rouge franc : Une couleur intense qui attire le regard et réveille toutes les tenues.\n• Silhouette structurée : Une forme bien tenue qui garde sa ligne.\n• Rabat avec sangle : Le rabat se ferme avec une sangle et un fermoir doré.\n• Surpiqûres visibles : Des coutures apparentes soignées qui soulignent les contours, et deux anses rondes pour le porter à la main.\n\nConseil de style : Pour un look éclatant, associez-le à du noir ou du blanc et laissez le rouge parler. Une robe noire pour une soirée, ou un pantalon crème pour un déjeuner, et le tour est joué.",
+      en: "A red with a voice of its own, for those who own it!\nThis structured handbag makes an instant impression, with two rounded handles and a flap closed by a strap and a gold-tone clasp. The visible topstitching outlines every edge and gives a very neat finish.\n---\nWhy you will love it\n• Bold red: An intense colour that draws the eye and wakes up any outfit.\n• Structured silhouette: A well-held shape that keeps its line.\n• Flap with strap: The flap closes with a strap and a gold-tone clasp.\n• Visible topstitching: Neat exposed stitching that outlines the edges, and two rounded handles for carrying it by hand.\n\nStyle tip: For a striking look, pair it with black or white and let the red speak. A black dress for an evening out, or cream trousers for lunch, and you’re set.",
     },
-    features: {
-      fr: ["Coloris : rouge", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
-      en: ["Colour: red", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
-    },
+
   }),
   newProduct("sac-rabat-beige-fermoir-dore", "bags", {
     name: { fr: "Sac à main beige à rabat, fermoir doré", en: "Beige flap handbag with gold clasp" },
@@ -2624,13 +2461,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-beige-fermoir-dore.jpg"],
     description: {
-      fr: "Un beige chaud pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
-      en: "A warm beige for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+      fr: "Un beige chaud qui va avec tout, sans jamais être banal !\nCe sac à main structuré a deux anses rondes et un rabat fermé par une sangle et un fermoir doré. Ses surpiqûres soignées lui donnent une allure nette, parfaite pour celles qui aiment les tons doux.\n---\nPourquoi vous allez l’adorer\n• Beige chaud : Un coloris doux et lumineux, facile à associer avec le reste de la garde-robe.\n• Forme structurée : Une ligne bien tenue, élégante et nette.\n• Sangle et fermoir doré : Le rabat se ferme avec une sangle, rehaussée d’un fermoir doré.\n• Anses rondes et surpiqûres : Deux anses rondes pour le porter à la main, avec des coutures apparentes bien nettes.\n\nConseil de style : Il s’accorde très bien avec une tenue tout en blanc, ou avec du marron et du kaki pour un style naturel. Un trench léger et ce sac, et vous avez une allure de pro en un instant.",
+      en: "A warm beige that goes with everything, without ever being dull!\nThis structured handbag has two rounded handles and a flap closed by a strap and a gold-tone clasp. Its neat topstitching gives it a clean look, perfect for anyone who loves soft tones.\n---\nWhy you will love it\n• Warm beige: A soft, bright colour that’s easy to match with the rest of your wardrobe.\n• Structured shape: A well-held line, elegant and crisp.\n• Strap and gold-tone clasp: The flap closes with a strap, set off by a gold-tone clasp.\n• Rounded handles and stitching: Two rounded handles for carrying by hand, with clean exposed seams.\n\nStyle tip: It goes very well with an all-white outfit, or with brown and khaki for a natural style. A light trench coat and this bag, and you look polished in an instant.",
     },
-    features: {
-      fr: ["Coloris : beige", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
-      en: ["Colour: beige", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
-    },
+
   }),
   newProduct("sac-rabat-vert-fermoir-dore", "bags", {
     name: { fr: "Sac à main vert émeraude à rabat, fermoir doré", en: "Emerald green flap handbag with gold clasp" },
@@ -2640,13 +2474,10 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/sac-rabat-vert-fermoir-dore.jpg"],
     description: {
-      fr: "Un vert vif pour ce sac à main structuré, qui se remarque tout de suite. Deux anses rondes pour le porter à la main, un rabat fermé par une sangle et un fermoir doré, des surpiqûres soignées. Il donne du caractère à une tenue de bureau comme à une tenue de soirée.",
-      en: "A vivid green for this structured handbag that gets noticed straight away. Two rounded handles to carry it by hand, a flap closed by a strap and a gold clasp, neat stitching. It adds character to an office outfit as well as an evening one.",
+      fr: "Le vert émeraude, pour sortir du lot avec élégance !\nCe sac à main structuré a un vert vif et profond qui se remarque de loin. Il a deux anses rondes, un rabat fermé par une sangle et un fermoir doré, et des surpiqûres apparentes qui soulignent sa forme.\n---\nPourquoi vous allez l’adorer\n• Vert émeraude vif : Une couleur riche et lumineuse, qui donne de la présence à n’importe quelle tenue.\n• Allure structurée : Une silhouette nette et élégante.\n• Fermoir doré : Le rabat est fermé par une sangle et un fermoir doré qui contraste joliment avec le vert.\n• Finitions soignées : Surpiqûres apparentes et deux anses rondes pour le porter à la main.\n\nConseil de style : Essayez-le avec du noir, du blanc cassé ou du doré pour un contraste chic. Pour une cérémonie ou un dîner, une robe sobre suffit : le vert fait le reste.",
+      en: "Emerald green, for standing out with elegance!\nThis structured handbag has a bright, deep green you can spot from afar. It has two rounded handles, a flap closed by a strap and a gold-tone clasp, and visible topstitching that outlines its shape.\n---\nWhy you will love it\n• Vivid emerald green: A rich, luminous colour that gives any outfit presence.\n• Structured look: A clean, elegant silhouette.\n• Gold-tone clasp: The flap is closed by a strap and a gold-tone clasp that contrasts nicely with the green.\n• Neat finishes: Visible topstitching and two rounded handles for carrying by hand.\n\nStyle tip: Try it with black, off-white or gold for a chic contrast. For a ceremony or dinner, a simple dress is enough: the green does the rest.",
     },
-    features: {
-      fr: ["Coloris : vert émeraude", "Deux anses rondes", "Rabat avec sangle et fermoir doré", "Surpiqûres apparentes"],
-      en: ["Colour: emerald green", "Two rounded handles", "Flap with strap and gold clasp", "Visible stitching"],
-    },
+
   }),
   newProduct("cosmetique-parfum-01-is", "cosmetics", {
     name: { fr: "iS, eau de parfum 100 ml", en: "iS, eau de parfum 100 ml" },
@@ -3261,6 +3092,22 @@ const showcases: Showcase[] = [
   { id: "showcase-jewelry-women", category: "jewelry", subcategory: null, audience: "women", title: { fr: "Bijoux · Femme", en: "Jewellery · Women" }, image: "/bijoux-femme-style.jpg", position: "center 40%" },
 ];
 
+const DescriptionBlock = ({ text, lang }: { text: string; lang: Lang }) => {
+  const [intro, more] = text.split("\n---\n");
+  if (!more) return <p className="detail-description">{text}</p>;
+  const lines = more.split("\n");
+  const body = lines.slice(1).join("\n").trim();
+  return (
+    <div className="detail-description">
+      <p>{intro}</p>
+      <details className="detail-more">
+        <summary>{lines[0]}<i aria-hidden="true">+</i></summary>
+        <p>{body}</p>
+      </details>
+    </div>
+  );
+};
+
 const copy = {
   fr: {
     announcement: "Catalogue en préparation — seules les informations vérifiées seront publiées",
@@ -3611,7 +3458,7 @@ export default function App() {
           <button className="back-link" onClick={() => openCategory(selectedProduct.category)}><span>←</span>{t.backCategory} · {getCategory(selectedProduct.category).name[lang]}</button>
           <div className="product-detail">
             <div className="product-gallery"><div className="main-image">{selectedProduct.images.length ? <img src={selectedProduct.images[imageIndex] ?? selectedProduct.images[0]} alt={displayName(selectedProduct, lang)} style={fitStyle(selectedProduct)} /> : <><ProductPlaceholder category={selectedProduct.category} /><span className="demo-label">{lang === "fr" ? "Photo réelle à importer" : "Real photo to upload"}</span></>}</div>{selectedProduct.images.length ? <div className="thumbnail-row">{selectedProduct.images.map((src, index) => <button className={index === imageIndex ? "active" : ""} key={src} onClick={() => setImageIndex(index)} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${index + 1}`}><img src={src} alt="" style={fitStyle(selectedProduct)} /></button>)}</div> : <><div className="thumbnail-row">{[1, 2, 3, 4].map((item) => <button className={item === 1 ? "active placeholder-thumb" : "placeholder-thumb"} key={item} aria-label={`${lang === "fr" ? "Angle photo" : "Photo angle"} ${item}`}><Icon name="image" /></button>)}</div><p className="photo-guidance">{lang === "fr" ? "Emplacements prévus pour la vue principale, le détail, le profil et la mise en situation. Aucune image illustrative n’est associée au stock." : "Slots for main view, detail, profile and context. No illustrative image is presented as stock photography."}</p></>}</div>
-            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(shownProduct, lang)}</div><p className="detail-description">{selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")}</p>
+            <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(shownProduct, lang)}</div><DescriptionBlock text={selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")} lang={lang} />
               {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
               {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
               <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : <div className="unconfigured-field">{lang === "fr" ? "Couleurs, tailles ou modèles à renseigner" : "Colours, sizes or models to complete"}</div>}</div>
