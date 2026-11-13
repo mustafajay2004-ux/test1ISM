@@ -868,7 +868,7 @@ const catalogue: Product[] = [
     {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/enceinte-loveyin-ai176-noir.jpg"]},
   ]),
   newProduct("watch-day-date-palmier", "watches", {
-    name: { fr: "Day-Date Palmier – Acier & Or jaune", en: "Day-Date Palm – Steel & Yellow Gold" },
+    name: { fr: "Rolex Day-Date Palmier – Acier & Or jaune", en: "Rolex Day-Date Palm – Steel & Yellow Gold" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-day-date-palmier.jpg"],
@@ -896,7 +896,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bleue", "watches", {
-    name: { fr: "Submariner Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue – Red Dial" },
+    name: { fr: "Rolex Submariner Bleu Électrique – Cadran Rouge", en: "Rolex Submariner Electric Blue – Red Dial" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bleue.jpg"],
@@ -910,7 +910,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-oyster-perpetual-noire", "watches", {
-    name: { fr: "Oyster Perpetual Noir – L’essentiel en acier", en: "Oyster Perpetual Black – Steel essentials" },
+    name: { fr: "Rolex Oyster Perpetual Noir – L’essentiel en acier", en: "Rolex Oyster Perpetual Black – Steel essentials" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-oyster-perpetual-noire.jpg"],
@@ -924,7 +924,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bicolore", "watches", {
-    name: { fr: "Submariner Acier & Or – Lunette Noire", en: "Submariner Steel & Gold – Black Bezel" },
+    name: { fr: "Rolex Submariner Acier & Or – Lunette Noire", en: "Rolex Submariner Steel & Gold – Black Bezel" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bicolore.jpg"],
@@ -1337,7 +1337,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-doree-verte", "watches", {
-    name: { fr: "Land-Dweller dorée – Cadran vert alvéolé", en: "Gold-tone Land-Dweller – Honeycomb green dial" },
+    name: { fr: "Rolex Land-Dweller dorée – Cadran vert alvéolé", en: "Rolex Gold-tone Land-Dweller – Honeycomb green dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1353,7 +1353,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-doree-champagne", "watches", {
-    name: { fr: "Datejust dorée – Cadran champagne alvéolé", en: "Gold-tone Datejust – Honeycomb champagne dial" },
+    name: { fr: "Rolex Datejust dorée – Cadran champagne alvéolé", en: "Rolex Gold-tone Datejust – Honeycomb champagne dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1369,7 +1369,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-acier-blanc", "watches", {
-    name: { fr: "Datejust acier – Cadran blanc texturé", en: "Steel Datejust – Textured white dial" },
+    name: { fr: "Rolex Datejust acier – Cadran blanc texturé", en: "Rolex Steel Datejust – Textured white dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1385,7 +1385,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-noire", "watches", {
-    name: { fr: "Land-Dweller acier – Cadran noir alvéolé", en: "Steel Land-Dweller – Honeycomb black dial" },
+    name: { fr: "Rolex Land-Dweller acier – Cadran noir alvéolé", en: "Rolex Steel Land-Dweller – Honeycomb black dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1401,7 +1401,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-champagne-bleu", "watches", {
-    name: { fr: "Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Steel Land-Dweller – Champagne dial, light blue ring" },
+    name: { fr: "Rolex Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Rolex Steel Land-Dweller – Champagne dial, light blue ring" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1417,7 +1417,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-acier-motif-logo-president", "watches", {
-    name: { fr: "Montre acier – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
+    name: { fr: "Rolex  – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
