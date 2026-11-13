@@ -445,3 +445,4 @@ h3 { margin: 0; color: var(--navy); }
 .detail-more summary i { font-style: normal; font-size: 18px; transition: transform .2s; }
 .detail-more[open] summary i { transform: rotate(45deg); }
 .detail-more > p { margin: 0; padding: 0 16px 16px; white-space: pre-line; }
+.detail-more > .detail-more-body p { margin: 0 0 12px; }
