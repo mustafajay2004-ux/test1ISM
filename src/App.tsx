@@ -3094,15 +3094,31 @@ const showcases: Showcase[] = [
 
 const DescriptionBlock = ({ text, lang }: { text: string; lang: Lang }) => {
   const [intro, more] = text.split("\n---\n");
-  if (!more) return <p className="detail-description">{text}</p>;
+  const introLines = intro.split("\n");
+  if (!more) return <p className="detail-description" style={{ whiteSpace: "pre-line" }}>{text}</p>;
   const lines = more.split("\n");
-  const body = lines.slice(1).join("\n").trim();
+  const rest = lines.slice(1);
   return (
     <div className="detail-description">
-      <p>{intro}</p>
+      {introLines.map((line, i) => <p key={i} style={{ margin: "0 0 10px", whiteSpace: "normal" }}>{line}</p>)}
       <details className="detail-more">
         <summary>{lines[0]}<i aria-hidden="true">+</i></summary>
-        <p>{body}</p>
+        <div className="detail-more-body" style={{ padding: "4px 16px 18px" }}>
+          {rest.map((line, i) => {
+            if (!line.trim()) return <div key={i} style={{ height: 8 }} />;
+            if (line.startsWith("• ")) {
+              const body = line.slice(2);
+              const cut = body.indexOf(" : ");
+              return (
+                <p key={i} style={{ margin: "0 0 12px", paddingLeft: 16, textIndent: -16, lineHeight: 1.7, whiteSpace: "normal" }}>
+                  <span aria-hidden="true">•&nbsp;&nbsp;</span>
+                  {cut > 0 ? <><strong style={{ color: "var(--navy)" }}>{body.slice(0, cut)}</strong>{body.slice(cut)}</> : body}
+                </p>
+              );
+            }
+            return <p key={i} style={{ margin: "14px 0 8px", fontWeight: 700, color: "var(--navy)", whiteSpace: "normal" }}>{line}</p>;
+          })}
+        </div>
       </details>
     </div>
   );
