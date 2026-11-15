@@ -895,6 +895,54 @@ const catalogue: Product[] = [
       en: ["Rolex inscription on the dial, Datejust model", "Black case, fluted bezel and President bracelet", "Silver dial, diamond-style and baguette markers", "Date at 3 o’clock", "Style: classic"],
     },
   }),
+  newProduct("montre-nautilus-blanc-cuir-brun", "watches", {
+    price: 20000,
+    priceOnRequest: false,
+    name: { fr: "Montre octogonale – Cadran blanc strié & bracelet brun", en: "Octagonal watch – White ridged dial & brown strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-nautilus-blanc-cuir-brun.jpg"],
+    description: {
+      fr: "Clarté, finesse et élégance naturelle : la montre qui s’impose sans élever la voix.\nSon boîtier aux lignes arrondies, mêlant surfaces satinées et bords polis, encadre un cadran blanc aux fines stries horizontales. Associée à un bracelet brun au grain croco, elle affiche un raffinement discret, du bureau aux soirées. L’inscription Patek Philippe Genève figure sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Silhouette octogonale arrondie : Une lunette aux angles adoucis qui capte la lumière et donne tout de suite du caractère.\n• Cadran blanc texturé : Des stries horizontales et des index bâtons lumineux pour une lecture claire en un coup d’œil.\n• Bracelet brun grain croco : Une teinte chaude et profonde qui change de l’acier et s’accorde avec les tenues habillées.\n• Sobriété fonctionnelle : Trois aiguilles et une date à 3 heures, sans rien de superflu.\n\nConseil de style : Avec une chemise claire ou un costume bleu marine, le bracelet brun donne un vrai relief à la tenue.",
+      en: "Clarity, finesse and natural elegance: the watch that stands out without raising its voice.\nIts rounded-edge case, mixing satin surfaces and polished edges, frames a white dial with fine horizontal ridges. Paired with a brown croc-grain strap, it shows a discreet refinement, from the office to evenings out. The Patek Philippe Genève inscription appears on the dial.\n---\nWhy you will love it\n• Rounded octagonal shape: A bezel with softened corners that catches the light and gives instant character.\n• Textured white dial: Horizontal ridges and luminous baton markers for a clear read at a glance.\n• Brown croc-grain strap: A warm, deep shade that breaks from steel and suits dressed-up outfits.\n• Functional simplicity: Three hands and a date at 3 o’clock, nothing superfluous.\n\nStyle tip: With a light shirt or a navy suit, the brown strap gives the outfit real depth.",
+    },
+    features: {
+      fr: ["Inscription Patek Philippe Genève sur le cadran", "Boîtier octogonal aux angles arrondis, finitions satinées et polies", "Cadran blanc strié, index bâtons lumineux", "Date à 3 heures", "Bracelet brun au grain croco"],
+      en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin and polished finishes", "White ridged dial, luminous baton markers", "Date at 3 o’clock", "Brown croc-grain strap"],
+    },
+  }),
+  newProduct("montre-nautilus-noir-cuir-noir", "watches", {
+    price: 20000,
+    priceOnRequest: false,
+    name: { fr: "Montre octogonale – Cadran noir strié & bracelet noir", en: "Octagonal watch – Black ridged dial & black strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-nautilus-noir-cuir-noir.jpg"],
+    description: {
+      fr: "Le noir qui fait tout : une allure habillée, sobre, qui se remarque pour de bonnes raisons.\nUn boîtier aux surfaces satinées et polies, un cadran noir strié horizontalement et un bracelet noir au grain croco : tout est dans le contraste et la profondeur. Elle suit un costume le matin comme une tenue plus détendue le week-end. L’inscription Patek Philippe Genève figure sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Cadran noir strié : Un fond profond qui joue avec la lumière et fait ressortir les index lumineux.\n• Boîtier aux lignes arrondies : Des finitions satinées et polies qui donnent du relief au poignet.\n• Bracelet noir grain croco : Une allure habillée qui s’accorde avec tout, du blazer au jean.\n• Lecture simple : Trois aiguilles et une date à 3 heures pour un cadran net et équilibré.\n\nConseil de style : Parfaite avec un costume sombre, mais elle donne aussi du style à un simple t-shirt blanc.",
+      en: "Black does it all: a dressy, understated look that gets noticed for good reasons.\nA case with satin and polished surfaces, a black dial with horizontal ridges and a black croc-grain strap: it is all about contrast and depth. It follows a suit in the morning as well as a more relaxed outfit at the weekend. The Patek Philippe Genève inscription appears on the dial.\n---\nWhy you will love it\n• Black ridged dial: A deep backdrop that plays with the light and sets off the luminous markers.\n• Rounded-line case: Satin and polished finishes that give the wrist presence.\n• Black croc-grain strap: A dressy look that goes with everything, from blazer to jeans.\n• Easy to read: Three hands and a date at 3 o’clock for a clean, balanced dial.\n\nStyle tip: Perfect with a dark suit, but it also adds style to a simple white T-shirt.",
+    },
+    features: {
+      fr: ["Inscription Patek Philippe Genève sur le cadran", "Boîtier octogonal aux angles arrondis, finitions satinées et polies", "Cadran noir strié, index bâtons lumineux", "Date à 3 heures", "Bracelet noir au grain croco"],
+      en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin and polished finishes", "Black ridged dial, luminous baton markers", "Date at 3 o’clock", "Black croc-grain strap"],
+    },
+  }),
+  newProduct("montre-nautilus-bleu-acier", "watches", {
+    price: 20000,
+    priceOnRequest: false,
+    name: { fr: "Montre octogonale – Cadran bleu dégradé & bracelet métal", en: "Octagonal watch – Gradient blue dial & metal bracelet" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-nautilus-bleu-acier.jpg"],
+    description: {
+      fr: "Un bleu profond qui accroche l’œil, sur un look tout métal qui va avec tout !\nUn cadran bleu dégradé aux stries horizontales, un boîtier aux lignes arrondies et un bracelet métallique aux maillons alternant satiné et poli : l’ensemble donne une présence nette et élégante au poignet. L’inscription Patek Philippe Genève figure sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Cadran bleu dégradé : Un bleu qui passe du nuit à l’azur selon la lumière, relevé par des stries horizontales.\n• Bracelet métallique intégré : Des maillons satinés et polis qui se fondent dans le boîtier pour une allure continue.\n• Silhouette octogonale arrondie : Une lunette reconnaissable de loin, sportive et chic à la fois.\n• Quantième à 3 heures : Trois aiguilles lumineuses et une date, pour un cadran net et lisible.\n\nConseil de style : Du bureau à la soirée, elle se suffit à elle-même : une chemise blanche ou un polo noir, et le bleu fait le reste.",
+      en: "A deep blue that catches the eye, on an all-metal look that goes with everything!\nA gradient blue dial with horizontal ridges, a rounded-line case and a metal bracelet with links alternating satin and polished: the whole gives the wrist a sharp, elegant presence. The Patek Philippe Genève inscription appears on the dial.\n---\nWhy you will love it\n• Gradient blue dial: A blue that shifts from midnight to azure with the light, set off by horizontal ridges.\n• Integrated metal bracelet: Satin and polished links that blend into the case for a seamless look.\n• Rounded octagonal shape: A bezel recognisable from afar, sporty and chic at once.\n• Date at 3 o’clock: Three luminous hands and a date, for a clean, legible dial.\n\nStyle tip: From the office to the evening, it speaks for itself: a white shirt or a black polo, and the blue does the rest.",
+    },
+    features: {
+      fr: ["Inscription Patek Philippe Genève sur le cadran", "Boîtier octogonal aux angles arrondis, finitions satinées et polies", "Cadran bleu dégradé strié, index bâtons lumineux", "Date à 3 heures", "Bracelet métallique à maillons satinés et polis"],
+      en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin and polished finishes", "Gradient blue ridged dial, luminous baton markers", "Date at 3 o’clock", "Metal bracelet with satin and polished links"],
+    },
+  }),
   newProduct("watch-submariner-bleue", "watches", {
     name: { fr: "Submariner Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue – Red Dial" },
     subcategory: "sports",
@@ -3188,6 +3236,8 @@ const DescriptionBlock = ({ text, lang }: { text: string; lang: Lang }) => {
                 </p>
               );
             }
+            const tip = line.match(/^(Conseil de style :|Style tip:)\s*(.*)$/);
+            if (tip) return <p key={i} style={{ margin: "14px 0 0", lineHeight: 1.7, whiteSpace: "normal" }}><strong style={{ color: "var(--navy)" }}>{tip[1]}</strong> {tip[2]}</p>;
             return <p key={i} style={{ margin: "14px 0 8px", fontWeight: 700, color: "var(--navy)", whiteSpace: "normal" }}>{line}</p>;
           })}
         </div>
