@@ -868,7 +868,7 @@ const catalogue: Product[] = [
     {"fr": "Noir", "en": "Black", "slug": "noir", "images": ["/enceinte-loveyin-ai176-noir.jpg"]},
   ]),
   newProduct("watch-day-date-palmier", "watches", {
-    name: { fr: "Rolex Day-Date Palmier – Acier & Or jaune", en: "Rolex Day-Date Palm – Steel & Yellow Gold" },
+    name: { fr: "Day-Date Palmier – Acier & Or jaune", en: "Day-Date Palm – Steel & Yellow Gold" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-day-date-palmier.jpg"],
@@ -896,7 +896,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bleue", "watches", {
-    name: { fr: "Rolex Submariner Bleu Électrique – Cadran Rouge", en: "Rolex Submariner Electric Blue – Red Dial" },
+    name: { fr: "Submariner Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue – Red Dial" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bleue.jpg"],
@@ -910,7 +910,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-oyster-perpetual-noire", "watches", {
-    name: { fr: "Rolex Oyster Perpetual Noir – L’essentiel en acier", en: "Rolex Oyster Perpetual Black – Steel essentials" },
+    name: { fr: "Oyster Perpetual Noir – L’essentiel en acier", en: "Oyster Perpetual Black – Steel essentials" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-oyster-perpetual-noire.jpg"],
@@ -924,7 +924,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bicolore", "watches", {
-    name: { fr: "Rolex Submariner Acier & Or – Lunette Noire", en: "Rolex Submariner Steel & Gold – Black Bezel" },
+    name: { fr: "Submariner Acier & Or – Lunette Noire", en: "Submariner Steel & Gold – Black Bezel" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bicolore.jpg"],
@@ -1337,7 +1337,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-doree-verte", "watches", {
-    name: { fr: "Rolex Land-Dweller dorée – Cadran vert alvéolé", en: "Rolex Gold-tone Land-Dweller – Honeycomb green dial" },
+    name: { fr: "Land-Dweller dorée – Cadran vert alvéolé", en: "Gold-tone Land-Dweller – Honeycomb green dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1353,7 +1353,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-doree-champagne", "watches", {
-    name: { fr: "Rolex Datejust dorée – Cadran champagne alvéolé", en: "Rolex Gold-tone Datejust – Honeycomb champagne dial" },
+    name: { fr: "Datejust dorée – Cadran champagne alvéolé", en: "Gold-tone Datejust – Honeycomb champagne dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1369,7 +1369,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-acier-blanc", "watches", {
-    name: { fr: "Rolex Datejust acier – Cadran blanc texturé", en: "Rolex Steel Datejust – Textured white dial" },
+    name: { fr: "Datejust acier – Cadran blanc texturé", en: "Steel Datejust – Textured white dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1385,7 +1385,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-noire", "watches", {
-    name: { fr: "Rolex Land-Dweller acier – Cadran noir alvéolé", en: "Rolex Steel Land-Dweller – Honeycomb black dial" },
+    name: { fr: "Land-Dweller acier – Cadran noir alvéolé", en: "Steel Land-Dweller – Honeycomb black dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1401,7 +1401,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-champagne-bleu", "watches", {
-    name: { fr: "Rolex Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Rolex Steel Land-Dweller – Champagne dial, light blue ring" },
+    name: { fr: "Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Steel Land-Dweller – Champagne dial, light blue ring" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1417,7 +1417,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-acier-motif-logo-president", "watches", {
-    name: { fr: "Rolex  – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
+    name: { fr: "Montre acier – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -2478,6 +2478,78 @@ const catalogue: Product[] = [
       en: "Emerald green, for standing out with elegance!\nThis structured handbag has a bright, deep green you can spot from afar. It has two rounded handles, a flap closed by a strap and a gold-tone clasp, and visible topstitching that outlines its shape.\n---\nWhy you will love it\n• Vivid emerald green: A rich, luminous colour that gives any outfit presence.\n• Structured look: A clean, elegant silhouette.\n• Gold-tone clasp: The flap is closed by a strap and a gold-tone clasp that contrasts nicely with the green.\n• Neat finishes: Visible topstitching and two rounded handles for carrying by hand.\n\nStyle tip: Try it with black, off-white or gold for a chic contrast. For a ceremony or dinner, a simple dress is enough: the green does the rest.",
     },
 
+  }),
+  newProduct("sac-ensemble-cadenas-caramel", "bags", {
+    name: { fr: "Ensemble sac à main caramel à cadenas doré + pochette", en: "Caramel handbag set with gold padlock + pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-cadenas-caramel.jpg"],
+    description: {
+      fr: "Le caramel qui va avec tout, et un cadenas qui fait toute la différence !\nCe sac à main structuré joue la carte de la douceur : une teinte caramel chaleureuse, deux anses rondes et une sangle fermée par un cadenas doré. Il est présenté avec sa petite pochette assortie, pour que tout soit prêt dès la première sortie.\n---\nPourquoi vous allez l’adorer\n• Teinte caramel : Une couleur chaude et facile à associer, du jean au tailleur.\n• Cadenas et breloque dorés : Le cadenas décoratif et la breloque en anneau doré donnent du caractère au sac.\n• Deux anses rondes : Pour le porter à la main avec élégance, avec un anneau doré sur le côté pour une bandoulière.\n• Pochette assortie : Une petite pochette à rabat avec bouton pression doré, dans la même teinte, présentée avec le sac.\n\nConseil de style : Associez-le à une tenue simple en blanc ou en noir : le caramel et l’or font le reste.",
+      en: "The caramel that goes with everything, and a padlock that makes all the difference!\nThis structured handbag plays the softness card: a warm caramel shade, two rounded handles and a strap closed by a gold padlock. It is shown with its small matching pouch, so everything is ready for the first outing.\n---\nWhy you will love it\n• Caramel shade: A warm colour that is easy to pair, from jeans to a tailored suit.\n• Gold padlock and charm: The decorative padlock and the gold ring charm give the bag character.\n• Two rounded handles: To carry it elegantly by hand, with a gold ring on the side for a shoulder strap.\n• Matching pouch: A small flap pouch with a gold snap button, in the same shade, shown with the bag.\n\nStyle tip: Pair it with a simple outfit in white or black: the caramel and gold do the rest.",
+    },
+  }),
+  newProduct("sac-ensemble-cadenas-vert", "bags", {
+    name: { fr: "Ensemble sac à main vert à cadenas bleu + pochette", en: "Green handbag set with blue padlock + pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-cadenas-vert.jpg"],
+    description: {
+      fr: "Un vert profond qui ne passe pas inaperçu, pour celles qui aiment oser !\nUn sac à main structuré d’un vert intense, fermé par une sangle et un cadenas aux reflets bleus. Il vient avec sa pochette assortie à rabat, pensée pour l’essentiel du quotidien.\n---\nPourquoi vous allez l’adorer\n• Vert intense : Une couleur profonde et élégante qui se remarque tout de suite.\n• Cadenas bleu et breloque dorée : Un contraste de couleurs qui apporte une touche originale.\n• Deux anses rondes : Pour le porter à la main, avec un anneau doré sur le côté pour une bandoulière.\n• Pochette assortie : Une pochette à rabat avec bouton pression doré et anse fine pour l’épaule, dans le même vert.\n\nConseil de style : Le vert aime le neutre : un total look noir, beige ou blanc le met parfaitement en valeur.",
+      en: "A deep green that does not go unnoticed, for those who love to dare!\nA structured handbag in an intense green, closed by a strap and a padlock with blue reflections. It comes with its matching flap pouch, made for everyday essentials.\n---\nWhy you will love it\n• Intense green: A deep, elegant colour that gets noticed straight away.\n• Blue padlock and gold charm: A colour contrast that adds an original touch.\n• Two rounded handles: To carry by hand, with a gold ring on the side for a shoulder strap.\n• Matching pouch: A flap pouch with a gold snap button and a slim shoulder strap, in the same green.\n\nStyle tip: Green loves neutrals: an all-black, beige or white outfit sets it off perfectly.",
+    },
+  }),
+  newProduct("sac-ensemble-cadenas-bordeaux", "bags", {
+    name: { fr: "Ensemble sac à main bordeaux à cadenas + pochette", en: "Burgundy handbag set with padlock + pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 9000,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-cadenas-bordeaux.jpg"],
+    description: {
+      fr: "Un bordeaux chic et chaleureux pour des tenues qui ont du style !\nCe sac à main structuré en bordeaux se ferme par une sangle avec cadenas doré. Sa breloque ornée d’un cœur en strass lui donne un petit côté précieux, et sa pochette assortie complète l’ensemble.\n---\nPourquoi vous allez l’adorer\n• Bordeaux profond : Une teinte élégante qui fait toujours effet, de jour comme de soir.\n• Breloque cœur en strass : Un détail doré et brillant qui personnalise le sac.\n• Deux anses rondes : Pour le porter à la main, avec une bandoulière amovible possible grâce aux anneaux dorés sur les côtés.\n• Pochette assortie : Une pochette à rabat avec bouton pression doré, dans le même bordeaux.\n\nConseil de style : Le bordeaux se marie très bien avec le noir, le beige ou le gris clair, pour une tenue chic sans effort.",
+      en: "A chic, warm burgundy for outfits with style!\nThis structured burgundy handbag closes with a strap and a gold padlock. Its rhinestone heart charm gives it a precious touch, and the matching pouch completes the set.\n---\nWhy you will love it\n• Deep burgundy: An elegant shade that always makes an impression, day or night.\n• Rhinestone heart charm: A shiny gold detail that personalises the bag.\n• Two rounded handles: To carry by hand, with gold rings on the sides for a shoulder strap.\n• Matching pouch: A flap pouch with a gold snap button, in the same burgundy.\n\nStyle tip: Burgundy pairs very well with black, beige or light grey for an effortlessly chic outfit.",
+    },
+  }),
+  newProduct("sac-ensemble-seau-noir-taupe", "bags", {
+    name: { fr: "Ensemble sac bandoulière noir à bande taupe + portefeuille", en: "Black crossbody bag with taupe band + wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-seau-noir-taupe.jpg"],
+    description: {
+      fr: "Un noir sobre avec une touche taupe, pour un look qui va partout !\nCe sac à bandoulière à la forme de seau joue sur le contraste : un panneau noir texturé encadré de taupe, avec un ornement doré au centre. Il est présenté avec son portefeuille assorti à rabat.\n---\nPourquoi vous allez l’adorer\n• Noir et taupe : Un duo sobre et moderne qui se porte en toute occasion.\n• Ornement doré : Un détail central qui apporte une touche chic sans en faire trop.\n• Bandoulière réglable : Une longue bandoulière avec mousquetons dorés, pour garder les mains libres.\n• Portefeuille assorti : Un portefeuille long à rabat avec bouton pression doré, dans le même noir.\n\nConseil de style : Parfait pour la fac comme pour une sortie : un jean, une chemise blanche et c’est réglé.",
+      en: "A sober black with a taupe touch, for a look that goes everywhere!\nThis bucket-shaped crossbody bag plays on contrast: a textured black panel framed in taupe, with a gold ornament at the centre. It is shown with its matching flap wallet.\n---\nWhy you will love it\n• Black and taupe: A sober, modern duo for any occasion.\n• Gold ornament: A central detail that adds a chic touch without overdoing it.\n• Adjustable shoulder strap: A long strap with gold snap hooks, to keep your hands free.\n• Matching wallet: A long flap wallet with a gold snap button, in the same black.\n\nStyle tip: Perfect for campus as well as a night out: jeans, a white shirt and you are done.",
+    },
+  }),
+  newProduct("sac-ensemble-beige-liseres-creme", "bags", {
+    name: { fr: "Ensemble sac à main beige à liserés crème + portefeuille", en: "Beige handbag with cream trim + wallet" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-beige-liseres-creme.jpg"],
+    description: {
+      fr: "Un beige lumineux, doux et élégant, pour un style tout en finesse !\nCe sac à main structuré associe un beige chaud à des liserés crème et à un ornement doré au centre. Ses deux anses rondes, nouées à la base, lui donnent une allure soignée. Il est présenté avec son portefeuille enveloppe assorti.\n---\nPourquoi vous allez l’adorer\n• Beige et crème : Un camaïeu doux et lumineux qui s’accorde avec presque tout.\n• Ornement doré : Un petit détail brillant au centre pour une touche de raffinement.\n• Deux anses rondes : Pour le porter à la main, avec des anneaux dorés sur les côtés pour une bandoulière.\n• Portefeuille enveloppe : Un portefeuille à rabat triangulaire avec bouton pression doré, dans le même beige.\n\nConseil de style : Du blanc, du camel ou du bleu ciel : les tons clairs vont très bien avec ce sac, surtout au printemps.",
+      en: "A bright, soft and elegant beige for a refined style!\nThis structured handbag pairs a warm beige with cream trim and a gold ornament at the centre. Its two rounded handles, tied at the base, give it a polished look. It is shown with its matching envelope wallet.\n---\nWhy you will love it\n• Beige and cream: A soft, bright tone-on-tone palette that goes with almost anything.\n• Gold ornament: A small shiny detail at the centre for a touch of refinement.\n• Two rounded handles: To carry by hand, with gold rings on the sides for a shoulder strap.\n• Envelope wallet: A wallet with a triangular flap and a gold snap button, in the same beige.\n\nStyle tip: White, camel or sky blue: light tones suit this bag very well, especially in spring.",
+    },
+  }),
+  newProduct("sac-ensemble-gris-liseres-clairs", "bags", {
+    name: { fr: "Ensemble sac à main gris à liserés clairs + pochette", en: "Grey handbag with light trim + pouch" },
+    subcategory: "handbags",
+    audience: "women",
+    price: 8500,
+    priceOnRequest: false,
+    images: ["/sac-ensemble-gris-liseres-clairs.jpg"],
+    description: {
+      fr: "Un gris tendance qui habille toutes les tenues !\nCe sac à main structuré en gris met en avant un ornement doré sur un panneau texturé, souligné de liserés clairs. Ses deux anses rondes le rendent facile à porter, et sa pochette assortie à rabat complète l’ensemble.\n---\nPourquoi vous allez l’adorer\n• Gris et liserés clairs : Un look moderne et sobre, facile à associer.\n• Ornement doré : Un détail brillant au centre qui donne de l’allure à l’ensemble.\n• Deux anses rondes : Pour le porter à la main, avec des anneaux dorés sur les côtés pour une bandoulière.\n• Pochette assortie : Une pochette à rabat avec bouton pression doré, dans le même gris.\n\nConseil de style : Le gris s’accorde avec tout : essayez-le avec une tenue rose poudré, bleu marine ou blanche.",
+      en: "A trendy grey that dresses every outfit!\nThis structured grey handbag features a gold ornament on a textured panel, underlined by light trim. Its two rounded handles make it easy to carry, and its matching flap pouch completes the set.\n---\nWhy you will love it\n• Grey with light trim: A modern, sober look that is easy to match.\n• Gold ornament: A shiny detail at the centre that gives the whole set some presence.\n• Two rounded handles: To carry by hand, with gold rings on the sides for a shoulder strap.\n• Matching pouch: A flap pouch with a gold snap button, in the same grey.\n\nStyle tip: Grey goes with everything: try it with a powder pink, navy or white outfit.",
+    },
   }),
   newProduct("cosmetique-parfum-01-is", "cosmetics", {
     name: { fr: "iS, eau de parfum 100 ml", en: "iS, eau de parfum 100 ml" },
