@@ -896,7 +896,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-blanc-cuir-brun", "watches", {
-    name: { fr: "Montre octogonale – Cadran blanc strié & bracelet brun", en: "Octagonal watch – White ridged dial & brown strap" },
+    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran blanc strié & bracelet brun", en: "Octagonal watch Patek Philipe Nautilu – White ridged dial & brown strap" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-blanc-cuir-brun.jpg"],
@@ -910,7 +910,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-noir-cuir-noir", "watches", {
-    name: { fr: "Montre octogonale – Cadran noir strié & bracelet noir", en: "Octagonal watch – Black ridged dial & black strap" },
+    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran noir strié & bracelet noir", en: "Octagonal watch Patek Philipe Nautilus – Black ridged dial & black strap" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-noir-cuir-noir.jpg"],
@@ -924,7 +924,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-bleu-acier", "watches", {
-    name: { fr: "Montre octogonale – Cadran bleu dégradé & bracelet métal", en: "Octagonal watch – Gradient blue dial & metal bracelet" },
+    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran bleu dégradé & bracelet métal", en: "Octagonal watch Patek Philipe Nautilus – Gradient blue dial & metal bracelet" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-bleu-acier.jpg"],
