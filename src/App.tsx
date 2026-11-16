@@ -896,7 +896,9 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-blanc-cuir-brun", "watches", {
-    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran blanc strié & bracelet brun", en: "Octagonal watch Patek Philipe Nautilu – White ridged dial & brown strap" },
+    price: 20000,
+    priceOnRequest: false,
+    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran blanc strié & bracelet brun", en: "Octagonal watch Patek Philipe Nautilus – White ridged dial & brown strap" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-blanc-cuir-brun.jpg"],
@@ -910,6 +912,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-noir-cuir-noir", "watches", {
+    price: 20000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran noir strié & bracelet noir", en: "Octagonal watch Patek Philipe Nautilus – Black ridged dial & black strap" },
     subcategory: "sports",
     audience: "men",
@@ -924,6 +928,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-nautilus-bleu-acier", "watches", {
+    price: 20000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran bleu dégradé & bracelet métal", en: "Octagonal watch Patek Philipe Nautilus – Gradient blue dial & metal bracelet" },
     subcategory: "sports",
     audience: "men",
@@ -938,13 +944,13 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bleue", "watches", {
-    name: { fr: "Submariner Rolex Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue Rolex – Red Dial" },
+    name: { fr: "Rolex Datejust Bleu Électrique – Cadran Rouge", en: "Rolex Datejust Electric Blue – Red Dial" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bleue.jpg"],
     description: {
-      fr: "Le bleu électrique habille le boîtier et le bracelet, relevé par un cadran rouge dégradé. La lunette cannelée et la date à 3 heures complètent le modèle. Une montre aux couleurs franches, faite pour ne pas passer inaperçue.",
-      en: "Electric blue covers the case and bracelet, balanced by a red gradient dial. A fluted bezel and date window at 3 o’clock complete the design. A bold colour combination that is hard to miss.",
+      fr: "Le bleu Datejust électrique habille le boîtier et le bracelet, relevé par un cadran rouge dégradé. La lunette cannelée et la date à 3 heures complètent le modèle. Une montre aux couleurs franches, faite pour ne pas passer inaperçue.",
+      en: "Electric blue Datejust covers the case and bracelet, balanced by a red gradient dial. A fluted bezel and date window at 3 o’clock complete the design. A bold colour combination that is hard to miss.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Submariner", "Boîtier et bracelet President bleu électrique", "Cadran dégradé rouge, index façon diamant", "Date à 3 heures", "Style : sportive"],
@@ -952,7 +958,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-oyster-perpetual-noire", "watches", {
-    name: { fr: "Rolex Oyster Perpetual Noir – L’essentiel en acier", en: "Rolex Oyster Perpetual Black – Steel essentials" },
+    name: { fr: "Rolex Datejust Oyster Perpetual Noir – L’essentiel en acier", en: "Rolex Datejust Oyster Perpetual Black – Steel essentials" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-oyster-perpetual-noire.jpg"],
@@ -966,12 +972,12 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bicolore", "watches", {
-    name: { fr: "Rolex Submariner Acier & Or – Lunette Noire", en: "Rolex Submariner Steel & Gold – Black Bezel" },
+    name: { fr: "Submariner Acier & Or – Lunette Noire", en: "Submariner Steel & Gold – Black Bezel" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bicolore.jpg"],
     description: {
-      fr: "La lunette noire graduée et son liseré doré répondent au bracelet Oyster bicolore. Le cadran noir de ce Rolex est ponctué d’index façon diamant et d’une date à 3 heures. L’ensemble garde une allure sportive, avec juste ce qu’il faut de doré.",
+      fr: "La lunette noire graduée et son liseré doré répondent au bracelet Oyster bicolore. Le cadran noir est ponctué d’index façon diamant et d’une date à 3 heures. L’ensemble garde une allure sportive, avec juste ce qu’il faut de doré.",
       en: "The graduated black bezel with its gold-tone edge pairs with a two-tone Oyster bracelet. Diamond-style markers and a date at 3 o’clock detail the black dial. A sporty design with a considered touch of gold.",
     },
     features: {
