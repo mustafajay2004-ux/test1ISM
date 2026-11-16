@@ -1385,15 +1385,15 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-doree-verte", "watches", {
-    name: { fr: "Land-Dweller dorée – Cadran vert alvéolé", en: "Gold-tone Land-Dweller – Honeycomb green dial" },
+    name: { fr: "Rolex Land-Dweller dorée – Cadran vert alvéolé", en: "Rolex Gold-tone Land-Dweller – Honeycomb green dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
     priceOnRequest: false,
     images: ["/montre-land-dweller-doree-verte.jpg"],
     description: {
-      fr: "Le cadran vert alvéolé apporte une note originale à l’ensemble doré. La lunette cannelée et le bracelet aux maillons polis encadrent le cadran, avec une date à 3 heures. Une combinaison de couleurs qui change des montres entièrement dorées.",
-      en: "The green honeycomb dial gives this gold-tone design a distinctive touch. A fluted bezel and polished-link bracelet frame the dial, with a date at 3 o’clock. A colour combination that offers a change from all-gold watches.",
+      fr: "Ce Rolex a cadran vert alvéolé apporte une note originale à l’ensemble doré. La lunette cannelée et le bracelet aux maillons polis encadrent le cadran, avec une date à 3 heures. Une combinaison de couleurs qui change des montres entièrement dorées.",
+      en: "This Rolex have a green honeycomb dial gives this gold-tone design a distinctive touch. A fluted bezel and polished-link bracelet frame the dial, with a date at 3 o’clock. A colour combination that offers a change from all-gold watches.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet dorés", "Cadran vert à motif alvéolé, date à 3 heures", "Style : classique"],
@@ -1401,15 +1401,15 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-doree-champagne", "watches", {
-    name: { fr: "Datejust dorée – Cadran champagne alvéolé", en: "Gold-tone Datejust – Honeycomb champagne dial" },
+    name: { fr: " Rolex Datejust dorée – Cadran champagne alvéolé", en: "Rolex Gold-tone Datejust – Honeycomb champagne dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
     priceOnRequest: false,
     images: ["/montre-datejust-doree-champagne.jpg"],
     description: {
-      fr: "Le cadran champagne alvéolé, souligné d’un anneau blanc, s’accorde à la lunette cannelée et au bracelet dorés. La date apparaît à 3 heures. Une montre aux tons chauds, dans un style classique qui se porte facilement.",
-      en: "The honeycomb champagne dial, framed by a white ring, pairs with the gold-tone fluted bezel and bracelet. The date appears at 3 o’clock. A warm-toned watch in a classic style that is easy to wear.",
+      fr: "Ce Rolex a un cadran champagne alvéolé, souligné d’un anneau blanc, s’accorde à la lunette cannelée et au bracelet dorés. La date apparaît à 3 heures. Une montre aux tons chauds, dans un style classique qui se porte facilement.",
+      en: "This Rolex have a honeycomb champagne dial, framed by a white ring, pairs with the gold-tone fluted bezel and bracelet. The date appears at 3 o’clock. A warm-toned watch in a classic style that is easy to wear.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet dorés", "Cadran champagne alvéolé, anneau blanc, date à 3 heures", "Style : classique"],
@@ -1417,7 +1417,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-datejust-acier-blanc", "watches", {
-    name: { fr: "Datejust acier – Cadran blanc texturé", en: "Steel Datejust – Textured white dial" },
+    name: { fr: "Rolex Datejust acier – Cadran blanc texturé", en: "Rolex Steel Datejust – Textured white dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1433,7 +1433,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-noire", "watches", {
-    name: { fr: "Land-Dweller acier – Cadran noir alvéolé", en: "Steel Land-Dweller – Honeycomb black dial" },
+    name: { fr: "Rolex Land-Dweller acier – Cadran noir alvéolé", en: "Rolex Steel Land-Dweller – Honeycomb black dial" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1449,7 +1449,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-land-dweller-acier-champagne-bleu", "watches", {
-    name: { fr: "Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Steel Land-Dweller – Champagne dial, light blue ring" },
+    name: { fr: "Rolex Land-Dweller acier – Cadran champagne, anneau bleu clair", en: "Rolex Steel Land-Dweller – Champagne dial, light blue ring" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
@@ -1465,7 +1465,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-acier-motif-logo-president", "watches", {
-    name: { fr: "Montre acier – Cadran motif logo, index façon diamant", en: "Steel watch – Logo-pattern dial, diamond-style markers" },
+    name: { fr: "Rolex  – Cadran motif logo, index façon diamant", en: "Rolex – Logo-pattern dial, diamond-style markers" },
     subcategory: "classic",
     audience: "unisex",
     price: 12500,
