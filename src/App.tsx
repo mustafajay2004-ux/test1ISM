@@ -938,7 +938,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bleue", "watches", {
-    name: { fr: "Submariner Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue – Red Dial" },
+    name: { fr: "Submariner Rolex Bleu Électrique – Cadran Rouge", en: "Submariner Electric Blue Rolex – Red Dial" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bleue.jpg"],
@@ -952,7 +952,7 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-oyster-perpetual-noire", "watches", {
-    name: { fr: "Oyster Perpetual Noir – L’essentiel en acier", en: "Oyster Perpetual Black – Steel essentials" },
+    name: { fr: "Rolex Oyster Perpetual Noir – L’essentiel en acier", en: "Rolex Oyster Perpetual Black – Steel essentials" },
     subcategory: "classic",
     audience: "men",
     images: ["/montre-oyster-perpetual-noire.jpg"],
@@ -966,12 +966,12 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("watch-submariner-bicolore", "watches", {
-    name: { fr: "Submariner Acier & Or – Lunette Noire", en: "Submariner Steel & Gold – Black Bezel" },
+    name: { fr: "Rolex Submariner Acier & Or – Lunette Noire", en: "Rolex Submariner Steel & Gold – Black Bezel" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-submariner-bicolore.jpg"],
     description: {
-      fr: "La lunette noire graduée et son liseré doré répondent au bracelet Oyster bicolore. Le cadran noir est ponctué d’index façon diamant et d’une date à 3 heures. L’ensemble garde une allure sportive, avec juste ce qu’il faut de doré.",
+      fr: "La lunette noire graduée et son liseré doré répondent au bracelet Oyster bicolore. Le cadran noir de ce Rolex est ponctué d’index façon diamant et d’une date à 3 heures. L’ensemble garde une allure sportive, avec juste ce qu’il faut de doré.",
       en: "The graduated black bezel with its gold-tone edge pairs with a two-tone Oyster bracelet. Diamond-style markers and a date at 3 o’clock detail the black dial. A sporty design with a considered touch of gold.",
     },
     features: {
