@@ -943,6 +943,104 @@ const catalogue: Product[] = [
       en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin and polished finishes", "Gradient blue ridged dial, luminous baton markers", "Date at 3 o’clock", "Metal bracelet with satin and polished links"],
     },
   }),
+  newProduct("montre-pop-rose-poudre", "watches", {
+    name: { fr: "Montre octogonale – Rose poudré tout en un", en: "Octagonal watch – Powder pink, all one colour" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-rose-poudre.jpg"],
+    description: {
+      fr: "Le rose qui met de bonne humeur, de la lunette jusqu’au bracelet !\nBoîtier, lunette, bracelet et cadran dans le même rose doux : un total look qui se remarque avec le sourire. Le cadran à petits carrés en relief, les huit vis apparentes et la date à 3 heures lui donnent du caractère. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look rose : Un seul coloris du boîtier au bracelet, pour un effet franc et tendance.\n• Cadran à carreaux en relief : Un motif texturé qui joue avec la lumière et donne de la profondeur.\n• Lunette octogonale à huit vis : Un détail graphique qui fait toute la signature de la montre.\n• Lecture facile : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Parfaite avec une tenue blanche ou en jean : le rose fait le reste.",
+      en: "A mood-lifting pink, from the bezel to the bracelet!\nCase, bezel, bracelet and dial all in the same soft pink: a total look that gets noticed with a smile. The dial with its small raised squares, the eight visible screws and the date at 3 o’clock give it character. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• All-pink look: One colour from case to bracelet for a bold, trendy effect.\n• Raised check-pattern dial: A textured pattern that plays with the light and adds depth.\n• Octagonal bezel with eight screws: A graphic detail that makes the watch’s signature.\n• Easy to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: Perfect with a white or denim outfit: the pink does the rest.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet rose poudré", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "Powder pink case, bezel and bracelet", "Raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
+  newProduct("montre-pop-gris", "watches", {
+    name: { fr: "Montre octogonale – Gris satiné tout en un", en: "Octagonal watch – Satin grey, all one colour" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-gris.jpg"],
+    description: {
+      fr: "Le gris qui s’habille tout seul : sobre, net, facile à porter !\nBoîtier, lunette, bracelet et cadran dans un même gris satiné, pour une allure discrète et moderne. Le cadran à carreaux en relief et la lunette octogonale à huit vis lui donnent juste ce qu’il faut de caractère. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look gris satiné : Une teinte neutre qui va avec tout, du bureau au week-end.\n• Cadran à carreaux en relief : Un motif texturé qui donne de la profondeur à un cadran sobre.\n• Lunette octogonale à huit vis : La silhouette qu’on reconnaît de loin.\n• Lecture simple : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Une chemise blanche, un pull noir, un jean : elle s’accorde à tout.",
+      en: "The grey that dresses itself: understated, clean, easy to wear!\nCase, bezel, bracelet and dial all in the same satin grey, for a discreet, modern look. The raised check-pattern dial and the octagonal bezel with eight screws give it just the right amount of character. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Satin grey all-over look: A neutral shade that goes with everything, from office to weekend.\n• Raised check-pattern dial: A textured pattern that adds depth to a sober dial.\n• Octagonal bezel with eight screws: The silhouette you recognise from afar.\n• Simple to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: A white shirt, a black sweater, jeans: it goes with everything.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet gris satiné", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "Satin grey case, bezel and bracelet", "Raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
+  newProduct("montre-pop-bleu-ciel", "watches", {
+    name: { fr: "Montre octogonale – Bleu ciel tout en un", en: "Octagonal watch – Sky blue, all one colour" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-bleu-ciel.jpg"],
+    description: {
+      fr: "Un bleu ciel tout doux pour un poignet qui respire la bonne humeur !\nBoîtier, lunette, bracelet et cadran dans le même bleu clair : un look frais et plein de peps. Le cadran à carreaux en relief, la lunette octogonale à huit vis et la date à 3 heures complètent l’ensemble. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look bleu ciel : Une couleur lumineuse du boîtier au bracelet.\n• Cadran à carreaux en relief : Un motif texturé qui joue avec la lumière.\n• Lunette octogonale à huit vis : Un détail graphique reconnaissable.\n• Lecture facile : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Super avec du blanc, du denim ou du beige, surtout aux beaux jours.",
+      en: "A soft sky blue for a wrist that radiates good mood!\nCase, bezel, bracelet and dial all in the same light blue: a fresh, lively look. The raised check-pattern dial, the octagonal bezel with eight screws and the date at 3 o’clock complete the set. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Sky-blue all-over look: A bright colour from case to bracelet.\n• Raised check-pattern dial: A textured pattern that plays with the light.\n• Octagonal bezel with eight screws: A recognisable graphic detail.\n• Easy to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: Great with white, denim or beige, especially on sunny days.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet bleu ciel", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "Sky-blue case, bezel and bracelet", "Raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
+  newProduct("montre-pop-rouge", "watches", {
+    name: { fr: "Montre octogonale – Rouge vif tout en un", en: "Octagonal watch – Vivid red, all one colour" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-rouge.jpg"],
+    description: {
+      fr: "Un rouge qui ne passe pas inaperçu, du cadran au bracelet !\nBoîtier, lunette, bracelet et cadran dans un même rouge vif : une montre qui affiche ses couleurs sans hésiter. Le cadran à carreaux en relief, les huit vis de la lunette et la date à 3 heures lui donnent du caractère. Les inscriptions AP, Audemars Piguet et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look rouge vif : Une couleur franche qui attire tous les regards.\n• Cadran à carreaux en relief : Un motif texturé qui accroche la lumière.\n• Lunette octogonale à huit vis : La silhouette qui fait la signature du modèle.\n• Lecture claire : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Pour oser : une tenue toute noire ou toute blanche, et le rouge devient le centre de l’attention.",
+      en: "A red that does not go unnoticed, from dial to bracelet!\nCase, bezel, bracelet and dial all in the same vivid red: a watch that shows its colours without hesitation. The raised check-pattern dial, the eight bezel screws and the date at 3 o’clock give it character. The AP, Audemars Piguet and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Vivid red all-over look: A bold colour that catches every eye.\n• Raised check-pattern dial: A textured pattern that catches the light.\n• Octagonal bezel with eight screws: The silhouette that makes the model’s signature.\n• Clear reading: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: To dare: an all-black or all-white outfit, and the red becomes the centre of attention.",
+    },
+    features: {
+      fr: ["Inscriptions AP, Audemars Piguet et Royal Pop sur le cadran", "Boîtier, lunette et bracelet rouge vif", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
+      en: ["AP, Audemars Piguet and Royal Pop inscriptions on the dial", "Vivid red case, bezel and bracelet", "Raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
+  newProduct("montre-pop-bleu-roi", "watches", {
+    name: { fr: "Montre octogonale – Bleu roi tout en un", en: "Octagonal watch – Royal blue, all one colour" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-bleu-roi.jpg"],
+    description: {
+      fr: "Un bleu roi intense, pour un style qui ose la couleur !\nBoîtier, lunette, bracelet et cadran dans un même bleu profond : un effet net et puissant au poignet. Le cadran à carreaux en relief et la lunette octogonale à huit vis donnent du relief à l’ensemble. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look bleu roi : Un bleu profond et saturé, du boîtier au bracelet.\n• Cadran à carreaux en relief : Un motif texturé qui donne de la profondeur au cadran.\n• Lunette octogonale à huit vis : Un détail graphique reconnaissable.\n• Lecture simple : Index bâtons clairs et trois aiguilles.\n\nConseil de style : Un jean, un t-shirt blanc, et le bleu fait tout le travail.",
+      en: "An intense royal blue, for a style that dares colour!\nCase, bezel, bracelet and dial all in the same deep blue: a sharp, powerful effect on the wrist. The raised check-pattern dial and the octagonal bezel with eight screws add relief to the whole. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Royal-blue all-over look: A deep, saturated blue from case to bracelet.\n• Raised check-pattern dial: A textured pattern that adds depth to the dial.\n• Octagonal bezel with eight screws: A recognisable graphic detail.\n• Simple to read: Light baton markers and three hands.\n\nStyle tip: Jeans, a white T-shirt, and the blue does all the work.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet bleu roi", "Cadran à carreaux en relief, index bâtons", "Pas de date visible"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "Royal-blue case, bezel and bracelet", "Raised check-pattern dial, baton markers", "No date window visible"],
+    },
+  }),
+  newProduct("montre-pop-blanc-multicolore", "watches", {
+    name: { fr: "Montre octogonale – Blanc & touches arc-en-ciel", en: "Octagonal watch – White with rainbow accents" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-blanc-multicolore.jpg"],
+    description: {
+      fr: "Du blanc, et toutes les couleurs en petites touches !\nBoîtier, lunette et bracelet blancs, relevés par des vis colorées sur la lunette et des index multicolores. Le cadran blanc à carreaux en relief reste très lisible et le résultat est joyeux, léger, résolument pop. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Vis de lunette multicolores : Huit petites touches de couleur qui changent tout.\n• Index multicolores : Orange, jaune, vert, noir et rose pour un cadran plein de vie.\n• Total look blanc : Une base lumineuse qui s’accorde avec toutes les tenues.\n• Lecture facile : Deux aiguilles claires sur un cadran blanc.\n\nConseil de style : Avec une tenue simple, c’est elle qui amène la couleur.",
+      en: "White, with every colour in small touches!\nWhite case, bezel and bracelet, lifted by coloured screws on the bezel and multicoloured markers. The white dial with its raised check pattern stays very legible, and the result is joyful, light and resolutely pop. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Multicoloured bezel screws: Eight small touches of colour that change everything.\n• Multicoloured markers: Orange, yellow, green, black and pink for a dial full of life.\n• All-white look: A bright base that goes with every outfit.\n• Easy to read: Two clear hands on a white dial.\n\nStyle tip: With a simple outfit, it is the one that brings the colour.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet blancs", "Vis de lunette et index multicolores", "Cadran à carreaux en relief"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "White case, bezel and bracelet", "Multicoloured bezel screws and markers", "Raised check-pattern dial"],
+    },
+  }),
+  newProduct("montre-pop-noir-lunette-blanche", "watches", {
+    name: { fr: "Montre octogonale – Noir & lunette blanche", en: "Octagonal watch – Black with white bezel" },
+    subcategory: "sports",
+    audience: "unisex",
+    images: ["/montre-pop-noir-lunette-blanche.jpg"],
+    description: {
+      fr: "Le duo noir et blanc, net et graphique, qui fait toujours son effet !\nUn boîtier et un bracelet noirs aux maillons centraux clairs, encadrés par une lunette blanche : le contraste est franc. Le cadran noir à carreaux en relief et la date à 3 heures complètent le look. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Contraste noir et blanc : Une lunette blanche qui ressort sur un boîtier noir.\n• Bracelet à maillons bicolores : Des maillons centraux clairs qui allègent l’ensemble.\n• Cadran noir à carreaux en relief : Un fond profond et texturé.\n• Lecture facile : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Elle va avec tout : un look streetwear ou une tenue plus habillée.",
+      en: "The black and white duo, sharp and graphic, that always makes its mark!\nA black case and bracelet with light centre links, framed by a white bezel: the contrast is bold. The black dial with raised check pattern and the date at 3 o’clock complete the look. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Black and white contrast: A white bezel that stands out on a black case.\n• Two-tone bracelet: Light centre links that lighten the whole.\n• Black raised check-pattern dial: A deep, textured backdrop.\n• Easy to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: It goes with everything: a streetwear look or a dressier outfit.",
+    },
+    features: {
+      fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier noir, lunette blanche, bracelet noir aux maillons clairs", "Cadran noir à carreaux en relief, index bâtons", "Date à 3 heures"],
+      en: ["AP, swatch and Royal Pop inscriptions on the dial", "Black case, white bezel, black bracelet with light links", "Black raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
   newProduct("watch-submariner-bleue", "watches", {
     name: { fr: "Rolex Datejust Bleu Électrique – Cadran Rouge", en: "Rolex Datejust Electric Blue – Red Dial" },
     subcategory: "sports",
@@ -1392,8 +1490,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-land-dweller-doree-verte.jpg"],
     description: {
-      fr: "Ce Rolex a cadran vert alvéolé apporte une note originale à l’ensemble doré. La lunette cannelée et le bracelet aux maillons polis encadrent le cadran, avec une date à 3 heures. Une combinaison de couleurs qui change des montres entièrement dorées.",
-      en: "This Rolex have a green honeycomb dial gives this gold-tone design a distinctive touch. A fluted bezel and polished-link bracelet frame the dial, with a date at 3 o’clock. A colour combination that offers a change from all-gold watches.",
+      fr: "Ce Rolex à cadran vert alvéolé apporte une note originale à l’ensemble doré. La lunette cannelée et le bracelet aux maillons polis encadrent le cadran, avec une date à 3 heures. Une combinaison de couleurs qui change des montres entièrement dorées.",
+      en: "This Rolex with a green honeycomb dial gives this gold-tone design a distinctive touch. A fluted bezel and polished-link bracelet frame the dial, with a date at 3 o’clock. A colour combination that offers a change from all-gold watches.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Land-Dweller", "Lunette cannelée, boîtier et bracelet dorés", "Cadran vert à motif alvéolé, date à 3 heures", "Style : classique"],
@@ -1408,8 +1506,8 @@ const catalogue: Product[] = [
     priceOnRequest: false,
     images: ["/montre-datejust-doree-champagne.jpg"],
     description: {
-      fr: "Ce Rolex a un cadran champagne alvéolé, souligné d’un anneau blanc, s’accorde à la lunette cannelée et au bracelet dorés. La date apparaît à 3 heures. Une montre aux tons chauds, dans un style classique qui se porte facilement.",
-      en: "This Rolex have a honeycomb champagne dial, framed by a white ring, pairs with the gold-tone fluted bezel and bracelet. The date appears at 3 o’clock. A warm-toned watch in a classic style that is easy to wear.",
+      fr: "Ce Rolex à cadran champagne alvéolé, souligné d’un anneau blanc, s’accorde à la lunette cannelée et au bracelet dorés. La date apparaît à 3 heures. Une montre aux tons chauds, dans un style classique qui se porte facilement.",
+      en: "This Rolex with a honeycomb champagne dial, framed by a white ring, pairs with the gold-tone fluted bezel and bracelet. The date appears at 3 o’clock. A warm-toned watch in a classic style that is easy to wear.",
     },
     features: {
       fr: ["Inscription Rolex sur le cadran, modèle Datejust", "Lunette cannelée, boîtier et bracelet dorés", "Cadran champagne alvéolé, anneau blanc, date à 3 heures", "Style : classique"],
