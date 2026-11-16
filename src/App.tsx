@@ -944,6 +944,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-rose-poudre", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Rose poudré tout en un", en: "Octagonal watch – Powder pink, all one colour" },
     subcategory: "sports",
     audience: "unisex",
@@ -958,6 +960,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-gris", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Gris satiné tout en un", en: "Octagonal watch – Satin grey, all one colour" },
     subcategory: "sports",
     audience: "unisex",
@@ -972,6 +976,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-bleu-ciel", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Bleu ciel tout en un", en: "Octagonal watch – Sky blue, all one colour" },
     subcategory: "sports",
     audience: "unisex",
@@ -986,6 +992,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-rouge", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Rouge vif tout en un", en: "Octagonal watch – Vivid red, all one colour" },
     subcategory: "sports",
     audience: "unisex",
@@ -1000,6 +1008,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-bleu-roi", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Bleu roi tout en un", en: "Octagonal watch – Royal blue, all one colour" },
     subcategory: "sports",
     audience: "unisex",
@@ -1014,6 +1024,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-blanc-multicolore", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Blanc & touches arc-en-ciel", en: "Octagonal watch – White with rainbow accents" },
     subcategory: "sports",
     audience: "unisex",
@@ -1028,6 +1040,8 @@ const catalogue: Product[] = [
     },
   }),
   newProduct("montre-pop-noir-lunette-blanche", "watches", {
+    price: 5000,
+    priceOnRequest: false,
     name: { fr: "Montre octogonale – Noir & lunette blanche", en: "Octagonal watch – Black with white bezel" },
     subcategory: "sports",
     audience: "unisex",
