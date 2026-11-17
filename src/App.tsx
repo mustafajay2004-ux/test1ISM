@@ -898,7 +898,7 @@ const catalogue: Product[] = [
   newProduct("montre-nautilus-blanc-cuir-brun", "watches", {
     price: 20000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran blanc strié & bracelet brun", en: "Octagonal watch Patek Philipe Nautilus – White ridged dial & brown strap" },
+    name: { fr: "Patek Philipe Nautilus – Cadran blanc strié & bracelet brun", en: "Patek Philipe Nautilus – White ridged dial & brown strap" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-blanc-cuir-brun.jpg"],
@@ -914,7 +914,7 @@ const catalogue: Product[] = [
   newProduct("montre-nautilus-noir-cuir-noir", "watches", {
     price: 20000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran noir strié & bracelet noir", en: "Octagonal watch Patek Philipe Nautilus – Black ridged dial & black strap" },
+    name: { fr: "Patek Philipe Nautilus – Cadran noir strié & bracelet noir", en: "Patek Philipe Nautilus – Black ridged dial & black strap" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-noir-cuir-noir.jpg"],
@@ -930,7 +930,7 @@ const catalogue: Product[] = [
   newProduct("montre-nautilus-bleu-acier", "watches", {
     price: 20000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale Patek Philipe Nautilus – Cadran bleu dégradé & bracelet métal", en: "Octagonal watch Patek Philipe Nautilus – Gradient blue dial & metal bracelet" },
+    name: { fr: "Patek Philipe Nautilus – Cadran bleu dégradé & bracelet métal", en: "Patek Philipe Nautilus – Gradient blue dial & metal bracelet" },
     subcategory: "sports",
     audience: "men",
     images: ["/montre-nautilus-bleu-acier.jpg"],
@@ -978,13 +978,13 @@ const catalogue: Product[] = [
   newProduct("montre-pop-bleu-ciel", "watches", {
     price: 5000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale – Bleu ciel tout en un", en: "Octagonal watch – Sky blue, all one colour" },
+    name: { fr: "AP x Swatch (Royal Pop) – Édition Monochrome Bleu Glacier", en: "AP x Swatch (Royal Pop) – Glacier Blue Monochrome Edition" },
     subcategory: "sports",
     audience: "unisex",
     images: ["/montre-pop-bleu-ciel.jpg"],
     description: {
-      fr: "Un bleu ciel tout doux pour un poignet qui respire la bonne humeur !\nBoîtier, lunette, bracelet et cadran dans le même bleu clair : un look frais et plein de peps. Le cadran à carreaux en relief, la lunette octogonale à huit vis et la date à 3 heures complètent l’ensemble. Les inscriptions AP, swatch et Royal Pop figurent sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Total look bleu ciel : Une couleur lumineuse du boîtier au bracelet.\n• Cadran à carreaux en relief : Un motif texturé qui joue avec la lumière.\n• Lunette octogonale à huit vis : Un détail graphique reconnaissable.\n• Lecture facile : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Super avec du blanc, du denim ou du beige, surtout aux beaux jours.",
-      en: "A soft sky blue for a wrist that radiates good mood!\nCase, bezel, bracelet and dial all in the same light blue: a fresh, lively look. The raised check-pattern dial, the octagonal bezel with eight screws and the date at 3 o’clock complete the set. The AP, swatch and Royal Pop inscriptions appear on the dial.\n---\nWhy you will love it\n• Sky-blue all-over look: A bright colour from case to bracelet.\n• Raised check-pattern dial: A textured pattern that plays with the light.\n• Octagonal bezel with eight screws: A recognisable graphic detail.\n• Easy to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: Great with white, denim or beige, especially on sunny days.",
+      fr: "Un bleu ciel tout doux pour un poignet qui respire la bonne humeur !\nDans l'univers très fermé des pièces de collection contemporaines, le bleu glacier s'impose comme le summum du raffinement estival et de l'exclusivité. Cette édition intégralement vêtue d'un bleu azur lumineux réinvente la célèbre silhouette octogonale avec une audace souveraine. Du boîtier au bracelet intégré, jusqu'au cadran texturé à relief quadrillé, l'harmonie ton sur ton est sublimée par l'éclat métallique des huit vis hexagonales, des index bâtons luminescents et du guichet de quantième à 3 heures.\n---\nPourquoi vous allez l’adorer\n• Monochrome bleu glacier intégral : Une nuance céleste vibrante et sophistiquée qui habille le boîtier, la couronne et les maillons articulés avec une continuité parfaite.\n• Architecture octogonale iconique : La célèbre lunette géométrique ponctuée de huit vis métalliques apparentes, signature légendaire immédiatement reconnue par les initiés.\n• Lunette octogonale à huit vis : Un détail graphique reconnaissable.\n• Lecture facile : Index bâtons clairs, trois aiguilles et date à 3 heures.\n\nConseil de style : Super avec du blanc, du denim ou du beige, surtout aux beaux jours.",
+      en: "A soft sky blue for a wrist that radiates good mood!\nIn the very exclusive world of contemporary collectible pieces, glacier blue stands out as the pinnacle of summer refinement and exclusivity. This edition, entirely dressed in a bright azure blue, reinvents the famous octagonal silhouette with sovereign audacity. From the case to the integrated bracelet, and down to the textured dial with a quadrant relief, the tone-on-tone harmony is enhanced by the metallic brilliance of the eight hexagonal screws, the luminescent baton indexes, and the date window at 3 o'clock.\n---\nWhy you will love it\n• Full glacier blue monochrome: A vibrant and sophisticated celestial shade that dresses the case, the crown, and the articulated links with perfect continuity.\n• Iconic octagonal architecture: The famous geometric bezel dotted with eight visible metal screws, a legendary signature immediately recognized by insiders.\n• Octagonal bezel with eight screws: A recognisable graphic detail.\n• Easy to read: Light baton markers, three hands and a date at 3 o’clock.\n\nStyle tip: Great with white, denim or beige, especially on sunny days.",
     },
     features: {
       fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet bleu ciel", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
@@ -994,7 +994,7 @@ const catalogue: Product[] = [
   newProduct("montre-pop-rouge", "watches", {
     price: 5000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale – Rouge vif tout en un", en: "Octagonal watch – Vivid red, all one colour" },
+    name: { fr: "Audemars Piguet (Royal Pop) – Édition Monochrome Rouge Carmin", en: "Audemars Piguet (Royal Oak) – Crimson Red Monochrome Edition" },
     subcategory: "sports",
     audience: "unisex",
     images: ["/montre-pop-rouge.jpg"],
@@ -1010,7 +1010,7 @@ const catalogue: Product[] = [
   newProduct("montre-pop-bleu-roi", "watches", {
     price: 5000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale – Bleu roi tout en un", en: "Octagonal watch – Royal blue, all one colour" },
+    name: { fr: "AP x Swatch (Royal Pop) – Édition Monochrome Bleu Cobalt", en: "AP x Swatch (Royal Pop) – Blue Cobalt Monochrome Edition" },
     subcategory: "sports",
     audience: "unisex",
     images: ["/montre-pop-bleu-roi.jpg"],
@@ -1042,7 +1042,7 @@ const catalogue: Product[] = [
   newProduct("montre-pop-noir-lunette-blanche", "watches", {
     price: 5000,
     priceOnRequest: false,
-    name: { fr: "Montre octogonale – Noir & lunette blanche", en: "Octagonal watch – Black with white bezel" },
+    name: { fr: "AP x Swatch (Royal Pop) – Édition Bicolore Noir Obsidienne & Lunette Argent", en: "AP x Swatch (Royal Pop) – Black Obsidian & Silver Bezel Two-Tone Edition" },
     subcategory: "sports",
     audience: "unisex",
     images: ["/montre-pop-noir-lunette-blanche.jpg"],
