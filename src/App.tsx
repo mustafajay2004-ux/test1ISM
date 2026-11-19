@@ -952,7 +952,7 @@ const catalogue: Product[] = [
     images: ["/montre-pop-rose-poudre.jpg"],
     description: {
       fr: "Une pièce iconoclaste réservée aux esthètes qui maîtrisent l'art de se démarquer avec subtilité et assurance.\Dans l'univers très fermé de la collection contemporaine, le monochrome pastel s'impose comme la signature absolue des connaisseurs affranchis des conventions. Cette édition intégralement vêtue de rose poudré réinterprète la célèbre silhouette octogonale avec une fraîcheur architecturale saisissante. Du boîtier au bracelet intégré, jusqu'au cadran texturé à relief quadrillé, la continuité chromatique est sublimée par l'éclat métallique des vis hexagonales, des index bâtons luminescents et du guichet date à 3 heures.\n---\nPourquoi vous allez l’adorer\n• Monochrome rose intégral : Une teinte pastel délicate et affirmée qui habille le boîtier, la couronne et les maillons articulés avec une homogénéité parfaite.\n• Architecture octogonale iconique : La célèbre lunette géométrique ponctuée de huit vis métalliques apparentes, signature intemporelle immédiatement reconnue par les initiés.\n• Cadran texturé « Tapisserie » & détails argentés : Un relief quadrillé raffiné qui capte la lumière, ponctué d'index appliqués lumineux, d'aiguilles assorties et d'un quantième discret à 3 heures.\n• Cachet Swiss Made : L'alliance rare entre l'esprit avant-gardiste de la culture pop et la rigueur horlogère helvétique.\n\nConseil de style : Parfaite avec une tenue blanche ou en jean : le rose fait le reste.",
-      en: "An iconoclastic piece reserved for aesthetes who have mastered the art of standing out with subtlety and confidence.\nIn the very exclusive world of contemporary collecting, pastel monochrome has become the ultimate signature for aficionados who break free from conventions. This edition, entirely dressed in powder pink, reinterprets the famous octagonal silhouette with striking architectural freshness. From the case to the integrated bracelet to the textured, grid-patterned dial, the color continuity is elevated by the metallic shine of the hexagonal screws, luminous stick markers, and the date window at 3 o'clock.\n---\nWhy you will love it\n•Full monochrome rose: A delicate and confident pastel shade that adorns the case, crown, and articulated links with perfect uniformity.\n•Iconic octagonal architecture: The famous geometric bezel dotted with eight visible metal screws, an timeless signature immediately recognized by insiders.\n• Textured "Tapisserie" dial & silver details: A refined grid relief that captures the light, punctuated by luminous applied hour markers, matching hands, and a discreet date display at 3 o'clock.\n• Swiss Made Stamp: The rare combination of the avant-garde spirit of pop culture and Swiss watchmaking precision.\n\nStyle tip: Perfect with a white or denim outfit: the pink does the rest.",
+      en: "An iconoclastic piece reserved for aesthetes who have mastered the art of standing out with subtlety and confidence.\nIn the very exclusive world of contemporary collecting, pastel monochrome has become the ultimate signature for aficionados who break free from conventions. This edition, entirely dressed in powder pink, reinterprets the famous octagonal silhouette with striking architectural freshness. From the case to the integrated bracelet to the textured, grid-patterned dial, the color continuity is elevated by the metallic shine of the hexagonal screws, luminous stick markers, and the date window at 3 o'clock.\n---\nWhy you will love it\n•Full monochrome rose: A delicate and confident pastel shade that adorns the case, crown, and articulated links with perfect uniformity.\n•Iconic octagonal architecture: The famous geometric bezel dotted with eight visible metal screws, an timeless signature immediately recognized by insiders.\n• Textured \"Tapisserie\" dial & silver details: A refined grid relief that captures the light, punctuated by luminous applied hour markers, matching hands, and a discreet date display at 3 o'clock.\n• Swiss Made Stamp: The rare combination of the avant-garde spirit of pop culture and Swiss watchmaking precision.\n\nStyle tip: Perfect with a white or denim outfit: the pink does the rest.",
     },
     features: {
       fr: ["AP, swatch et Royal Pop sur le cadran", "Boîtier, lunette et bracelet rose poudré", "Cadran à carreaux en relief, index bâtons", "Date à 3 heures"],
@@ -1053,6 +1053,38 @@ const catalogue: Product[] = [
     features: {
       fr: ["Inscriptions AP, swatch et Royal Pop sur le cadran", "Boîtier noir, lunette blanche, bracelet noir aux maillons clairs", "Cadran noir à carreaux en relief, index bâtons", "Date à 3 heures"],
       en: ["AP, swatch and Royal Pop inscriptions on the dial", "Black case, white bezel, black bracelet with light links", "Black raised check-pattern dial, baton markers", "Date at 3 o’clock"],
+    },
+  }),
+  newProduct("montre-aquanaut-marron", "watches", {
+    price: 15000,
+    priceOnRequest: false,
+    name: { fr: "Patek Philippe Aquanaut – Cadran marron & bracelet caoutchouc", en: "Patek Philippe Aquanaut – Brown dial & rubber strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-aquanaut-marron.jpg"],
+    description: {
+      fr: "Un marron chocolat chaud, pour une montre qui se remarque sans en faire trop !\nUn boîtier octogonal aux angles arrondis, un cadran marron quadrillé en relief et un bracelet en caoutchouc assorti, à motif strié : l’ensemble est sobre, sportif et très net. L’inscription Patek Philippe Genève figure sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Cadran marron quadrillé : Un relief en carreaux qui accroche la lumière.\n• Bracelet caoutchouc assorti : Même teinte que le cadran, pour un look d’une seule pièce.\n• Lunette satinée : Un boîtier octogonal aux lignes arrondies, facile à reconnaître.\n• Lecture facile : Chiffres et index lumineux, trois aiguilles et date à 3 heures.\n\nConseil de style : Le marron s’associe très bien au beige, au blanc ou au denim : une chemise claire ou un simple t-shirt suffisent.",
+      en: "A warm chocolate brown, for a watch that stands out without trying too hard!\nAn octagonal case with rounded corners, a brown dial with a raised check pattern and a matching rubber strap with a ridged design: the whole is sober, sporty and very sharp. The Patek Philippe Genève inscription appears on the dial.\n---\nWhy you will love it\n• Brown check-pattern dial: A raised grid that catches the light.\n• Matching rubber strap: Same shade as the dial, for a one-piece look.\n• Satin bezel: An octagonal case with rounded lines, easy to recognise.\n• Easy to read: Luminous numerals and markers, three hands and a date at 3 o’clock.\n\nStyle tip: Brown pairs very well with beige, white or denim: a light shirt or a simple t-shirt is enough.",
+    },
+    features: {
+      fr: ["Inscription Patek Philippe Genève sur le cadran", "Boîtier octogonal aux angles arrondis, lunette satinée", "Cadran marron quadrillé en relief, chiffres et index lumineux", "Date à 3 heures", "Bracelet en caoutchouc marron à motif strié"],
+      en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin bezel", "Brown dial with raised check pattern, luminous numerals and markers", "Date at 3 o’clock", "Brown rubber strap with ridged design"],
+    },
+  }),
+  newProduct("montre-aquanaut-bleu", "watches", {
+    price: 15000,
+    priceOnRequest: false,
+    name: { fr: "Patek Philippe Aquanaut – Cadran bleu nuit & bracelet caoutchouc", en: "Patek Philippe Aquanaut – Midnight blue dial & rubber strap" },
+    subcategory: "sports",
+    audience: "men",
+    images: ["/montre-aquanaut-bleu.jpg"],
+    description: {
+      fr: "Un bleu profond et sportif, pour un look net du matin au soir !\nUn boîtier octogonal aux angles arrondis, un cadran bleu nuit quadrillé en relief et un bracelet en caoutchouc bleu au motif strié : tout est dans la même teinte, pour un rendu soigné. L’inscription Patek Philippe Genève figure sur le cadran.\n---\nPourquoi vous allez l’adorer\n• Cadran bleu nuit quadrillé : Un relief en carreaux qui joue avec la lumière.\n• Bracelet caoutchouc bleu : Assorti au cadran, pour un ensemble d’une seule couleur.\n• Lunette satinée : Un boîtier octogonal aux lignes arrondies, sportif et élégant.\n• Lecture facile : Chiffres et index lumineux, trois aiguilles et date à 3 heures.\n\nConseil de style : Le bleu va avec presque tout : blanc, gris, noir ou jean. Une chemise blanche et c’est réglé.",
+      en: "A deep, sporty blue for a sharp look from morning to night!\nAn octagonal case with rounded corners, a midnight blue dial with a raised check pattern and a blue rubber strap with a ridged design: everything in the same shade, for a polished result. The Patek Philippe Genève inscription appears on the dial.\n---\nWhy you will love it\n• Midnight blue check-pattern dial: A raised grid that plays with the light.\n• Blue rubber strap: Matched to the dial, for a single-colour ensemble.\n• Satin bezel: An octagonal case with rounded lines, sporty and elegant.\n• Easy to read: Luminous numerals and markers, three hands and a date at 3 o’clock.\n\nStyle tip: Blue goes with almost everything: white, grey, black or denim. A white shirt and you are set.",
+    },
+    features: {
+      fr: ["Inscription Patek Philippe Genève sur le cadran", "Boîtier octogonal aux angles arrondis, lunette satinée", "Cadran bleu nuit quadrillé en relief, chiffres et index lumineux", "Date à 3 heures", "Bracelet en caoutchouc bleu à motif strié"],
+      en: ["Patek Philippe Genève inscription on the dial", "Octagonal case with rounded corners, satin bezel", "Midnight blue dial with raised check pattern, luminous numerals and markers", "Date at 3 o’clock", "Blue rubber strap with ridged design"],
     },
   }),
   newProduct("watch-submariner-bleue", "watches", {
@@ -2709,6 +2741,100 @@ const catalogue: Product[] = [
     description: {
       fr: "Un gris tendance qui habille toutes les tenues !\nCe sac à main structuré en gris met en avant un ornement doré sur un panneau texturé, souligné de liserés clairs. Ses deux anses rondes le rendent facile à porter, et sa pochette assortie à rabat complète l’ensemble.\n---\nPourquoi vous allez l’adorer\n• Gris et liserés clairs : Un look moderne et sobre, facile à associer.\n• Ornement doré : Un détail brillant au centre qui donne de l’allure à l’ensemble.\n• Deux anses rondes : Pour le porter à la main, avec des anneaux dorés sur les côtés pour une bandoulière.\n• Pochette assortie : Une pochette à rabat avec bouton pression doré, dans le même gris.\n\nConseil de style : Le gris s’accorde avec tout : essayez-le avec une tenue rose poudré, bleu marine ou blanche.",
       en: "A trendy grey that dresses every outfit!\nThis structured grey handbag features a gold ornament on a textured panel, underlined by light trim. Its two rounded handles make it easy to carry, and its matching flap pouch completes the set.\n---\nWhy you will love it\n• Grey with light trim: A modern, sober look that is easy to match.\n• Gold ornament: A shiny detail at the centre that gives the whole set some presence.\n• Two rounded handles: To carry by hand, with gold rings on the sides for a shoulder strap.\n• Matching pouch: A flap pouch with a gold snap button, in the same grey.\n\nStyle tip: Grey goes with everything: try it with a powder pink, navy or white outfit.",
+    },
+  }),
+  newProduct("sac-mk-noir-monogramme", "bags", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Sac à main noir – Monogramme gris & détails dorés", en: "Black handbag – Grey monogram & gold details" },
+    subcategory: "handbags",
+    audience: "women",
+    images: ["/sac-mk-noir-monogramme.jpg"],
+    description: {
+      fr: "Le noir qui ne se démode jamais, avec un monogramme qui lui donne du caractère !\nCe sac à main structuré affiche un motif de lettres MK gris sur fond noir, avec deux anses rondes noires nouées d’un petit ruban et un médaillon doré en pendentif. L’inscription Michael Kors figure sur la face avant.\n---\nPourquoi vous allez l’adorer\n• Monogramme gris sur noir : Un motif régulier, discret mais reconnaissable.\n• Deux anses rondes : Pour le porter à la main, avec des attaches dorées sur les côtés pour une bandoulière.\n• Médaillon doré : Un pendentif brillant qui apporte une touche de lumière.\n• Forme structurée : Une silhouette droite et soignée, facile à associer.\n\nConseil de style : Le noir va partout : jean, robe, tenue de cours ou de soirée. Laissez-le être la pièce qui finit le look.",
+      en: "The black that never goes out of style, with a monogram that gives it character!\nThis structured handbag shows a grey MK letter pattern on a black background, with two round black handles tied with a small ribbon and a gold medallion charm. The Michael Kors inscription appears on the front.\n---\nWhy you will love it\n• Grey monogram on black: A regular pattern, discreet but recognisable.\n• Two round handles: To carry by hand, with gold fittings on the sides for a shoulder strap.\n• Gold medallion: A shiny charm that adds a touch of light.\n• Structured shape: A straight, neat silhouette that is easy to match.\n\nStyle tip: Black goes everywhere: jeans, dress, class outfit or evening wear. Let it be the piece that finishes the look.",
+    },
+  }),
+  newProduct("sac-mk-marron-monogramme", "bags", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Sac à main marron – Monogramme caramel & anses noires", en: "Brown handbag – Caramel monogram & black handles" },
+    subcategory: "handbags",
+    audience: "women",
+    images: ["/sac-mk-marron-monogramme.jpg"],
+    description: {
+      fr: "Un marron chaud et profond, pour un sac qui habille toute la saison !\nCe sac à main structuré joue sur un motif de lettres MK caramel sur fond marron foncé, relevé par des anses rondes noires et un médaillon doré en pendentif. L’inscription Michael Kors figure sur la face avant.\n---\nPourquoi vous allez l’adorer\n• Monogramme caramel sur marron : Un camaïeu chaleureux, très élégant.\n• Anses rondes noires : Un contraste net avec le motif, et des attaches dorées sur les côtés pour une bandoulière.\n• Médaillon doré : Un pendentif brillant qui ressort bien sur le marron.\n• Forme structurée : Une silhouette droite qui tient bien.\n\nConseil de style : Beige, crème, blanc ou denim : les tons clairs font ressortir le marron.",
+      en: "A warm, deep brown, for a bag that dresses the whole season!\nThis structured handbag plays on a caramel MK letter pattern on a dark brown background, set off by round black handles and a gold medallion charm. The Michael Kors inscription appears on the front.\n---\nWhy you will love it\n• Caramel monogram on brown: A warm tone-on-tone look, very elegant.\n• Black round handles: A sharp contrast with the pattern, and gold fittings on the sides for a shoulder strap.\n• Gold medallion: A shiny charm that stands out on the brown.\n• Structured shape: A straight silhouette that holds well.\n\nStyle tip: Beige, cream, white or denim: light tones make the brown stand out.",
+    },
+  }),
+  newProduct("sac-mk-blanc-orange", "bags", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Sac à main blanc – Monogramme gris clair & anses orange", en: "White handbag – Light grey monogram & orange handles" },
+    subcategory: "handbags",
+    audience: "women",
+    images: ["/sac-mk-blanc-orange.jpg"],
+    description: {
+      fr: "Un blanc lumineux relevé d’orange, pour un sac qui met de bonne humeur !\nCe sac à main structuré associe un fond blanc à un motif de lettres MK gris clair, avec des anses rondes orange nouées d’un ruban et un médaillon doré en pendentif. L’inscription Michael Kors figure sur la face avant.\n---\nPourquoi vous allez l’adorer\n• Blanc et gris clair : Un fond lumineux au motif doux et discret.\n• Anses orange : Une touche de couleur qui donne du relief à l’ensemble.\n• Médaillon doré : Un pendentif brillant, assorti aux attaches dorées.\n• Forme structurée : Une silhouette droite, avec des attaches sur les côtés pour une bandoulière.\n\nConseil de style : Le blanc et l’orange vont très bien avec le jean, le beige ou le bleu marine, surtout aux beaux jours.",
+      en: "A bright white lifted with orange, for a bag that lifts the mood!\nThis structured handbag pairs a white background with a light grey MK letter pattern, with round orange handles tied with a ribbon and a gold medallion charm. The Michael Kors inscription appears on the front.\n---\nWhy you will love it\n• White and light grey: A bright background with a soft, discreet pattern.\n• Orange handles: A touch of colour that gives the whole bag some depth.\n• Gold medallion: A shiny charm, matching the gold fittings.\n• Structured shape: A straight silhouette, with fittings on the sides for a shoulder strap.\n\nStyle tip: White and orange go very well with denim, beige or navy, especially on sunny days.",
+    },
+  }),
+  newProduct("sac-dome-noir-dore", "bags", {
+    name: { fr: "Sac à main dôme noir – Fermeture & finitions dorées", en: "Black dome handbag – Gold zip & finishes" },
+    subcategory: "handbags",
+    audience: "women",
+    images: ["/sac-dome-noir-dore.jpg"],
+    description: {
+      fr: "Un petit sac noir en forme de dôme, facile à porter tous les jours !\nCe sac à main noir à la silhouette arrondie se ferme par une double fermeture éclair dorée. Il est complété par deux anses rondes, des attaches dorées et une petite étiquette pendante. L’inscription Coach New York figure sur la face avant.\n---\nPourquoi vous allez l’adorer\n• Forme dôme : Une silhouette arrondie, compacte et élégante.\n• Noir et doré : Un contraste classique entre le noir et les finitions dorées.\n• Double fermeture éclair : Une fermeture dorée qui s’ouvre largement.\n• Deux anses rondes : Pour le porter à la main, avec des attaches pour une bandoulière.\n\nConseil de style : Il va avec tout : jean, robe ou tenue plus habillée. Un sac noir de base, toujours utile.",
+      en: "A small black dome-shaped bag, easy to carry every day!\nThis black handbag with a rounded silhouette closes with a gold double zip. It is completed by two round handles, gold fittings and a small hanging tag. The Coach New York inscription appears on the front.\n---\nWhy you will love it\n• Dome shape: A rounded, compact and elegant silhouette.\n• Black and gold: A classic contrast between black and gold finishes.\n• Double zip: A gold closure that opens wide.\n• Two round handles: To carry by hand, with fittings for a shoulder strap.\n\nStyle tip: It goes with everything: jeans, a dress or a dressier outfit. A basic black bag that is always useful.",
+    },
+  }),
+  newProduct("bonnet-yeux-blanc", "fashion", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Bonnet blanc – Yeux Sharingan & Rinnegan", en: "White beanie – Sharingan & Rinnegan eyes" },
+    subcategory: "beanies",
+    audience: "unisex",
+    images: ["/bonnet-yeux-blanc.jpg"],
+    description: {
+      fr: "Le bonnet pour les fans de manga qui aiment les détails !\nUn bonnet blanc uni avec un revers sur lequel deux yeux sont représentés en relief : un œil rouge Sharingan et un œil violet Rinnegan.\n---\nPourquoi vous allez l’adorer\n• Deux yeux en relief : Sharingan rouge d’un côté, Rinnegan violet de l’autre, bien visibles sur le revers.\n• Blanc uni : Une base nette qui met les couleurs en valeur.\n• Revers large : Il se porte rabattu pour montrer les yeux.\n• Mixte : Un bonnet que filles et garçons peuvent porter.\n\nConseil de style : Portez-le avec une veste sombre ou un sweat : le blanc et les yeux colorés ressortent.",
+      en: "The beanie for manga fans who love details!\nA plain white beanie with a cuff on which two eyes are shown in relief: a red Sharingan eye and a purple Rinnegan eye.\n---\nWhy you will love it\n• Two raised eyes: Red Sharingan on one side, purple Rinnegan on the other, clearly visible on the cuff.\n• Plain white: A clean base that shows off the colours.\n• Wide cuff: Worn folded down to show the eyes.\n• Unisex: A beanie anyone can wear.\n\nStyle tip: Wear it with a dark jacket or a sweatshirt: the white and the coloured eyes stand out.",
+    },
+  }),
+  newProduct("bonnet-yeux-noir", "fashion", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Bonnet noir – Yeux Sharingan & Rinnegan", en: "Black beanie – Sharingan & Rinnegan eyes" },
+    subcategory: "beanies",
+    audience: "unisex",
+    images: ["/bonnet-yeux-noir.jpg"],
+    description: {
+      fr: "Le bonnet noir qui fait parler le regard !\nUn bonnet noir uni avec un revers sur lequel deux yeux sont représentés en relief : un œil rouge Sharingan et un œil violet Rinnegan.\n---\nPourquoi vous allez l’adorer\n• Deux yeux en relief : Sharingan rouge d’un côté, Rinnegan violet de l’autre, qui ressortent sur le noir.\n• Noir uni : Une base sobre qui va avec tout.\n• Revers large : Il se porte rabattu pour montrer les yeux.\n• Mixte : Un bonnet que filles et garçons peuvent porter.\n\nConseil de style : Le noir va avec toutes les tenues : le détail des yeux fait tout le style.",
+      en: "The black beanie that makes the eyes speak!\nA plain black beanie with a cuff on which two eyes are shown in relief: a red Sharingan eye and a purple Rinnegan eye.\n---\nWhy you will love it\n• Two raised eyes: Red Sharingan on one side, purple Rinnegan on the other, standing out on the black.\n• Plain black: A sober base that goes with everything.\n• Wide cuff: Worn folded down to show the eyes.\n• Unisex: A beanie anyone can wear.\n\nStyle tip: Black goes with every outfit: the eye detail does all the styling.",
+    },
+  }),
+  newProduct("bonnet-foocus-noir", "fashion", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Bonnet noir – Logo « FooCus » blanc", en: "Black beanie – White “FooCus” logo" },
+    subcategory: "beanies",
+    audience: "unisex",
+    images: ["/bonnet-foocus-noir.jpg"],
+    description: {
+      fr: "Un bonnet noir simple, avec juste ce qu’il faut de style !\nUn bonnet noir uni avec un revers sur lequel le logo « FooCus » est imprimé en blanc, bien lisible.\n---\nPourquoi vous allez l’adorer\n• Logo blanc : Un contraste net sur le revers noir.\n• Noir uni : Une base sobre qui va avec tout.\n• Revers : Il se porte rabattu pour afficher le logo.\n• Mixte : Un bonnet que filles et garçons peuvent porter.\n\nConseil de style : Un bonnet de tous les jours : jean, sweat, doudoune, tout passe.",
+      en: "A simple black beanie with just the right amount of style!\nA plain black beanie with a cuff on which the “FooCus” logo is printed in white, easy to read.\n---\nWhy you will love it\n• White logo: A sharp contrast on the black cuff.\n• Plain black: A sober base that goes with everything.\n• Cuff: Worn folded down to show the logo.\n• Unisex: A beanie anyone can wear.\n\nStyle tip: An everyday beanie: jeans, sweatshirt, puffer jacket, everything works.",
+    },
+  }),
+  newProduct("bonnet-foocus-blanc", "fashion", {
+    price: 6000,
+    priceOnRequest: false,
+    name: { fr: "Bonnet blanc cassé – Logo « FooCus » noir", en: "Off-white beanie – Black “FooCus” logo" },
+    subcategory: "beanies",
+    audience: "unisex",
+    images: ["/bonnet-foocus-blanc.jpg"],
+    description: {
+      fr: "Un bonnet clair et doux, avec un logo bien affirmé !\nUn bonnet blanc cassé uni avec un revers sur lequel le logo « FooCus » est imprimé en noir.\n---\nPourquoi vous allez l’adorer\n• Logo noir : Un contraste net sur le revers clair.\n• Blanc cassé : Une teinte douce qui s’accorde avec les couleurs neutres.\n• Revers : Il se porte rabattu pour afficher le logo.\n• Mixte : Un bonnet que filles et garçons peuvent porter.\n\nConseil de style : Il va très bien avec le beige, le marron, le noir ou le denim.",
+      en: "A light, soft beanie with a bold logo!\nA plain off-white beanie with a cuff on which the “FooCus” logo is printed in black.\n---\nWhy you will love it\n• Black logo: A sharp contrast on the light cuff.\n• Off-white: A soft shade that matches neutral colours.\n• Cuff: Worn folded down to show the logo.\n• Unisex: A beanie anyone can wear.\n\nStyle tip: It goes very well with beige, brown, black or denim.",
     },
   }),
   newProduct("cosmetique-parfum-01-is", "cosmetics", {
