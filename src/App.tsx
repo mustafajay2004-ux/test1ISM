@@ -61,8 +61,8 @@ const categories: Category[] = [
     id: "jewelry",
     name: { fr: "Bijoux & style", en: "Jewellery & style" },
     description: {
-      fr: "Bracelets, boucles d’oreilles, colliers et bijoux pour hommes selon les références confirmées.",
-      en: "Bracelets, earrings, necklaces and men’s jewellery based on confirmed items.",
+      fr: "Bracelets, bagues, boucles d’oreilles et colliers.",
+      en: "Bracelets, rings, earrings and necklaces.",
     },
     subcategories: [sub("bracelets", "Bracelets", "Bracelets"), sub("earrings", "Boucles d’oreilles", "Earrings"), sub("necklaces", "Colliers", "Necklaces"), sub("rings", "Bagues", "Rings")],
     filters: { fr: ["Type", "Style", "Couleur", "Matière"], en: ["Type", "Style", "Colour", "Material"] },
@@ -71,8 +71,8 @@ const categories: Category[] = [
     id: "bags",
     name: { fr: "Sacs & maroquinerie", en: "Bags & leather goods" },
     description: {
-      fr: "Sacs à main, sacoches et sacs pour hommes, uniquement parmi les modèles réellement disponibles.",
-      en: "Handbags, crossbody bags and men’s bags, limited to models that are genuinely available.",
+      fr: "Sacs à main, sacoches et sacs pour hommes.",
+      en: "Handbags, crossbody bags and men’s bags.",
     },
     subcategories: [sub("handbags", "Sacs à main", "Handbags"), sub("crossbody", "Sacoches", "Crossbody bags"), sub("mens-bags", "Sacs pour homme", "Men’s bags"), sub("other-bags", "Autres sacs", "Other bags")],
     filters: { fr: ["Type", "Couleur", "Style", "Prix"], en: ["Type", "Colour", "Style", "Price"] },
@@ -81,8 +81,8 @@ const categories: Category[] = [
     id: "scarves",
     name: { fr: "Foulards & carrés", en: "Scarves & silk squares" },
     description: {
-      fr: "Foulards et carrés de soie classés par imprimé, couleur et style lorsque ces informations sont vérifiées.",
-      en: "Scarves and silk squares organised by print, colour and style when that information is verified.",
+      fr: "Foulards et carrés de soie, bientôt disponibles.",
+      en: "Scarves and silk squares, coming soon.",
     },
     subcategories: [sub("scarves", "Foulards", "Scarves"), sub("silk", "Carrés de soie", "Silk squares"), sub("printed", "Imprimés", "Printed"), sub("plain", "Unis", "Plain")],
     filters: { fr: ["Type", "Couleur", "Motif", "Style"], en: ["Type", "Colour", "Pattern", "Style"] },
@@ -91,8 +91,8 @@ const categories: Category[] = [
     id: "fashion",
     name: { fr: "Accessoires de mode", en: "Fashion accessories" },
     description: {
-      fr: "Lunettes, ceintures et accessoires de tête selon le catalogue confirmé.",
-      en: "Sunglasses, belts and headwear based on the confirmed catalogue.",
+      fr: "Lunettes, ceintures et accessoires de tête.",
+      en: "Sunglasses, belts and headwear.",
     },
     subcategories: [sub("sunglasses", "Lunettes de soleil", "Sunglasses"), sub("belts", "Ceintures", "Belts"), sub("caps", "Casquettes", "Caps"), sub("beanies", "Bonnets", "Beanies"), sub("hats", "Chapeaux", "Hats")],
     filters: { fr: ["Type", "Style", "Couleur", "Taille"], en: ["Type", "Style", "Colour", "Size"] },
@@ -101,8 +101,8 @@ const categories: Category[] = [
     id: "tech",
     name: { fr: "Tech & audio", en: "Tech & audio" },
     description: {
-      fr: "Accessoires pour appareils, écouteurs, casques et enceintes dont les caractéristiques sont vérifiées.",
-      en: "Device accessories, earphones, headphones and speakers with verified specifications.",
+      fr: "Accessoires pour appareils, écouteurs, casques et enceintes.",
+      en: "Device accessories, earphones, headphones and speakers.",
     },
     subcategories: [
       sub("phone", "Téléphone", "Phone"),
@@ -4229,7 +4229,7 @@ const casePrices: Record<string, number> = {
   "watch-auliter-carbone-rouge": 11000,
 };
 const withPrice = (item: Product): Product => (casePrices[item.id] ? { ...item, price: casePrices[item.id], priceOnRequest: false } : item);
-const products: Product[] = [...placeholders.map((product) => ({ ...product, ...(realProducts[product.id] ? { availability: "available" as const } : {}), ...realProducts[product.id] })), ...catalogue.map(withPrice)];
+const products: Product[] = [...placeholders.map((product) => ({ ...product, ...(realProducts[product.id] ? { availability: "available" as const } : {}), ...realProducts[product.id] })), ...catalogue.map(withPrice)].filter((product) => product.name);
 
 const featuredProducts = products.filter((product) => product.featured);
 
@@ -4286,37 +4286,37 @@ const DescriptionBlock = ({ text, lang }: { text: string; lang: Lang }) => {
 
 const copy = {
   fr: {
-    announcement: "Catalogue en préparation — seules les informations vérifiées seront publiées",
+    announcement: "Bienvenue chez Le Coin ISM — découvrez notre sélection",
     nav: { home: "Accueil", shop: "Boutique", about: "À propos", faq: "Infos pratiques" },
     search: "Rechercher dans le catalogue",
     heroEyebrow: "Accessoires choisis pour la vie étudiante",
     heroTitle: "Tes essentiels. Ton style. Ton campus.",
     heroText:
-      "Montres, bijoux, sacs, foulards, accessoires de mode et tech : une sélection indépendante qui sera publiée au fil des disponibilités confirmées.",
+      "Montres, bijoux, sacs, foulards, accessoires de mode et tech : une sélection pensée pour les étudiants, à commander facilement sur WhatsApp.",
     discover: "Explorer les catégories",
     how: "Comment commander",
-    categories: "Six univers à découvrir",
+    categories: "Sept univers à découvrir",
     categoriesText: "Une organisation claire pour trouver rapidement le bon accessoire.",
     catalogReady: "Produits en boutique",
     catalogPending: "Montres, sacs, parfums, tech",
     seeAll: "Voir toute la boutique",
-    philosophy: "Des informations réelles, ou rien.",
+    philosophy: "Des articles choisis avec soin.",
     philosophyText:
-      "Chaque nom, prix, photo, variante et disponibilité sera ajouté uniquement après vérification. Les emplacements visibles aujourd’hui indiquent clairement les données qui restent à compléter.",
+      "Chaque fiche présente le nom, le prix, les photos et la disponibilité de l’article. Une question avant de commander ? Écris-nous sur WhatsApp.",
     steps: ["Découvre une catégorie", "Choisis ton article", "Confirme sur WhatsApp"],
     stepsText: [
-      "Parcours les six univers et leurs sous-catégories.",
-      "Consulte les photos, variantes, caractéristiques et disponibilités vérifiées.",
-      "Envoie ta demande. La commande reste à confirmer dans la conversation.",
+      "Parcours les sept univers et leurs sous-catégories.",
+      "Consulte les photos, les variantes, les caractéristiques et la disponibilité.",
+      "Envoie ta commande. On confirme avec toi la disponibilité, le paiement et la livraison dans la conversation.",
     ],
     shopTitle: "Toute la boutique",
-    shopText: "La structure est prête à accueillir les produits réels sans devoir redessiner chaque page.",
+    shopText: "Montres, bijoux, sacs, parfums et tech : trouve ton article et commande-le sur WhatsApp.",
     filters: "Filtres",
     sort: "Trier par",
     newest: "Nouveautés",
     low: "Prix croissant",
     high: "Prix décroissant",
-    results: "emplacements",
+    results: "produits",
     noResults: "Aucun résultat",
     noResultsText: "Essaie un autre terme ou efface les filtres actifs.",
     clear: "Effacer les filtres",
@@ -4328,7 +4328,7 @@ const copy = {
     variant: "Variante",
     order: "Commander sur WhatsApp",
     orderUnavailable: "La commande sera activée après ajout du nom, du prix et de la disponibilité réelle.",
-    practical: "Informations de commande",
+    practical: "Comment passer une commande",
     practicalText:
       "Aucun paiement n’est effectué sur ce site. Disponibilité, paiement et remise seront confirmés dans la conversation WhatsApp.",
     similar: "Vous pourriez aussi aimer",
@@ -4336,7 +4336,7 @@ const copy = {
     aboutTitle: "Une initiative étudiante, simplement.",
     aboutText:
       "Le Coin ISM est un projet indépendant lancé par un étudiant pour proposer des accessoires utiles avec des informations claires.",
-    faqTitle: "Commander en toute clarté",
+    faqTitle: "Comment passer une commande",
     faqText: "Livraison, paiement, retours et garantie : tout ce qu’il faut savoir avant de commander.",
     independent: "Projet indépendant — sans affiliation officielle avec le Groupe ISM.",
     dsTitle: "Design System",
@@ -4346,7 +4346,7 @@ const copy = {
     close: "Fermer",
     language: "Langue",
     footerText: "Une sélection indépendante pensée avec et pour les étudiants.",
-    verifiedOnly: "Aucune donnée commerciale inventée",
+    verifiedOnly: "Livraison partout au Sénégal",
     prestigeEyebrow: "Sélection prestige",
     prestigeTitle: "Nos pièces d’exception",
     prestigeText: "Une vitrine de nos articles les plus luxueux. Toutes les montres et tous les bijoux restent à retrouver dans leurs catégories.",
@@ -4364,37 +4364,37 @@ const copy = {
     noMatch: "Aucun produit pour cette sélection pour le moment.",
   },
   en: {
-    announcement: "Catalogue in preparation — only verified information will be published",
+    announcement: "Welcome to Le Coin ISM — discover our selection",
     nav: { home: "Home", shop: "Shop", about: "About", faq: "Practical info" },
     search: "Search the catalogue",
     heroEyebrow: "Accessories selected for student life",
     heroTitle: "Your essentials. Your style. Your campus.",
     heroText:
-      "Watches, jewellery, bags, scarves, fashion accessories and tech: an independent selection published as availability is confirmed.",
+      "Watches, jewellery, bags, scarves, fashion accessories and tech: a selection made for students, easy to order on WhatsApp.",
     discover: "Explore categories",
     how: "How to order",
-    categories: "Six worlds to explore",
+    categories: "Seven worlds to explore",
     categoriesText: "A clear structure to help you quickly find the right accessory.",
     catalogReady: "Products in store",
     catalogPending: "Watches, bags, perfumes, tech",
     seeAll: "View the full shop",
-    philosophy: "Real information, or nothing.",
+    philosophy: "Items chosen with care.",
     philosophyText:
-      "Every name, price, photo, variant and availability status will only be added after verification. Current slots clearly show what still needs to be completed.",
+      "Each page shows the name, price, photos and availability of the item. A question before ordering? Write to us on WhatsApp.",
     steps: ["Explore a category", "Choose your item", "Confirm on WhatsApp"],
     stepsText: [
-      "Browse the six collections and their subcategories.",
-      "Check verified photos, variants, specifications and availability.",
-      "Send your request. The order still needs confirmation in the conversation.",
+      "Browse the seven collections and their subcategories.",
+      "Check the photos, variants, specifications and availability.",
+      "Send your order. We confirm availability, payment and delivery with you in the conversation.",
     ],
     shopTitle: "All products",
-    shopText: "The structure is ready for real products without redesigning each page.",
+    shopText: "Watches, jewellery, bags, perfumes and tech: find your item and order it on WhatsApp.",
     filters: "Filters",
     sort: "Sort by",
     newest: "Newest",
     low: "Price: low to high",
     high: "Price: high to low",
-    results: "slots",
+    results: "products",
     noResults: "No results",
     noResultsText: "Try another term or clear the active filters.",
     clear: "Clear filters",
@@ -4406,7 +4406,7 @@ const copy = {
     variant: "Variant",
     order: "Order on WhatsApp",
     orderUnavailable: "Ordering will be enabled once the real name, price and availability are added.",
-    practical: "Ordering information",
+    practical: "How to place an order",
     practicalText:
       "No payment is processed on this site. Availability, payment and handover will be confirmed in the WhatsApp conversation.",
     similar: "You may also like",
@@ -4414,7 +4414,7 @@ const copy = {
     aboutTitle: "A student initiative, simply.",
     aboutText:
       "Le Coin ISM is an independent project started by a student to offer useful accessories with clear information.",
-    faqTitle: "Order with clarity",
+    faqTitle: "How to place an order",
     faqText: "Delivery, payment, returns and warranty: everything you need to know before ordering.",
     independent: "Independent project — not officially affiliated with Groupe ISM.",
     dsTitle: "Design System",
@@ -4424,7 +4424,7 @@ const copy = {
     close: "Close",
     language: "Language",
     footerText: "An independent selection made with and for students.",
-    verifiedOnly: "No invented commercial data",
+    verifiedOnly: "Delivery all over Senegal",
     prestigeEyebrow: "Prestige selection",
     prestigeTitle: "Our exceptional pieces",
     prestigeText: "A showcase of our most luxurious items. All watches and jewellery can still be found in their categories.",
@@ -4637,14 +4637,14 @@ export default function App() {
             <div className="product-info"><div className="product-meta"><Status lang={lang} availability={selectedProduct.availability} /><span>{selectedProduct.name ? (audienceLabel(selectedProduct, lang) || getCategory(selectedProduct.category).name[lang]) : lang === "fr" ? "Référence à renseigner" : "Reference to complete"}</span></div><h1>{displayName(selectedProduct, lang)}</h1><div className={selectedProduct.price !== null || selectedProduct.priceOnRequest ? "detail-price" : "detail-price pending-price"}>{selectedProduct.oldPrice && <s className="old-price">{selectedProduct.oldPrice.toLocaleString("fr-FR")} FCFA</s>}{priceLabel(shownProduct, lang)}</div><DescriptionBlock text={selectedProduct.description?.[lang] ?? (lang === "fr" ? "Ajoutez ici une description concise et vérifiée du produit, sans promesse non confirmée." : "Add a concise, verified product description here, without unconfirmed claims.")} lang={lang} />
               {selectedProduct.features && <div className="data-checklist"><strong>{lang === "fr" ? "Caractéristiques" : "Features"}</strong>{selectedProduct.features[lang].map((item) => <span key={item}><i />{item}</span>)}</div>}
               {missingData.length > 0 && <div className="data-checklist"><strong>{t.addData}</strong>{missingData.map((item) => <span key={item}><i />{item}</span>)}</div>}
-              <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : <div className="unconfigured-field">{lang === "fr" ? "Couleurs, tailles ou modèles à renseigner" : "Colours, sizes or models to complete"}</div>}</div>
+              {selectedProduct.variants.length > 0 && <div className="selection-block"><div className="selection-label"><label>{t.variant}</label></div>{selectedProduct.variants.length ? <div className="variants">{selectedProduct.variants.map((item) => <button className={variant === item ? "active" : ""} key={item} onClick={() => setVariant(item)}>{item}</button>)}</div> : null}</div>}
               {isWatch && selectedProduct.price !== null && <div className="selection-block"><div className="selection-label"><label>{lang === "fr" ? "Boîte" : "Box"}</label></div><div className="variants"><button className={!withBox ? "active" : ""} onClick={() => setWithBox(false)}>{lang === "fr" ? "Sans boîte" : "Without box"}</button><button className={withBox ? "active" : ""} onClick={() => setWithBox(true)}>{lang === "fr" ? "Avec boîte (+1 000 FCFA)" : "With box (+1,000 FCFA)"}</button></div></div>}
               <div className="selection-block"><label>{t.quantity}</label><div className="quantity"><button aria-label="Decrease" onClick={() => setQuantity(Math.max(1, quantity - 1))}><Icon name="minus" /></button><span>{quantity}</span><button aria-label="Increase" onClick={() => setQuantity(quantity + 1)}><Icon name="plus" /></button></div></div>
               <a className={`button whatsapp ${canOrder ? "" : "disabled"}`} href={canOrder ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}` : undefined} target={canOrder ? "_blank" : undefined} rel="noreferrer" aria-disabled={!canOrder} onClick={(event) => { if (!canOrder) event.preventDefault(); }}><Icon name="message" />{t.order}<Icon name="arrow" /></a><p className="order-help"><Icon name={canOrder ? "check" : "close"} />{canOrder ? t.practicalText : t.orderUnavailable}</p><details className="practical" open><summary>{t.practical}<span>−</span></summary><p>{t.practicalText}</p></details>
             </div>
           </div>
           <RecommendationSection title={t.similar} products={categoryProducts.filter((product) => product.id !== selectedProduct.id)} lang={lang} onOpen={openProduct} />
-          <RecommendationSection title={t.completeStyle} products={products.filter((product) => product.category !== selectedProduct.category).slice(0, 3)} lang={lang} onOpen={openProduct} />
+          <RecommendationSection title={t.completeStyle} products={products.filter((product) => product.category !== selectedProduct.category && product.name).slice(0, 3)} lang={lang} onOpen={openProduct} />
         </section>}
 
         {page === "about" && <AboutPage lang={lang} />}
@@ -4652,7 +4652,7 @@ export default function App() {
         {page === "system" && <DesignSystemPage lang={lang} />}
       </main>
 
-      <footer className="footer"><div className="shell footer-top"><div><Logo onClick={() => navigate("home")} /><p>{t.footerText}</p><span>{t.independent}</span></div><div><strong>{lang === "fr" ? "Catégories" : "Categories"}</strong>{categories.slice(0, 3).map((category) => <button key={category.id} onClick={() => openCategory(category.id)}>{category.name[lang]}</button>)}</div><div><strong>{lang === "fr" ? "Explorer" : "Explore"}</strong>{categories.slice(3).map((category) => <button key={category.id} onClick={() => openCategory(category.id)}>{category.name[lang]}</button>)}</div><div><strong>{lang === "fr" ? "Informations" : "Information"}</strong><button onClick={() => navigate("faq")}>FAQ</button><button onClick={() => navigate("system")}>Design System</button><span>{lang === "fr" ? "Mentions légales — à compléter" : "Legal notice — to complete"}</span></div></div><div className="shell footer-bottom"><span>© 2025 Le Coin ISM</span><span>Dakar, Sénégal · Prototype</span></div></footer>
+      <footer className="footer"><div className="shell footer-top"><div><Logo onClick={() => navigate("home")} /><p>{t.footerText}</p><span>{t.independent}</span></div><div><strong>{lang === "fr" ? "Catégories" : "Categories"}</strong>{categories.slice(0, 3).map((category) => <button key={category.id} onClick={() => openCategory(category.id)}>{category.name[lang]}</button>)}</div><div><strong>{lang === "fr" ? "Explorer" : "Explore"}</strong>{categories.slice(3).map((category) => <button key={category.id} onClick={() => openCategory(category.id)}>{category.name[lang]}</button>)}</div><div><strong>{lang === "fr" ? "Informations" : "Information"}</strong><button onClick={() => navigate("faq")}>FAQ</button></div></div><div className="shell footer-bottom"><span>© 2026 Le Coin ISM</span><span>Dakar, Sénégal</span></div></footer>
     </div>
   );
 }
@@ -4688,7 +4688,7 @@ function CatalogPage({ lang, isCategory, activeCategory, products: visibleProduc
     <div className="page-intro">{isCategory && <div className="breadcrumb"><button onClick={onShop}>{t.nav.shop}</button><span>/</span><span>{activeCategory.name[lang]}</span></div>}<span className="eyebrow">{isCategory ? `Collection 0${categories.findIndex((item) => item.id === activeCategory.id) + 1}` : t.catalogReady}</span><h1>{isCategory ? activeCategory.name[lang] : t.shopTitle}</h1><p>{isCategory ? activeCategory.description[lang] : t.shopText}</p>{isCategory && ["watches", "jewelry"].includes(activeCategory.id) && <div className="subcategory-chips audience-chips">{([["", t.allAudience], ["men", t.men], ["women", t.women]] as const).map(([value, label]) => <button className={audience === value ? "active" : ""} key={value} onClick={() => setAudience(value)}>{label}</button>)}</div>}{isCategory && <div className="subcategory-chips">{activeCategory.subcategories.filter((item) => !item.parent).map((item) => <button className={activeTop === item.id ? "active" : ""} key={item.id} onClick={() => setSubcategory(subcategory === item.id ? "" : item.id)}>{item.name[lang]}</button>)}</div>}{isCategory && childSubs.length > 0 && <div className="subcategory-chips child-chips"><button className={subcategory === activeTop ? "active" : ""} onClick={() => setSubcategory(activeTop)}>{t.allSelection}</button>{childSubs.map((item) => <button className={subcategory === item.id ? "active" : ""} key={item.id} onClick={() => setSubcategory(subcategory === item.id ? activeTop : item.id)}>{item.name[lang]}</button>)}</div>}</div>
     {!isCategory && <div className="shop-category-strip">{categories.map((category) => <button key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><Icon name="arrow" /></button>)}</div>}
     <div className="catalog-toolbar"><label className="search-field"><Icon name="search" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t.search} /></label><button className="button secondary mobile-filter" onClick={() => setFilterOpen(!filterOpen)}>{t.filters}<span>{filterOpen ? "−" : "+"}</span></button><div className="sort-control"><label>{t.sort}</label><select value={sort} onChange={(event) => setSort(event.target.value)} disabled={!availablePriceData}><option value="newest">{t.newest}</option><option value="low">{t.low}</option><option value="high">{t.high}</option></select></div></div>
-    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories.filter((item) => !item.parent || item.parent === activeTop).map((item) => <button className={subcategory === item.id ? "filter-option active" : "filter-option"} key={item.id} style={item.parent ? { paddingLeft: 16 } : undefined} onClick={() => setSubcategory(subcategory === item.id ? "" : item.id)}><span>{item.name[lang]}</span><small>—</small></button>)}</div><div className="planned-filters"><label>{lang === "fr" ? "Filtres prévus" : "Planned filters"}</label>{filterCategory.filters[lang].map((filter) => <span key={filter}>{filter}<small>{lang === "fr" ? "À activer avec les données" : "Enable with data"}</small></span>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>{String(products.filter((item) => item.category === category.id && item.name).length).padStart(2, "0")}</small></button>)}</div>}<div className="pilot-note"><span>i</span><p>{lang === "fr" ? "Le tri par prix et les filtres détaillés s’activent uniquement lorsque les données réelles sont renseignées." : "Price sorting and detailed filters are only enabled once real data is entered."}</p></div></aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory || audience ? t.noMatch : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
+    <div className="catalog-layout"><aside className={filterOpen ? "filters open" : "filters"}><div className="filter-head"><strong>{t.filters}</strong><button onClick={onClear}>{t.clear}</button></div>{filterCategory ? <><div className="filter-group"><label>{lang === "fr" ? "Sous-catégorie" : "Subcategory"}</label>{filterCategory.subcategories.filter((item) => !item.parent || item.parent === activeTop).map((item) => <button className={subcategory === item.id ? "filter-option active" : "filter-option"} key={item.id} style={item.parent ? { paddingLeft: 16 } : undefined} onClick={() => setSubcategory(subcategory === item.id ? "" : item.id)}><span>{item.name[lang]}</span><small>—</small></button>)}</div></> : <div className="filter-group"><label>{lang === "fr" ? "Catégorie" : "Category"}</label>{categories.map((category) => <button className="filter-option" key={category.id} onClick={() => onCategory(category.id)}><span>{category.name[lang]}</span><small>{String(products.filter((item) => item.category === category.id && item.name).length).padStart(2, "0")}</small></button>)}</div>}</aside><div className="catalog-content"><div className="result-head"><span><strong>{visibleProducts.length}</strong> {t.results}</span><span>{isCategory ? activeCategory.name[lang] : t.shopTitle}</span></div>{visibleProducts.length ? <div className="product-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} lang={lang} onOpen={onProduct} />)}</div> : <div className="empty-state"><div><Icon name="search" size={28} /></div><h2>{t.noResults}</h2><p>{subcategory || audience ? t.noMatch : t.noResultsText}</p><button className="button secondary" onClick={onClear}>{t.clear}</button></div>}</div></div>
   </section>;
 }
 
@@ -4707,7 +4707,7 @@ function FaqPreview({ lang, onAll }: { lang: Lang; onAll: () => void }) {
 
 function AboutPage({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <><section className="inner-hero"><div className="shell"><span className="eyebrow">{lang === "fr" ? "Notre histoire" : "Our story"}</span><h1>{t.aboutTitle}</h1><p>{t.aboutText}</p></div></section><section className="section shell about-grid"><div className="about-image"><img src="/a-propos.jpg" alt={lang === "fr" ? "Costume, parfum et montre : l’univers Le Coin ISM" : "Suit, fragrance and watch: the Le Coin ISM world"} /></div><div className="about-copy"><span className="eyebrow">01 — {lang === "fr" ? "Notre méthode" : "Our method"}</span><h2>{lang === "fr" ? "Vérifier avant de publier." : "Verify before publishing."}</h2><p>{lang === "fr" ? "Le catalogue est organisé autour de six univers réels. Chaque fiche reste en préparation tant que ses photos, son prix et sa disponibilité ne sont pas confirmés." : "The catalogue is organised around six real collections. Each page remains in preparation until its photos, price and availability are confirmed."}</p><div className="values">{(lang === "fr" ? [["Authenticité", "Pas de marque ou photo trompeuse."], ["Clarté", "Les données manquantes sont visibles."], ["Souplesse", "Le catalogue s’enrichit sans refonte."]] : [["Authenticity", "No misleading brand or photo."], ["Clarity", "Missing data stays visible."], ["Flexibility", "The catalogue grows without redesign."]]).map(([title, text], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{text}</p></div>)}</div></div></section><section className="section shell independence"><span>i</span><div><h2>{lang === "fr" ? "Une identité indépendante" : "An independent identity"}</h2><p>{t.independent}</p></div></section></>;
+  return <><section className="inner-hero"><div className="shell"><span className="eyebrow">{lang === "fr" ? "Notre histoire" : "Our story"}</span><h1>{t.aboutTitle}</h1><p>{t.aboutText}</p></div></section><section className="section shell about-grid"><div className="about-image"><img src="/a-propos.jpg" alt={lang === "fr" ? "Costume, parfum et montre : l’univers Le Coin ISM" : "Suit, fragrance and watch: the Le Coin ISM world"} /></div><div className="about-copy"><span className="eyebrow">01 — {lang === "fr" ? "Notre méthode" : "Our method"}</span><h2>{lang === "fr" ? "Choisir avec soin." : "Choose with care."}</h2><p>{lang === "fr" ? "Le catalogue est organisé autour de sept univers. Chaque fiche présente les photos, le prix et la disponibilité de l’article." : "The catalogue is organised around seven collections. Each page shows the photos, price and availability of the item."}</p><div className="values">{(lang === "fr" ? [["Sélection", "Des articles choisis pour la vie étudiante."], ["Clarté", "Prix et disponibilité affichés sur chaque fiche."], ["Simplicité", "Une commande en quelques clics sur WhatsApp."]] : [["Selection", "Items chosen for student life."], ["Clarity", "Price and availability shown on every page."], ["Simplicity", "Order in a few clicks on WhatsApp."]]).map(([title, text], index) => <div key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{text}</p></div>)}</div></div></section><section className="section shell independence"><span>i</span><div><h2>{lang === "fr" ? "Une identité indépendante" : "An independent identity"}</h2><p>{t.independent}</p></div></section></>;
 }
 
 function FaqPage({ lang }: { lang: Lang }) {
